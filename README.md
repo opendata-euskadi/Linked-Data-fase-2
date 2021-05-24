@@ -7,12 +7,15 @@ Este es el repositorio del proyecto "Contratación de Servicios Profesionales pa
 A grandes rasgos este repositorio contiene los siguientes elementos:
 
 * Gestión:
-  * Informes de progreso.
-  * Documentación (En el Wiki de GitHub o mediante archivos MarkDown).
-  * Issues GitHub para las tareas.
+  * Informes de progreso (PDFs firmados).
+  * Documentación (En el [Wiki](https://github.com/opendata-euskadi/Produccion-Datos-Enlazados-contrato-2105015/wiki) o mediante archivos MarkDown).
+  * Issues para las tareas.
   * GitHub projects para Kanban, hitos etc.
 * Productos:
-  * Código para convertir datos a RDF.
+  * Programas para:
+    * Convertir datos a RDF, incluyendo el esquema de URIs ya definido.
+    * Descubrir enlaces.
+    * Gestionar los metadataos y Named Graphs con respecto a DCAT.
   * Datos RDF propiamente dichos.
   * Consultas SPARQL sobre los datos RDF.
   * Ontologías reusadas o creadas.  
@@ -21,8 +24,8 @@ A grandes rasgos este repositorio contiene los siguientes elementos:
 
 Estos son lo datos que se espera convertir a Linked Data:
 
-* NORA.
-* UDALMAP.
-* Directorio (Pesonas/entidades/equipamientos).
-* Datasets Open Data Euskadi.
-* Datos Normativos en formato ELI (European Legislation Identifier).
+* NORA. NORA es el callejero de la Comunidad Autónoma del País Vasco que es mantenido por el Instituto Vasco de Estadística - EUSTAT.
+* UDALMAP. UDALMAP es un sistema de información municipal, cuya finalidad es mostrar la realidad socio-económica de los municipios de Euskadi y el diseño y evaluación de políticas públicas.
+* Directorio Gobierno Vasco: Personas, entidades, y equipamientos.
+* Datasets Open Data Euskadi. Archivos DCAT(RDF) de DataSets.
+* Datos Normativos en formato ELI (European Legislation Identifier). Datos de LegeGunea en JSON-LD (Obtenido de las páginas web).
