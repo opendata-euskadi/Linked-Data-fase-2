@@ -1,10 +1,12 @@
 # Prototipo de modelo RDF para municipios de NORA
 
-# Patron URIs (https://opendata.euskadi.eus/lod/-/linked-open-data/) http://id.euskadi.eus/{Sector}/{Domain}/{ClassName}/{Identifier}:
+# Patron de URIs (https://opendata.euskadi.eus/lod/-/linked-open-data/) http://id.euskadi.eus/{Sector}/{Domain}/{ClassName}/{Identifier}:
 # Sector (https://github.com/opendata-euskadi/SKOS-taxonomies/tree/master/sectores-nti): urbanism-infrastructure
 # Domain (https://github.com/opendata-euskadi/SKOS-taxonomies/tree/master/sectores-dominio): urbanism-territory
 # ClassName: municipality (http://dbpedia.org/ontology/Municipality)
 # Identifier: identificador NORA en ingles
+
+# Grafo: http://id.euskadi.eus/graph/NORA
 
 PREFIX dbo:	<http://dbpedia.org/ontology/> 
 PREFIX schema: <https://schema.org/> 
@@ -14,4 +16,4 @@ PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 eus-municipality:001-abadino a dbo:Municipality ;
                                 a schema:AdministrativeArea ;
                                 rdfs:label "Abadiano"@es ;
-                                rdfs:label "Abadiño"@eus .
+                                rdfs:label "Abadiño"@eu .
