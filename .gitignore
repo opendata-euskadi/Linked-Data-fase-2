@@ -33,3 +33,6 @@ LDf2/RDF4JGraphDB/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml
 LDf2/RDF4JGraphDB/.metadata/.plugins/org.eclipse.ui.intro/dialog_settings.xml
 LDf2/RDF4JGraphDB/.metadata/.plugins/org.eclipse.ui.intro/introstate
 LDf2/RDF4JGraphDB/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+graphdb-silk-docker/graphdb-free-9.7.0-dist.zip
+graphdb-silk-docker/graphdb-data/*
+graphdb-silk-docker/silk-workspace/*
