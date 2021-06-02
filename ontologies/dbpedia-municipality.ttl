@@ -1,0 +1,34 @@
+@prefix ns0:	<http://open.vocab.org/terms/> .
+@prefix dbo:	<http://dbpedia.org/ontology/> .
+<http://dbpedia.org/ontology/>	ns0:defines	dbo:Municipality .
+<http://dbpedia.org/ontology/data/definitions.ttl>	ns0:describes	dbo:Municipality .
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl:	<http://www.w3.org/2002/07/owl#> .
+dbo:Municipality	rdf:type	owl:Class .
+@prefix rdfs:	<http://www.w3.org/2000/01/rdf-schema#> .
+dbo:Municipality	rdfs:subClassOf	dbo:GovernmentalAdministrativeRegion ;
+	rdfs:label	"municipio"@es ,
+		"\u57FA\u790E\u81EA\u6CBB\u4F53"@ja ,
+		"\u03B4\u03AE\u03BC\u03BF\u03C2"@el ,
+		"Gemeinde"@de ,
+		"gemeente"@nl ,
+		"municipality"@en ,
+		"commune"@fr ;
+	rdfs:isDefinedBy	dbo: ;
+	rdfs:comment	"An administrative body governing a territorial unity on the lower level, administering one or a few more settlements"@en ,
+		"Un Municipio es el ente local definido en el art\u00EDculo 140 de la Constituci\u00F3n espa\u00F1ola y la entidad b\u00E1sica de la organizaci\u00F3n territorial del Estado seg\u00FAn el art\u00EDculo 1 de la Ley 7/1985, de 2 de abril, Reguladora de las Bases del R\u00E9gimen Local. Tiene personalidad jur\u00EDdica y plena capacidad para el cumplimiento de sus fines. La delimitaci\u00F3n territorial de Municipio est\u00E1 recogida del REgistro Central de Cartograf\u00EDa del IGN"@es ,
+		"\u0394\u03AE\u03BC\u03BF\u03C2 \u03BF\u03BD\u03BF\u03BC\u03AC\u03B6\u03B5\u03C4\u03B1\u03B9 \u03BC\u03AF\u03B1 \u03BF\u03BD\u03C4\u03CC\u03C4\u03B7\u03C4\u03B1 \u03C4\u03B7\u03C2 \u03B4\u03B7\u03BC\u03CC\u03C3\u03B9\u03B1\u03C2 \u03B4\u03B9\u03BF\u03AF\u03BA\u03B7\u03C3\u03B7\u03C2, \u03B7 \u03BF\u03C0\u03BF\u03AF\u03B1 \u03C3\u03C4\u03B1 \u03C0\u03B5\u03C1\u03B9\u03C3\u03C3\u03CC\u03C4\u03B5\u03C1\u03B1 \u03BA\u03C1\u03AC\u03C4\u03B7 \u03B1\u03C0\u03BF\u03C4\u03B5\u03BB\u03B5\u03AF \u03C4\u03B7 \u03B2\u03B1\u03C3\u03B9\u03BA\u03AE \u03B1\u03C5\u03C4\u03BF\u03B4\u03B9\u03BF\u03B9\u03BA\u03B7\u03C4\u03B9\u03BA\u03AE \u03BC\u03BF\u03BD\u03AC\u03B4\u03B1 \u03BA\u03B1\u03B9 \u03BA\u03B1\u03C4\u03AC \u03BA\u03B1\u03BD\u03CC\u03BD\u03B1 \u03C0\u03B5\u03C1\u03B9\u03BB\u03B1\u03BC\u03B2\u03AC\u03BD\u03B5\u03B9 \u03BC\u03B9\u03B1 \u03C0\u03CC\u03BB\u03B7 \u03AE \u03BA\u03C9\u03BC\u03CC\u03C0\u03BF\u03BB\u03B7 \u03BA\u03B1\u03B9 \u03C4\u03B1 \u03B3\u03CD\u03C1\u03C9 \u03C7\u03C9\u03C1\u03B9\u03AC \u03C4\u03B7\u03C2."@el .
+@prefix wdrs:	<http://www.w3.org/2007/05/powder-s#> .
+dbo:Municipality	wdrs:describedby	<http://dbpedia.org/ontology/data/definitions.ttl> ;
+	owl:sameAs	dbo:Municipality .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+@prefix ns7:	<http://mappings.dbpedia.org/index.php/OntologyClass:> .
+dbo:Municipality	prov:wasDerivedFrom	ns7:Municipality .
+dbo:FormerMunicipality	rdfs:subClassOf	dbo:Municipality .
+dbo:amsterdamCode	rdfs:domain	dbo:Municipality .
+dbo:departmentCode	rdfs:domain	dbo:Municipality .
+dbo:hasAbsorbedMunicipality	rdfs:domain	dbo:Municipality .
+dbo:municipalityAbsorbedBy	rdfs:range	dbo:Municipality .
+dbo:municipalityRenamedTo	rdfs:domain	dbo:Municipality .
+dbo:municipalityType	rdfs:domain	dbo:Municipality .
+dbo:presentMunicipality	rdfs:range	dbo:Municipality .
