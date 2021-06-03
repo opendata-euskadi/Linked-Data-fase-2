@@ -14,8 +14,6 @@ services:
          - "81:80"
       volumes:
          - ./silk-workspace:/opt/silk/workspace
-      links:
-         - graphdb
       restart: always
       depends_on:
          - graphdb
