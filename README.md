@@ -28,3 +28,5 @@ Estos son lo datos que se espera convertir a Linked Data:
 * Directorio Gobierno Vasco: Personas, entidades, y equipamientos.
 * Datasets Open Data Euskadi. Archivos DCAT(RDF) de DataSets.
 * Datos Normativos en formato ELI (European Legislation Identifier). Datos de LegeGunea en JSON-LD (Obtenido de las páginas web).
+
+
