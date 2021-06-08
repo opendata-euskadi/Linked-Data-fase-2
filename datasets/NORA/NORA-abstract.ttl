@@ -6,22 +6,22 @@
 
 # Enlaces: ver archivo NORA-high-level.ttl
 
-
 PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
+PREFIX geo: <https://datos.ign.es/def/geo_core#>
 PREFIX geonames: <http://www.geonames.org/ontology#>
 PREFIX dcterms: <http://purl.org/dc/elements/1.1/>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX geonames: <http://www.geonames.org/ontology#>
-PREFIX geo: <https://datos.ign.es/def/geo_core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX nora: <http://id.euskadi.eus/def/nora#>
 
 <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA>
         a                      esadm:Pais ;
         geonames:featureCode   geonames:A.ADMD ;
         geonames:featureClass  geonames:A ;
-        dcterms:identifier	   "ID-NORA" ; 
-        schema:identifier	   "ID-NORA" ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
         geonames:officialName  "descripcionOficial" ;
         rdfs:label             "esDescripcion"@es ;
         rdfs:label             "euDescripcion"@eu ;
@@ -30,8 +30,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         a                      esadm:ComunidadAutonoma ;
         geonames:featureCode   geonames:A.ADMD ;
         geonames:featureClass  geonames:A ;
-        dcterms:identifier	   "ID-NORA" ; 
-        schema:identifier	   "ID-NORA" ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
         geonames:officialName  "descripcionOficial" ;
         rdfs:label             "esDescripcion"@es ;
         rdfs:label             "euDescripcion"@eu ;
@@ -41,8 +41,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         a                      esadm:Provincia ;
         geonames:featureCode   geonames:A.ADMD ;
         geonames:featureClass  geonames:A ;
-        dcterms:identifier	   "ID-NORA" ; 
-        schema:identifier	   "ID-NORA" ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
         geonames:officialName  "descripcionOficial" ;
         rdfs:label             "esDescripcion"@es ;
         rdfs:label             "euDescripcion"@eu ;
@@ -53,11 +53,11 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         a                      esadm:Comarca ;
         geonames:featureCode   geonames:A.ADMD ;
         geonames:featureClass  geonames:A ;
-        dcterms:identifier	   "ID-NORA" ; 
-        schema:identifier	   "ID-NORA" ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
         geonames:officialName  "descripcionOficial" ;
-        rdfs:label             "esDescripcion"@es ;
-        rdfs:label             "euDescripcion"@eu ;
+        nora:descripcion             "esDescripcion"@es ;
+        nora:descripcion             "euDescripcion"@eu ;
         esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
         esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
         esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> .
@@ -66,8 +66,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         a                      esadm:Municipio ;
         geonames:featureCode   geonames:P.PPL ;
         geonames:featureClass  geonames:P ;
-        dcterms:identifier	   "ID-NORA" ; 
-        schema:identifier	   "ID-NORA" ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
         geonames:officialName  "descripcionOficial" ;
         geo:xETRS89            "dxEtrs89"^^xsd:double ;
         geo:yETRS89            "dyEtrs89"^^xsd:double ;
@@ -75,6 +75,117 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
         esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> ;
         esadm:comarca          <http://id.euskadi.eus/public-sector/urbanism-territory/region/ID-NORA> .
+
+# Entidad en NORA es EntidadSingular o EntidadColectiva en ESADM?
+# Que es Localidad en NORA en ESADM?
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/neighbourhood/ID-NORA>
+        a                      esadm:Barrio ;
+        geonames:featureCode   geonames:P.PPLX ;
+        geonames:featureClass  geonames:P ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        # BarrioCod?
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
+        esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
+        esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> ;
+        esadm:comarca          <http://id.euskadi.eus/public-sector/urbanism-territory/region/ID-NORA> ;
+        esadm:municipio        <http://id.euskadi.eus/public-sector/urbanism-territory/municipality/ID-NORA> .
+        # Localidad?
+        # Entidad?
+
+# En NORA, distrito --> barrio
+# En ESADM, barrio --> distrito
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/district/ID-NORA>
+        a                      esadm:Distrito ;
+        geonames:featureCode   geonames:P.PPLX ;
+        geonames:featureClass  geonames:P ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        # DistritoCod?
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
+        esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
+        esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> ;
+        esadm:comarca          <http://id.euskadi.eus/public-sector/urbanism-territory/region/ID-NORA> ;
+        esadm:municipio        <http://id.euskadi.eus/public-sector/urbanism-territory/municipality/ID-NORA> ;
+        esadm:barrio           <http://id.euskadi.eus/public-sector/urbanism-territory/neighbourhood/ID-NORA> .
+        # Localidad?
+        # Entidad?
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/section/ID-NORA>
+        a                      esadm:SeccionCensal ;
+        geonames:featureCode   geonames:P.PPLX ;
+        geonames:featureClass  geonames:P ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        # SeccionCod?
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
+        esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
+        esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> ;
+        esadm:comarca          <http://id.euskadi.eus/public-sector/urbanism-territory/region/ID-NORA> ;
+        esadm:municipio        <http://id.euskadi.eus/public-sector/urbanism-territory/municipality/ID-NORA> ;
+        esadm:barrio           <http://id.euskadi.eus/public-sector/urbanism-territory/neighbourhood/ID-NORA> ;
+        esadm:distrito           <http://id.euskadi.eus/public-sector/urbanism-territory/district/ID-NORA> .
+        # Localidad?
+        # Entidad?
+
+
+# ------------------------- Callejero ----------------------------------------------------------------------------------#
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/street/ID-NORA>
+        a                      escjr:Via ;
+        geonames:featureCode   geonames:R.ST ;
+        geonames:featureClass  geonames:R ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        nora:descripcionSecundaria            "descripcionSecundaria" ; # EU|ES
+        # calleCod?
+        # Provisional? esadm:estado <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/territorio/tipoEstado/vigente>
+        escjr:tipoVia          <http://id.euskadi.eus/public-sector/urbanism-territory/streettype/ID-NORA> ;
+        esadm:barrio           <http://id.euskadi.eus/public-sector/urbanism-territory/neighbourhood/ID-NORA> .
+
+
+# Probablement habra un conjunto definido de tipos de via que habria que meter en una ontologia
+<http://id.euskadi.eus/public-sector/urbanism-territory/streettype/ID-NORA>
+        # a                      escjr:Via ; ???
+        geonames:featureCode   geonames:R.ST ;
+        geonames:featureClass  geonames:R ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
+        geonames:officialName  "es|eu-DescripcionOficial" ; # EU|ES
+        # crear ontologia? 
+        nora:descripcionReducida    "es|eu-DescripcionReducida" ; # EU|ES
+        nora:abreviatura            "es|eu-Abreviatura" ; # EU/ES
+        
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/doorway/ID-NORA>
+        a                      escjr:Portal ;
+        dcterms:identifier     "ID-NORA" ; 
+        schema:identifier      "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        nora:descripcionSecundaria             "descripcionSecundaria" ; # EU|ES
+        geo:xETRS89            "dxEtrs89"^^xsd:double ;
+        geo:yETRS89            "dyEtrs89"^^xsd:double ;
+        # bloque?
+        # numero?
+        # vis?
+        # translatedBis?
+        # codigopostal?
+        # acepcion?
+        # Provisional? esadm:estado <http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/territorio/tipoEstado/vigente>
+        esadm:barrio           <http://id.euskadi.eus/public-sector/urbanism-territory/neighbourhood/ID-NORA> .
+
+
+
+
+
+
+
 
 
         
