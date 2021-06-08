@@ -1,0 +1,12 @@
+# Modelo abstracto de RDF de NORA
+
+PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/Autonomous_communities_of_Spain/Basque_Autonomous_Community> 
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/Provinces_of_Spain/ArabaAlava> 
+ 
+<http://id.euskadi.eus/public-sector/urbanism-territory/Provinces_of_Spain/Gipuzkoa> 
+ 	
+<http://id.euskadi.eus/public-sector/urbanism-territory/Provinces_of_Spain/Biscay> 
+ 

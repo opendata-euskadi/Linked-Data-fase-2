@@ -4,6 +4,8 @@
 
 * Nombre: NORA
 * URI Named Graph: http://id.euskadi.eus/graph/NORA
+* URI Named Graph enlaces: http://id.euskadi.eus/graph/NORA-links
+* URI Named Graph ontologias: http://id.euskadi.eus/graph/NORA-vocabs
 * Origen: API NORA (**URL!**)
 * DCAT: **To do**
 * Prototipo: `abadiano.ttl`
