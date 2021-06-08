@@ -10,10 +10,10 @@
 * DCAT: **To do**
 * Prototipo: `abadiano.ttl`
 * Patrón de URIs:
-  * Sector: urbanism-infrastructure
+  * Sector: public-sector
   * Domain: urbanism-territory
-  * ClassName: municipality (http://dbpedia.org/ontology/Municipality)
-  * Identifier: identificador NORA en ingles
+  * ClassName: DBpedia/Wikidata/Schema
+  * Identifier: NORA-ID
 
 ## Ontologías
 

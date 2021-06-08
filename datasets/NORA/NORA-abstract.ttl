@@ -1,12 +1,83 @@
-# Modelo abstracto de RDF de NORA
+# Modelo abstracto y provisional de NORA en RDF
+
+# Inferencias: 
+#   esadm:pais, esadm:autonomia, ... subPropertyOf geosparql:sfWithin
+#   esadm:ComunidadAutonoma, ... subClassOf ...
+
+# Enlaces: ver archivo NORA-high-level.ttl
+
 
 PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX dcterms: <http://purl.org/dc/elements/1.1/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geonames: <http://www.geonames.org/ontology#>
+PREFIX geo: <https://datos.ign.es/def/geo_core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
-<http://id.euskadi.eus/public-sector/urbanism-territory/Autonomous_communities_of_Spain/Basque_Autonomous_Community> 
+<http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA>
+        a                      esadm:Pais ;
+        geonames:featureCode   geonames:A.ADMD ;
+        geonames:featureClass  geonames:A ;
+        dcterms:identifier	   "ID-NORA" ; 
+        schema:identifier	   "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        rdfs:label             "esDescripcion"@es ;
+        rdfs:label             "euDescripcion"@eu ;
 
-<http://id.euskadi.eus/public-sector/urbanism-territory/Provinces_of_Spain/ArabaAlava> 
- 
-<http://id.euskadi.eus/public-sector/urbanism-territory/Provinces_of_Spain/Gipuzkoa> 
- 	
-<http://id.euskadi.eus/public-sector/urbanism-territory/Provinces_of_Spain/Biscay> 
+<http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA>
+        a                      esadm:ComunidadAutonoma ;
+        geonames:featureCode   geonames:A.ADMD ;
+        geonames:featureClass  geonames:A ;
+        dcterms:identifier	   "ID-NORA" ; 
+        schema:identifier	   "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        rdfs:label             "esDescripcion"@es ;
+        rdfs:label             "euDescripcion"@eu ;
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA>
+        a                      esadm:Provincia ;
+        geonames:featureCode   geonames:A.ADMD ;
+        geonames:featureClass  geonames:A ;
+        dcterms:identifier	   "ID-NORA" ; 
+        schema:identifier	   "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        rdfs:label             "esDescripcion"@es ;
+        rdfs:label             "euDescripcion"@eu ;
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
+        esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/region/ID-NORA>
+        a                      esadm:Comarca ;
+        geonames:featureCode   geonames:A.ADMD ;
+        geonames:featureClass  geonames:A ;
+        dcterms:identifier	   "ID-NORA" ; 
+        schema:identifier	   "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        rdfs:label             "esDescripcion"@es ;
+        rdfs:label             "euDescripcion"@eu ;
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
+        esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
+        esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/ID-NORA>
+        a                      esadm:Municipio ;
+        geonames:featureCode   geonames:P.PPL ;
+        geonames:featureClass  geonames:P ;
+        dcterms:identifier	   "ID-NORA" ; 
+        schema:identifier	   "ID-NORA" ;
+        geonames:officialName  "descripcionOficial" ;
+        geo:xETRS89            "dxEtrs89"^^xsd:double ;
+        geo:yETRS89            "dyEtrs89"^^xsd:double ;
+        esadm:pais             <http://id.euskadi.eus/public-sector/urbanism-territory/country/ID-NORA> ;
+        esadm:autonomia        <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/ID-NORA> ;
+        esadm:provincia        <http://id.euskadi.eus/public-sector/urbanism-territory/province/ID-NORA> ;
+        esadm:comarca          <http://id.euskadi.eus/public-sector/urbanism-territory/region/ID-NORA> .
+
+
+        
+
+
  
