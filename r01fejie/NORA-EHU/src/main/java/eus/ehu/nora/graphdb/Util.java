@@ -28,6 +28,14 @@ public abstract class Util {
 		connection.add(sub, pred, obj, namedgraphIRI);
 	}
 	
+	public static void addLiteralTriple (String s, String p, double o, String namedGraph, RepositoryConnection connection) {
+		IRI sub= Values.iri(s);
+		IRI pred = Values.iri(p);
+		Literal obj = Values.literal(o);
+		IRI namedgraphIRI = Values.iri(namedGraph);
+		connection.add(sub, pred, obj, namedgraphIRI);
+	}
+	
 	public static void addLiteralTripleLang (String s, String p, String o, String lang, String namedGraph, RepositoryConnection connection) {
 		IRI sub= Values.iri(s);
 		IRI pred = Values.iri(p);

@@ -10,6 +10,7 @@ import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 
 
 import eus.ehu.nora.entity.GeoNamesADMDEntity;
+import eus.ehu.nora.entity.Municipality;
 import eus.ehu.nora.entity.County;
 import eus.ehu.nora.entity.State;
 import eus.ehu.nora.graphdb.Util;
@@ -28,6 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 import r01f.ejie.nora.NORAGeoIDs;
 import r01f.ejie.nora.NORAService;
 import r01f.ejie.nora.NORAServiceConfig;
+import r01f.locale.Language;
 import r01f.types.geo.GeoCountry;
 import r01f.types.geo.GeoCounty;
 import r01f.types.geo.GeoMunicipality;
@@ -122,11 +124,24 @@ public class NORA2GRAPHDB {
 		
 //		log.info("Comarcas de Araba");
 //		Collection <GeoRegion> regionsOfAraba =  nora.getServicesForRegions().getRegionsOf(euskadi.getId(), araba.getId());
-				
+			
 		log.info("Pueblos de Araba");
 		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(euskadi.getId(), araba.getId());
 		for(GeoMunicipality muni : municipalitiesOfAraba) {
 			log.info(muni.getOfficialName());
+			log.info(muni.getNameIn(Language.SPANISH)); 
+			log.info(muni.getNameIn(Language.BASQUE));
+			(new Municipality(
+					ESADMURIs.MUNICIPIO.getURI(), 
+					NORABaseURIs.MUNICIPALITY.getURI() + muni.getId().asString(), 
+					muni.getId().asString(), 
+					muni.getOfficialName(),
+					muni.getNameIn(Language.SPANISH), 
+					muni.getNameIn(Language.BASQUE), 
+					araba.getId().asString(), 
+					muni.getPosition2D().getX(), 
+					muni.getPosition2D().getY())
+					).add(repositoryConnection, NORALinksNamedGraphURI);
 		}
 		
 		

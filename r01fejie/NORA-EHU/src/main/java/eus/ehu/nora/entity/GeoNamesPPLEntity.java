@@ -31,8 +31,5 @@ public class GeoNamesPPLEntity extends Basic implements AddRDFtoGraphDB{
 				GeoNamesURIs.p.getURI(),
 				namedGraph,
 				connection);
-		
-//        geo:xETRS89            "dxEtrs89"^^xsd:double ;
-//        geo:yETRS89            "dyEtrs89"^^xsd:double ;
 	}
 }

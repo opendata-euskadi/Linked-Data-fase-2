@@ -66,20 +66,14 @@ public class Basic implements AddRDFtoGraphDB{
 				namedGraph,
 				connection);
 		
-		Util.addLiteralTripleLang(
-				entity_iri,
-				RDFS.LABEL.stringValue(),
-				esDescripcion,
-				"es",
-				namedGraph,
-				connection);
+		if(esDescripcion != null) {	
+			Util.addLiteralTripleLang(entity_iri, RDFS.LABEL.stringValue(), esDescripcion, "es", namedGraph,
+					connection);
+		}
 		
-		Util.addLiteralTripleLang(
-				entity_iri,
-				RDFS.LABEL.stringValue(),
-				euDescripcion,
-				"eu",
-				namedGraph,
-				connection);
+		if(euDescripcion != null) {	
+			Util.addLiteralTripleLang(entity_iri, RDFS.LABEL.stringValue(), euDescripcion, "eu", namedGraph,
+					connection);
+		}
 	}
 }

@@ -6,15 +6,15 @@ public enum NORABaseURIs {
     COUNTRY ("country/"),  
     AUTONOMOUS_COMMUNITY("autonomous_community/"), 
     PROVINCE("province/"),
-    REGION("region"),
-    MUNICIPALITY("municipality"),
-    NEIGHBOURHOOD("neighbourhood"),
-    DISTRICT("district"),
-    SECTION("section"),
+    REGION("region/"),
+    MUNICIPALITY("municipality/"),
+    NEIGHBOURHOOD("neighbourhood/"),
+    DISTRICT("district/"),
+    SECTION("section/"),
     // Callejero
-    STREET("street"),
-    STREETTYPE("streettype"),
-    DOORWAY("doorway"),
+    STREET("street/"),
+    STREETTYPE("streettype/"),
+    DOORWAY("doorway/"),
     ; 
 
 	private final String uri_name;
