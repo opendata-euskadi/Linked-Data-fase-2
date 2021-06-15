@@ -1,6 +1,8 @@
 package eus.ehu.nora;
 
 
+import java.util.Collection;
+
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
@@ -28,6 +30,8 @@ import r01f.ejie.nora.NORAService;
 import r01f.ejie.nora.NORAServiceConfig;
 import r01f.types.geo.GeoCountry;
 import r01f.types.geo.GeoCounty;
+import r01f.types.geo.GeoMunicipality;
+import r01f.types.geo.GeoRegion;
 import r01f.types.geo.GeoState;
 import r01f.types.url.Url;
 
@@ -117,7 +121,15 @@ public class NORA2GRAPHDB {
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
 		
-//		nora.getServicesForRegions().
+//		log.info("Comarcas de Araba");
+//		Collection <GeoRegion> regionsOfAraba =  nora.getServicesForRegions().getRegionsOf(euskadi.getId(), araba.getId());
+		
+		
+		log.info("Pueblos de Araba");
+		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(euskadi.getId(), araba.getId());
+		for(GeoMunicipality muni : municipalitiesOfAraba) {
+			
+		}
 		
 		
 		
