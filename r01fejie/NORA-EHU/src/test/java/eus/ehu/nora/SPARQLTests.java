@@ -2,6 +2,8 @@ package eus.ehu.nora;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.ArrayList;
+
 import org.eclipse.rdf4j.model.Value;
 import org.eclipse.rdf4j.query.BindingSet;
 import org.eclipse.rdf4j.query.BooleanQuery;
@@ -45,28 +47,30 @@ class SPARQLTests {
 		repositoryManager.shutDown();
 	}
 
-	// Upload Linked-Data-fase-2/datasets/NORA/territorio.owl to graph
-	// http://id.euskadi.eus/graph/NORA-vocabs for inference to work
-	
-	// TODO: varios niveles
+	// Upload the following ontologies to Named Graph http://id.euskadi.eus/graph/NORA-vocabs for inference to work:
+	// Linked-Data-fase-2/datasets/NORA/territorio.owl
+	// Linked-Data-fase-2/datasets/NORA/nora.ttl
+
 	@Test
 	void subPropInference() {
 		TupleQuery tupleQuery = repositoryConnection.prepareTupleQuery(QueryLanguage.SPARQL,
 				"PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> " + "SELECT ?country WHERE { "
-						+ "<http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16> geosparql:sfWithin ?country . "
+						+ "<http://id.euskadi.eus/public-sector/urbanism-territory/province/48> geosparql:sfWithin ?country . "
 						+ "} ");
 		
 		String expectedCountry = "http://id.euskadi.eus/public-sector/urbanism-territory/country/108";
-		String obtainedCountry = "";
+		String expectedAutonomousComunity = "http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16";
 
+		ArrayList <String> obtainedResults = new <String> ArrayList();
 		TupleQueryResult result = tupleQuery.evaluate();
 		while (result.hasNext()) {
 			BindingSet bindingSet = result.next();
 			Value valueOfcountry = bindingSet.getValue("country");
-			obtainedCountry = valueOfcountry.toString();
+			obtainedResults.add(valueOfcountry.toString());
 		}
 		
-		assertEquals(expectedCountry, obtainedCountry);
+		assertTrue(obtainedResults.contains(expectedCountry));
+		assertTrue(obtainedResults.contains(expectedAutonomousComunity));
 	}
 
 //	@Test

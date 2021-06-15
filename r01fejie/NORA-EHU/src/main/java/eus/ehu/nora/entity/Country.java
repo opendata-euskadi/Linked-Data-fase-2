@@ -1,8 +1,5 @@
 package eus.ehu.nora.entity;
 
-import org.eclipse.rdf4j.model.IRI;
-import org.eclipse.rdf4j.model.Literal;
-import org.eclipse.rdf4j.model.util.Values;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.model.vocabulary.RDFS;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
@@ -19,13 +16,15 @@ import eus.ehu.nora.uris.SchemaURIs;
 public class Country implements AddRDFtoGraphDB{
 	
 	private String rdftype;
+	private String country;
 	private String country_id;
 	private String officialName;
 	private String esDescripcion;
 	private String euDescripcion;
 
-	public Country (String rdftype, String country_id, String officialName, String esDEscripcion, String euDescripcion) {
+	public Country (String rdftype, String country_iri, String country_id, String officialName, String esDEscripcion, String euDescripcion) {
 		this.rdftype = rdftype;
+		this.country = country_iri;
 		this.country_id = country_id;
 		this.officialName = officialName;
 		this.esDescripcion = esDEscripcion;
@@ -34,9 +33,6 @@ public class Country implements AddRDFtoGraphDB{
 
 	@Override
 	public void add(RepositoryConnection connection, String namedGraph) {
-		
-		String country = NORABaseURIs.COUNTRY.getURI() + country_id;
-		
 		Util.addIRITriple(
 				country, 
 				RDF.TYPE.stringValue(),

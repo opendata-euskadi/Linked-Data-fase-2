@@ -5,9 +5,11 @@ public enum ESADMURIs {
 	// Classes
     PAIS ("Pais"),  
     COMUNIDAD_AUTONOMA("ComunidadAutonoma"),
+    PROVINCIA("Provincia"),
     
     // Properties
-    paisProp ("pais")
+    paisProp ("pais"),
+    autonomiaProp ("autonomia")
     ; 
 
 	private final String uri_name;
