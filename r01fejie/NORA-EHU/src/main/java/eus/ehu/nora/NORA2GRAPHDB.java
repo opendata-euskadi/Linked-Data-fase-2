@@ -9,7 +9,7 @@ import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 
 
-import eus.ehu.nora.entity.Country;
+import eus.ehu.nora.entity.GeoNamesADMDEntity;
 import eus.ehu.nora.entity.County;
 import eus.ehu.nora.entity.State;
 import eus.ehu.nora.graphdb.Util;
@@ -57,14 +57,13 @@ public class NORA2GRAPHDB {
 		log.info("Clear former NORA graph");
 		Util.clearGraph(NORANamedGraphURI, repositoryConnection);
 
-		
-		
 		log.info("Connecting to NORA ... ");
 		NORAService nora = new NORAService(cfg);
 		
 		log.info("Spain");
 		GeoCountry spain = nora.getServicesForCountries().getCountry(NORAGeoIDs.SPAIN);
-		(new Country(
+		log.info(spain.getOfficialName());
+		(new GeoNamesADMDEntity(
 				ESADMURIs.PAIS.getURI(),
 				NORABaseURIs.COUNTRY.getURI() + spain.getId().asString(),
 				spain.getId().asString(),
@@ -123,12 +122,11 @@ public class NORA2GRAPHDB {
 		
 //		log.info("Comarcas de Araba");
 //		Collection <GeoRegion> regionsOfAraba =  nora.getServicesForRegions().getRegionsOf(euskadi.getId(), araba.getId());
-		
-		
+				
 		log.info("Pueblos de Araba");
 		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(euskadi.getId(), araba.getId());
 		for(GeoMunicipality muni : municipalitiesOfAraba) {
-			
+			log.info(muni.getOfficialName());
 		}
 		
 		

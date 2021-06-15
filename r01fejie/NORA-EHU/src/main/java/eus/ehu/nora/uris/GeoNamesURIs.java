@@ -4,12 +4,14 @@ public enum GeoNamesURIs {
 	
 	// Properties
     featureCode ("featureCode"),  
-    featureClass("featureCode"),
-    officialname("officialname"),
+    featureClass ("featureCode"),
+    officialname ("officialname"),
     
     // Entities
     admd ("A.ADMD"),
-    a ("A")
+    a ("A"),
+    pppl("P.PPL"),
+    p("P")
     ; 
 
 	private final String uri_name;

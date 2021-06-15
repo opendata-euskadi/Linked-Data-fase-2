@@ -7,83 +7,67 @@ import org.eclipse.rdf4j.repository.RepositoryConnection;
 import eus.ehu.nora.graphdb.AddRDFtoGraphDB;
 import eus.ehu.nora.graphdb.Util;
 import eus.ehu.nora.uris.DublinCoreURIs;
-import eus.ehu.nora.uris.ESADMURIs;
 import eus.ehu.nora.uris.EuskadiURIs;
 import eus.ehu.nora.uris.GeoNamesURIs;
-import eus.ehu.nora.uris.NORABaseURIs;
 import eus.ehu.nora.uris.SchemaURIs;
 
-public class Country implements AddRDFtoGraphDB{
-	
-	private String rdftype;
-	private String country;
-	private String country_id;
-	private String officialName;
-	private String esDescripcion;
-	private String euDescripcion;
+public class Basic implements AddRDFtoGraphDB{
+	protected String entity_rdftype;
+	protected String entity_iri;
+	protected String entity__id;
+	protected String officialName;
+	protected String esDescripcion;
+	protected String euDescripcion;
 
-	public Country (String rdftype, String country_iri, String country_id, String officialName, String esDEscripcion, String euDescripcion) {
-		this.rdftype = rdftype;
-		this.country = country_iri;
-		this.country_id = country_id;
+	public Basic(String entity_rdftype, String entity_iri, String entity__id, String officialName,
+			String esDescripcion, String euDescripcion) {
+		this.entity_rdftype = entity_rdftype;
+		this.entity_iri = entity_iri;
+		this.entity__id = entity__id;
 		this.officialName = officialName;
-		this.esDescripcion = esDEscripcion;
+		this.esDescripcion = esDescripcion;
 		this.euDescripcion = euDescripcion;
 	}
 
 	@Override
 	public void add(RepositoryConnection connection, String namedGraph) {
 		Util.addIRITriple(
-				country, 
+				entity_iri, 
 				RDF.TYPE.stringValue(),
-				rdftype, 
+				entity_rdftype, 
 				namedGraph, 
 				connection);
-		
-		Util.addIRITriple(
-				country,
-				GeoNamesURIs.featureCode.getURI(),
-				GeoNamesURIs.admd.getURI(),
-				namedGraph,
-				connection);
-		
-		Util.addIRITriple(
-				country,
-				GeoNamesURIs.featureClass.getURI(),
-				GeoNamesURIs.a.getURI(),
-				namedGraph,
-				connection);
-		
+
 		Util.addLiteralTriple(
-				country,
+				entity_iri,
 				SchemaURIs.identifier.getURI(),
-				country_id,
+				entity__id,
 				namedGraph,
 				connection);
 		
 		Util.addLiteralTriple(
-				country,
+				entity_iri,
 				DublinCoreURIs.identifier.getURI(),
-				country_id,
+				entity__id,
 				namedGraph,
 				connection);
 
 		Util.addLiteralTriple(
-				country,
+				entity_iri,
 				EuskadiURIs.identifier.getURI(),
-				country_id,
+				entity__id,
 				namedGraph,
 				connection);
 		
 		Util.addLiteralTriple(
-				country,
+				entity_iri,
 				GeoNamesURIs.officialname.getURI(),
 				officialName,
 				namedGraph,
 				connection);
 		
 		Util.addLiteralTripleLang(
-				country,
+				entity_iri,
 				RDFS.LABEL.stringValue(),
 				esDescripcion,
 				"es",
@@ -91,7 +75,7 @@ public class Country implements AddRDFtoGraphDB{
 				connection);
 		
 		Util.addLiteralTripleLang(
-				country,
+				entity_iri,
 				RDFS.LABEL.stringValue(),
 				euDescripcion,
 				"eu",

@@ -7,17 +7,15 @@ import eus.ehu.nora.graphdb.Util;
 import eus.ehu.nora.uris.ESADMURIs;
 import eus.ehu.nora.uris.NORABaseURIs;
 
-public class County extends Country implements AddRDFtoGraphDB {
+public class County extends GeoNamesADMDEntity implements AddRDFtoGraphDB {
 
-	private String state_id;
-	private String county_id;
-	private String county_iri;
+	private String stateID;
 
-	public County(String rdftype, String county_iri,String countyID, String officialName, String esDEscripcion, String euDescripcion, String stateID) {
-		super(rdftype, county_iri, countyID, officialName, esDEscripcion, euDescripcion);
-		this.state_id = stateID;
-		this.county_id = countyID;
-		this.county_iri = county_iri;
+	public County(String entity_rdftype, String entity_iri, String entity__id, String officialName,
+			String esDescripcion, String euDescripcion, String stateID) {
+		super(entity_rdftype, entity_iri, entity__id, officialName,
+				esDescripcion, euDescripcion);
+		this.stateID = stateID;
 	}
 	
 	@Override
@@ -25,9 +23,9 @@ public class County extends Country implements AddRDFtoGraphDB {
 		super.add(connection, namedGraph);
 				
 		Util.addIRITriple(
-				county_iri, 
+				entity_iri, 
 				ESADMURIs.autonomiaProp.getURI(),
-				NORABaseURIs.AUTONOMOUS_COMMUNITY.getURI()+state_id, 
+				NORABaseURIs.AUTONOMOUS_COMMUNITY.getURI()+stateID, 
 				namedGraph, 
 				connection);	
 	}
