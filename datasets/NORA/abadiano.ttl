@@ -1,9 +1,0 @@
-PREFIX dbo:	<http://dbpedia.org/ontology/> 
-PREFIX schema: <https://schema.org/> 
-PREFIX eus-municipality: <http://id.euskadi.eus/public-sector/urbanism-territory/municipality/> 
-PREFIX rdfs: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
-
-eus-municipality:001 a dbo:Municipality ;
-                                a schema:AdministrativeArea ;
-                                rdfs:label "Abadiano"@es ;
-                                rdfs:label "Abadiño"@eu .

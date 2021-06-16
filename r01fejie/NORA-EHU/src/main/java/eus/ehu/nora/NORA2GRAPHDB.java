@@ -74,7 +74,7 @@ public class NORA2GRAPHDB {
 				"Espainia")
 				).add(repositoryConnection, NORANamedGraphURI);
 		
-		log.info("... Euskal herri nerea ezin zaitut maiteeeee ...");
+		log.info("Euskadi");
 		GeoState euskadi = nora.getServicesForStates().getState(NORAGeoIDs.EUSKADI); 
 		(new State(
 				ESADMURIs.COMUNIDAD_AUTONOMA.getURI(),
@@ -98,6 +98,8 @@ public class NORA2GRAPHDB {
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
 		
+		processTowns(araba,repositoryConnection,nora);
+		
 		log.info("Bizkaia");
 		GeoCounty bizkaia = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.BIZKAIA);
 		(new County(
@@ -109,6 +111,8 @@ public class NORA2GRAPHDB {
 				"Bizkaia",
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
+		
+		processTowns(bizkaia,repositoryConnection,nora);
 		
 		log.info("Gipuzkoa");
 		GeoCounty gipuzkoa = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.GIPUZKOA);
@@ -122,26 +126,32 @@ public class NORA2GRAPHDB {
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
 		
-//		log.info("Comarcas de Araba");
-//		Collection <GeoRegion> regionsOfAraba =  nora.getServicesForRegions().getRegionsOf(euskadi.getId(), araba.getId());
-			
-		log.info("Pueblos de Araba");
-		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(euskadi.getId(), araba.getId());
+		processTowns(gipuzkoa,repositoryConnection,nora);
+				
+		// TODO metadata
+		log.info("Add metadata to Named Graph");
+		
+		log.info("Disconnecting from GraphDB ... ");
+		repositoryConnection.close();
+		repository.shutDown();
+		repositoryManager.shutDown();
+	}
+	
+	private static void processTowns (GeoCounty county, RepositoryConnection repositoryConnection, NORAService nora) {
+		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(NORAGeoIDs.EUSKADI, county.getId());
 		for(GeoMunicipality muni : municipalitiesOfAraba) {
-			
-			
 			if(muni.getPosition2D() != null) {
 				log.info(muni.getOfficialName());
 				log.info(muni.getNameIn(Language.SPANISH)); 
 				log.info(muni.getNameIn(Language.BASQUE));
 				(new Municipality(
 					ESADMURIs.MUNICIPIO.getURI(), 
-					NORABaseURIs.MUNICIPALITY.getURI() + muni.getId().asString(), 
+					NORABaseURIs.MUNICIPALITY.getURI() + county.getId().asString() + "-" + muni.getId().asString(), 
 					muni.getId().asString(), 
 					muni.getOfficialName(),
 					muni.getNameIn(Language.SPANISH), 
 					muni.getNameIn(Language.BASQUE), 
-					araba.getId().asString(), 
+					county.getId().asString(), 
 					muni.getPosition2D().getX(), 
 					muni.getPosition2D().getY())
 					).add(repositoryConnection, NORANamedGraphURI);
@@ -151,15 +161,5 @@ public class NORA2GRAPHDB {
 				log.info(muni.getOfficialName() + " lacks 2D position! ");
 			}
 		}
-		
-		
-		
-		// TODO metadata
-		log.info("Add metadata to Named Graph");
-		
-		log.info("Disconnecting from GraphDB ... ");
-		repositoryConnection.close();
-		repository.shutDown();
-		repositoryManager.shutDown();
 	}
 }

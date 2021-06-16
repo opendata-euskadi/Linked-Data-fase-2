@@ -1,0 +1,5 @@
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+SELECT ?country
+WHERE { 
+   <http://id.euskadi.eus/public-sector/urbanism-territory/province/48> geosparql:sfWithin ?country .
+}

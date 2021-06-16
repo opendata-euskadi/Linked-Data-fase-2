@@ -54,48 +54,52 @@ class SPARQLTests {
 	// Linked-Data-fase-2/datasets/NORA/nora.ttl
 
 	@Test
-	void subPropInference() {
-		TupleQuery tupleQuery = repositoryConnection.prepareTupleQuery(QueryLanguage.SPARQL,
-				"PREFIX geosparql: <http://www.opengis.net/ont/geosparql#> " + "SELECT ?country WHERE { "
-						+ "<http://id.euskadi.eus/public-sector/urbanism-territory/province/48> geosparql:sfWithin ?country . "
-						+ "} ");
+	void subPropInference() throws IOException {
+		String query = getQueryFromResource("/SubPropInference.rq");
+		ArrayList<String> results = execSingleVariableQuery ("country", query);
 		
 		String expectedCountry = "http://id.euskadi.eus/public-sector/urbanism-territory/country/108";
 		String expectedAutonomousComunity = "http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16";
-
-		ArrayList <String> obtainedResults = new <String> ArrayList();
-		TupleQueryResult result = tupleQuery.evaluate();
-		while (result.hasNext()) {
-			BindingSet bindingSet = result.next();
-			Value valueOfcountry = bindingSet.getValue("country");
-			obtainedResults.add(valueOfcountry.toString());
-		}
 		
-		assertTrue(obtainedResults.contains(expectedCountry));
-		assertTrue(obtainedResults.contains(expectedAutonomousComunity));
+		assertTrue(results.contains(expectedCountry));
+		assertTrue(results.contains(expectedAutonomousComunity));
 	}
 
 	@Test
-	void townsPerProvince() throws IOException {
-		log.info("LOL");
-		String query = IOUtils.toString(
-			      this.getClass().getResourceAsStream("/CountMunicipiosAraba.rq"),
-			      "UTF-8");
-		log.info(query);
-		System.out.println(query);
-		
-		String expectedTownNumber = "50";
-		String obtainedtownNumber = ""; 
-		
+	void townNumberAraba() throws IOException {
+		String query = getQueryFromResource("/CountMunicipiosAraba.rq");
+		ArrayList<String> results = execSingleVariableQuery ("count", query);
+		assertTrue(results.contains("50"));  // en realidad son 51!
+	}
+	
+	@Test
+	void townNumberBizkaia() throws IOException {
+		String query = getQueryFromResource("/CountMunicipiosBizkaia.rq");
+		ArrayList<String> results = execSingleVariableQuery ("count", query);
+		assertTrue(results.contains("112"));  
+	}
+	
+	@Test
+	void townNumberGipuzkoa() throws IOException {
+		String query = getQueryFromResource("/CountMunicipiosGipuzkoa.rq");
+		ArrayList<String> results = execSingleVariableQuery ("count", query);
+		assertTrue(results.contains("88")); 
+	}
+	
+	private ArrayList<String> execSingleVariableQuery (String varName, String query){
+		ArrayList <String> obtainedResults = new ArrayList<String>();
 		TupleQuery tupleQuery = repositoryConnection.prepareTupleQuery(QueryLanguage.SPARQL,query);
 		TupleQueryResult result = tupleQuery.evaluate();
-		log.info(result.getBindingNames().toString());
 		while (result.hasNext()) {
 			BindingSet bindingSet = result.next();
-			Value valueOfcount = bindingSet.getValue("count");
-			obtainedtownNumber = valueOfcount.stringValue();
+			Value valueOfcount = bindingSet.getValue(varName);
+			obtainedResults.add(valueOfcount.stringValue());
 		}
-		assertEquals(expectedTownNumber, obtainedtownNumber);
+		return obtainedResults;
+	}
+	
+	private String getQueryFromResource (String queryResourceFileName) throws IOException {
+		return IOUtils.toString(this.getClass().getResourceAsStream(queryResourceFileName),"UTF-8");
 	}
 
 }
