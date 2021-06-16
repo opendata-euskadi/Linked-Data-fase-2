@@ -128,10 +128,13 @@ public class NORA2GRAPHDB {
 		log.info("Pueblos de Araba");
 		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(euskadi.getId(), araba.getId());
 		for(GeoMunicipality muni : municipalitiesOfAraba) {
-			log.info(muni.getOfficialName());
-			log.info(muni.getNameIn(Language.SPANISH)); 
-			log.info(muni.getNameIn(Language.BASQUE));
-			(new Municipality(
+			
+			
+			if(muni.getPosition2D() != null) {
+				log.info(muni.getOfficialName());
+				log.info(muni.getNameIn(Language.SPANISH)); 
+				log.info(muni.getNameIn(Language.BASQUE));
+				(new Municipality(
 					ESADMURIs.MUNICIPIO.getURI(), 
 					NORABaseURIs.MUNICIPALITY.getURI() + muni.getId().asString(), 
 					muni.getId().asString(), 
@@ -141,7 +144,12 @@ public class NORA2GRAPHDB {
 					araba.getId().asString(), 
 					muni.getPosition2D().getX(), 
 					muni.getPosition2D().getY())
-					).add(repositoryConnection, NORALinksNamedGraphURI);
+					).add(repositoryConnection, NORANamedGraphURI);
+			}
+			// e.g. Badaiako mendizerra/Sierra Brava de Badaya
+			else {
+				log.info(muni.getOfficialName() + " lacks 2D position! ");
+			}
 		}
 		
 		

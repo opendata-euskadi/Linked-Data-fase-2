@@ -2,8 +2,10 @@ package eus.ehu.nora;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 
+import org.apache.commons.io.IOUtils;
 import org.eclipse.rdf4j.model.Value;
 import org.eclipse.rdf4j.query.BindingSet;
 import org.eclipse.rdf4j.query.BooleanQuery;
@@ -73,9 +75,27 @@ class SPARQLTests {
 		assertTrue(obtainedResults.contains(expectedAutonomousComunity));
 	}
 
-//	@Test
-//	void townNumber() {
-//		fail("Not yet implemented");
-//	}
+	@Test
+	void townsPerProvince() throws IOException {
+		log.info("LOL");
+		String query = IOUtils.toString(
+			      this.getClass().getResourceAsStream("/CountMunicipiosAraba.rq"),
+			      "UTF-8");
+		log.info(query);
+		System.out.println(query);
+		
+		String expectedTownNumber = "50";
+		String obtainedtownNumber = ""; 
+		
+		TupleQuery tupleQuery = repositoryConnection.prepareTupleQuery(QueryLanguage.SPARQL,query);
+		TupleQueryResult result = tupleQuery.evaluate();
+		log.info(result.getBindingNames().toString());
+		while (result.hasNext()) {
+			BindingSet bindingSet = result.next();
+			Value valueOfcount = bindingSet.getValue("count");
+			obtainedtownNumber = valueOfcount.stringValue();
+		}
+		assertEquals(expectedTownNumber, obtainedtownNumber);
+	}
 
 }
