@@ -1,13 +1,16 @@
 package eus.ehu.nora;
 
 
+import java.io.InputStream;
 import java.util.Collection;
 
+import org.eclipse.rdf4j.model.IRI;
+import org.eclipse.rdf4j.model.util.Values;
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
-
+import org.eclipse.rdf4j.rio.RDFFormat;
 
 import eus.ehu.nora.entity.GeoNamesADMDEntity;
 import eus.ehu.nora.entity.Municipality;
@@ -44,13 +47,18 @@ public class NORA2GRAPHDB {
 	private static final NORAServiceConfig cfg = new NORAServiceConfig(
 			Url.from("http://svc.integracion.euskadi.net/ctxweb/t17iApiWS"));
 
-	private final static String urlGraphDB = "http://127.0.0.1:7200";
-	private final static String graphDBNORArepoName = "NORA";
-	private final static String NORANamedGraphURI = "http://id.euskadi.eus/graph/NORA";
-	private final static String NORALinksNamedGraphURI = "http://id.euskadi.eus/graph/NORA-links";
-	private final static String NORAVocabsNamedGraphURI = "http://id.euskadi.eus/graph/NORA-vocabs";
+//	private final static String urlGraphDB = "http://127.0.0.1:7200";
+//	private final static String graphDBNORArepoName = "NORA";
+//	private final static String NORANamedGraphURI = "http://id.euskadi.eus/graph/NORA";
+//	private final static String NORALinksNamedGraphURI = "http://id.euskadi.eus/graph/NORA-links";
+//	private final static String NORAVocabsNamedGraphURI = "http://id.euskadi.eus/graph/NORA-vocabs";
+//	private final static String NORAMetadataGraphURI = "http://id.euskadi.eus/graph/NORA-metadata";
+//	private final static String MetadataFile = "";
+//	private final static String LinksFile = "";
 
 	public static void main(String[] args) throws Exception {
+		
+		String urlGraphDB = NORA2GRAPHDBConfig.urlGraphDB;
 		log.info("Connecting to GraphDB ... ");
 		RepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
 		Repository repository = repositoryManager.getRepository(graphDBNORArepoName);
@@ -127,10 +135,7 @@ public class NORA2GRAPHDB {
 				).add(repositoryConnection, NORANamedGraphURI);
 		
 		processTowns(gipuzkoa,repositoryConnection,nora);
-				
-		// TODO metadata
-		log.info("Add metadata to Named Graph");
-		
+						
 		log.info("Disconnecting from GraphDB ... ");
 		repositoryConnection.close();
 		repository.shutDown();
