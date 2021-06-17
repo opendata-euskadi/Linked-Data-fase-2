@@ -47,18 +47,14 @@ public class NORA2GRAPHDB {
 	private static final NORAServiceConfig cfg = new NORAServiceConfig(
 			Url.from("http://svc.integracion.euskadi.net/ctxweb/t17iApiWS"));
 
-//	private final static String urlGraphDB = "http://127.0.0.1:7200";
-//	private final static String graphDBNORArepoName = "NORA";
-//	private final static String NORANamedGraphURI = "http://id.euskadi.eus/graph/NORA";
-//	private final static String NORALinksNamedGraphURI = "http://id.euskadi.eus/graph/NORA-links";
-//	private final static String NORAVocabsNamedGraphURI = "http://id.euskadi.eus/graph/NORA-vocabs";
-//	private final static String NORAMetadataGraphURI = "http://id.euskadi.eus/graph/NORA-metadata";
-//	private final static String MetadataFile = "";
-//	private final static String LinksFile = "";
+
 
 	public static void main(String[] args) throws Exception {
-		
+		// Config
 		String urlGraphDB = NORA2GRAPHDBConfig.urlGraphDB;
+		String graphDBNORArepoName = NORA2GRAPHDBConfig.graphDBNORArepoName;
+		String NORANamedGraphURI = NORA2GRAPHDBConfig.NORANamedGraphURI;
+		
 		log.info("Connecting to GraphDB ... ");
 		RepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
 		Repository repository = repositoryManager.getRepository(graphDBNORArepoName);
@@ -106,7 +102,7 @@ public class NORA2GRAPHDB {
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
 		
-		processTowns(araba,repositoryConnection,nora);
+		processTowns(araba,repositoryConnection,nora,NORANamedGraphURI);
 		
 		log.info("Bizkaia");
 		GeoCounty bizkaia = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.BIZKAIA);
@@ -120,7 +116,7 @@ public class NORA2GRAPHDB {
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
 		
-		processTowns(bizkaia,repositoryConnection,nora);
+		processTowns(bizkaia,repositoryConnection,nora,NORANamedGraphURI);
 		
 		log.info("Gipuzkoa");
 		GeoCounty gipuzkoa = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.GIPUZKOA);
@@ -134,7 +130,7 @@ public class NORA2GRAPHDB {
 				euskadi.getId().asString())										
 				).add(repositoryConnection, NORANamedGraphURI);
 		
-		processTowns(gipuzkoa,repositoryConnection,nora);
+		processTowns(gipuzkoa,repositoryConnection,nora,NORANamedGraphURI);
 						
 		log.info("Disconnecting from GraphDB ... ");
 		repositoryConnection.close();
@@ -142,7 +138,7 @@ public class NORA2GRAPHDB {
 		repositoryManager.shutDown();
 	}
 	
-	private static void processTowns (GeoCounty county, RepositoryConnection repositoryConnection, NORAService nora) {
+	private static void processTowns (GeoCounty county, RepositoryConnection repositoryConnection, NORAService nora, String NORANamedGraphURI) {
 		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(NORAGeoIDs.EUSKADI, county.getId());
 		for(GeoMunicipality muni : municipalitiesOfAraba) {
 			if(muni.getPosition2D() != null) {

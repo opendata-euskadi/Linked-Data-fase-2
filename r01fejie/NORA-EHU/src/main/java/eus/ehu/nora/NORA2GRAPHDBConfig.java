@@ -8,7 +8,7 @@ public abstract class NORA2GRAPHDBConfig  {
 	public final static String NORALinksNamedGraphURI = "http://id.euskadi.eus/graph/NORA-links";
 	public final static String NORAVocabsNamedGraphURI = "http://id.euskadi.eus/graph/NORA-vocabs";
 	public final static String NORAMetadataGraphURI = "http://id.euskadi.eus/graph/NORA-metadata";
-	public final static String MetadataFile = "";
+	public final static String MetadataFile = "NORA-metadata.ttl"; // cp ../../../../../datasets/NORA/NORA-metadata.ttl .
 	public final static String LinksFile = "";
 
 }
