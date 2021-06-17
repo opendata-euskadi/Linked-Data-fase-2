@@ -17,18 +17,19 @@
 
 ## Ontologías
 
+Para más detalles ver archivo `NORA-metadata.ttl`:
+
 * [NORA](nora.ttl). (Importante para consultas transitivas).
 * [Territorio (ESADM)](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio), incluye GeoSPARQL (Importante para consultas transitivas). (`territorio.owl`).
-* [DBPedia ontology](http://dbpedia.org/ontology/).
-* [Schema](https://schema.org/).
-* Dublin Core.
-* **Wikidata**?
+* ...
 
 ## Consultas SPARQL
 
 Todas las consultas se encuentran en `/r01fejie/NORA-EHU/src/test/resources`. Las más interesantes se citan a continuación.
 
 ### Consulta transitiva
+
+Para que esta consulta funcione hay que cargar los archivos `nora.ttl` y `territorio.owl`. Además el repo GraphDB tiene que tener la inferencia activada, por ejemplo con la opción "OWL-Horst (Optimized)".
 
 ```sparql
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>

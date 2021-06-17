@@ -1,0 +1,45 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#> 
+PREFIX void: <http://rdfs.org/ns/void#> 
+PREFIX prov: <http://www.w3.org/ns/prov#> 
+PREFIX sd: <http://www.w3.org/ns/sparql-service-description#> 
+PREFIX dc: <http://purl.org/dc/terms/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX schema: <http://schema.org/> 
+PREFIX cc: <http://creativecommons.org/ns#> 
+
+<http://id.euskadi.eus/distribution/NORA> a dcat:Distribution, void:Dataset, schema:Distribution ;
+    sd:namedGraph <http://id.euskadi.eus/graph/NORA>;
+    void:sparqlEndpoint <https://api.euskadi.eus/sparql/> ;
+    void:rootResource <http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-001> ;
+    void:exampleResource <http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16> ;
+    void:vocabulary <http://id.euskadi.eus/def/nora> ;
+    void:vocabulary <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio> ;
+    void:vocabulary <http://www.geonames.org/ontology> ;
+    void:vocabulary <https://schema.org> ;
+    void:vocabulary <https://datos.ign.es/def/geo_core> ;
+    dc:modified "2021-06-17"^^xsd:date ;
+    dc:License <http://creativecommons.org/licenses/MIT/> ;
+    dc:title "NORA, datos territorio Euskadi"@es .
+
+<http://id.euskadi.eus/graph/NORA> prov:wasGeneratedBy [
+    a prov:Activity ;
+    prov:wasAssociatedWith  <https://github.com/opendata-euskadi/Linked-Data-fase-2/tree/main/r01fejie> ;
+] .
+
+<http://id.euskadi.eus/distribution/NORA-links> a void:Linkset;
+  sd:namedGraph <http://id.euskadi.eus/graph/NORA-links>;
+  void:target <https://query.wikidata.org/>;
+  void:subset <http://id.euskadi.eus/graph/NORA> ;
+  void:triples 252000;
+  void:linkPredicate owl:sameAs;
+    .
+
+<http://creativecommons.org/licenses/MIT/>
+  a cc:License ;
+  cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+  cc:licenseClass <http://creativecommons.org/license/software> ;
+  cc:requires cc:Notice ;
+  cc:legalcode <http://opensource.org/licenses/mit-license.php> .
