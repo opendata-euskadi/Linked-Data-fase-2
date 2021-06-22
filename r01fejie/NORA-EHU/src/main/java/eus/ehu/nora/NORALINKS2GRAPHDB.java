@@ -31,7 +31,7 @@ public class NORALINKS2GRAPHDB {
 		
 		Util.clearGraph(NORALinksGraphURI, repositoryConnection);
 		
-		InputStream input = NORAMETADATA2GRAPHDB.class.getResourceAsStream("/" + LinksFile);
+		InputStream input = NORALINKS2GRAPHDB.class.getResourceAsStream("/" + LinksFile);
 		
 		repositoryConnection.add(input, RDFFormat.TURTLE, Values.iri(NORALinksGraphURI));
 		
