@@ -1,0 +1,274 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/country/108> 
+owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Pais/España> ; 
+owl:sameAs <http://dbpedia.org/resource/Spain> ;
+owl:sameAs <http://www.wikidata.org/entity/Q29> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16> 
+owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco> ; 
+owl:sameAs <http://dbpedia.org/resource/Basque_Country_(autonomous_community)> ;
+owl:sameAs <http://www.wikidata.org/entity/Q3995> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/province/01> 
+owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Alava> ;
+owl:sameAs <http://dbpedia.org/resource/%C3%81lava> ;
+owl:sameAs <http://www.wikidata.org/entity/Q81801> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/province/20> 
+owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Guipuzcoa> ;
+owl:sameAs <http://dbpedia.org/resource/Gipuzkoa> ;
+owl:sameAs <http://www.wikidata.org/entity/Q95010> .	
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/province/48> 
+owl:sameAs <http://datos.gob.es/recurso/sector-publico/territorio/Provincia/Vizcaya> ;
+owl:sameAs <http://dbpedia.org/resource/Biscay> ;
+owl:sameAs <http://www.wikidata.org/entity/Q93366> .	
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-001> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1330796> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-006> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1113519> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-008> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368923> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-009> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368957> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-010> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368772> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-011> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1382239> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-014> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368868> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-016> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368822> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-017> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1373973> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-018> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1443528> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-019> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1369053> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-021> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1382246> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-022> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368834> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-023> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368805> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-027> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1443812> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-030> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1382223> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-032> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1443959> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-033> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1445242> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-034> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1382266> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-037> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1369040> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-039> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1442886> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-041> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1442870> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-042> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1368782> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-044> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1452675> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-049> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1113405> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-053> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1616072> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-054> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1445218> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-055> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1452684> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-056> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1382230> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-057> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1443518> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-058> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1611490> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-060> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1443585> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-061> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1443609> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-062> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1113094> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-902> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1447382> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-001> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1598962> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-009> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1598976> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-025> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1442954> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-029> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1611504> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-035> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1110918> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-040> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1441329> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-051> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1113716> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-074> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1382252> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-079> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q147774> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-002> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242411> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-006> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228124> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-016> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242343> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-021> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242317> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-023> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242330> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-028> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228081> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-029> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228107> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-032> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242382> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-033> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242307> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-034> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242400> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-036> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227388> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-041> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228053> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-042> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228097> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-047> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228089> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-048> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227981> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-049> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227941> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-051> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227956> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-053> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1246777> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-055> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227196> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-057> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227965> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-058> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227994> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-063> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227761> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-065> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228035> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-069> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228780> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-077> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228773> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-079> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228030> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-080> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228787> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-086> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228749> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-087> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228743> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-088> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227932> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-091> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242393> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-092> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1242425> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-093> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228114> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-095> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228013> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-097> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1227189> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-903> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228023> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-905> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q146016> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-907> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228003> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-911> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228043> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-913> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1542223> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-914> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1228784> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-915> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1247479> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-003> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1625876> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-004> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639421> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-005> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639961> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-007> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639371> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-010> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1640537> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-011> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1625886> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-012> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1625902> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-014> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1619436> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-015> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1619442> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-016> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1631163> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-020> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1625906> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-021> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639379> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-022> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639406> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-023> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1625846> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-027> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618393> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-028> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618316> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-032> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618383> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-033> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639427> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-034> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633894> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-037> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633877> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-038> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639399> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-041> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639392> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-042> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618296> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-043> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1619118> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-047> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639397> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-048> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639443> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-050> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639387> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-052> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639412> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-054> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633857> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-056> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618305> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-057> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618352> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-058> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618340> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-065> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633869> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-072> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633844> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-073> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633909> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-078> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1618289> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-903> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639355> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-905> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1633885> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-906> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1639435> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-907> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1641862> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-053> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1649625> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-061> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1649616> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-068> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1649621> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-018> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q180611> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-024> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q169332> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-046> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q189848> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-066> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q1752925> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-031> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q303629> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-063> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q228613> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-045> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q200201> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-081> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q229659> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-011> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q283607> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-002> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q481760> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-004> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q587131> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-043> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q581589> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-051> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q398698> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-002> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q576753> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-006> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q650223> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-024> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q670498> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-030> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q496567> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-036> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q492312> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-044> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q616464> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-046> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q537215> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-059> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q496588> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-060> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q598020> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-070> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q532136> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-071> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q497801> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-075> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q672876> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-076> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q672483> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-901> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q629193> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-904> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q385872> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-003> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q474080> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-004> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q427240> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-009> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q670080> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-013> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q487801> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-025> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q594280> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-026> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q663530> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-030> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q648921> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-035> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q648519> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-040> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q611647> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-044> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q492420> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-045> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q596305> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-054> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q530302> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-060> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q604810> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-062> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q661515> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-064> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q647357> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-067> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q664870> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-071> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q607474> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-073> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q595283> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-076> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q665188> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-078> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q548441> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-085> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q657407> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-901> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q574712> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-910> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q668016> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-013> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q961216> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-052> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q943857> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-008> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q942106> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-013> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q935603> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-017> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q793934> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-019> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q847130> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-031> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q767250> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-039> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q849330> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-049> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q932872> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-062> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q932808> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-063> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q911092> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-064> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q847127> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-066> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q964114> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-067> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q681893> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-077> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q904269> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-080> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q844508> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-902> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q932766> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-001> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q744893> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-007> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q745645> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-008> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q677615> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-010> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q699830> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-012> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q804466> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-015> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q765496> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-017> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q695444> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-019> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q747628> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-022> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q686837> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-027> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q732094> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-031> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q735451> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-037> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q738717> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-039> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q732806> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-043> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q763669> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-050> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q682513> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-052> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q784127> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-056> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q936264> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-059> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q913283> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-061> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q678721> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-068> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q786126> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-072> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q734550> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-075> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q726664> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-081> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q946068> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-082> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q917886> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-084> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q909707> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-094> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q779046> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-902> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q913272> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-904> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q942025> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-906> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q679513> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-908> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q922926> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-909> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q765761> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-003> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q976743> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-059> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q14318> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-026> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q974930> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/20-069> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q10313> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-005> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q971263> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-014> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4481> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-020> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q8692> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-070> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4472> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-083> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4474> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-090> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4480> .
+<http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-096> <http://www.w3.org/2002/07/owl#sameAs> <http://www.wikidata.org/entity/Q4476> .
+
+
+
+
+
+
+
+

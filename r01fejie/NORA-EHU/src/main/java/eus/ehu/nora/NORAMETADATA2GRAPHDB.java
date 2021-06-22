@@ -25,24 +25,18 @@ public class NORAMETADATA2GRAPHDB {
 		String NORAMetadataGraphURI = NORA2GRAPHDBConfig.NORAMetadataGraphURI;
 		String MetadataFile = NORA2GRAPHDBConfig.MetadataFile;
 		
-		log.info("Loading metadata file into GraphDB ... ");
-		
-		log.info("Connecting to GraphDB ... ");
 		RepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
 		Repository repository = repositoryManager.getRepository(graphDBNORArepoName);
 		RepositoryConnection repositoryConnection = repository.getConnection();
 		
-		log.info("Clear former NORA graph");
 		Util.clearGraph(NORAMetadataGraphURI, repositoryConnection);
 		
 		InputStream input = NORAMETADATA2GRAPHDB.class.getResourceAsStream("/" + MetadataFile);
 		
 		repositoryConnection.add(input, RDFFormat.TURTLE, Values.iri(NORAMetadataGraphURI));
 		
-		log.info("Disconnecting from GraphDB ... ");
 		repositoryConnection.close();
 		repository.shutDown();
 		repositoryManager.shutDown();
 	}
-
 }

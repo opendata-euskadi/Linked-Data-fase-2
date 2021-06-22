@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.rdf4j.model.Value;
 import org.eclipse.rdf4j.query.BindingSet;
-import org.eclipse.rdf4j.query.BooleanQuery;
 import org.eclipse.rdf4j.query.QueryLanguage;
 import org.eclipse.rdf4j.query.TupleQuery;
 import org.eclipse.rdf4j.query.TupleQueryResult;
@@ -25,11 +24,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 class SPARQLTests {
 
-	private final static String urlGraphDB = "http://127.0.0.1:7200";
-	private final static String graphDBNORArepoName = "NORA";
-	private final static String NORANamedGraphURI = "http://id.euskadi.eus/graph/NORA";
-	private final static String NORALinksNamedGraphURI = "http://id.euskadi.eus/graph/NORA-links";
-	private final static String NORAVocabsNamedGraphURI = "http://id.euskadi.eus/graph/NORA-vocabs";
+	private final static String urlGraphDB = NORA2GRAPHDBConfig.urlGraphDB;
+	private final static String graphDBNORArepoName = NORA2GRAPHDBConfig.graphDBNORArepoName;
 
 	private static RepositoryManager repositoryManager;
 	private static Repository repository;
@@ -84,6 +80,11 @@ class SPARQLTests {
 		String query = getQueryFromResource("/CountMunicipiosGipuzkoa.rq");
 		ArrayList<String> results = execSingleVariableQuery ("count", query);
 		assertTrue(results.contains("88")); 
+	}
+	
+	@Test 
+	void federatedQuery () {
+		
 	}
 	
 	private ArrayList<String> execSingleVariableQuery (String varName, String query){

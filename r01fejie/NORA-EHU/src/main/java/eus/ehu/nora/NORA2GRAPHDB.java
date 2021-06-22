@@ -1,16 +1,11 @@
 package eus.ehu.nora;
 
-
-import java.io.InputStream;
 import java.util.Collection;
 
-import org.eclipse.rdf4j.model.IRI;
-import org.eclipse.rdf4j.model.util.Values;
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
-import org.eclipse.rdf4j.rio.RDFFormat;
 
 import eus.ehu.nora.entity.GeoNamesADMDEntity;
 import eus.ehu.nora.entity.Municipality;
@@ -20,14 +15,6 @@ import eus.ehu.nora.graphdb.Util;
 import eus.ehu.nora.uris.ESADMURIs;
 import eus.ehu.nora.uris.NORABaseURIs;
 
-// Programa para convertir datos de NORA a RDF y subirlos a GraphDB, incluyendo enlaces
-
-// Programa muy mejorable, se añade aquí simplemente para demostrar el proceso
-
-// NOTA IMPORTANTE: asume que los IDs de NORA son constantes!
-
-// Para poner GraphDB en funcionamiento, ejecutar "docker-compose up" en graphdb-silk-docker/
-
 import lombok.extern.slf4j.Slf4j;
 import r01f.ejie.nora.NORAGeoIDs;
 import r01f.ejie.nora.NORAService;
@@ -36,10 +23,16 @@ import r01f.locale.Language;
 import r01f.types.geo.GeoCountry;
 import r01f.types.geo.GeoCounty;
 import r01f.types.geo.GeoMunicipality;
-import r01f.types.geo.GeoRegion;
 import r01f.types.geo.GeoState;
 import r01f.types.url.Url;
 
+// Programa para convertir datos de NORA a RDF y subirlos a GraphDB, incluyendo enlaces
+
+// Programa muy mejorable, se añade aquí simplemente para demostrar el proceso
+
+// NOTA IMPORTANTE: asume que los IDs de NORA son constantes!
+
+// Para poner GraphDB en funcionamiento, ejecutar "docker-compose up" en graphdb-silk-docker/
 
 @Slf4j
 public class NORA2GRAPHDB {
@@ -47,15 +40,12 @@ public class NORA2GRAPHDB {
 	private static final NORAServiceConfig cfg = new NORAServiceConfig(
 			Url.from("http://svc.integracion.euskadi.net/ctxweb/t17iApiWS"));
 
-
-
 	public static void main(String[] args) throws Exception {
 		// Config
 		String urlGraphDB = NORA2GRAPHDBConfig.urlGraphDB;
 		String graphDBNORArepoName = NORA2GRAPHDBConfig.graphDBNORArepoName;
 		String NORANamedGraphURI = NORA2GRAPHDBConfig.NORANamedGraphURI;
 		
-		log.info("Connecting to GraphDB ... ");
 		RepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
 		Repository repository = repositoryManager.getRepository(graphDBNORArepoName);
 		RepositoryConnection repositoryConnection = repository.getConnection();
@@ -68,7 +58,6 @@ public class NORA2GRAPHDB {
 		
 		log.info("Spain");
 		GeoCountry spain = nora.getServicesForCountries().getCountry(NORAGeoIDs.SPAIN);
-		log.info(spain.getOfficialName());
 		(new GeoNamesADMDEntity(
 				ESADMURIs.PAIS.getURI(),
 				NORABaseURIs.COUNTRY.getURI() + spain.getId().asString(),
@@ -132,7 +121,6 @@ public class NORA2GRAPHDB {
 		
 		processTowns(gipuzkoa,repositoryConnection,nora,NORANamedGraphURI);
 						
-		log.info("Disconnecting from GraphDB ... ");
 		repositoryConnection.close();
 		repository.shutDown();
 		repositoryManager.shutDown();
