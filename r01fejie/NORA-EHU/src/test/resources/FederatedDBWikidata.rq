@@ -1,0 +1,21 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+
+SELECT ?entity ?euskoLabel ?wikidataEntity ?wikidataLabel ?dbpediaEntity ?dbpediaLabel
+
+WHERE {
+    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    	?entity gn:officialname ?euskoLabel .
+    }
+    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+    	?entity owl:sameAs ?wikidataEntity .
+    }
+    SERVICE <https://query.wikidata.org/sparql> { 
+       ?wikidataEntity rdfs:label ?wikidataLabel . 
+    } 
+    SERVICE <https://dbpedia.org/sparql> { 
+       ?dbpediaEntity owl:sameAs ?wikidataEntity .
+       ?dbpediaEntity rdfs:label ?dbpediaLabel . 
+    } 
+}
