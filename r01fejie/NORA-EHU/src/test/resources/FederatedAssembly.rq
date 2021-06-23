@@ -1,0 +1,26 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+
+SELECT DISTINCT ?entity ?euskoLabel ?assembly
+
+WHERE {
+    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    	?entity gn:officialname ?euskoLabel .
+        ?entity rdf:type esadm:Municipio .
+    }
+    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+    	?entity owl:sameAs ?wikidataEntity .
+    }
+    SERVICE <https://query.wikidata.org/sparql> { 
+       ?wikidataEntity rdfs:label ?wikidataLabel . 
+    }
+    SERVICE <https://dbpedia.org/sparql> { 
+       ?dbpediaEntity owl:sameAs ?wikidataEntity .
+       ?dbpediaEntity rdfs:label ?dbpediaLabel . 
+       ?assembly dbo:assembly ?dbpediaEntity .
+    } 
+}
