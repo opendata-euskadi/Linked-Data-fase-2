@@ -25,16 +25,61 @@ Para más detalles ver archivo `NORA-metadata.ttl`:
 
 ## Consultas SPARQL
 
-Todas las consultas se encuentran en `/r01fejie/NORA-EHU/src/test/resources`. Las más interesantes se citan a continuación.
+Todas las consultas se encuentran en `/r01fejie/NORA-EHU/src/test/resources/*.rq`. Las más interesantes se citan a continuación.
+
+### Contar los municipios de Araba
+
+Esta simple consulta nos da el numero de municipios de Araba.
+
+```sparql
+PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT  (COUNT(?municipioAraba) as ?count) 
+WHERE { 
+  ?municipioAraba esadm:provincia ?provincia .
+  ?provincia rdfs:label "Araba"@eu .
+} 
+```
 
 ### Consulta transitiva
 
-Para que esta consulta funcione hay que cargar los archivos `nora.ttl` y `territorio.owl`. Además el repo GraphDB tiene que tener la inferencia activada, por ejemplo con la opción "OWL-Horst (Optimized)".
+Esta consulta aprovecha el razonamineto automático para conseguir entidades que no están directamente relacionadas entre sí. 
+
+Para que esta consulta funcione hay que cargar los archivos `nora.ttl` y `territorio.owl` en el grafo `NORA-vocabs`. Además el repo GraphDB `NORA` tiene que tener la inferencia activada, por ejemplo con la opción "OWL-Horst (Optimized)".
 
 ```sparql
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT ?country
 WHERE { 
    <http://id.euskadi.eus/public-sector/urbanism-territory/province/48> geosparql:sfWithin ?country .
+}
+```
+
+### Consulta federada
+
+Esta consulta demuestra la utilidad de los enlaces existentes. A partir de esta consulta básica, se pueden combinar datos de WikiData, DBPedia, etc, explotando la potencia de Linked Data.
+
+```sparql
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+
+SELECT ?entity ?euskoLabel ?wikidataEntity ?wikidataLabel ?dbpediaEntity ?dbpediaLabel
+
+WHERE {
+    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    	?entity gn:officialname ?euskoLabel .
+    }
+    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+    	?entity owl:sameAs ?wikidataEntity .
+    }
+    SERVICE <https://query.wikidata.org/sparql> { 
+       ?wikidataEntity rdfs:label ?wikidataLabel . 
+    } 
+    SERVICE <https://dbpedia.org/sparql> { 
+       ?dbpediaEntity owl:sameAs ?wikidataEntity .
+       ?dbpediaEntity rdfs:label ?dbpediaLabel . 
+    } 
 }
 ```
