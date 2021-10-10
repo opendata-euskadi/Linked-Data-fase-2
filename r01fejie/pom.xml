@@ -17,7 +17,8 @@
 		<!-- Update revision: 
 				> mvn -Drevision={new revision} clean package 
 		-->
-		<revision>1.0.1-20210604-01</revision>
+		<!-- <revision>1.0.1-20210604-01</revision> -->
+		<revision>1.0.7-20210917-01</revision>
 		
 		<!-- Dependencies versions -->
 		<weblogic.version>14.1.1.0</weblogic.version>	<!-- 10.3.6.0 (jdk 8) / 14.1.1.0 (jdk 11) -->
