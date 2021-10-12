@@ -22,6 +22,7 @@ import r01f.ejie.nora.NORAServiceConfig;
 import r01f.locale.Language;
 import r01f.types.geo.GeoCountry;
 import r01f.types.geo.GeoCounty;
+import r01f.types.geo.GeoLocality;
 import r01f.types.geo.GeoMunicipality;
 import r01f.types.geo.GeoState;
 import r01f.types.url.Url;
@@ -127,8 +128,8 @@ public class NORA2GRAPHDB {
 	}
 	
 	private static void processTowns (GeoCounty county, RepositoryConnection repositoryConnection, NORAService nora, String NORANamedGraphURI) {
-		Collection <GeoMunicipality> municipalitiesOfAraba = nora.getServicesForMunicipalities().getMunicipalitiesOf(NORAGeoIDs.EUSKADI, county.getId());
-		for(GeoMunicipality muni : municipalitiesOfAraba) {
+		Collection <GeoMunicipality> municipalities = nora.getServicesForMunicipalities().getMunicipalitiesOf(NORAGeoIDs.EUSKADI, county.getId());
+		for(GeoMunicipality muni : municipalities) {
 			if(muni.getPosition2D() != null) {
 				log.info(muni.getOfficialName());
 				log.info(muni.getNameIn(Language.SPANISH)); 
@@ -150,5 +151,10 @@ public class NORA2GRAPHDB {
 				log.info(muni.getOfficialName() + " lacks 2D position! ");
 			}
 		}
+	}
+	
+	private static void processLocalities (GeoMunicipality municipality, RepositoryConnection repositoryConnection, NORAService nora, String NORANamedGraphURI) {
+		Collection <GeoLocality> localities = nora.getServicesForLocalities().getLocalitiesOf(NORAGeoIDs.EUSKADI, municipality.getCountyId(), municipality.getId());
+		
 	}
 }

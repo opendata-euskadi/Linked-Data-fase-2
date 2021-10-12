@@ -11,7 +11,8 @@ public enum ESADMURIs {
     // Properties
     paisProp ("pais"),
     autonomiaProp ("autonomia"),
-    provinciaProp ("provincia")
+    provinciaProp ("provincia"),
+    municipioProp ("municipio")
     ; 
 
 	private final String uri_name;
