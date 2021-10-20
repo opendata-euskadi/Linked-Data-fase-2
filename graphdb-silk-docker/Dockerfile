@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine
+FROM adoptopenjdk/openjdk12:alpine
 
 RUN apk update && apk add -u bash 
 
