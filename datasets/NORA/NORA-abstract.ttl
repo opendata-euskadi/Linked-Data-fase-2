@@ -152,7 +152,7 @@ PREFIX nora: <http://id.euskadi.eus/def/nora#>
         esadm:barrio           <http://id.euskadi.eus/public-sector/urbanism-territory/neighbourhood/ID-NORA> .
 
 
-# Probablement habra un conjunto definido de tipos de via que habria que meter en una ontologia
+# Probablemente habra un conjunto definido de tipos de via que habria que meter en una ontologia
 <http://id.euskadi.eus/public-sector/urbanism-territory/streettype/ID-NORA>
         # a                      escjr:Via ; ???
         geonames:featureCode   geonames:R.ST ;

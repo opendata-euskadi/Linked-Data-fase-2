@@ -8,6 +8,7 @@ public enum NORABaseURIs {
     PROVINCE("province/"),
     REGION("region/"),
     MUNICIPALITY("municipality/"),
+    LOCALITY("locality/"),
     NEIGHBOURHOOD("neighbourhood/"),
     DISTRICT("district/"),
     SECTION("section/"),

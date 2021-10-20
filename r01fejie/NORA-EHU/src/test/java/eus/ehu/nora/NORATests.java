@@ -77,11 +77,12 @@ public class NORATests {
 		GeoMunicipality municipality = nora.getServicesForMunicipalities().getMunicipality(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO);
 		Collection <GeoLocality> localities = nora.getServicesForLocalities().getLocalitiesOf(NORAGeoIDs.EUSKADI, municipality.getCountyId(), municipality.getId());
 		for (GeoLocality locality : localities) { 
+			System.out.println(locality.getId());
 			System.out.println(locality.getOfficialName());
 			System.out.println(locality.getNameIn(Language.SPANISH));
 			System.out.println(locality.getNameIn(Language.BASQUE));
-			System.out.println(locality.getPosition2D().getX());
-			System.out.println(locality.getPosition2D().getY());	
+//			System.out.println(locality.getPosition2D().getX());
+//			System.out.println(locality.getPosition2D().getY());	
 		}
 	}
 	
@@ -101,7 +102,9 @@ public class NORATests {
 				System.out.println(calle.getOfficialName());
 				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, localidad.getLocalityId(), calle.getId());
 				for (GeoPortal portal : portales) {
-					System.out.println("---" + portal.getOfficialName() +"---"+portal.getPosition2D().getX());
+					System.out.println("Portal: " + portal.getOfficialName());
+					System.out.println("X: " + portal.getPosition2D().getX());
+					System.out.println("Y: " + portal.getPosition2D().getY());
 				}
 			}
 		}	

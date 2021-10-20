@@ -8,11 +8,13 @@ import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 
 import eus.ehu.nora.entity.GeoNamesADMDEntity;
+import eus.ehu.nora.entity.Locality;
 import eus.ehu.nora.entity.Municipality;
 import eus.ehu.nora.entity.County;
 import eus.ehu.nora.entity.State;
 import eus.ehu.nora.graphdb.Util;
 import eus.ehu.nora.uris.ESADMURIs;
+import eus.ehu.nora.uris.EuskadiURIs;
 import eus.ehu.nora.uris.NORABaseURIs;
 
 import lombok.extern.slf4j.Slf4j;
@@ -145,6 +147,7 @@ public class NORA2GRAPHDB {
 					muni.getPosition2D().getX(), 
 					muni.getPosition2D().getY())
 					).add(repositoryConnection, NORANamedGraphURI);
+				processLocalities(muni, repositoryConnection, nora, NORANamedGraphURI);
 			}
 			// e.g. Badaiako mendizerra/Sierra Brava de Badaya
 			else {
@@ -155,6 +158,17 @@ public class NORA2GRAPHDB {
 	
 	private static void processLocalities (GeoMunicipality municipality, RepositoryConnection repositoryConnection, NORAService nora, String NORANamedGraphURI) {
 		Collection <GeoLocality> localities = nora.getServicesForLocalities().getLocalitiesOf(NORAGeoIDs.EUSKADI, municipality.getCountyId(), municipality.getId());
-		
+		for (GeoLocality locality : localities) {
+			(new Locality(
+					EuskadiURIs.localidad.getURI(), 
+					NORABaseURIs.LOCALITY.getURI() + locality.getId().asString(),
+					locality.getId().asString(), 
+					locality.getOfficialName(),
+					locality.getNameIn(Language.SPANISH), 
+					locality.getNameIn(Language.BASQUE), 
+					municipality.getId().asString(), 
+					locality.getPosition2D().getX(), 
+					locality.getPosition2D().getY())).add(repositoryConnection, NORANamedGraphURI);
+		}
 	}
 }

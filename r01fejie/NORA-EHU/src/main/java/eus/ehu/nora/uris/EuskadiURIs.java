@@ -3,7 +3,8 @@ package eus.ehu.nora.uris;
 public enum EuskadiURIs {
 	
 	// Properties
-	identifier ("identifier")
+	identifier ("identifier"),
+	localidad ("Localidad"),
     ; 
 
 	private final String uri_name;

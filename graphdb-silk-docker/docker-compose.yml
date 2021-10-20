@@ -8,14 +8,14 @@ services:
       volumes:
          - ./graphdb-data:/data
 
-   silk:
-      image: silkframework/silk-workbench:latest
-      ports:
-         - "81:80"
-      volumes:
-         - ./silk-workspace:/opt/silk/workspace
-      restart: always
-      depends_on:
-         - graphdb
+   # silk:
+   #    image: silkframework/silk-workbench:latest
+   #    ports:
+   #       - "82:80"
+   #    volumes:
+   #       - ./silk-workspace:/opt/silk/workspace
+   #    restart: always
+   #    depends_on:
+   #       - graphdb
 
 

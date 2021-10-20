@@ -10,6 +10,6 @@ Levantar los servicios:
 docker-compose up
 ```
 
-Esto debería levantar los dos servicios en localhost 7200 (GraphDB) y 81 (Silk). Los puertos y volumenes se pueden configurar en el archivo `docker-compose.yml` (Ambos servicios persisten lso datos en los volumenes).
+Esto debería levantar los dos servicios en localhost 7200 (GraphDB) y 81 (Silk). Los puertos y volumenes se pueden configurar en el archivo `docker-compose.yml` (Ambos servicios persisten los datos en los volumenes).
 
 En GraphDB, conectar el repositorio `NORA-links`. En Silk, el proyecto `NORA-links-tests` (Importarlo de `Linked-Data-fase-2/graphdb-silk-docker/silk-workspaces/NORA-links-tests.zip` si fuera necesario) incluye una configuración con GraphDB, y DBPedia.
