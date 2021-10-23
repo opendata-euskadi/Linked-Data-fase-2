@@ -142,6 +142,8 @@ PREFIX nora: <http://id.euskadi.eus/def/nora#>
         a                      escjr:Via ;
         geonames:featureCode   geonames:R.ST ;
         geonames:featureClass  geonames:R ;
+        geo:xETRS89            "dxEtrs89"^^xsd:double ;
+        geo:yETRS89            "dyEtrs89"^^xsd:double ;
         dcterms:identifier     "ID-NORA" ; 
         schema:identifier      "ID-NORA" ;
         geonames:officialName  "descripcionOficial" ;

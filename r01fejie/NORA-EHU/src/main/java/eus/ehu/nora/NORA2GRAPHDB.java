@@ -26,7 +26,9 @@ import r01f.types.geo.GeoCountry;
 import r01f.types.geo.GeoCounty;
 import r01f.types.geo.GeoLocality;
 import r01f.types.geo.GeoMunicipality;
+import r01f.types.geo.GeoPortal;
 import r01f.types.geo.GeoState;
+import r01f.types.geo.GeoStreet;
 import r01f.types.url.Url;
 
 // Programa para convertir datos de NORA a RDF y subirlos a GraphDB, incluyendo enlaces
@@ -160,15 +162,25 @@ public class NORA2GRAPHDB {
 		Collection <GeoLocality> localities = nora.getServicesForLocalities().getLocalitiesOf(NORAGeoIDs.EUSKADI, municipality.getCountyId(), municipality.getId());
 		for (GeoLocality locality : localities) {
 			(new Locality(
-					EuskadiURIs.localidad.getURI(), 
+					EuskadiURIs.Localidad.getURI(), 
 					NORABaseURIs.LOCALITY.getURI() + locality.getId().asString(),
 					locality.getId().asString(), 
 					locality.getOfficialName(),
 					locality.getNameIn(Language.SPANISH), 
 					locality.getNameIn(Language.BASQUE), 
-					municipality.getId().asString(), 
-					locality.getPosition2D().getX(), 
-					locality.getPosition2D().getY())).add(repositoryConnection, NORANamedGraphURI);
+					municipality.getId().asString(),
+					municipality.getCountyId().asString())
+					).add(repositoryConnection, NORANamedGraphURI);
+			Collection<GeoStreet> calles = nora.getServicesForStreets().getStreetsOf(NORAGeoIDs.EUSKADI, municipality.getCountyId(), municipality.getId(), locality.getId());
+			for (GeoStreet calle : calles) {
+				System.out.println(calle.getOfficialName());
+				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, locality.getLocalityId(), calle.getId());
+				for (GeoPortal portal : portales) {
+					System.out.println("Portal: " + portal.getOfficialName());
+					System.out.println("X: " + portal.getPosition2D().getX());
+					System.out.println("Y: " + portal.getPosition2D().getY());
+				}
+			}
 		}
 	}
 }

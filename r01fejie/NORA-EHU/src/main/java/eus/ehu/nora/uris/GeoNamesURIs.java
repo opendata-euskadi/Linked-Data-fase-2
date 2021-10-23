@@ -11,7 +11,9 @@ public enum GeoNamesURIs {
     admd ("A.ADMD"),
     a ("A"),
     pppl("P.PPL"),
-    p("P")
+    p("P"),
+    rst("R.ST"),
+    r("R")
     ; 
 
 	private final String uri_name;

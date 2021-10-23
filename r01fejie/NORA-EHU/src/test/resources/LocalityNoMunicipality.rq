@@ -1,0 +1,12 @@
+PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX nora: <http://id.euskadi.eus/def/nora#>
+
+# Hay algun municipio sin localidad?
+ASK  { 
+    FILTER NOT EXISTS { 
+        ?localidad rdf:type nora:Localidad .
+    	?municipio rdf:type esadm:Municipio .
+        ?localidad esadm:municipio ?municipio . 
+    }
+}  

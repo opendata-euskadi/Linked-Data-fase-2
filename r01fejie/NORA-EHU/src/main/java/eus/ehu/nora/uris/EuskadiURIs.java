@@ -4,7 +4,10 @@ public enum EuskadiURIs {
 	
 	// Properties
 	identifier ("identifier"),
-	localidad ("Localidad"),
+	localidad ("localidad"),
+	
+	// Classes
+	Localidad ("Localidad"),
     ; 
 
 	private final String uri_name;

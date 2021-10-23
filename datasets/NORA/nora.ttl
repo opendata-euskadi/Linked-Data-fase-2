@@ -12,6 +12,11 @@
 #    Object Properties
 #################################################################
 
+###  http://id.euskadi.eus/def/nora#localidad
+:localidad rdf:type owl:ObjectProperty ;
+           rdfs:range :Localidad .
+
+
 ###  http://www.opengis.net/ont/geosparql#sfWithin
 <http://www.opengis.net/ont/geosparql#sfWithin> rdf:type owl:ObjectProperty ,
                                                          owl:TransitiveProperty .

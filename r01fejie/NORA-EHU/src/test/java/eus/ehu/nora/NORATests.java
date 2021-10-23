@@ -99,6 +99,7 @@ public class NORATests {
 		for (GeoLocality localidad : localidades) {
 			Collection<GeoStreet> calles = nora.getServicesForStreets().getStreetsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, localidad.getLocalityId());
 			for (GeoStreet calle : calles) {
+				
 				System.out.println(calle.getOfficialName());
 				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, localidad.getLocalityId(), calle.getId());
 				for (GeoPortal portal : portales) {

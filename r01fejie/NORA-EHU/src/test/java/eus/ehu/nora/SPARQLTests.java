@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.rdf4j.model.Value;
 import org.eclipse.rdf4j.query.BindingSet;
+import org.eclipse.rdf4j.query.BooleanQuery;
 import org.eclipse.rdf4j.query.QueryLanguage;
 import org.eclipse.rdf4j.query.TupleQuery;
 import org.eclipse.rdf4j.query.TupleQueryResult;
@@ -82,6 +83,12 @@ class SPARQLTests {
 		assertTrue(results.contains("88")); 
 	}
 	
+	@Test
+	void localityNoMunicipality() throws IOException {
+		String query = getQueryFromResource("/LocalityNoMunicipality.rq");
+		assertFalse(execBooleanQuery(query));
+	}
+	
 	@Test 
 	void federatedQuery () {
 		
@@ -97,6 +104,11 @@ class SPARQLTests {
 			obtainedResults.add(valueOfcount.stringValue());
 		}
 		return obtainedResults;
+	}
+	
+	private boolean execBooleanQuery (String query) {
+		BooleanQuery booleanQuery = repositoryConnection.prepareBooleanQuery(QueryLanguage.SPARQL,query);
+		return booleanQuery.evaluate();
 	}
 	
 	private String getQueryFromResource (String queryResourceFileName) throws IOException {
