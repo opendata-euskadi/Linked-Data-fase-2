@@ -14,6 +14,7 @@
 
 ###  http://id.euskadi.eus/def/nora#localidad
 :localidad rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf <http://www.opengis.net/ont/geosparql#sfWithin> ;
            rdfs:range :Localidad .
 
 
