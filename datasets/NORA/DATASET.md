@@ -17,11 +17,11 @@
 
 ## Ontologías
 
-Para más detalles ver archivo `NORA-metadata.ttl`:
+Para más detalles ver archivo `NORA-metadata.ttl`. Ontologias a incluir en triple store:
 
 * [NORA](nora.ttl). (Importante para consultas transitivas).
 * [Territorio (ESADM)](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio), incluye GeoSPARQL (Importante para consultas transitivas). (`territorio.owl`).
-* ...
+* [Callejero] (`callejero.owl.rdf`)
 
 ## Consultas SPARQL
 

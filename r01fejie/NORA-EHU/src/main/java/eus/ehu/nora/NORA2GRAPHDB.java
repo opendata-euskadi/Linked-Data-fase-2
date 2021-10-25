@@ -12,8 +12,10 @@ import eus.ehu.nora.entity.Locality;
 import eus.ehu.nora.entity.Municipality;
 import eus.ehu.nora.entity.County;
 import eus.ehu.nora.entity.State;
+import eus.ehu.nora.entity.Street;
 import eus.ehu.nora.graphdb.Util;
 import eus.ehu.nora.uris.ESADMURIs;
+import eus.ehu.nora.uris.ESCJRURIs;
 import eus.ehu.nora.uris.EuskadiURIs;
 import eus.ehu.nora.uris.NORABaseURIs;
 
@@ -134,27 +136,28 @@ public class NORA2GRAPHDB {
 	private static void processTowns (GeoCounty county, RepositoryConnection repositoryConnection, NORAService nora, String NORANamedGraphURI) {
 		Collection <GeoMunicipality> municipalities = nora.getServicesForMunicipalities().getMunicipalitiesOf(NORAGeoIDs.EUSKADI, county.getId());
 		for(GeoMunicipality muni : municipalities) {
+			double x = 0.0;
+			double y = 0.0;
+			// e.g. Badaiako mendizerra/Sierra Brava de Badaya: http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-501
 			if(muni.getPosition2D() != null) {
-				log.info(muni.getOfficialName());
-				log.info(muni.getNameIn(Language.SPANISH)); 
-				log.info(muni.getNameIn(Language.BASQUE));
-				(new Municipality(
-					ESADMURIs.MUNICIPIO.getURI(), 
-					NORABaseURIs.MUNICIPALITY.getURI() + county.getId().asString() + "-" + muni.getId().asString(), 
-					muni.getId().asString(), 
-					muni.getOfficialName(),
-					muni.getNameIn(Language.SPANISH), 
-					muni.getNameIn(Language.BASQUE), 
-					county.getId().asString(), 
-					muni.getPosition2D().getX(), 
-					muni.getPosition2D().getY())
-					).add(repositoryConnection, NORANamedGraphURI);
+				x = muni.getPosition2D().getX();
+				y = muni.getPosition2D().getY();
+			}
+			log.info(muni.getOfficialName());
+			log.info(muni.getNameIn(Language.SPANISH)); 
+			log.info(muni.getNameIn(Language.BASQUE));
+			(new Municipality(
+				ESADMURIs.MUNICIPIO.getURI(), 
+				NORABaseURIs.MUNICIPALITY.getURI() + county.getId().asString() + "-" + muni.getId().asString(), 
+				muni.getId().asString(), 
+				muni.getOfficialName(),
+				muni.getNameIn(Language.SPANISH), 
+				muni.getNameIn(Language.BASQUE), 
+				county.getId().asString(), 
+				x, 
+				y)
+				).add(repositoryConnection, NORANamedGraphURI);
 				processLocalities(muni, repositoryConnection, nora, NORANamedGraphURI);
-			}
-			// e.g. Badaiako mendizerra/Sierra Brava de Badaya
-			else {
-				log.info(muni.getOfficialName() + " lacks 2D position! ");
-			}
 		}
 	}
 	
@@ -173,12 +176,46 @@ public class NORA2GRAPHDB {
 					).add(repositoryConnection, NORANamedGraphURI);
 			Collection<GeoStreet> calles = nora.getServicesForStreets().getStreetsOf(NORAGeoIDs.EUSKADI, municipality.getCountyId(), municipality.getId(), locality.getId());
 			for (GeoStreet calle : calles) {
-				System.out.println(calle.getOfficialName());
+				double x = 0.0;
+				double y = 0.0;
+				if(calle.getPosition2D() != null) {
+					x = calle.getPosition2D().getX();
+					y = calle.getPosition2D().getY();
+				}
+				(new Street(
+						ESCJRURIs.Via.getURI(), 
+						NORABaseURIs.STREET.getURI() + calle.getId().asString(), 
+						calle.getId().asString(), 
+						calle.getOfficialName(), 
+						calle.getNameIn(Language.SPANISH), 
+						calle.getNameIn(Language.BASQUE),
+						locality.getId().asString(), 
+						x, 
+						y)
+				).add(repositoryConnection, NORANamedGraphURI);
+								
 				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, locality.getLocalityId(), calle.getId());
 				for (GeoPortal portal : portales) {
-					System.out.println("Portal: " + portal.getOfficialName());
-					System.out.println("X: " + portal.getPosition2D().getX());
-					System.out.println("Y: " + portal.getPosition2D().getY());
+					
+					double x_portal = 0.0;
+					double y_portal = 0.0;
+					if(portal.getPosition2D() != null) {
+						x = portal.getPosition2D().getX();
+						y = portal.getPosition2D().getY();
+					}
+					
+					(new Street(
+							ESCJRURIs.Portal.getURI(), 
+							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
+							portal.getId().asString(), 
+							portal.getOfficialName(), 
+							portal.getNameIn(Language.SPANISH), 
+							portal.getNameIn(Language.BASQUE),
+							portal.getId().asString(), 
+							x_portal, 
+							y_portal)
+					).add(repositoryConnection, NORANamedGraphURI);
+					
 				}
 			}
 		}

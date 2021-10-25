@@ -4,21 +4,22 @@ import org.eclipse.rdf4j.repository.RepositoryConnection;
 
 import eus.ehu.nora.graphdb.AddRDFtoGraphDB;
 import eus.ehu.nora.graphdb.Util;
+import eus.ehu.nora.uris.ESCJRURIs;
 import eus.ehu.nora.uris.EuskadiURIs;
 import eus.ehu.nora.uris.GeoURIs;
 import eus.ehu.nora.uris.NORABaseURIs;
 
-public class Street extends GeoNamesRSTEntity implements AddRDFtoGraphDB {
+public class Portal extends GeoNamesRSTEntity implements AddRDFtoGraphDB {
 
-	private String localityID;
+	private String streetID;
 	private double xetrs89;
 	private double yetrs89;
 
-	public Street(String entity_rdftype, String entity_iri, String entity__id, String officialName,
-			String esDescripcion, String euDescripcion, String localityID, double xetrs89, double yetrs89) {
+	public Portal(String entity_rdftype, String entity_iri, String entity__id, String officialName,
+			String esDescripcion, String euDescripcion, String streetID, double xetrs89, double yetrs89) {
 		super(entity_rdftype, entity_iri, entity__id, officialName,
 				esDescripcion, euDescripcion);
-		this.localityID = localityID;
+		this.streetID = streetID;
 		this.xetrs89 = xetrs89;
 		this.yetrs89 = yetrs89;
 	}
@@ -29,8 +30,8 @@ public class Street extends GeoNamesRSTEntity implements AddRDFtoGraphDB {
 				
 		Util.addIRITriple(
 				entity_iri, 
-				EuskadiURIs.localidad.getURI(),
-				NORABaseURIs.LOCALITY.getURI() + localityID, 
+				ESCJRURIs.viaProp.getURI(),
+				NORABaseURIs.STREET.getURI() + streetID, 
 				namedGraph, 
 				connection);
 		if(xetrs89 != 0.0 && yetrs89 != 0.0) {

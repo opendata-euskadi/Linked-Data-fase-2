@@ -27,8 +27,7 @@ public class Locality extends GeoNamesPPLEntity implements AddRDFtoGraphDB {
 		Util.addIRITriple(
 				entity_iri, 
 				ESADMURIs.municipioProp.getURI(),
-				NORABaseURIs.MUNICIPALITY.getURI()+ countyID + "-" + municipalityID, // NORABaseURIs.MUNICIPALITY.getURI() + county.getId().asString() + "-" + muni.getId().asString()
-				namedGraph, 
+				NORABaseURIs.MUNICIPALITY.getURI()+ countyID + "-" + municipalityID, namedGraph, 
 				connection);
 		
 	}

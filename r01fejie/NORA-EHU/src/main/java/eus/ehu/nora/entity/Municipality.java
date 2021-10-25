@@ -33,9 +33,10 @@ public class Municipality extends GeoNamesPPLEntity implements AddRDFtoGraphDB {
 				NORABaseURIs.PROVINCE.getURI()+countyID, 
 				namedGraph, 
 				connection);
-		
-		Util.addLiteralTriple(entity_iri, GeoURIs.xETRS89.getURI(), xetrs89, namedGraph, connection);
-		Util.addLiteralTriple(entity_iri, GeoURIs.yETRS89.getURI(), yetrs89, namedGraph, connection);
+		if(xetrs89 != 0.0 && yetrs89 != 0.0) {
+			Util.addLiteralTriple(entity_iri, GeoURIs.xETRS89.getURI(), xetrs89, namedGraph, connection);
+			Util.addLiteralTriple(entity_iri, GeoURIs.yETRS89.getURI(), yetrs89, namedGraph, connection);
+		}
 		
 	}
 }
