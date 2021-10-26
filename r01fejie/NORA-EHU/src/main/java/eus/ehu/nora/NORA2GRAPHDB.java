@@ -103,33 +103,33 @@ public class NORA2GRAPHDB {
 		
 		processTowns(araba,repositoryConnection,nora,NORANamedGraphURI);
 		
-//		log.info("Bizkaia");
-//		GeoCounty bizkaia = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.BIZKAIA);
-//		(new County(
-//				ESADMURIs.PROVINCIA.getURI(),
-//				NORABaseURIs.PROVINCE.getURI() + bizkaia.getId().asString(), 
-//				bizkaia.getId().asString(),
-//				bizkaia.getOfficialName(),
-//				"Vizcaya",
-//				"Bizkaia",
-//				euskadi.getId().asString())										
-//				).add(repositoryConnection, NORANamedGraphURI);
-//		
-//		processTowns(bizkaia,repositoryConnection,nora,NORANamedGraphURI);
-//		
-//		log.info("Gipuzkoa");
-//		GeoCounty gipuzkoa = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.GIPUZKOA);
-//		(new County(
-//				ESADMURIs.PROVINCIA.getURI(),
-//				NORABaseURIs.PROVINCE.getURI() + gipuzkoa.getId().asString(), 
-//				gipuzkoa.getId().asString(),
-//				gipuzkoa.getOfficialName(),
-//				"Guipúzcoa",
-//				"Gipuzkoa",
-//				euskadi.getId().asString())										
-//				).add(repositoryConnection, NORANamedGraphURI);
-//		
-//		processTowns(gipuzkoa,repositoryConnection,nora,NORANamedGraphURI);
+		log.info("Bizkaia");
+		GeoCounty bizkaia = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.BIZKAIA);
+		(new County(
+				ESADMURIs.PROVINCIA.getURI(),
+				NORABaseURIs.PROVINCE.getURI() + bizkaia.getId().asString(), 
+				bizkaia.getId().asString(),
+				bizkaia.getOfficialName(),
+				"Vizcaya",
+				"Bizkaia",
+				euskadi.getId().asString())										
+				).add(repositoryConnection, NORANamedGraphURI);
+		
+		processTowns(bizkaia,repositoryConnection,nora,NORANamedGraphURI);
+		
+		log.info("Gipuzkoa");
+		GeoCounty gipuzkoa = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.GIPUZKOA);
+		(new County(
+				ESADMURIs.PROVINCIA.getURI(),
+				NORABaseURIs.PROVINCE.getURI() + gipuzkoa.getId().asString(), 
+				gipuzkoa.getId().asString(),
+				gipuzkoa.getOfficialName(),
+				"Guipúzcoa",
+				"Gipuzkoa",
+				euskadi.getId().asString())										
+				).add(repositoryConnection, NORANamedGraphURI);
+		
+		processTowns(gipuzkoa,repositoryConnection,nora,NORANamedGraphURI);
 						
 		repositoryConnection.close();
 		repository.shutDown();
@@ -197,29 +197,29 @@ public class NORA2GRAPHDB {
 						y)
 				).add(repositoryConnection, NORANamedGraphURI);
 								
-				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, locality.getLocalityId(), calle.getId());
-				for (GeoPortal portal : portales) {
-					
-					double x_portal = 0.0;
-					double y_portal = 0.0;
-					if(portal.getPosition2D() != null) {
-						x = portal.getPosition2D().getX();
-						y = portal.getPosition2D().getY();
-					}
-					
-					(new Portal(
-							ESCJRURIs.Portal.getURI(), 
-							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
-							portal.getId().asString(), 
-							portal.getOfficialName(), 
-							portal.getNameIn(Language.SPANISH), 
-							portal.getNameIn(Language.BASQUE),
-							portal.getId().asString(), 
-							x_portal, 
-							y_portal)
-					).add(repositoryConnection, NORANamedGraphURI);
-					
-				}
+//				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, locality.getLocalityId(), calle.getId());
+//				for (GeoPortal portal : portales) {
+//					
+//					double x_portal = 0.0;
+//					double y_portal = 0.0;
+//					if(portal.getPosition2D() != null) {
+//						x = portal.getPosition2D().getX();
+//						y = portal.getPosition2D().getY();
+//					}
+//					
+//					(new Portal(
+//							ESCJRURIs.Portal.getURI(), 
+//							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
+//							portal.getId().asString(), 
+//							portal.getOfficialName(), 
+//							portal.getNameIn(Language.SPANISH), 
+//							portal.getNameIn(Language.BASQUE),
+//							portal.getId().asString(), 
+//							x_portal, 
+//							y_portal)
+//					).add(repositoryConnection, NORANamedGraphURI);
+//					
+//				}
 			}
 		}
 	}
