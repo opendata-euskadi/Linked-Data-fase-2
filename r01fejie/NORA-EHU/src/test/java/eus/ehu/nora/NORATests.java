@@ -10,6 +10,10 @@ import org.junit.Assert;
 import com.google.common.collect.Iterables;
 
 import eus.ehu.nora.entity.Locality;
+import eus.ehu.nora.entity.Portal;
+import eus.ehu.nora.entity.Street;
+import eus.ehu.nora.uris.ESCJRURIs;
+import eus.ehu.nora.uris.NORABaseURIs;
 import lombok.extern.slf4j.Slf4j;
 import r01f.ejie.nora.NORAGeoIDs;
 import r01f.ejie.nora.NORAService;
@@ -99,13 +103,41 @@ public class NORATests {
 		for (GeoLocality localidad : localidades) {
 			Collection<GeoStreet> calles = nora.getServicesForStreets().getStreetsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, localidad.getLocalityId());
 			for (GeoStreet calle : calles) {
+				double x = 0.0;
+				double y = 0.0;
+				if(calle.getPosition2D() != null) {
+					System.out.println("2D!");
+					x = calle.getPosition2D().getX();
+					y = calle.getPosition2D().getY();
+				}
+				System.out.println(ESCJRURIs.Via.getURI());
+				System.out.println(NORABaseURIs.STREET.getURI() + calle.getId().asString()); 
+				System.out.println(calle.getId().asString()); 
+				System.out.println(calle.getOfficialName()); 
+				System.out.println(calle.getNameIn(Language.SPANISH)); 
+				System.out.println(calle.getNameIn(Language.BASQUE));
+				System.out.println(localidad.getId().asString()); 
+				System.out.println(x); 
+				System.out.println(y);
 				
-				System.out.println(calle.getOfficialName());
 				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, localidad.getLocalityId(), calle.getId());
 				for (GeoPortal portal : portales) {
-					System.out.println("Portal: " + portal.getOfficialName());
-					System.out.println("X: " + portal.getPosition2D().getX());
-					System.out.println("Y: " + portal.getPosition2D().getY());
+					double x_portal = 0.0;
+					double y_portal = 0.0;
+					if(portal.getPosition2D() != null) {
+						x = portal.getPosition2D().getX();
+						y = portal.getPosition2D().getY();
+					}
+					
+					System.out.println(ESCJRURIs.Portal.getURI()); 
+					System.out.println(NORABaseURIs.DOORWAY.getURI() + portal.getId().asString()); 
+					System.out.println(portal.getId().asString()); 
+					System.out.println(portal.getOfficialName()); 
+					System.out.println(portal.getNameIn(Language.SPANISH)); 
+					System.out.println(portal.getNameIn(Language.BASQUE));
+					System.out.println(portal.getId().asString()); 
+					System.out.println(x_portal);
+					System.out.println(y_portal);
 				}
 			}
 		}	

@@ -10,6 +10,7 @@ import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 import eus.ehu.nora.entity.GeoNamesADMDEntity;
 import eus.ehu.nora.entity.Locality;
 import eus.ehu.nora.entity.Municipality;
+import eus.ehu.nora.entity.Portal;
 import eus.ehu.nora.entity.County;
 import eus.ehu.nora.entity.State;
 import eus.ehu.nora.entity.Street;
@@ -57,8 +58,10 @@ public class NORA2GRAPHDB {
 		Repository repository = repositoryManager.getRepository(graphDBNORArepoName);
 		RepositoryConnection repositoryConnection = repository.getConnection();
 		
-		log.info("Clear former NORA graph");
-		Util.clearGraph(NORANamedGraphURI, repositoryConnection);
+		if(NORA2GRAPHDBConfig.clearGraph) {
+			log.info("Clear former NORA graph");
+			Util.clearGraph(NORANamedGraphURI, repositoryConnection);
+		}
 
 		log.info("Connecting to NORA ... ");
 		NORAService nora = new NORAService(cfg);
@@ -100,33 +103,33 @@ public class NORA2GRAPHDB {
 		
 		processTowns(araba,repositoryConnection,nora,NORANamedGraphURI);
 		
-		log.info("Bizkaia");
-		GeoCounty bizkaia = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.BIZKAIA);
-		(new County(
-				ESADMURIs.PROVINCIA.getURI(),
-				NORABaseURIs.PROVINCE.getURI() + bizkaia.getId().asString(), 
-				bizkaia.getId().asString(),
-				bizkaia.getOfficialName(),
-				"Vizcaya",
-				"Bizkaia",
-				euskadi.getId().asString())										
-				).add(repositoryConnection, NORANamedGraphURI);
-		
-		processTowns(bizkaia,repositoryConnection,nora,NORANamedGraphURI);
-		
-		log.info("Gipuzkoa");
-		GeoCounty gipuzkoa = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.GIPUZKOA);
-		(new County(
-				ESADMURIs.PROVINCIA.getURI(),
-				NORABaseURIs.PROVINCE.getURI() + gipuzkoa.getId().asString(), 
-				gipuzkoa.getId().asString(),
-				gipuzkoa.getOfficialName(),
-				"Guipúzcoa",
-				"Gipuzkoa",
-				euskadi.getId().asString())										
-				).add(repositoryConnection, NORANamedGraphURI);
-		
-		processTowns(gipuzkoa,repositoryConnection,nora,NORANamedGraphURI);
+//		log.info("Bizkaia");
+//		GeoCounty bizkaia = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.BIZKAIA);
+//		(new County(
+//				ESADMURIs.PROVINCIA.getURI(),
+//				NORABaseURIs.PROVINCE.getURI() + bizkaia.getId().asString(), 
+//				bizkaia.getId().asString(),
+//				bizkaia.getOfficialName(),
+//				"Vizcaya",
+//				"Bizkaia",
+//				euskadi.getId().asString())										
+//				).add(repositoryConnection, NORANamedGraphURI);
+//		
+//		processTowns(bizkaia,repositoryConnection,nora,NORANamedGraphURI);
+//		
+//		log.info("Gipuzkoa");
+//		GeoCounty gipuzkoa = nora.getServicesForCounties().getCounty(euskadi.getId(), NORAGeoIDs.GIPUZKOA);
+//		(new County(
+//				ESADMURIs.PROVINCIA.getURI(),
+//				NORABaseURIs.PROVINCE.getURI() + gipuzkoa.getId().asString(), 
+//				gipuzkoa.getId().asString(),
+//				gipuzkoa.getOfficialName(),
+//				"Guipúzcoa",
+//				"Gipuzkoa",
+//				euskadi.getId().asString())										
+//				).add(repositoryConnection, NORANamedGraphURI);
+//		
+//		processTowns(gipuzkoa,repositoryConnection,nora,NORANamedGraphURI);
 						
 		repositoryConnection.close();
 		repository.shutDown();
@@ -204,7 +207,7 @@ public class NORA2GRAPHDB {
 						y = portal.getPosition2D().getY();
 					}
 					
-					(new Street(
+					(new Portal(
 							ESCJRURIs.Portal.getURI(), 
 							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
 							portal.getId().asString(), 

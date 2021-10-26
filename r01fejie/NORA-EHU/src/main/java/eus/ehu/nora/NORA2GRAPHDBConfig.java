@@ -10,5 +10,7 @@ public abstract class NORA2GRAPHDBConfig  {
 	public final static String NORAMetadataGraphURI = "http://id.euskadi.eus/graph/NORA-metadata";
 	public final static String MetadataFile = "NORA-metadata.ttl"; // cp ../../../../../datasets/NORA/NORA-metadata.ttl .
 	public final static String LinksFile = "NORA-links.ttl"; // cp ../../../../../datasets/NORA/NORA-links.ttl . 
+	
+	public final static boolean clearGraph = true;
 
 }
