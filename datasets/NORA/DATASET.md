@@ -14,6 +14,10 @@
   * Domain: urbanism-territory
   * ClassName: ESADM (Traducido al inglés)
   * Identifier: NORA-ID (en el caso de municipios, como comparten el mismo ID municipios de diferentes provincias, se añade el ID de la provincia primero)
+* Enlaces a/desde otros datasets:
+  * Directorio (Para ubicacion de entidades y personas, mediante portal)
+* Notas:
+  * Carece de portales (De calles "hacia arriba" en la jerarquia). Cuando se procese directorio, se procesaran los portales necesarios (Los que aparecen en direcotorio)
 
 ## Ontologías
 
@@ -21,7 +25,7 @@ Para más detalles ver archivo `NORA-metadata.ttl`. Ontologias a incluir en trip
 
 * [NORA](nora.ttl). (Importante para consultas transitivas).
 * [Territorio (ESADM)](http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio), incluye GeoSPARQL (Importante para consultas transitivas). (`territorio.owl`).
-* [Callejero] (`callejero.owl.rdf`)
+* [Callejero] (`callejero.owl.rdf`).
 
 ## Consultas SPARQL
 
