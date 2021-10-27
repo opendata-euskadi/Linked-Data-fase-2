@@ -14,6 +14,9 @@
   * Domain: directorio
   * ClassName: ???
   * Identifier: ???
+* Enlaces a/desde otros datasets:
+  * NORA (Para ubicacion de entidades y personas, mediante portal)
+* Notas:
 
 ## Ontologías
 
