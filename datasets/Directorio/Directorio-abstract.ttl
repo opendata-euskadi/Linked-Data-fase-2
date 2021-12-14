@@ -10,3 +10,11 @@ PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX nora: <http://id.euskadi.eus/def/nora#>
+
+############# Persona
+
+# General/Responsable
+
+############# Entidad
+
+############# Equipamiento
