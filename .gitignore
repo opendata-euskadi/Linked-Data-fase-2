@@ -37,3 +37,7 @@ graphdb-silk-docker/graphdb-free-9.7.0-dist.zip
 graphdb-silk-docker/graphdb-data/*
 graphdb-silk-docker/silk-workspace/*
 datasets/Directorio/Core_Vocabularies_v2.0.1/*
+Directorio-ehu/.classpath
+Directorio-ehu/.project
+Directorio-ehu/.settings/org.eclipse.jdt.core.prefs
+Directorio-ehu/.settings/org.eclipse.m2e.core.prefs

@@ -29,4 +29,11 @@ Estos son lo datos que se espera convertir a Linked Data:
 * Datasets Open Data Euskadi. Archivos DCAT(RDF) de DataSets.
 * Datos Normativos en formato ELI (European Legislation Identifier). Datos de LegeGunea en JSON-LD (Obtenido de las páginas web).
 
+## Directorios
 
+Directorios actuales y su contenido:
+
+* `datasets`: datasets procesados, inluyendog ficha, ontologías, ejemplos de RDF, etc.
+* `graphdb-silk-docker`: proyecto docker compose para levantar servicios GraphDB y Silk en local para pruebas de desarrollo.
+* `metadatos`: ejemplo de metadatos en DCAT.
+* `r01fejie`: proyecto Maven para convertir NORA a Linked Data.
