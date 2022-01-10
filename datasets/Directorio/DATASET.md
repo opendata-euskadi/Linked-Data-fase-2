@@ -27,6 +27,10 @@ Posibles ontologías:
 
 * [e-Government core vocabularies](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/release/201)
 
+Ontologias a incluir en triple store:
+
+* [ISA Programme Person Core Vocabulary](http://www.w3.org/ns/person).(`person.ttl`)
+
 Para más detalles ver archivo `Directorio-metadata.ttl`:
 
 * ...

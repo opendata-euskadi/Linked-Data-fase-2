@@ -1,5 +1,6 @@
 
 # Modelo abstracto y provisional de Directorio en RDF
+# Obtenido explorando manualmente https://platea.cms.sandbox.euskadi.eus/directory
 
 PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
 PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
@@ -10,10 +11,33 @@ PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX nora: <http://id.euskadi.eus/def/nora#>
+PREFIX person: <http://www.w3.org/ns/person#>
 
-############# Persona
+############# Persona (En home, filtrar por Persona y recorrer todos; en cada uno, darle a editar y ahí salen los atributos)
 
-# General/Responsable
+# TODO: Cual es al diferencia entre General/Responsable?
+
+# Datos generales
+<http://id.euskadi.eus/public-sector/directorio/person/id-persona> a person:Person ; # TODO: hay algun id interno de directorio para generar id-persona?
+                                                person:birthName "Campo Nombre" ; # TODO: en el programa los apellidos aparecen en el nombre (?)
+                                                rdfs:comment "Campo descripción" ;
+                                                # TODO: rango de vida de persona se refiere a lo que esta en el cargo lo que vive la persona?
+# Catalogación queda fuera
+# TODO: Datos de contacto
+# Curriculum queda fuera
+# Entidades: solo se van a procesar las normalizadas
+                                                relacion_entidad_publica relacion_id # (El id se consigue con el nombre de la relacion y rango de fechas)
+                                                                        relacion_id fecha_comienzo
+                                                                                    fecha_final
+                                                                                    nombre (es, eu)
+                                                                                    descripcion (es, eu)
+                                                                                    legislatura
+                                                                                    # TODO: se podria conseguir el rol (Director etc)? Mucho lio igual
+                                                relacion_partido_politico
+# TODO: Relaciones 
+
+
+
 
 ############# Entidad
 
