@@ -18,7 +18,7 @@ PREFIX person: <http://www.w3.org/ns/person#>
 # TODO: Cual es al diferencia entre General/Responsable?
 
 # Datos generales
-<http://id.euskadi.eus/public-sector/directorio/person/id-persona> a person:Person ; # TODO: hay algun id interno de directorio para generar id-persona?
+<http://id.euskadi.eus/public-sector/directory/person/id-persona> a person:Person ; # TODO: hay algun id interno de directorio para generar id-persona?
                                                 person:birthName "Campo Nombre" ; # TODO: en el programa los apellidos aparecen en el nombre (?)
                                                 rdfs:comment "Campo descripción" ;
                                                 # TODO: rango de vida de persona se refiere a lo que esta en el cargo lo que vive la persona?

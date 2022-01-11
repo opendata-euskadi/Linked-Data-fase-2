@@ -13,7 +13,7 @@
 * Prototipo: `Directorio-abstract.ttl`
 * Patrón de URIs:
   * Sector: public-sector
-  * Domain: directorio
+  * Domain: directory
   * ClassName: ???
   * Identifier: ???
 * Enlaces a/desde otros datasets:
