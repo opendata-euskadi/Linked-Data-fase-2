@@ -1,6 +1,7 @@
 
 # Modelo abstracto y provisional de Directorio en RDF
 # Obtenido explorando manualmente https://platea.cms.sandbox.euskadi.eus/directory
+# (En home, filtrar por persona|entidad|equipamiento y recorrer todos; en cada uno, darle a editar y ahí salen los atributos)
 
 PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
 PREFIX escjr: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
@@ -12,15 +13,17 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX nora: <http://id.euskadi.eus/def/nora#>
 PREFIX person: <http://www.w3.org/ns/person#>
+PREFIX org: <http://www.w3.org/ns/org#> 
 
-############# Persona (En home, filtrar por Persona y recorrer todos; en cada uno, darle a editar y ahí salen los atributos)
+############# Persona 
 
 # TODO: Cual es al diferencia entre General/Responsable?
 
 # Datos generales
-<http://id.euskadi.eus/public-sector/directory/person/id-persona> a person:Person ; # TODO: hay algun id interno de directorio para generar id-persona?
-                                                person:birthName "Campo Nombre" ; # TODO: en el programa los apellidos aparecen en el nombre (?)
-                                                rdfs:comment "Campo descripción" ;
+<http://id.euskadi.eus/public-sector/directory/person/id-persona> a person:Person ; # person:Person es subclase de schema:Person
+# TODO: hay algun id interno de directorio para generar id-persona?
+                                                person:birthName "Nombre" ; # TODO: en el programa los apellidos aparecen en el nombre (?)
+                                                rdfs:comment "Descripción" ;
                                                 # TODO: rango de vida de persona se refiere a lo que esta en el cargo lo que vive la persona?
 # Catalogación queda fuera
 # TODO: Datos de contacto
@@ -37,8 +40,20 @@ PREFIX person: <http://www.w3.org/ns/person#>
 # TODO: Relaciones 
 
 
-
-
 ############# Entidad
+
+# Datos generales
+<http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a org:Organization ; 
+                                                                        a schema:GovernmentOrganization ;
+# TODO: hay algun id interno de directorio para generar id-entidad?
+                                                                        rdfs:label "Nombre de entidad" ;
+                                                                        org:identifier "Nombre corto" ;
+                                                                        rdfs:comment "Descripción de la entidad" ;
+                                                                        schema:foundingDate "rango de vida de la entidad"^^xsd:date ; 
+                                                                        schema:dissolutionDate "rango de vida de la entidad"^^xsd:date ; 
+
+# nivel de organizacion queda fuera
+# Catalogación queda fuera
+# TODO: Datos de contacto
 
 ############# Equipamiento

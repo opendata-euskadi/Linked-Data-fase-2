@@ -14,8 +14,8 @@
 * Patrón de URIs:
   * Sector: public-sector
   * Domain: directory
-  * ClassName: ???
-  * Identifier: ???
+  * ClassName: person
+  * Identifier: alfanumerico de directorio?
 * Enlaces a/desde otros datasets:
   * NORA (Para ubicacion de entidades y personas, mediante portal)
 * Notas:
