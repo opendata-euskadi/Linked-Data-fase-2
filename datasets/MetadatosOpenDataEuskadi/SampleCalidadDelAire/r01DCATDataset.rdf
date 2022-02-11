@@ -1,0 +1,178 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns:j.0="https://purl.org/dc/terms/"
+    xmlns:tema="https://datos.gob.es/kos/sector-publico/sector/"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <dcat:Dataset rdf:about="https://opendata.euskadi.eus/catalogo/-/calidad-aire-en-euskadi-2022/">
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2022-02-11T00:00:00</dct:modified>
+    <dct:references rdf:resource="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2017/es_def/adjuntos/interpretacion-datos-opendata-es.pdf"/>
+    <dcat:keyword xml:lang="es">aire#calidad#contaminaciÃ³n#red vigilancia#</dcat:keyword>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_xlsx.zip">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>XLSX</rdfs:label>
+            <rdf:value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_xlsx.zip</dcat:accessURL>
+        <dct:title xml:lang="es">Diarios y horarios</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:theme rdf:resource="https://datos.gob.es/kos/sector-publico/sector/medio-ambiente"/>
+    <dct:publisher rdf:resource="https://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"/>
+    <dct:identifier>https://opendata.euskadi.eus/catalogo/-/calidad-aire-en-euskadi-2022/</dct:identifier>
+    <dct:references rdf:resource="http://www.ingurumena.ejgv.euskadi.net/informacion/la-red-de-control-de-calidad-del-aire/r49-3614/es/"/>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/estaciones.json">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>JSON</rdfs:label>
+            <rdf:value>application/json</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/estaciones.json</dcat:accessURL>
+        <dct:title xml:lang="es">Estaciones de mediciÃ³n</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/estaciones.csv">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>CSV</rdfs:label>
+            <rdf:value>text/csv</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/estaciones.csv</dcat:accessURL>
+        <dct:title xml:lang="es">Estaciones de mediciÃ³n</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:references rdf:resource="http://www.ingurumena.ejgv.euskadi.eus/r49-aa17a/es/aa17aCalidadAireWar/estacion/mapa?locale=es"/>
+    <dct:accrualPeriodicity>
+      <dct:Frequency>
+        <rdf:value>
+          <time:DurationDescription>
+            <time:hours rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"
+            >1</time:hours>
+            <rdfs:label>Horario</rdfs:label>
+          </time:DurationDescription>
+        </rdf:value>
+      </dct:Frequency>
+    </dct:accrualPeriodicity>
+    <dct:spatial rdf:resource="https://datos.gob.es/recurso/sector-publico/territorio/autonomia/pais-vasco"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dct:temporal>
+      <j.0:PeriodOfTime>
+        <time:hasEnd>
+          <time:Instant>
+            <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2022-02-11T00:00:00</time:inXSDDateTime>
+          </time:Instant>
+        </time:hasEnd>
+        <time:hasBeginning>
+          <time:Instant>
+            <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2022-01-01T00:00:00</time:inXSDDateTime>
+          </time:Instant>
+        </time:hasBeginning>
+        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
+      </j.0:PeriodOfTime>
+    </dct:temporal>
+    <dc:language>es</dc:language>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_indice_csv.zip">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>CSV</rdfs:label>
+            <rdf:value>text/csv</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_indice_csv.zip</dcat:accessURL>
+        <dct:title xml:lang="es">Datos de Ã­ndices de calidad del aire</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_csv.zip">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>CSV</rdfs:label>
+            <rdf:value>text/csv</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_csv.zip</dcat:accessURL>
+        <dct:title xml:lang="es">Diarios y horarios</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:description xml:lang="es">El departamento de Medio Ambiente y PolÃ­tica Territorial del Gobierno Vasco se encarga de controlar y vigilar a travÃ©s de la Red de Control de Calidad del AireÂ los niveles de contaminaciÃ³n en la Comunidad AutÃ³noma Vasca, en cumplimientoÂ de la obligaciÃ³n que tienen las Comunidades AutÃ³nomas de evaluar la calidad del aire en su territorio.Esta Red dispone de analizadores y sensores que miden los contaminantes que marca la normativa en materia de calidad del aire, principalmente diÃ³xido de azufre (SO2), Ã³xidos de nitrÃ³geno (NO y NO2), ozono troposfÃ©rico, monÃ³xido de carbono (CO), benceno y partÃ­culas en suspensiÃ³n (PM10 y PM2.5). AdemÃ¡s se miden parÃ¡metros meteorolÃ³gicos como velocidad y direcciÃ³n del viento, temperatura, humedad relativa, presiÃ³n, radiaciÃ³n y precipitaciÃ³n.La Red de Control de calidad del Aire estÃ¡ integrada por estaciones que se disponen por todo el territorio vasco, actualmente hay 53 estaciones, de las cuales 14 pertenecen a actividades industriales. Estas estaciones permiten medir la contaminaciÃ³n de fondo en condiciones naturales, la calidad del aire en zonas urbanas y tambiÃ©n entornos industriales. De forma general se clasifican segÃºn el Ã¡rea donde estÃ©n; rurales, urbanas o suburbanas y segÃºn el origen de la contaminaciÃ³n que este recogiendo; trÃ¡fico, industria o fondo (cuando es una mezcla de varias fuentes). AdemÃ¡s de estaciones fijas en la Red tambiÃ©n se dispone de equipamientos mÃ³viles para poder realizar campaÃ±as indicativas en diferentes puntos del territorio.Este conjunto de datos pone a tu disposiciÃ³n los datos recogidos por la Red de Control de la Calidad del Aire en formatos reutilizables y actualizados diariamente. AdemÃ¡s, puedes obtener los datos histÃ³ricos de aÃ±os anteriores en el CatÃ¡logo de datos.</dct:description>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/index.json">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>JSON</rdfs:label>
+            <rdf:value>application/json</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/index.json</dcat:accessURL>
+        <dct:title xml:lang="es">Diarios, horarios e Ã­ndices de calidad del aire</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_indice_xlsx.zip">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>XLSX</rdfs:label>
+            <rdf:value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/datos_historicos_indice_xlsx.zip</dcat:accessURL>
+        <dct:title xml:lang="es">Datos de Ã­ndices de calidad del aire</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/estaciones.xlsx">
+        <dct:format>
+          <dct:IMT>
+            <rdfs:label>XLSX</rdfs:label>
+            <rdf:value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >0</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_informes_estudios/calidad_aire_2022/es_def/adjuntos/estaciones.xlsx</dcat:accessURL>
+        <dct:title xml:lang="es">Estaciones de mediciÃ³n</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2022-01-01T00:00:00</dct:issued>
+    <dct:title xml:lang="es">Calidad del aire en Euskadi durante el 2022</dct:title>
+  </dcat:Dataset>
+</rdf:RDF>
