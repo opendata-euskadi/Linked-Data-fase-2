@@ -1,0 +1,67 @@
+<rdf:RDF
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<dcat:Dataset rdf:about="https://opendata.euskadi.eus/catalogo/-/registro-de-contratos-de-ayuntamiento-de-gorliz-del-2019/">
+    <dc:language>es</dc:language>
+    <dct:references rdf:resource="http://www.contratacion.euskadi.eus/w32-2083/es/y46aRevasconWar/consultaContratosC/filtro?locale=es"/>
+    <dct:references rdf:resource="http://www.contratacion.euskadi.eus"/>
+    <dc:language>eu</dc:language>
+    <dct:references rdf:resource="https://www.contratacion.euskadi.eus/w32-1084/es/contenidos/poder_adjudicador/poder360/es_doc/es_arch_poder360.html"/>
+    <dct:identifier>https://opendata.euskadi.eus/catalogo/-/registro-de-contratos-de-ayuntamiento-de-gorliz-del-2019/</dct:identifier>
+    <dcat:distribution>
+      <dcat:Distribution rdf:about="https://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_poder360_2019/es_contracc/adjuntos/doc_contratos_poder360_2019.xlsx">
+        <dct:format>
+          <dct:IMT rdf:about="https://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_poder360_2019/es_contracc/adjuntos/doc_contratos_poder360_2019.xlsx/format/">
+            <rdfs:label>XLSX</rdfs:label>
+            <rdf:value>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</rdf:value>
+          </dct:IMT>
+        </dct:format>
+        <dcat:byteSize rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal"
+        >25467</dcat:byteSize>
+        <dcat:accessURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"
+        >https://opendata.euskadi.eus/contenidos/ds_contrataciones/contratos_poder360_2019/es_contracc/adjuntos/doc_contratos_poder360_2019.xlsx</dcat:accessURL>
+        <dct:title xml:lang="eu">Kontratuak</dct:title>
+        <dct:title xml:lang="es">Contratos</dct:title>
+      </dcat:Distribution>
+    </dcat:distribution>
+    <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2020-02-23T00:00:00</dct:issued>
+    <dct:title xml:lang="es">Registro de contratos de Ayuntamiento de Gorliz del 2019</dct:title>
+    <dcat:theme rdf:resource="https://datos.gob.es/kos/sector-publico/sector/sector-publico"/>
+    <dct:description xml:lang="eu">Sektore Publikoko Kontratuen Erregistroa kontratazio publikoari buruzko informazio-sistema ofizial eta nagusia da eta, ondorioz, kontratazio publikoa ezagutu, aztertu eta ikertzeko, kontratu publikoen alorreko estatistikak egiteko, kontratazio publikoari buruzko nazioko eta nazioarteko betebeharrak betetzeko eta, gardentasun-printzipioari jarraituz, beste administrazio-organo batzuei kontratuei buruzko datuak jakinarazteko euskarria da.</dct:description>
+    <dct:title xml:lang="eu">2019ko Gorlizko Udala Kontratuen Erregistroa</dct:title>
+    <dct:temporal>
+      <time:Interval about="https://opendata.euskadi.eus/catalogo/-/registro-de-contratos-de-ayuntamiento-de-gorliz-del-2019/temporal/">
+        <time:hasEnd>
+          <time:Instant about="https://opendata.euskadi.eus/catalogo/-/registro-de-contratos-de-ayuntamiento-de-gorliz-del-2019/temporal/end/">
+            <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2020-06-22T00:00:00</time:inXSDDateTime>
+          </time:Instant>
+        </time:hasEnd>
+        <time:hasBeginning>
+          <time:Instant about="https://opendata.euskadi.eus/catalogo/-/registro-de-contratos-de-ayuntamiento-de-gorliz-del-2019/temporal/beggining/">
+            <time:inXSDDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"
+            >2020-01-01T00:00:00</time:inXSDDateTime>
+          </time:Instant>
+        </time:hasBeginning>
+        <rdf:type rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+      </time:Interval>
+    </dct:temporal>
+    <dct:description xml:lang="es">El Registro de Contratos del Sector Público constituye el sistema oficial central de información sobre la contratación pública y, como tal, el soporte para el conocimiento, análisis e investigación de la contratación pública, para la estadística en materia de contratos públicos, para el cumplimiento de las obligaciones nacionales e internacionales en materia de información sobre la contratación pública, para las comunicaciones de los datos sobre contratos a otros órganos de la Administración, de conformidad con el principio de transparencia.</dct:description>
+    <dct:spatial rdf:resource="https://datos.gob.es/recurso/sector-publico/territorio/Autonomia/Pais-Vasco"/>
+    <dct:references rdf:resource="https://opendata.euskadi.eus/catalogo/-/registro-de-contratos-de-ayuntamiento-de-gorliz-del-2019/"/>
+    <dct:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcat:theme rdf:resource="https://datos.gob.es/kos/sector-publico/sector/hacienda"/>
+    <dcat:keyword xml:lang="es">contratación administrativa,registro,contratos,revascon,contratos públicos,contrataciones,licitaciones,Ayuntamiento de Gorliz</dcat:keyword>
+    <dct:publisher rdf:resource="https://datos.gob.es/recurso/sector-publico/org/Organismo/A16003011"/>
+    <dcat:keyword xml:lang="eu">kontratuak,erregistroa,revascon,kontratu publikoak,kontratazioak,lizitazioak,kontratazio administratiboak,Gorlizko Udala</dcat:keyword>
+    <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date"
+    >2020-06-22T00:00:00</dct:modified>
+  </dcat:Dataset>
+  </rdf:RDF>
