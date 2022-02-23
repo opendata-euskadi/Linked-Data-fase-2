@@ -55,4 +55,49 @@ WHERE {
 }
 ORDER BY ?date_publication
 ```
+
 https://services.euskadi.eus/graphdb/sparql?name=&infer=true&sameAs=true&query=PREFIX%20eli%3A%3Chttps%3A%2F%2Fdata.europa.eu%2Feli%2Fontology%23%3E%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20xsd%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0A%0ASELECT%20%3Furl%20%3Fdate_publication%0AFROM%20%3Chttp%3A%2F%2Fid.euskadi.eus%2Fgraph%2Fbopv-european-legislation-identifier-eli%3E%0AWHERE%20%7B%0A%09%3FLegalResource%20rdf%3Atype%20eli%3ALegalResource%20.%0A%20%20%20%20%3FLegalResource%20eli%3Ais_about%20%3Chttps%3A%2F%2Fid.euskadi.eus%2Fkos%2Fpublic-sector%2Fsector%2Fsalud%3E%20.%0A%20%20%20%20%3FLegalResource%20eli%3Ais_realized_by%20%3FLegalExpression%20.%0A%20%20%20%20%3Fformat%20eli%3Aembodies%20%3FLegalExpression%20.%0A%20%20%20%20%3Fformat%20eli%3Apublished_in_format%20%3Furl%20.%0A%20%20%20%20%3FLegalResource%20eli%3Adate_publication%20%3Fdate_publication%20.%0A%20%20%20%20FILTER%20(%3Fdate_publication%20%3C%20%222022-01-01%22%5E%5Exsd%3Adate%20%26%26%20%3Fdate_publication%20%3E%20%222021-01-01%22%5E%5Exsd%3Adate)%0A%7D%0AORDER%20BY%20%3Fdate_publication%0A
+
+
+Conjuntos de datos sobre urbanismo:
+
+```sparql
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sector: <https://datos.gob.es/kos/sector-publico/sector/>
+
+SELECT ?dataset ?date_modified
+FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+WHERE { 
+	?dataset rdf:type dcat:Dataset .
+    ?dataset dcat:theme sector:urbanismo-infraestructuras .
+    ?dataset dct:modified ?date_modified .
+    ?dataset dct:description ?description .
+}
+ORDER BY ?date_modified
+```
+
+https://services.euskadi.eus/graphdb/sparql?name=&infer=true&sameAs=true&query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20sector%3A%20%3Chttps%3A%2F%2Fdatos.gob.es%2Fkos%2Fsector-publico%2Fsector%2F%3E%0A%0ASELECT%20%3Fdataset%20%3Fdate_modified%0AFROM%20%3Chttp%3A%2F%2Fid.euskadi.eus%2Fgraph%2FDCATOpenDataEuskadi%3E%0AWHERE%20%7B%20%0A%09%3Fdataset%20rdf%3Atype%20dcat%3ADataset%20.%0A%20%20%20%20%3Fdataset%20dcat%3Atheme%20sector%3Aurbanismo-infraestructuras%20.%0A%20%20%20%20%3Fdataset%20dct%3Amodified%20%3Fdate_modified%20.%0A%20%20%20%20%3Fdataset%20dct%3Adescription%20%3Fdescription%20.%0A%7D%0AORDER%20BY%20%3Fdate_modified%0A
+
+Conjuntos de datos sobre urbanismo que impliquen a una Biosfera:
+
+```sparql
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX sector: <https://datos.gob.es/kos/sector-publico/sector/>
+
+SELECT ?dataset ?date_modified
+FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+WHERE { 
+	?dataset rdf:type dcat:Dataset .
+    ?dataset dcat:theme sector:urbanismo-infraestructuras .
+    ?dataset dct:modified ?date_modified .
+    ?dataset dct:description ?description .
+    FILTER CONTAINS(?description, "Biosfera") .
+}
+ORDER BY ?date_modified
+```
+
+https://services.euskadi.eus/graphdb/sparql?name=&infer=true&sameAs=true&query=PREFIX%20dcat%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0APREFIX%20sector%3A%20%3Chttps%3A%2F%2Fdatos.gob.es%2Fkos%2Fsector-publico%2Fsector%2F%3E%0A%0ASELECT%20%3Fdataset%20%3Fdate_modified%0AFROM%20%3Chttp%3A%2F%2Fid.euskadi.eus%2Fgraph%2FDCATOpenDataEuskadi%3E%0AWHERE%20%7B%20%0A%09%3Fdataset%20rdf%3Atype%20dcat%3ADataset%20.%0A%20%20%20%20%3Fdataset%20dcat%3Atheme%20sector%3Aurbanismo-infraestructuras%20.%0A%20%20%20%20%3Fdataset%20dct%3Amodified%20%3Fdate_modified%20.%0A%20%20%20%20%3Fdataset%20dct%3Adescription%20%3Fdescription%20.%0A%20%20%20%20FILTER%20CONTAINS(%3Fdescription%2C%20%22Biosfera%22)%20.%0A%7D%0AORDER%20BY%20%3Fdate_modified%0A
