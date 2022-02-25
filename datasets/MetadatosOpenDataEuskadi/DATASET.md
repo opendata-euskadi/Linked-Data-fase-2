@@ -106,7 +106,7 @@ WHERE {
 }
 ```
 
-https://services.euskadi.eus/graphdb/sparql?name=&infer=true&sameAs=true&query=PREFIX%20dcat%3A%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdataset%0AFROM%20%3Chttp%3A%2F%2Fid.euskadi.eus%2Fgraph%2FDCATOpenDataEuskadi%3E%0AWHERE%20%7B%20%0A%09%3Fdataset%20rdf%3Atype%20dcat%3ADataset%20.%0A%20%20%20%20%3Fdataset%20dcat%3Akeyword%20%3Fkeywords%20.%0A%20%20%20%20FILTER%20CONTAINS(%3Fkeywords%2C%20%22coronavirus%22)%20.%0A%7D%0A
+URL: https://services.euskadi.eus/graphdb/sparql?name=&infer=true&sameAs=true&query=PREFIX%20dcat%3A%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Fdcat%23%3E%0APREFIX%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX%20dct%3A%20%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Fterms%2F%3E%0A%0ASELECT%20DISTINCT%20%3Fdataset%0AFROM%20%3Chttp%3A%2F%2Fid.euskadi.eus%2Fgraph%2FDCATOpenDataEuskadi%3E%0AWHERE%20%7B%20%0A%09%3Fdataset%20rdf%3Atype%20dcat%3ADataset%20.%0A%20%20%20%20%3Fdataset%20dcat%3Akeyword%20%3Fkeywords%20.%0A%20%20%20%20FILTER%20CONTAINS(%3Fkeywords%2C%20%22coronavirus%22)%20.%0A%7D%0A
 
 ### Temas sobre los que tratan los datasets actualmente disponibles
 
