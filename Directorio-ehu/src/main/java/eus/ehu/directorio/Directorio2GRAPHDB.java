@@ -45,6 +45,7 @@ public class Directorio2GRAPHDB {
 			}
 			catch (Exception e) {
 				System.out.println("Pages out of range: " + e.getMessage());
+				break;
 			}
 		}
 		
