@@ -1,0 +1,100 @@
+{
+  "typeId" : "accountablePerson",
+  "oid" : "7804BBD9-CDBE-4E07-B16A-F9D08287521C",
+  "numericId" : 0,
+  "entityVersion" : 35,
+  "trackingInfo" : {
+    "createDate" : 1608032633000,
+    "creatorUserOid" : "3209a63a-0752-41e2-8fcc-f3746925ffc8",
+    "creatorUserCode" : "admin",
+    "lastUpdate" : 1646904852000,
+    "lastUpdaterUserOid" : "d1af7459-b94e-447e-a9f9-9df2e0c7af46",
+    "lastUpdaterUserCode" : "LGARCIAM"
+  },
+  "id" : "person7804BBD9",
+  "type" : "PERSON",
+  "subType" : "ACCOUNTABLE",
+  "contactInfo" : {
+    "private" : false,
+    "phoneChannels" : [ {
+      "private" : false,
+      "usage" : "WORK",
+      "default" : true,
+      "type" : "NORMAL",
+      "number" : "945018206",
+      "availability" : "[0..23]"
+    } ],
+    "emailChannels" : [ {
+      "private" : false,
+      "usage" : "WORK",
+      "default" : true,
+      "addr" : "a-landa@euskadi.eus"
+    } ],
+    "geoPosition" : {
+      "position2D" : {
+        "standard" : "ETRS89",
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "address" : "<p>Donostia-San Sebastián, 1 - LAKUA</p>\n<p>01010 Vitoria-Gasteiz</p>\n<p>Araba/Álava</p>"
+    }
+  },
+  "inheritDirection" : true,
+  "inheritContact" : false,
+  "images" : [ "801A4885-A591-4D24-BA8F-B1B436E34539" ],
+  "relationsOrdering" : [ {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY",
+    "targetObjSubType" : "PUBLIC_SECTOR",
+    "relations" : [ "DC516A74-87F3-4384-B063-F5C6315733E6" ]
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY"
+  } ],
+  "labelPicks" : [ {
+    "oid" : "D0DCA2BB-22D0-4384-BF33-638702678EF3",
+    "structureOid" : "r01e00000fe4e6676dda470b8deed65c9bfe02f4c/1",
+    "labelOid" : "r01e00000fe4e66771ba470b85e6897e3cbce045d/1",
+    "labelRoleInStructure" : "2",
+    "pickTimeStamp" : 1645784862308
+  }, {
+    "oid" : "DE680B9B-4F9C-495E-943E-74508790D0DF",
+    "structureOid" : "r01etpd17e00e28e111ea6d50fa67b7ed12707291e/1",
+    "labelOid" : "r01e00000ff26d461e3a470b8181621308b9c4fdf/1",
+    "labelRoleInStructure" : "1",
+    "pickTimeStamp" : 1645784862308
+  }, {
+    "oid" : "571B5279-D69E-434D-98CE-27B6F7EF5DE0",
+    "structureOid" : "r01e00000fe4e6676dda470b8deed65c9bfe02f4c/1",
+    "labelOid" : "r01epd0122e4ed314423e0db04c97a47b5baa317f/1",
+    "labelRoleInStructure" : "1",
+    "pickTimeStamp" : 1645784862308
+  }, {
+    "oid" : "89BF3D48-1A4E-48EB-ACB8-82D864EB14FE",
+    "structureOid" : "r01e00000fe4e6676dda470b8deed65c9bfe02f4c/1",
+    "labelOid" : "r01e00000ff26d4661aa470b893fbc5e727f84c92/1",
+    "labelRoleInStructure" : "3",
+    "pickTimeStamp" : 1645784862308
+  } ],
+  "sourceSystems" : [ {
+    "systemId" : "gip",
+    "externalId" : "30624350",
+    "usageId" : "org",
+    "main" : true
+  } ],
+  "importedAt" : 1621241342290,
+  "name" : "Estibaliz Hernaez Laviña",
+  "description" : {
+    "SPANISH" : "<p>Fecha de nombramiento: 06/03/2021</p>",
+    "BASQUE" : "<p>Izendapen-data: 2021/03/06</p>"
+  },
+  "curriculum" : {
+    "abstractByLang" : {
+      "SPANISH" : "<p><a href=\"https://www.irekia.euskadi.eus/uploads/attachments/16355/hernaez_lavi%C3%B1a_estibaliz_es_.pdf\" target=\"_blank\" rel=\"noopener\">Curriculum Vitae</a></p>",
+      "BASQUE" : "<p><a href=\"https://www.irekia.euskadi.eus/uploads/attachments/16356/hernaez_lavi%C3%B1a_estibaliz_eu.pdf\" target=\"_blank\" rel=\"noopener\">Curriculum Vitae</a></p>"
+    }
+  },
+  "positionId" : "102"
+}

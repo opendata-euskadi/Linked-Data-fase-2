@@ -10,6 +10,7 @@ import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 
 import eus.ehu.directorio.graphdb.Util;
+import eus.ehu.directorio.json.AccountablePerson;
 import eus.ehu.directorio.json.JSONParser;
 import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.json.Persons;
@@ -30,12 +31,18 @@ public class Directorio2GRAPHDB {
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-		Persons persons = (new JSONParser()).parsePersons();
-		for (Person person : persons.persons) {
-			System.out.println(person.id + person.description);
-			Util.addLiteralTripleLang(DIRECTORIOBaseURIs.PERSON.getURI() + person.id, RDFS.COMMENT.stringValue(), person.description, "es", namedGraphURI,
-					repositoryConnection);
-			Util.addIRITriple(DIRECTORIOBaseURIs.PERSON.getURI() + person.id, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
-		}
+		
+		AccountablePerson accountableperson = (new JSONParser()).parseAccountablePerson();
+		Util.addIRITriple(DIRECTORIOBaseURIs.PERSON.getURI() + accountableperson.oid, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
+		
+		
+		
+//		Persons persons = (new JSONParser()).parsePersons();
+//		for (Person person : persons.persons) {
+//			System.out.println(person.id + person.description);
+//			Util.addLiteralTripleLang(DIRECTORIOBaseURIs.PERSON.getURI() + person.id, RDFS.COMMENT.stringValue(), person.description, "es", namedGraphURI,
+//					repositoryConnection);
+//			Util.addIRITriple(DIRECTORIOBaseURIs.PERSON.getURI() + person.id, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
+//		}
 	}
 }
