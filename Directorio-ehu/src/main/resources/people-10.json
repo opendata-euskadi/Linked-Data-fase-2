@@ -1,0 +1,207 @@
+{
+  "totalItemsCount" : 176,
+  "startPosition" : 10,
+  "endPosition" : 20,
+  "requestedNumberOfItems" : 10,
+  "filter" : {
+    "uiLanguage" : "SPANISH",
+    "booleanQuery" : {
+      "clauses" : [ {
+        "clause" : {
+          "typeId" : "containedInClause",
+          "forMetaData" : "typeFacets",
+          "spectrum" : [ 111 ]
+        },
+        "occur" : "MUST"
+      }, {
+        "clause" : {
+          "typeId" : "equalsClause",
+          "forMetaData" : "objType",
+          "value" : [ "r01mb.model.directory.R01MDirectoryObjectType", "PERSON" ]
+        },
+        "occur" : "MUST"
+      } ]
+    }
+  },
+  "pageItems" : [ {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "B9A8AF7F-E673-4C76-A388-EAB3D533BA35",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "B9A8AF7F-E673-4C76-A388-EAB3D533BA35",
+      "name" : "Jorge Garbisu Buesa",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646914488644,
+      "_importedAt" : 1621241353068
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "328FDA6C-1917-4879-A529-C565DFE36316",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "328FDA6C-1917-4879-A529-C565DFE36316",
+      "name" : "Javier Aguirre Orcajo",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646916279604,
+      "_importedAt" : 1621241357034
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "6F2A5920-5A40-4C33-B9A6-899D9C68547F",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "6F2A5920-5A40-4C33-B9A6-899D9C68547F",
+      "name" : "Yurdana Burgoa Valtierra",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646919776310,
+      "_importedAt" : 1646129715759
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "9B111516-45AF-4821-AE53-B5C5FD0D91E9",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "9B111516-45AF-4821-AE53-B5C5FD0D91E9",
+      "name" : "Mª Luz Ruiz Melendo",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646919872509,
+      "_importedAt" : 1646129716478
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "95CB600D-12C2-44AB-BBBA-DB462B2670F1",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "95CB600D-12C2-44AB-BBBA-DB462B2670F1",
+      "name" : "Francisco Pedraza Moreno",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646932817406,
+      "_importedAt" : 1621241169091
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "48820877-C3BD-4342-A77E-111035AA468D",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "48820877-C3BD-4342-A77E-111035AA468D",
+      "name" : "Iñaki Aldekogarai Labaka",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646904399665,
+      "_importedAt" : 1621241340556
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "5025ABD2-4D62-4856-80D3-71C5054C4406",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "5025ABD2-4D62-4856-80D3-71C5054C4406",
+      "name" : "Alfonso Gurpegui Ruiz",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646932735048,
+      "_importedAt" : 1621241168467
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "C3FF6186-0A9D-48BC-A8D2-46F5313C5723",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "C3FF6186-0A9D-48BC-A8D2-46F5313C5723",
+      "name" : "Javier Losa Ziganda",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646919976669,
+      "_importedAt" : 1646129718372
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "0086A2DB-2CD9-4ACF-9042-D74250D30318",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "0086A2DB-2CD9-4ACF-9042-D74250D30318",
+      "name" : "Jesus Mari Zubiaga Nieva",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1638173228019,
+      "_importedAt" : 1621241129818
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.person.R01MDirectoryIsPerson",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "5EA15805-A1CB-4DE1-9067-80A072057070",
+    "data" : {
+      "typeId" : "summarizedDirectoryPerson",
+      "oid" : "5EA15805-A1CB-4DE1-9067-80A072057070",
+      "name" : "Amaia Jauregiberri Goenaga",
+      "objectType" : "PERSON",
+      "objectSubType" : "ACCOUNTABLE",
+      "_lastActionDate" : 1646919877558,
+      "_importedAt" : 1646758434167
+    }
+  } ]
+}

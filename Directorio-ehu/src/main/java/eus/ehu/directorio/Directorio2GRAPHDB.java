@@ -10,8 +10,10 @@ import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 
 import eus.ehu.directorio.graphdb.Util;
-import eus.ehu.directorio.json.AccountablePerson;
+import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.json.JSONParser;
+import eus.ehu.directorio.json.People;
+import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.uris.DIRECTORIOBaseURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 
@@ -30,10 +32,32 @@ public class Directorio2GRAPHDB {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
 		
-		AccountablePerson accountableperson = (new JSONParser()).parseAccountablePerson();
-		String accountablepersonURI = DIRECTORIOBaseURIs.PERSON.getURI() + accountableperson.oid;
-		Util.addIRITriple(accountablepersonURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
-		Util.addLiteralTriple(accountablepersonURI, PersonURIs.birthName.getURI(), accountableperson.name, namedGraphURI,repositoryConnection);
+		int itemAt = 0;
+		for (itemAt = 0;; itemAt += 10) {
+			try {
+				People people = (new JSONParser()).parsePeople("https://api.euskadi.eus/directory/people?fromItemAt=" + String.valueOf(itemAt));
+				for (Person person : people.pageItems) {
+					System.out.println(person.oid);
+					Person full_person = (new JSONParser()).parsePerson("https://api.euskadi.eus/directory/people/person/" + person.oid);	
+					System.out.println(full_person.oid);
+					System.out.println(full_person.name);
+				}
+			}
+			catch (Exception e) {
+				System.out.println("Pages out of range: " + e.getMessage());
+			}
+		}
+		
+				
+
+		
+		
+		
+		
+//		AccountablePerson accountableperson = (new JSONParser()).parseAccountablePerson();
+//		String accountablepersonURI = DIRECTORIOBaseURIs.PERSON.getURI() + accountableperson.oid;
+//		Util.addIRITriple(accountablepersonURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
+//		Util.addLiteralTriple(accountablepersonURI, PersonURIs.birthName.getURI(), accountableperson.name, namedGraphURI,repositoryConnection);
 		
 		
 		
