@@ -17,12 +17,11 @@ PREFIX org: <http://www.w3.org/ns/org#>
 
 ############# Persona 
 
-# TODO: Cual es al diferencia entre General/Responsable?
-
 # Datos generales
-<http://id.euskadi.eus/public-sector/directory/person/id-persona> a person:Person ; # person:Person es subclase de schema:Person
-# TODO: hay algun id interno de directorio para generar id-persona?
-                                                person:birthName "Nombre" ; # TODO: en el programa los apellidos aparecen en el nombre (?)
+<http://id.euskadi.eus/public-sector/directory/person/id-persona> # id-pesona = oid
+                                                a person:Person ; # person:Person es subclase de schema:Person
+                                                # TODO: Cual es al diferencia entre General/Responsable? "Accountable" es Responsable? Hay que añadir subtype?       
+                                                person:birthName "Nombre" ;
                                                 rdfs:comment "Descripción" ;
                                                 # TODO: rango de vida de persona se refiere a lo que esta en el cargo lo que vive la persona?
 # Catalogación queda fuera
@@ -45,7 +44,7 @@ PREFIX org: <http://www.w3.org/ns/org#>
 # Datos generales
 <http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a org:Organization ; 
                                                                         a schema:GovernmentOrganization ;
-# TODO: hay algun id interno de directorio para generar id-entidad?
+                                                                        # id-entidad = oid  
                                                                         rdfs:label "Nombre de entidad" ;
                                                                         org:identifier "Nombre corto" ;
                                                                         rdfs:comment "Descripción de la entidad" ;

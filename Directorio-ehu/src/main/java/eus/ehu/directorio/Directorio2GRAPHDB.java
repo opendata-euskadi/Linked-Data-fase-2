@@ -12,8 +12,6 @@ import org.eclipse.rdf4j.repository.manager.RepositoryManager;
 import eus.ehu.directorio.graphdb.Util;
 import eus.ehu.directorio.json.AccountablePerson;
 import eus.ehu.directorio.json.JSONParser;
-import eus.ehu.directorio.json.Person;
-import eus.ehu.directorio.json.Persons;
 import eus.ehu.directorio.uris.DIRECTORIOBaseURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 
@@ -33,7 +31,9 @@ public class Directorio2GRAPHDB {
 		}
 		
 		AccountablePerson accountableperson = (new JSONParser()).parseAccountablePerson();
-		Util.addIRITriple(DIRECTORIOBaseURIs.PERSON.getURI() + accountableperson.oid, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
+		String accountablepersonURI = DIRECTORIOBaseURIs.PERSON.getURI() + accountableperson.oid;
+		Util.addIRITriple(accountablepersonURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
+		Util.addLiteralTriple(accountablepersonURI, PersonURIs.birthName.getURI(), accountableperson.name, namedGraphURI,repositoryConnection);
 		
 		
 		

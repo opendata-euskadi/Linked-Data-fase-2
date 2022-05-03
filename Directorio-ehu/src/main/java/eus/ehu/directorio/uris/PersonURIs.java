@@ -3,7 +3,9 @@ package eus.ehu.directorio.uris;
 public enum PersonURIs {
 	
 	// Classes
-	Person ("Person")
+	Person ("Person"),
+    // Properties
+	birthName ("birthName")
     ; 
 
 	private final String uri_name;
