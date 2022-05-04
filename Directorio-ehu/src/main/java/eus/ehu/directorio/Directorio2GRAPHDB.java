@@ -8,6 +8,8 @@ import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import eus.ehu.directorio.graphdb.Util;
 import eus.ehu.directorio.json.Person;
@@ -18,6 +20,8 @@ import eus.ehu.directorio.uris.DIRECTORIOBaseURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 
 public class Directorio2GRAPHDB {
+	
+	private static Logger logger = LoggerFactory.getLogger(Directorio2GRAPHDB.class);
 
 	public static void main(String[] args) throws IOException {
 		String urlGraphDB = DIRECTORIO2GRAPHDBConfig.urlGraphDB;
@@ -33,18 +37,18 @@ public class Directorio2GRAPHDB {
 		}
 		
 		int itemAt = 0;
-		for (itemAt = 0;; itemAt += 10) {
+		for (;; itemAt += 10) {
 			try {
-				People people = (new JSONParser()).parsePeople("https://api.euskadi.eus/directory/people?fromItemAt=" + String.valueOf(itemAt));
+				People people = (new JSONParser()).parsePeople(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_PEOPLE + String.valueOf(itemAt));
 				for (Person person : people.pageItems) {
-					System.out.println(person.oid);
-					Person full_person = (new JSONParser()).parsePerson("https://api.euskadi.eus/directory/people/person/" + person.oid);	
-					System.out.println(full_person.oid);
-					System.out.println(full_person.name);
+					Person full_person = (new JSONParser()).parsePerson(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_PERSON + person.oid);	
+					String personURI = DIRECTORIOBaseURIs.PERSON.getURI() + full_person.oid;
+					Util.addIRITriple(personURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
+					Util.addLiteralTriple(personURI, PersonURIs.birthName.getURI(), full_person.name, namedGraphURI, repositoryConnection);
 				}
 			}
-			catch (Exception e) {
-				System.out.println("Pages out of range: " + e.getMessage());
+			catch (IOException e) {
+				logger.info("Pages out of range: " + e.getMessage());
 				break;
 			}
 		}
