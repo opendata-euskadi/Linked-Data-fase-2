@@ -1,6 +1,5 @@
 package eus.ehu.directorio.json;
 
-public class Person {
-	public String oid;
+public class Person extends JSONitem{
 	public String name;
 }

@@ -13,38 +13,49 @@ import org.slf4j.LoggerFactory;
 
 import eus.ehu.directorio.graphdb.Util;
 import eus.ehu.directorio.json.Person;
+import eus.ehu.directorio.json.Entity;
+import eus.ehu.directorio.json.Equipment;
+import eus.ehu.directorio.json.JSONCollection;
 import eus.ehu.directorio.json.JSONParser;
-import eus.ehu.directorio.json.People;
+import eus.ehu.directorio.json.JSONitem;
 import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.uris.DIRECTORIOBaseURIs;
+import eus.ehu.directorio.uris.EuskadiURIs;
 import eus.ehu.directorio.uris.PersonURIs;
+import eus.ehu.directorio.uris.SchemaURIs;
 
 public class Directorio2GRAPHDB {
 	
 	private static Logger logger = LoggerFactory.getLogger(Directorio2GRAPHDB.class);
+	
+	static String urlGraphDB = DIRECTORIO2GRAPHDBConfig.urlGraphDB;
+	static String graphDBrepoName = DIRECTORIO2GRAPHDBConfig.graphDBDIRECTORIOrepoName;
+	static String namedGraphURI = DIRECTORIO2GRAPHDBConfig.DIRECTORIONamedGraphURI;
+	static RepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
+	static Repository repository = repositoryManager.getRepository(graphDBrepoName);
+	static RepositoryConnection repositoryConnection = repository.getConnection();
 
-	public static void main(String[] args) throws IOException {
-		String urlGraphDB = DIRECTORIO2GRAPHDBConfig.urlGraphDB;
-		String graphDBrepoName = DIRECTORIO2GRAPHDBConfig.graphDBDIRECTORIOrepoName;
-		String namedGraphURI = DIRECTORIO2GRAPHDBConfig.DIRECTORIONamedGraphURI;
-		
-		RepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
-		Repository repository = repositoryManager.getRepository(graphDBrepoName);
-		RepositoryConnection repositoryConnection = repository.getConnection();
-		
+	public static void main(String[] args) throws IOException {		
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-		
+		processPeople ();
+		processEntities ();
+		processEquipments ();
+
+	}
+	
+	private static void processPeople () {
 		int itemAt = 0;
 		for (;; itemAt += 10) {
 			try {
-				People people = (new JSONParser()).parsePeople(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_PEOPLE + String.valueOf(itemAt));
-				for (Person person : people.pageItems) {
-					Person full_person = (new JSONParser()).parsePerson(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_PERSON + person.oid);	
-					String personURI = DIRECTORIOBaseURIs.PERSON.getURI() + full_person.oid;
+				String api_call_url = DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_PEOPLE + String.valueOf(itemAt);
+				JSONCollection json_collection = (new JSONParser()).parseJSONCollection(api_call_url);
+				for (JSONitem item : json_collection.pageItems) {
+					Person person = (Person) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_PERSON + item.oid, new Person());
+					String personURI = DIRECTORIOBaseURIs.PERSON.getURI() + person.oid;
 					Util.addIRITriple(personURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
-					Util.addLiteralTriple(personURI, PersonURIs.birthName.getURI(), full_person.name, namedGraphURI, repositoryConnection);
+					Util.addLiteralTriple(personURI, PersonURIs.birthName.getURI(), person.name, namedGraphURI, repositoryConnection);
 				}
 			}
 			catch (IOException e) {
@@ -52,26 +63,44 @@ public class Directorio2GRAPHDB {
 				break;
 			}
 		}
-		
-				
+	}
+	
+	private static void processEntities () {
+		int itemAt = 0;
+		for (;; itemAt += 10) {
+			try {
+				String api_call_url = DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITIES + String.valueOf(itemAt);
+				JSONCollection json_collection = (new JSONParser()).parseJSONCollection(api_call_url);
+				for (JSONitem item : json_collection.pageItems) {
+					Entity entity = (Entity) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid, new Entity ());	
+					String entityURI = DIRECTORIOBaseURIs.ENTITY.getURI() + entity.oid;
+					Util.addIRITriple(entityURI, RDF.TYPE.stringValue(), SchemaURIs.GovernmentOrganization.getURI(), namedGraphURI, repositoryConnection);
+				}
+			}
+			catch (IOException e) {
+				logger.info("Pages out of range: " + e.getMessage());
+				break;
+			}
+		}
+	}
+	
+	private static void processEquipments () {
+		int itemAt = 0;
+		for (;; itemAt += 10) {
+			try {
+				String api_call_url = DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_EQUIPMENTS + String.valueOf(itemAt);
+				JSONCollection json_collection = (new JSONParser()).parseJSONCollection(api_call_url);
+				for (JSONitem item : json_collection.pageItems) {
+					Equipment equipment = (Equipment) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_EQUIPMENT + item.oid, new Equipment ());	
+					String equipmentURI = DIRECTORIOBaseURIs.EQUIPMENT.getURI() + equipment.oid;
+					Util.addIRITriple(equipmentURI, RDF.TYPE.stringValue(), EuskadiURIs.Equipment.getURI(), namedGraphURI, repositoryConnection);
+				}
+			}
+			catch (IOException e) {
+				logger.info("Pages out of range: " + e.getMessage());
+				break;
+			}
+		}
 
-		
-		
-		
-		
-//		AccountablePerson accountableperson = (new JSONParser()).parseAccountablePerson();
-//		String accountablepersonURI = DIRECTORIOBaseURIs.PERSON.getURI() + accountableperson.oid;
-//		Util.addIRITriple(accountablepersonURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
-//		Util.addLiteralTriple(accountablepersonURI, PersonURIs.birthName.getURI(), accountableperson.name, namedGraphURI,repositoryConnection);
-		
-		
-		
-//		Persons persons = (new JSONParser()).parsePersons();
-//		for (Person person : persons.persons) {
-//			System.out.println(person.id + person.description);
-//			Util.addLiteralTripleLang(DIRECTORIOBaseURIs.PERSON.getURI() + person.id, RDFS.COMMENT.stringValue(), person.description, "es", namedGraphURI,
-//					repositoryConnection);
-//			Util.addIRITriple(DIRECTORIOBaseURIs.PERSON.getURI() + person.id, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
-//		}
 	}
 }

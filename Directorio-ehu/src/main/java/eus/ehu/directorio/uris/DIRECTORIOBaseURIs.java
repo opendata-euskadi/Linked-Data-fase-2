@@ -2,7 +2,9 @@ package eus.ehu.directorio.uris;
 
 public enum DIRECTORIOBaseURIs {
 	
-    PERSON ("person/")
+    PERSON ("person/"),
+    ENTITY ("organization/"),
+    EQUIPMENT ("equipment/")
     ; 
 
 	private final String uri_name;
