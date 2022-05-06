@@ -197,29 +197,29 @@ public class NORA2GRAPHDB {
 						y)
 				).add(repositoryConnection, NORANamedGraphURI);
 								
-				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, locality.getLocalityId(), calle.getId());
-				for (GeoPortal portal : portales) {
-					
-					double x_portal = 0.0;
-					double y_portal = 0.0;
-					if(portal.getPosition2D() != null) {
-						x = portal.getPosition2D().getX();
-						y = portal.getPosition2D().getY();
-					}
-					
-					(new Portal(
-							ESCJRURIs.Portal.getURI(), 
-							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
-							portal.getId().asString(), 
-							portal.getOfficialName(), 
-							portal.getNameIn(Language.SPANISH), 
-							portal.getNameIn(Language.BASQUE),
-							calle.getId().asString(), 
-							x_portal, 
-							y_portal)
-					).add(repositoryConnection, NORANamedGraphURI);
-					
-				}
+//				Collection <GeoPortal> portales = nora.getServicesForPortal().getPortalsOf(NORAGeoIDs.EUSKADI, NORAGeoIDs.BIZKAIA, NORAGeoIDs.BILBAO, locality.getLocalityId(), calle.getId());
+//				for (GeoPortal portal : portales) {
+//					
+//					double x_portal = 0.0;
+//					double y_portal = 0.0;
+//					if(portal.getPosition2D() != null) {
+//						x = portal.getPosition2D().getX();
+//						y = portal.getPosition2D().getY();
+//					}
+//					
+//					(new Portal(
+//							ESCJRURIs.Portal.getURI(), 
+//							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
+//							portal.getId().asString(), 
+//							portal.getOfficialName(), 
+//							portal.getNameIn(Language.SPANISH), 
+//							portal.getNameIn(Language.BASQUE),
+//							calle.getId().asString(), 
+//							x_portal, 
+//							y_portal)
+//					).add(repositoryConnection, NORANamedGraphURI);
+//					
+//				}
 			}
 		}
 	}

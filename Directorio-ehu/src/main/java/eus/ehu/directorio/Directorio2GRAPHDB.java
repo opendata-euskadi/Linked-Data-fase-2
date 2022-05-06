@@ -27,6 +27,8 @@ import eus.ehu.directorio.uris.EuskadiURIs;
 import eus.ehu.directorio.uris.OrganizationURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 import eus.ehu.directorio.uris.SchemaURIs;
+import eus.ehu.directorio.uris.ESCJRURIs;
+import eus.ehu.directorio.uris.NORABaseURIs;
 
 public class Directorio2GRAPHDB {
 	
@@ -43,9 +45,9 @@ public class Directorio2GRAPHDB {
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-		processPeople ();
-		processEntities ();
-//		processEquipments ();
+//		processPeople ();
+//		processEntities ();
+		processEquipments ();
 
 	}
 	
@@ -113,17 +115,30 @@ public class Directorio2GRAPHDB {
 					String equipmentURI = DIRECTORIOBaseURIs.EQUIPMENT.getURI() + equipment.oid;
 					Util.addIRITriple(equipmentURI, RDF.TYPE.stringValue(), EuskadiURIs.Equipment.getURI(), namedGraphURI, repositoryConnection);
 					
-					Util.addLiteralTripleLang(equipmentURI, RDFS.LABEL.stringValue(), equipment.name.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(equipmentURI, RDFS.LABEL.stringValue(), equipment.name.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(equipmentURI, RDFS.LABEL.stringValue(), equipment.name.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(equipmentURI, RDFS.LABEL.stringValue(), equipment.name.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					
+//					Util.addLiteralTripleLang(equipmentURI, OrganizationURIs.identifier.getURI(), equipment.shortName.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(equipmentURI, OrganizationURIs.identifier.getURI(), equipment.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					
+//					Util.addLiteralTripleLang(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
 					
-					Util.addLiteralTripleLang(equipmentURI, OrganizationURIs.identifier.getURI(), equipment.shortName.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(equipmentURI, OrganizationURIs.identifier.getURI(), equipment.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
 					
-					Util.addLiteralTripleLang(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					processRelations(equipment, "ENTITY", equipmentURI, "locationOf");
+					
+					logger.info(equipment.contactInfo.geoPosition.portal.get("oid"));
+					logger.info(equipment.contactInfo.geoPosition.street.get("oid"));
 					
 					
-					processRelations(equipment, "ENTITY", equipmentURI, "locationOf");
+
+					
+//					Util.addIRITriple(
+//							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
+//							ESCJRURIs.viaProp.getURI(),
+//							NORABaseURIs.STREET.getURI() + streetID, 
+//							namedGraphURI, 
+//							repositoryConnection);
 				}
 			}
 			catch (IOException e) {
