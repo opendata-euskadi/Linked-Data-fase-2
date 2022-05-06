@@ -1,10 +1,12 @@
 package eus.ehu.directorio.json;
 
 import java.util.List;
+import java.util.Map;
 
 public class JSONitem {
 	public String oid;
 	public List<Relation> relationsOrdering;
+	public Map<String, String> description;
 }
 
 

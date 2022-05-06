@@ -22,6 +22,7 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                 a person:Person ; # person:Person es subclase de schema:Person
                                                 # TODO: Cual es al diferencia entre General/Responsable? "Accountable" es Responsable? Hay que añadir subtype?       
                                                 person:birthName "Nombre" ;
+                                                rdfs:comment "Description"@es|eu ;
 
                                                 schema:memberOf <entidad> ;
 
@@ -41,13 +42,9 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                                         a schema:GovernmentOrganization ;
                                                                         # id-entidad = oid  
                                                                         rdfs:label "Nombre de entidad"@es|@eu ;
-
-
-
-
-
+                                                                        rdfs:comment "Description"@es|eu ;
                                                                         org:identifier "Nombre corto" ;
-                                                                        rdfs:comment "Descripción de la entidad" ;
+                                                                        
 
 
 
@@ -61,4 +58,5 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
 
 ############# Equipamiento
 
-<http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a eus_dir:Equipment .
+<http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a eus_dir:Equipment ;
+                                                                        rdfs:comment "Description"@es|eu ;
