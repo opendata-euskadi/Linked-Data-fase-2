@@ -18,35 +18,25 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
 
 ############# Persona 
 
-# Datos generales
 <http://id.euskadi.eus/public-sector/directory/person/id-persona> # id-pesona = oid
                                                 a person:Person ; # person:Person es subclase de schema:Person
                                                 # TODO: Cual es al diferencia entre General/Responsable? "Accountable" es Responsable? Hay que añadir subtype?       
                                                 person:birthName "Nombre" ;
 
+                                                schema:memberOf <entidad> ;
 
 
 
-                                                rdfs:comment "Descripción" ;
-                                                # TODO: rango de vida de persona se refiere a lo que esta en el cargo lo que vive la persona?
-# Catalogación queda fuera
-# TODO: Datos de contacto
-# Curriculum queda fuera
-# Entidades: solo se van a procesar las normalizadas
-                                                relacion_entidad_publica relacion_id # (El id se consigue con el nombre de la relacion y rango de fechas)
-                                                                        relacion_id fecha_comienzo
-                                                                                    fecha_final
-                                                                                    nombre (es, eu)
-                                                                                    descripcion (es, eu)
-                                                                                    legislatura
-                                                                                    # TODO: se podria conseguir el rol (Director etc)? Mucho lio igual
-                                                relacion_partido_politico
-# TODO: Relaciones 
 
+                                                # TODO: contactInfo
+                                                # TODO: description
+                                                # TODO: curriculum
+
+
+                                                # labelpicks queda fuera
 
 ############# Entidad
 
-# Datos generales
 <http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a org:Organization ; 
                                                                         a schema:GovernmentOrganization ;
                                                                         # id-entidad = oid  
@@ -67,11 +57,8 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                                         schema:foundingDate "rango de vida de la entidad"^^xsd:date ; 
                                                                         schema:dissolutionDate "rango de vida de la entidad"^^xsd:date ; 
 
-# nivel de organizacion queda fuera
-# Catalogación queda fuera
-# TODO: Datos de contacto
+
 
 ############# Equipamiento
 
-# Datos generales
 <http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a eus_dir:Equipment .

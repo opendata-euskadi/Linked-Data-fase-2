@@ -4,6 +4,7 @@ public enum SchemaURIs {
 	
 	// Properties
 	identifier ("identifier"),
+	memberOf ("memberOf"),
 	// Classes
 	GovernmentOrganization ("GovernmentOrganization")
     ; 

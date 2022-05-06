@@ -44,7 +44,7 @@ public class Directorio2GRAPHDB {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
 		processPeople ();
-//		processEntities ();
+		processEntities ();
 //		processEquipments ();
 
 	}
@@ -60,15 +60,7 @@ public class Directorio2GRAPHDB {
 					String personURI = DIRECTORIOBaseURIs.PERSON.getURI() + person.oid;
 					Util.addIRITriple(personURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
 					Util.addLiteralTriple(personURI, PersonURIs.birthName.getURI(), person.name, namedGraphURI, repositoryConnection);
-
-					Iterator relationOrderintIterator = person.relationsOrdering.iterator();
-					while (relationOrderintIterator.hasNext()) {
-						Relation relation = (Relation) relationOrderintIterator.next();
-						if (relation.relations != null) {
-							logger.info(relation.relations.get(0));
-							logger.info(relation.targetObjType);
-						}
-					}
+					processRelations(person, "ENTITY", personURI, SchemaURIs.memberOf.getURI());
 				}
 			}
 			catch (IOException e) {
@@ -88,14 +80,17 @@ public class Directorio2GRAPHDB {
 					Entity entity = (Entity) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid, new Entity ());	
 					String entityURI = DIRECTORIOBaseURIs.ENTITY.getURI() + entity.oid;
 					Util.addIRITriple(entityURI, RDF.TYPE.stringValue(), SchemaURIs.GovernmentOrganization.getURI(), namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(entityURI, RDFS.LABEL.stringValue(), entity.name.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(entityURI, RDFS.LABEL.stringValue(), entity.name.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(entityURI, RDFS.LABEL.stringValue(), entity.name.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(entityURI, RDFS.LABEL.stringValue(), entity.name.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					
+//					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					
+//					Util.addLiteralTripleLang(entityURI, RDFS.COMMENT.stringValue(), entity.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
+//					Util.addLiteralTripleLang(entityURI, RDFS.COMMENT.stringValue(), entity.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
 					
-					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
-					
-					Util.addLiteralTripleLang(entityURI, RDFS.COMMENT.stringValue(), entity.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(entityURI, RDFS.COMMENT.stringValue(), entity.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+//					processRelations(entity, "ENTITY", entityURI, "partOf");
+//					processRelations(entity, "PERSON", entityURI, "organizationOf");
 				}
 			}
 			catch (IOException e) {
@@ -115,6 +110,7 @@ public class Directorio2GRAPHDB {
 					Equipment equipment = (Equipment) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_EQUIPMENT + item.oid, new Equipment ());	
 					String equipmentURI = DIRECTORIOBaseURIs.EQUIPMENT.getURI() + equipment.oid;
 					Util.addIRITriple(equipmentURI, RDF.TYPE.stringValue(), EuskadiURIs.Equipment.getURI(), namedGraphURI, repositoryConnection);
+					processRelations(equipment, "ENTITY", equipmentURI, "locationOf");
 				}
 			}
 			catch (IOException e) {
@@ -123,5 +119,21 @@ public class Directorio2GRAPHDB {
 			}
 		}
 
+	}
+	
+	private static void processRelations (JSONitem jsonitem, String itemtype, String sbj, String predicate) {
+		Iterator <Relation> relationOrderintIterator = jsonitem.relationsOrdering.iterator();
+		while (relationOrderintIterator.hasNext()) {
+			Relation relation = relationOrderintIterator.next();
+			if (relation.relations != null) {
+				if(relation.targetObjType.equals(itemtype)) {
+					Iterator <String> relationValueIterator = relation.relations.iterator();
+					while (relationValueIterator.hasNext()) {
+						String obj = relationValueIterator.next();
+						Util.addIRITriple(sbj, predicate, DIRECTORIOBaseURIs.ENTITY.getURI() + obj, namedGraphURI, repositoryConnection);
+					}
+				}
+			}
+		}
 	}
 }
