@@ -130,15 +130,15 @@ public class Directorio2GRAPHDB {
 					logger.info(equipment.contactInfo.geoPosition.portal.get("oid"));
 					logger.info(equipment.contactInfo.geoPosition.street.get("oid"));
 					
-					
-
-					
-//					Util.addIRITriple(
-//							NORABaseURIs.DOORWAY.getURI() + portal.getId().asString(), 
-//							ESCJRURIs.viaProp.getURI(),
-//							NORABaseURIs.STREET.getURI() + streetID, 
-//							namedGraphURI, 
-//							repositoryConnection);
+					String portal_oid = equipment.contactInfo.geoPosition.portal.get("oid");
+					String street_oid = equipment.contactInfo.geoPosition.street.get("oid");
+										
+					Util.addIRITriple(
+							NORABaseURIs.DOORWAY.getURI() + portal_oid, 
+							ESCJRURIs.viaProp.getURI(),
+							NORABaseURIs.STREET.getURI() + street_oid, 
+							namedGraphURI, 
+							repositoryConnection);
 				}
 			}
 			catch (IOException e) {
