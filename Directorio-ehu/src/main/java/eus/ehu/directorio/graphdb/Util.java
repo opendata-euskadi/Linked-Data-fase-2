@@ -39,8 +39,10 @@ public abstract class Util {
 	public static void addLiteralTripleLang (String s, String p, String o, String lang, String namedGraph, RepositoryConnection connection) {
 		IRI sub= Values.iri(s);
 		IRI pred = Values.iri(p);
-		Literal obj = Values.literal(o,lang);
-		IRI namedgraphIRI = Values.iri(namedGraph);
-		connection.add(sub, pred, obj, namedgraphIRI);
+		if (o != null) {
+			Literal obj = Values.literal(o,lang);
+			IRI namedgraphIRI = Values.iri(namedGraph);
+			connection.add(sub, pred, obj, namedgraphIRI);
+		}
 	}
 }
