@@ -22,19 +22,23 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                 a person:Person ; # person:Person es subclase de schema:Person
                                                 # TODO: Cual es al diferencia entre General/Responsable? "Accountable" es Responsable? Hay que añadir subtype?       
                                                 person:birthName "Nombre" ;
-                                                rdfs:comment "Description"@es|eu ;
+                                                rdfs:comment "Description"@es|@eu ;
+                                                eus_dir:curriculum "curriculum"@es|@eu;
 
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
                                                 schema:memberOf <entidad> ;
 
 
 
 
-                                                # TODO: contactInfo
-                                                # TODO: description
-                                                # TODO: curriculum
+                                             
 
 
-                                                # labelpicks queda fuera
 
 ############# Entidad
 
@@ -58,5 +62,6 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
 
 ############# Equipamiento
 
-<http://id.euskadi.eus/public-sector/directory/organization/id-entidad> a eus_dir:Equipment ;
+<http://id.euskadi.eus/public-sector/directory/equipment/id-entidad> a eus_dir:Equipment ;
                                                                         rdfs:comment "Description"@es|eu ;
+                                                                        escjr:via uri-calle-NORA;

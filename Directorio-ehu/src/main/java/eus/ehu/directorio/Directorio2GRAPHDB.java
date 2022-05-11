@@ -150,19 +150,19 @@ public class Directorio2GRAPHDB {
 
 	}
 	
-	private static void processRelations (JSONitem jsonitem, String itemtype, String sbj, String predicate) {
-		Iterator <Relation> relationOrderintIterator = jsonitem.relationsOrdering.iterator();
-		while (relationOrderintIterator.hasNext()) {
-			Relation relation = relationOrderintIterator.next();
-			if (relation.relations != null) {
-				if(relation.targetObjType.equals(itemtype)) {
-					Iterator <String> relationValueIterator = relation.relations.iterator();
-					while (relationValueIterator.hasNext()) {
-						String obj = relationValueIterator.next();
-						Util.addIRITriple(sbj, predicate, DIRECTORIOBaseURIs.ENTITY.getURI() + obj, namedGraphURI, repositoryConnection);
-					}
-				}
-			}
-		}
-	}
+//	private static void processRelations (JSONitem jsonitem, String itemtype, String sbj, String predicate) {
+//		Iterator <Relation> relationOrderintIterator = jsonitem.relationsOrdering.iterator();
+//		while (relationOrderintIterator.hasNext()) {
+//			Relation relation = relationOrderintIterator.next();
+//			if (relation.relations != null) {
+//				if(relation.targetObjType.equals(itemtype)) {
+//					Iterator <String> relationValueIterator = relation.relations.iterator();
+//					while (relationValueIterator.hasNext()) {
+//						String obj = relationValueIterator.next();
+//						Util.addIRITriple(sbj, predicate, DIRECTORIOBaseURIs.ENTITY.getURI() + obj, namedGraphURI, repositoryConnection);
+//					}
+//				}
+//			}
+//		}
+//	}
 }
