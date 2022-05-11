@@ -24,22 +24,12 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                 person:birthName "Nombre" ;
                                                 rdfs:comment "Description"@es|@eu ;
                                                 eus_dir:curriculum "curriculum"@es|@eu;
-                                                schema:address "address"
-
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                
-                                                schema:memberOf <entidad> ;
-
-
-
-
-                                             
-
-
+                                                schema:address "address";
+                                                schema:telephone "telephone";
+                                                schema:telephone "email";   
+                                                geo:xETRS89 "x"^^xsd:double ;
+                                                geo:yETRS89 "y"^^xsd:double ;                                 
+                                                schema:memberOf <entidad> .
 
 ############# Entidad
 
@@ -49,15 +39,13 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                                         rdfs:label "Nombre de entidad"@es|@eu ;
                                                                         rdfs:comment "Description"@es|eu ;
                                                                         org:identifier "Nombre corto" ;
-                                                                        
+                                                                        schema:telephone "telephone";
+                                                                        schema:telephone "email";   
+                                                                        geo:xETRS89 "x"^^xsd:double ;
+                                                                        geo:yETRS89 "y"^^xsd:double ; 
 
-
-
-
-
-                                                                        
-                                                                        schema:foundingDate "rango de vida de la entidad"^^xsd:date ; 
-                                                                        schema:dissolutionDate "rango de vida de la entidad"^^xsd:date ; 
+                                                                        # schema:foundingDate "rango de vida de la entidad"^^xsd:date ; 
+                                                                        # schema:dissolutionDate "rango de vida de la entidad"^^xsd:date ; 
 
 
 
@@ -66,5 +54,7 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
 <http://id.euskadi.eus/public-sector/directory/equipment/id-entidad> a eus_dir:Equipment ;
                                                                         rdfs:comment "Description"@es|eu ;
                                                                         escjr:via uri-calle-NORA ;
+                                                                        schema:telephone "telephone";
+                                                                        schema:telephone "email";   
                                                                         geo:xETRS89 "x"^^xsd:double ;
-                                                                        geo:yETRS89 "y"^^xsd:double ;
+                                                                        geo:yETRS89 "y"^^xsd:double ; 

@@ -17,8 +17,10 @@ import org.slf4j.LoggerFactory;
 
 import eus.ehu.directorio.graphdb.Util;
 import eus.ehu.directorio.json.Person;
+import eus.ehu.directorio.json.PhoneChannel;
 import eus.ehu.directorio.json.Relation;
 import eus.ehu.directorio.json.AbstractByLang;
+import eus.ehu.directorio.json.EmailChannel;
 import eus.ehu.directorio.json.Entity;
 import eus.ehu.directorio.json.Equipment;
 import eus.ehu.directorio.json.JSONCollection;
@@ -49,9 +51,9 @@ public class Directorio2GRAPHDB {
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-		processPeople ();
+//		processPeople ();
 //		processEntities ();
-//		processEquipments ();
+		processEquipments ();
 
 	}
 	
@@ -80,15 +82,7 @@ public class Directorio2GRAPHDB {
 						Util.addLiteralTriple(personURI, SchemaURIs.address.getURI(), addrss.replaceAll("<.*?>", ""), namedGraphURI, repositoryConnection);
 					}
 					
-					logger.info(item.oid);
-					if (person.contactInfo.geoPosition.position2D != null) {
-						Util.addLiteralTriple(personURI, GeoURIs.xETRS89.getURI(), person.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
-						Util.addLiteralTriple(personURI, GeoURIs.yETRS89.getURI(), person.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
-					}
-					
-
-
-
+					processContactInfo (person,personURI);
 					
 //					processRelations(person, "ENTITY", personURI, SchemaURIs.memberOf.getURI());
 				}
@@ -116,6 +110,7 @@ public class Directorio2GRAPHDB {
 					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
 					processDescription(entityURI, entity.description.get("SPANISH"),"es");
 					processDescription(entityURI, entity.description.get("BASQUE"),"eu");
+					processContactInfo(entity, entityURI);
 										
 //					processRelations(entity, "ENTITY", entityURI, "partOf");
 //					processRelations(entity, "PERSON", entityURI, "organizationOf");
@@ -157,9 +152,8 @@ public class Directorio2GRAPHDB {
 							NORABaseURIs.STREET.getURI() + street_oid, 
 							namedGraphURI, 
 							repositoryConnection);
-					
-					Util.addLiteralTriple(equipmentURI, GeoURIs.xETRS89.getURI(), equipment.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
-					Util.addLiteralTriple(equipmentURI, GeoURIs.yETRS89.getURI(), equipment.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
+										
+					processContactInfo(equipment, equipmentURI);
 					
 //					processRelations(equipment, "ENTITY", equipmentURI, "locationOf");
 				}
@@ -187,6 +181,26 @@ public class Directorio2GRAPHDB {
 //			}
 //		}
 //	}
+	
+	private static void processContactInfo(JSONitem item, String itemURI) {
+		if (item.contactInfo.geoPosition.position2D != null) {
+			Util.addLiteralTriple(itemURI, GeoURIs.xETRS89.getURI(), item.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
+			Util.addLiteralTriple(itemURI, GeoURIs.yETRS89.getURI(), item.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
+		}
+		
+		if (item.contactInfo.phoneChannels != null) {
+			for (PhoneChannel phonechannel : item.contactInfo.phoneChannels) {
+				Util.addLiteralTriple(itemURI, SchemaURIs.telephone.getURI(), phonechannel.number, namedGraphURI, repositoryConnection);
+			}
+		}
+		
+		if (item.contactInfo.emailChannels != null) {
+			for (EmailChannel emailchannel : item.contactInfo.emailChannels) {
+				Util.addLiteralTriple(itemURI, SchemaURIs.email.getURI(), emailchannel.addr, namedGraphURI, repositoryConnection);
+			}
+		}
+		
+	}
 	
 	private static void processDescription(String item_uri, String descr, String lang) {
 		if (descr != null) {

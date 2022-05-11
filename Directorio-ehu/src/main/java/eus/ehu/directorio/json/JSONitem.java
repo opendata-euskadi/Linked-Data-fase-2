@@ -7,6 +7,7 @@ public class JSONitem {
 	public String oid;
 	public List<Relation> relationsOrdering;
 	public Map<String, String> description;
+	public ContactInfo contactInfo;
 }
 
 

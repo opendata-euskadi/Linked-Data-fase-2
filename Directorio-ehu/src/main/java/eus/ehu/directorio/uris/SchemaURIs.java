@@ -6,6 +6,8 @@ public enum SchemaURIs {
 	identifier ("identifier"),
 	memberOf ("memberOf"),
 	address ("address"),
+	telephone ("telephone"),
+	email ("email"),
 	// Classes
 	GovernmentOrganization ("GovernmentOrganization")
     ; 
