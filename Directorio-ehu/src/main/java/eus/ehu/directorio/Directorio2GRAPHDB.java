@@ -49,9 +49,9 @@ public class Directorio2GRAPHDB {
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-//		processPeople ();
+		processPeople ();
 //		processEntities ();
-		processEquipments ();
+//		processEquipments ();
 
 	}
 	
@@ -80,8 +80,13 @@ public class Directorio2GRAPHDB {
 						Util.addLiteralTriple(personURI, SchemaURIs.address.getURI(), addrss.replaceAll("<.*?>", ""), namedGraphURI, repositoryConnection);
 					}
 					
-//					Util.addLiteralTriple(personURI, GeoURIs.xETRS89.getURI(), person.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
-//					Util.addLiteralTriple(personURI, GeoURIs.yETRS89.getURI(), person.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
+					logger.info(item.oid);
+					if (person.contactInfo.geoPosition.position2D != null) {
+						Util.addLiteralTriple(personURI, GeoURIs.xETRS89.getURI(), person.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
+						Util.addLiteralTriple(personURI, GeoURIs.yETRS89.getURI(), person.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
+					}
+					
+
 
 
 					
