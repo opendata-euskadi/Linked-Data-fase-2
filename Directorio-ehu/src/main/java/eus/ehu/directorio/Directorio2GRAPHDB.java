@@ -3,6 +3,8 @@ package eus.ehu.directorio;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.model.vocabulary.RDFS;
@@ -16,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import eus.ehu.directorio.graphdb.Util;
 import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.json.Relation;
+import eus.ehu.directorio.json.AbstractByLang;
 import eus.ehu.directorio.json.Entity;
 import eus.ehu.directorio.json.Equipment;
 import eus.ehu.directorio.json.JSONCollection;
@@ -46,8 +49,8 @@ public class Directorio2GRAPHDB {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
 		processPeople ();
-		processEntities ();
-		processEquipments ();
+//		processEntities ();
+//		processEquipments ();
 
 	}
 	
@@ -64,6 +67,13 @@ public class Directorio2GRAPHDB {
 					Util.addLiteralTriple(personURI, PersonURIs.birthName.getURI(), person.name, namedGraphURI, repositoryConnection);
 					Util.addLiteralTripleLang(personURI, RDFS.COMMENT.stringValue(), person.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
 					Util.addLiteralTripleLang(personURI, RDFS.COMMENT.stringValue(), person.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+					String cv_link_es = person.curriculum.abstractByLang.get("SPANISH");
+					Util.addLiteralTripleLang(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(cv_link_es), "es", namedGraphURI, repositoryConnection);
+					String cv_link_eu = person.curriculum.abstractByLang.get("BASQUE");
+					Util.addLiteralTripleLang(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(cv_link_eu), "eu", namedGraphURI, repositoryConnection);
+					
+
+
 					
 //					processRelations(person, "ENTITY", personURI, SchemaURIs.memberOf.getURI());
 				}
@@ -75,6 +85,17 @@ public class Directorio2GRAPHDB {
 		}
 	}
 	
+	private static String extract_cv_url(String cv_link) {
+		Pattern p = Pattern.compile("href=\"(.*?)\"", Pattern.DOTALL);
+		Matcher m = p.matcher(cv_link);
+		if (m.find()) {
+			return m.group(1);
+		}
+		else {
+			return null;
+		}
+	}
+
 	private static void processEntities () {
 		int itemAt = 0;
 		for (;; itemAt += 10) {

@@ -3,7 +3,10 @@ package eus.ehu.directorio.uris;
 public enum EuskadiURIs {
 	
 	// Classes
-	Equipment ("Equipment")
+	Equipment ("Equipment"),
+	
+	// Properties
+	curriculum ("curriculum")
     ; 
 
 	private final String uri_name;
