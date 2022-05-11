@@ -30,6 +30,7 @@ import eus.ehu.directorio.uris.EuskadiURIs;
 import eus.ehu.directorio.uris.OrganizationURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 import eus.ehu.directorio.uris.SchemaURIs;
+import eus.ehu.directorio.uris.GeoURIs;
 import eus.ehu.directorio.uris.ESCJRURIs;
 import eus.ehu.directorio.uris.NORABaseURIs;
 
@@ -48,9 +49,9 @@ public class Directorio2GRAPHDB {
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-		processPeople ();
+//		processPeople ();
 //		processEntities ();
-//		processEquipments ();
+		processEquipments ();
 
 	}
 	
@@ -65,13 +66,22 @@ public class Directorio2GRAPHDB {
 					String personURI = DIRECTORIOBaseURIs.PERSON.getURI() + person.oid;
 					Util.addIRITriple(personURI, RDF.TYPE.stringValue(), PersonURIs.Person.getURI(), namedGraphURI, repositoryConnection);
 					Util.addLiteralTriple(personURI, PersonURIs.birthName.getURI(), person.name, namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(personURI, RDFS.COMMENT.stringValue(), person.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(personURI, RDFS.COMMENT.stringValue(), person.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
+					
+					processDescription(personURI, person.description.get("SPANISH"),"es");
+					processDescription(personURI, person.description.get("BASQUE"),"eu");
+					
 					String cv_link_es = person.curriculum.abstractByLang.get("SPANISH");
 					Util.addLiteralTripleLang(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(cv_link_es), "es", namedGraphURI, repositoryConnection);
 					String cv_link_eu = person.curriculum.abstractByLang.get("BASQUE");
 					Util.addLiteralTripleLang(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(cv_link_eu), "eu", namedGraphURI, repositoryConnection);
+										
+					String addrss = person.contactInfo.geoPosition.address;
+					if (addrss != null) {
+						Util.addLiteralTriple(personURI, SchemaURIs.address.getURI(), addrss.replaceAll("<.*?>", ""), namedGraphURI, repositoryConnection);
+					}
 					
+//					Util.addLiteralTriple(personURI, GeoURIs.xETRS89.getURI(), person.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
+//					Util.addLiteralTriple(personURI, GeoURIs.yETRS89.getURI(), person.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
 
 
 					
@@ -85,17 +95,6 @@ public class Directorio2GRAPHDB {
 		}
 	}
 	
-	private static String extract_cv_url(String cv_link) {
-		Pattern p = Pattern.compile("href=\"(.*?)\"", Pattern.DOTALL);
-		Matcher m = p.matcher(cv_link);
-		if (m.find()) {
-			return m.group(1);
-		}
-		else {
-			return null;
-		}
-	}
-
 	private static void processEntities () {
 		int itemAt = 0;
 		for (;; itemAt += 10) {
@@ -108,15 +107,11 @@ public class Directorio2GRAPHDB {
 					Util.addIRITriple(entityURI, RDF.TYPE.stringValue(), SchemaURIs.GovernmentOrganization.getURI(), namedGraphURI, repositoryConnection);
 					Util.addLiteralTripleLang(entityURI, RDFS.LABEL.stringValue(), entity.name.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
 					Util.addLiteralTripleLang(entityURI, RDFS.LABEL.stringValue(), entity.name.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
-					
 					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-
 					Util.addLiteralTripleLang(entityURI, OrganizationURIs.identifier.getURI(), entity.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
-					
-					
-					Util.addLiteralTripleLang(entityURI, RDFS.COMMENT.stringValue(), entity.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(entityURI, RDFS.COMMENT.stringValue(), entity.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
-					
+					processDescription(entityURI, entity.description.get("SPANISH"),"es");
+					processDescription(entityURI, entity.description.get("BASQUE"),"eu");
+										
 //					processRelations(entity, "ENTITY", entityURI, "partOf");
 //					processRelations(entity, "PERSON", entityURI, "organizationOf");
 				}
@@ -144,14 +139,10 @@ public class Directorio2GRAPHDB {
 					
 					Util.addLiteralTripleLang(equipmentURI, OrganizationURIs.identifier.getURI(), equipment.shortName.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
 					Util.addLiteralTripleLang(equipmentURI, OrganizationURIs.identifier.getURI(), equipment.shortName.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
-					
-					Util.addLiteralTripleLang(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.get("SPANISH"), "es", namedGraphURI, repositoryConnection);
-					Util.addLiteralTripleLang(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.get("BASQUE"), "eu", namedGraphURI, repositoryConnection);
-					
-					
-//					processRelations(equipment, "ENTITY", equipmentURI, "locationOf");
-					
-					
+										
+					processDescription(equipmentURI, equipment.description.get("SPANISH"),"es");
+					processDescription(equipmentURI, equipment.description.get("BASQUE"),"eu");
+										
 					String portal_oid = equipment.contactInfo.geoPosition.portal.get("oid");
 					String street_oid = equipment.contactInfo.geoPosition.street.get("oid");
 										
@@ -161,6 +152,11 @@ public class Directorio2GRAPHDB {
 							NORABaseURIs.STREET.getURI() + street_oid, 
 							namedGraphURI, 
 							repositoryConnection);
+					
+					Util.addLiteralTriple(equipmentURI, GeoURIs.xETRS89.getURI(), equipment.contactInfo.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
+					Util.addLiteralTriple(equipmentURI, GeoURIs.yETRS89.getURI(), equipment.contactInfo.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
+					
+//					processRelations(equipment, "ENTITY", equipmentURI, "locationOf");
 				}
 			}
 			catch (IOException e) {
@@ -186,4 +182,21 @@ public class Directorio2GRAPHDB {
 //			}
 //		}
 //	}
+	
+	private static void processDescription(String item_uri, String descr, String lang) {
+		if (descr != null) {
+			Util.addLiteralTripleLang(item_uri, RDFS.COMMENT.stringValue(), descr.replaceAll("<.*?>", ""), lang, namedGraphURI, repositoryConnection);
+		}
+	}
+
+	private static String extract_cv_url(String cv_link) {
+		Pattern p = Pattern.compile("href=\"(.*?)\"", Pattern.DOTALL);
+		Matcher m = p.matcher(cv_link);
+		if (m.find()) {
+			return m.group(1);
+		}
+		else {
+			return null;
+		}
+	}
 }

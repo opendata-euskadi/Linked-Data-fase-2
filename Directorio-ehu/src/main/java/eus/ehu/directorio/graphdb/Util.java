@@ -23,7 +23,7 @@ public abstract class Util {
 	public static void addLiteralTriple (String s, String p, String o, String namedGraph, RepositoryConnection connection) {
 		IRI sub= Values.iri(s);
 		IRI pred = Values.iri(p);
-		if (o != null) {
+		if (o != null && !o.isEmpty()) {
 			Literal obj = Values.literal(o);
 			IRI namedgraphIRI = Values.iri(namedGraph);
 			connection.add(sub, pred, obj, namedgraphIRI);
@@ -41,7 +41,7 @@ public abstract class Util {
 	public static void addLiteralTripleLang (String s, String p, String o, String lang, String namedGraph, RepositoryConnection connection) {
 		IRI sub= Values.iri(s);
 		IRI pred = Values.iri(p);
-		if (o != null) {
+		if (o != null && !o.isEmpty()) {
 			Literal obj = Values.literal(o,lang);
 			IRI namedgraphIRI = Values.iri(namedGraph);
 			connection.add(sub, pred, obj, namedgraphIRI);
