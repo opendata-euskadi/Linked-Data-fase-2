@@ -6,7 +6,8 @@ public enum EuskadiURIs {
 	Equipment ("Equipment"),
 	
 	// Properties
-	curriculum ("curriculum")
+	curriculum ("curriculum"),
+	webLink ("webLink")
     ; 
 
 	private final String uri_name;

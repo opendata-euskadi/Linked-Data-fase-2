@@ -43,6 +43,8 @@ PREFIX eus_dir: <http://id.euskadi.eus/def/directory#>
                                                                         schema:telephone "email";   
                                                                         geo:xETRS89 "x"^^xsd:double ;
                                                                         geo:yETRS89 "y"^^xsd:double ; 
+                                                                        eus_dir:webLink webLink;
+                                                                        webLink url - comment
 
                                                                         # schema:foundingDate "rango de vida de la entidad"^^xsd:date ; 
                                                                         # schema:dissolutionDate "rango de vida de la entidad"^^xsd:date ; 

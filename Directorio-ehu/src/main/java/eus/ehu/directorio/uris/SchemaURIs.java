@@ -8,6 +8,7 @@ public enum SchemaURIs {
 	address ("address"),
 	telephone ("telephone"),
 	email ("email"),
+	url ("url"),
 	// Classes
 	GovernmentOrganization ("GovernmentOrganization")
     ; 

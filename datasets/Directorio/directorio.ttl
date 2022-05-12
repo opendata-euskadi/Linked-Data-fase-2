@@ -24,17 +24,23 @@
 #    Data properties
 #################################################################
 
-###  http://id.euskadi.eus/def/directory#curriculum
+###  http://id.euskadi.eus/def/directorio#curriculum
 :curriculum rdf:type owl:DatatypeProperty ;
             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
             <http://purl.org/dc/elements/1.1/date> "2022-05-11T10:23:04Z"^^xsd:dateTime .
+
+
+###  http://id.euskadi.eus/def/directory#webLink
+:webLink rdf:type owl:DatatypeProperty ;
+         <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+         <http://purl.org/dc/elements/1.1/date> "2022-05-12T07:23:38Z"^^xsd:dateTime .
 
 
 #################################################################
 #    Classes
 #################################################################
 
-###  http://id.euskadi.eus/def/directory#Equipment
+###  http://id.euskadi.eus/def/directorio#Equipment
 :Equipment rdf:type owl:Class ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
            <http://purl.org/dc/elements/1.1/date> "2022-05-11T10:20:47Z"^^xsd:dateTime .

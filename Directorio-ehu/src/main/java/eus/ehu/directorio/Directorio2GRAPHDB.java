@@ -19,6 +19,7 @@ import eus.ehu.directorio.graphdb.Util;
 import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.json.PhoneChannel;
 import eus.ehu.directorio.json.Relation;
+import eus.ehu.directorio.json.WebLink;
 import eus.ehu.directorio.json.AbstractByLang;
 import eus.ehu.directorio.json.EmailChannel;
 import eus.ehu.directorio.json.Entity;
@@ -51,8 +52,8 @@ public class Directorio2GRAPHDB {
 		if(DIRECTORIO2GRAPHDBConfig.clearGraph) {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
-//		processPeople ();
-//		processEntities ();
+		processPeople ();
+		processEntities ();
 		processEquipments ();
 
 	}
@@ -111,6 +112,21 @@ public class Directorio2GRAPHDB {
 					processDescription(entityURI, entity.description.get("SPANISH"),"es");
 					processDescription(entityURI, entity.description.get("BASQUE"),"eu");
 					processContactInfo(entity, entityURI);
+					
+					if(entity.legalFramework != null && entity.legalFramework.webLinks != null) {
+						int i = 0;
+						for (WebLink weblink : entity.legalFramework.webLinks) {
+							String webLinkURI = entityURI + "/webLink/" + i ;
+							i++;
+							Util.addIRITriple(entityURI, EuskadiURIs.webLink.getURI(), webLinkURI, namedGraphURI, repositoryConnection);
+							Util.addLiteralTriple(webLinkURI, SchemaURIs.url.getURI(), weblink.url, namedGraphURI, repositoryConnection);
+							String lang = "eu";
+							if (weblink.texts.get("lang").equals("SPANISH")) {
+								lang = "es";
+							}
+							Util.addLiteralTripleLang(webLinkURI, RDFS.COMMENT.stringValue(), weblink.texts.get("text"), lang, namedGraphURI, repositoryConnection);
+						}
+					}
 										
 //					processRelations(entity, "ENTITY", entityURI, "partOf");
 //					processRelations(entity, "PERSON", entityURI, "organizationOf");
