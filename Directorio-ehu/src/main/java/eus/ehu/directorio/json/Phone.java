@@ -1,5 +1,5 @@
 package eus.ehu.directorio.json;
 
-public class PhoneChannel {
+public class Phone {
 	public String number;
 }

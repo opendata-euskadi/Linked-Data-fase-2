@@ -21,6 +21,16 @@
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://id.euskadi.eus/def/directory#equipmentOf
+:equipmentOf rdf:type owl:ObjectProperty ;
+             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+             <http://purl.org/dc/elements/1.1/date> "2022-06-06T16:06:30Z"^^xsd:dateTime .
+
+
+#################################################################
 #    Data properties
 #################################################################
 
@@ -30,7 +40,7 @@
             <http://purl.org/dc/elements/1.1/date> "2022-05-11T10:23:04Z"^^xsd:dateTime .
 
 
-###  http://id.euskadi.eus/def/directory#webLink
+###  http://id.euskadi.eus/def/directorio#webLink
 :webLink rdf:type owl:DatatypeProperty ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
          <http://purl.org/dc/elements/1.1/date> "2022-05-12T07:23:38Z"^^xsd:dateTime .

@@ -7,6 +7,7 @@ public enum EuskadiURIs {
 	
 	// Properties
 	curriculum ("curriculum"),
+	equipmentOf("equipmentOf"),
 	webLink ("webLink")
     ; 
 

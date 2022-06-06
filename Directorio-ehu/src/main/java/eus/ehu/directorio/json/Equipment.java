@@ -1,5 +1,7 @@
 package eus.ehu.directorio.json;
 
+import java.util.List;
+
 public class Equipment extends JSONitem{
-//	public Map<String, String> shortName;
+	public Links _links;
 }

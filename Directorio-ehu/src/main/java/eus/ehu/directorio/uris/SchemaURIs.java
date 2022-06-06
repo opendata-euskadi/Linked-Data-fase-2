@@ -9,6 +9,7 @@ public enum SchemaURIs {
 	telephone ("telephone"),
 	email ("email"),
 	url ("url"),
+	mainEntityOfPage ("mainEntityOfPage"),
 	// Classes
 	GovernmentOrganization ("GovernmentOrganization")
     ; 

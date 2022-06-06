@@ -2,9 +2,9 @@ package eus.ehu.directorio.json;
 
 import java.util.List;
 
-public class Relation {
-	public String targetObjType;
-	public List<String> relations;
+public class Links {
+	public String mainEntityOfPage;
+	public List<Link> entitiesLinks;
 }
 
 // {

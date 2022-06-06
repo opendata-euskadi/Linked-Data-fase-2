@@ -7,7 +7,6 @@ public class JSONitem {
 	public String oid;
 	public String name;
 	public String description;
-	public List<Relation> relationsOrdering;
 	public ContactInfo contactInfo;
 	public GeoPosition geoPosition;
 }
