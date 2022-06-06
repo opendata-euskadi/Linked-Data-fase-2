@@ -6,7 +6,7 @@
 * URI Named Graph: http://id.euskadi.eus/graph/Directorio
 * URI Named Graph enlaces: http://id.euskadi.eus/graph/Directorio-links
 * URI Named Graph ontologias: http://id.euskadi.eus/graph/Directorio-vocabs
-* Origen: API euskadi.eus
+* Origen: https://www.opendata.euskadi.eus/webopd00-apidirectory/es?api=directory
 * DCAT/Metadatos: `Directorio-metadata.ttl`
 * Prototipo: `Directorio-abstract.ttl`
 * Patrón de URIs:
