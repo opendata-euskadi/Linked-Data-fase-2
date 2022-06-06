@@ -1,0 +1,48 @@
+{
+    "oid" : "912B2236-07B5-44B3-B7B2-97F6BC557FD6",
+    "id" : "person912B2236",
+    "name" : "Alberto Fernandez Gonzalez",
+    "description" : "<p>Fecha de nombramiento: 06/03/2021</p>",
+    "type" : "PERSON",
+    "subType" : "ACCOUNTABLE",
+    "createDate" : "15/12/2020",
+    "lastUpdate" : "15/03/2022",
+    "contactInfo" : {
+      "phones" : [ {
+        "number" : "945018215",
+        "type" : "NORMAL",
+        "usage" : "WORK"
+      } ],
+      "emails" : [ {
+        "email" : "dte@euskadi.eus",
+        "usage" : "WORK"
+      } ]
+    },
+    "geoPosition" : {
+      "position2D" : {
+        "standard" : "ETRS89",
+        "x" : 0.0,
+        "y" : 0.0
+      },
+      "address" : "<p>Donostia-San Sebastián, 1 - LAKUA</p>\n<p>01010 Vitoria-Gasteiz</p>\n<p>Araba/Álava</p>"
+    },
+    "images" : [ {
+      "name" : "big_280_alberto_jose_fernandez",
+      "fileSizeKB" : 43,
+      "href" : "https://www.euskadi.eus/contenidos/persona/person912b2236/es_def/images/big_280_alberto_jose_fernandez.jpg"
+    } ],
+    "curriculum" : {
+      "summary" : "<p><a href=\"https://www.irekia.euskadi.eus/uploads/attachments/16502/fernandez_gonzalez_alberto_jose_es.pdf\" target=\"_blank\" rel=\"noopener\">Curriculum Vitae</a></p>"
+    },
+    "_links" : {
+      "self" : {
+        "name" : "Alberto Fernandez Gonzalez",
+        "href" : "https://api.euskadi.eus/directory/people/912B2236-07B5-44B3-B7B2-97F6BC557FD6"
+      },
+      "mainEntityOfPage" : "https://www.euskadi.eus/web01-s2jusap/es/contenidos/persona/person912b2236/es_def/index.shtml",
+      "people" : [ {
+        "name" : "Alberto Fernandez Gonzalez",
+        "href" : "https://api.euskadi.eus/directory/people/912B2236-07B5-44B3-B7B2-97F6BC557FD6"
+      } ]
+    }
+  }

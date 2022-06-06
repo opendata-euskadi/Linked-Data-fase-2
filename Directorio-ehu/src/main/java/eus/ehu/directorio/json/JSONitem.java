@@ -5,9 +5,11 @@ import java.util.Map;
 
 public class JSONitem {
 	public String oid;
+	public String name;
+	public String description;
 	public List<Relation> relationsOrdering;
-	public Map<String, String> description;
 	public ContactInfo contactInfo;
+	public GeoPosition geoPosition;
 }
 
 

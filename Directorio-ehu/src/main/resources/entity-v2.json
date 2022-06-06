@@ -1,0 +1,58 @@
+{
+  "oid" : "247263C6-A7F7-4F41-A9AC-543C4963F5E5",
+  "id" : "entity247263C6",
+  "name" : "Dirección de Tecnología e Innovación",
+  "type" : "ENTITY",
+  "subType" : "PUBLIC_SECTOR",
+  "createDate" : "15/12/2020",
+  "lastUpdate" : "12/05/2022",
+  "contactInfo" : { },
+  "geoPosition" : {
+    "position2D" : {
+      "standard" : "ETRS89",
+      "x" : 525544.537177715,
+      "y" : 4745187.980709642
+    },
+    "country" : {
+      "oid" : "108"
+    },
+    "state" : {
+      "oid" : "16"
+    },
+    "county" : {
+      "oid" : "01"
+    },
+    "municipality" : {
+      "oid" : "059"
+    },
+    "locality" : {
+      "oid" : "10105900000734"
+    },
+    "street" : {
+      "oid" : "130105900007070"
+    },
+    "portal" : {
+      "oid" : "80105900105980"
+    },
+    "zipCode" : "01010"
+  },
+  "competences" : "<p>La Dirección de Tecnología e Innovación, además de las señaladas en el <a href=\"#articulo7\">artículo 7</a> del presente Decreto, realizará las siguientes funciones:</p>\n<ol style=\"list-style-type: lower-alpha;\">\n<li>Proponer las directrices y orientaciones estratégicas de la política de competitividad y de la política de I+D+i, incluyendo el diseño y desarrollo de los planes de competitividad en lo que se refiere a la mejora de la I+D+i y específicamente, en lo que se refiere a la innovación empresarial, así como la elaboración de los informes de seguimiento y evaluación de estos planes.</li>\n<li>Coordinar la elaboración de los planes de gestión internos y de los informes de seguimiento de los mismos.</li>\n<li>Ejecutar las medidas de coordinación necesarias para la elaboración y aplicación de las políticas de la Unión Europea, en especial de la política de competencia y de la política de I+D+i, así como canalizar las relaciones de los órganos del Departamento con las Instituciones de la Unión Europea, sin perjuicio de las competencias que corresponden a otros órganos.</li>\n<li>Elaborar estudios, informes y propuestas de actuaciones encaminadas a diseñar nuevos instrumentos para la mejora de la I+D+i, incluida la innovación empresarial en materia organizacional y de negocio y cualesquiera otros en el ámbito interinstitucional dentro de las materias de competencia de esta Dirección.</li>\n<li>Elaborar, ejecutar y evaluar programas de actuación del Departamento en materia de I+D+i, de apoyo y financiación de proyectos de I+D+i, incluida la innovación empresarial, organizacional y de negocio.</li>\n<li>Elaborar y desarrollar de planes de sensibilización, divulgación y formación en materia de innovación.</li>\n<li>Gestionar los programas derivados del Plan de Ciencia, Tecnología e Innovación que corresponden a la Viceconsejería de Tecnología, Innovación y Transformación Digital y coordinar las actividades que deriven de los mismos con los Departamentos afectados.</li>\n<li>Promover y participar en las acciones vinculadas a la creación e implantación en el territorio de infraestructuras estratégicas tecnológicas e  innovadoras vinculadas a la política de ciencia y tecnología del País Vasco.</li>\n<li>Elaborar y ejecutar programas para el fomento de la creación y consolidación de infraestructuras tecnológicas eficientes al servicio de la mejora de la competitividad industrial.</li>\n<li>Llevar a cabo el análisis, evaluación y seguimiento de proyectos de investigación tecnológica y de proyectos de innovación.</li>\n<li>Fomentar la transferencia tecnológica entre las empresas y las entidades oferentes de tecnología.</li>\n<li>Apoyar la formación, captación y desarrollo de personal investigador.</li>\n<li>Ser órgano de relación con los Agentes Científico Tecnológicos integrados en la Red Vasca de Ciencia, Tecnología e Innovación, así como con los foros de encuentro interinstitucionales en materia de tecnología e innovación.</li>\n<li>Gestionar el Registro Público de Agentes de la Red Vasca de Ciencia, Tecnología e Innovación.</li>\n<li>Apoyar la consolidación del Consorcio Científico-Tecnológico Vasco – Basque Research and Technology Alliance, BRTA.</li>\n</ol>\n<hr />\n<p><a id=\"articulo7\"></a><strong>Artículo 7.– Directoras y Directores del Departamento.</strong></p>\n<p>Corresponde a las Directoras y a los Directores del Departamento, bajo la dependencia directa y jerárquica de la Viceconsejera o Viceconsejero correspondiente, o de la Consejera en el caso del Director o Directora de Gabinete y Comunicación y del Director o Directora de Servicios, el ejercicio de las siguientes atribuciones generales:</p>\n<ol style=\"list-style-type: lower-alpha;\">\n<li>Desarrollar las políticas de gestión pública correspondientes a sus áreas de actuación, determinando las actuaciones a realizar.</li>\n<li>Desplegar los objetivos asignados a sus áreas de actuación, asignando actividades y responsabilidades, controlando logros, y estableciendo las correcciones necesarias en la gestión.</li>\n<li>Proponer la organización operativa de sus áreas de actuación y definir los sistemas internos de trabajo.</li>\n<li>Programar, impulsar, dirigir, coordinar y controlar las actividades de sus áreas de actuación.</li>\n<li>Coordinar las actuaciones en sus áreas de actuación en relación con las demás áreas, cuando hayan de intervenir varias en un procedimiento.</li>\n<li>Proponer el desarrollo normativo en sus áreas de actuación.</li>\n<li>Proponer la articulación de subvenciones en materias propias de la Dirección.</li>\n<li>Dictar los actos administrativos correspondientes para la ejecución de las funciones a ellos atribuidas.</li>\n<li>Iniciar y resolver los expedientes sancionadores relativos a infracciones tipificadas como leves y graves. Les corresponde además la instrucción de los expedientes sancionadores. Todo ello con<br />excepción de los que corresponden a las Delegaciones Territoriales de Administración Industrial.</li>\n<li>Resolver recursos en los supuestos previstos en la normativa vigente.</li>\n<li>Proceder a la gestión, liquidación, administración y cobro en periodo voluntario de las tasas y precios públicos respecto a las actividades o servicios que deban prestar.</li>\n<li>Elaborar dictámenes, informes y estudios en las áreas funcionales de la Dirección.</li>\n<li>Resolver las solicitudes del derecho de acceso a la información pública.</li>\n<li>Definir en el área de su competencia, y en coordinación con la Dirección de Servicios, los objetivos establecidos en el Plan para la normalización del uso del euskera y desarrollar las iniciativas precisas para su implantación y evaluación.</li>\n<li>Definir en su ámbito los objetivos del Plan para la Igualdad de Mujeres y Hombres de la Comunidad Autónoma de Euskadi, así como ejecutar y evaluar las acciones e iniciativas para alcanzar dichos objetivos, llevando a cabo una gestión integrada de las políticas en materia de igualdad de mujeres y hombres, en coordinación con la Dirección de Servicios.</li>\n<li>Cualesquiera otras funciones que les atribuya el ordenamiento jurídico vigente o tengan el carácter de comunes por venir atribuidas con carácter general a las Directoras y Directores del Gobierno.</li>\n</ol>\n<p></p>",
+  "legislature" : "XII",
+  "scope" : "AUTONOMY",
+  "publicEntityType" : "ADMIN",
+  "_links" : {
+    "self" : {
+      "name" : "Dirección de Tecnología e Innovación",
+      "href" : "https://api.euskadi.eus/directory/entities/247263C6-A7F7-4F41-A9AC-543C4963F5E5"
+    },
+    "mainEntityOfPage" : "https://www.euskadi.eus/web01-s2jusap/es/contenidos/entidad/entity247263c6/es_def/index.shtml",
+    "entitesAbove" : [ {
+      "name" : "Viceconsejería de Tecnología, Innovación y Transformación Digital",
+      "href" : "https://api.euskadi.eus/directory/entities/0E469552-FDFD-417A-B21C-EB97194E1D99"
+    } ],
+    "people" : [ {
+      "name" : "Alberto Fernandez Gonzalez",
+      "href" : "https://api.euskadi.eus/directory/people/912B2236-07B5-44B3-B7B2-97F6BC557FD6"
+    } ]
+  }
+}
