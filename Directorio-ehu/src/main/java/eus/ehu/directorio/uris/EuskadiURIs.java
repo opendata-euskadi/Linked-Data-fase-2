@@ -8,7 +8,10 @@ public enum EuskadiURIs {
 	// Properties
 	curriculum ("curriculum"),
 	equipmentOf("equipmentOf"),
-	webLink ("webLink")
+	webLink ("webLink"), 
+	publicEntityType ("publicEntityType"),
+	scope ("scope"),
+	legislature ("legislature")
     ; 
 
 	private final String uri_name;

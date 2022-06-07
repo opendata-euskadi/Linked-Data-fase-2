@@ -106,20 +106,58 @@ public class Directorio2GRAPHDB {
 					logger.info(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid);
 					Entity entity = (Entity) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid, new Entity ());
 					String entityURI = DIRECTORIOBaseURIs.ENTITY.getURI() + entity.oid;
-					Util.addIRITriple(entityURI, RDF.TYPE.stringValue(), SchemaURIs.GovernmentOrganization.getURI(), namedGraphURI, repositoryConnection);
-					Util.addLiteralTriple(entityURI, RDFS.LABEL.stringValue(), entity.name, namedGraphURI, repositoryConnection);
-					Util.addLiteralTriple(entityURI, SchemaURIs.identifier.getURI(), entity.id, namedGraphURI, repositoryConnection);
+					processBasics(entity, entityURI, SchemaURIs.GovernmentOrganization.getURI());
+					processContactInfo(entity, entityURI);					
+					if (entity.geoPosition != null) {
+						processGeo (entity, entityURI);
+					}
 					
+					if (entity.competences != null) {
+						Util.addLiteralTriple(entityURI, RDFS.COMMENT.stringValue(), entity.competences.replaceAll("<.*?>", ""), namedGraphURI, repositoryConnection);
+					}
 					
+					if (entity.legislature != null) {
+						Util.addLiteralTriple(entityURI, EuskadiURIs.legislature.getURI(), entity.legislature, namedGraphURI, repositoryConnection);
+					}
 					
+					if (entity.scope != null) {
+						Util.addLiteralTriple(entityURI, EuskadiURIs.scope.getURI(), entity.scope, namedGraphURI, repositoryConnection);
+					}
 					
+					if (entity.publicEntityType != null) {
+						Util.addLiteralTriple(entityURI, EuskadiURIs.publicEntityType.getURI(), entity.publicEntityType, namedGraphURI, repositoryConnection);
+					}
+										
+					Util.addIRITriple(entityURI, SchemaURIs.mainEntityOfPage.getURI(),entity._links.mainEntityOfPage, namedGraphURI, repositoryConnection);
 					
+					if(entity._links.legalFramework != null) {
+						int i = 0;
+						for (WebLink weblink : entity._links.legalFramework) {
+							String webLinkURI = entityURI + "/webLink/" + i ;
+							i++;
+							Util.addIRITriple(entityURI, EuskadiURIs.webLink.getURI(), webLinkURI, namedGraphURI, repositoryConnection);
+							Util.addLiteralTriple(webLinkURI, SchemaURIs.url.getURI(), weblink.href, namedGraphURI, repositoryConnection);
+							Util.addLiteralTriple(webLinkURI, RDFS.COMMENT.stringValue(), weblink.name, namedGraphURI, repositoryConnection);
+						}
+					}
 					
 
-					processContactInfo(entity, entityURI);
-											
-//					processRelations(entity, "ENTITY", entityURI, "partOf");
-//					processRelations(entity, "PERSON", entityURI, "organizationOf");
+					
+
+					
+					
+					
+					
+//					
+//					
+//					List <Link> links = equipment._links.entitiesLinks;
+//					if (links != null) {
+//						for (Link link : links) {
+//							Util.addIRITriple(entityURI, EuskadiURIs.equipmentOf.getURI(),
+//									DIRECTORIOBaseURIs.ENTITY.getURI() + link.href.replace("https://api.euskadi.eus/directory/entities/", ""), 
+//									namedGraphURI, repositoryConnection);
+//						}
+//					}
 					
 				}
 			}
@@ -140,41 +178,26 @@ public class Directorio2GRAPHDB {
 					logger.info(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_EQUIPMENT + item.oid);
 					Equipment equipment = (Equipment) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_EQUIPMENT + item.oid, new Equipment ());	
 					String equipmentURI = DIRECTORIOBaseURIs.EQUIPMENT.getURI() + equipment.oid;
-					Util.addIRITriple(equipmentURI, RDF.TYPE.stringValue(), EuskadiURIs.Equipment.getURI(), namedGraphURI, repositoryConnection);
-					Util.addLiteralTriple(equipmentURI, RDFS.LABEL.stringValue(), equipment.name, namedGraphURI, repositoryConnection);
-					Util.addLiteralTriple(equipmentURI, SchemaURIs.identifier.getURI(), equipment.id, namedGraphURI, repositoryConnection);
+					
+					processBasics(equipment, equipmentURI, EuskadiURIs.Equipment.getURI());
+					
 					if (equipment.description != null) {
 						Util.addLiteralTriple(equipmentURI, RDFS.COMMENT.stringValue(), equipment.description.replaceAll("<.*?>", ""), namedGraphURI, repositoryConnection);
 					}
-					if (equipment.geoPosition.position2D != null) {
-						Util.addLiteralTriple(equipmentURI, GeoURIs.xETRS89.getURI(), equipment.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
-						Util.addLiteralTriple(equipmentURI, GeoURIs.yETRS89.getURI(), equipment.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
-					}
-					String portal_oid = equipment.geoPosition.portal.get("oid");
-					String street_oid = equipment.geoPosition.street.get("oid");			
-					Util.addIRITriple(
-							NORABaseURIs.DOORWAY.getURI() + portal_oid, 
-							ESCJRURIs.viaProp.getURI(),
-							NORABaseURIs.STREET.getURI() + street_oid, 
-							namedGraphURI, 
-							repositoryConnection);			
+
 					processContactInfo(equipment, equipmentURI);
-					Util.addIRITriple(
-							equipmentURI, 
-							SchemaURIs.mainEntityOfPage.getURI(),
-							equipment._links.mainEntityOfPage, 
-							namedGraphURI, 
-							repositoryConnection);
+					if (equipment.geoPosition != null) {
+						processGeo (equipment, equipmentURI);
+					}
+					
+					Util.addIRITriple(equipmentURI, SchemaURIs.mainEntityOfPage.getURI(),equipment._links.mainEntityOfPage, namedGraphURI, repositoryConnection);
 					
 					List <Link> links = equipment._links.entitiesLinks;
 					if (links != null) {
 						for (Link link : links) {
-							Util.addIRITriple(
-									equipmentURI, 
-									EuskadiURIs.equipmentOf.getURI(),
+							Util.addIRITriple(equipmentURI, EuskadiURIs.equipmentOf.getURI(),
 									DIRECTORIOBaseURIs.ENTITY.getURI() + link.href.replace("https://api.euskadi.eus/directory/entities/", ""), 
-									namedGraphURI, 
-									repositoryConnection);
+									namedGraphURI, repositoryConnection);
 						}
 					}
 				}
@@ -184,10 +207,31 @@ public class Directorio2GRAPHDB {
 				break;
 			}
 		}
-
 	}
 	
-
+	private static void processBasics (JSONitem item, String itemURI, String typeURI) {
+		Util.addIRITriple(itemURI, RDF.TYPE.stringValue(), typeURI, namedGraphURI, repositoryConnection);
+		Util.addLiteralTriple(itemURI, RDFS.LABEL.stringValue(), item.name, namedGraphURI, repositoryConnection);
+		Util.addLiteralTriple(itemURI, SchemaURIs.identifier.getURI(), item.id, namedGraphURI, repositoryConnection);
+	}
+	
+	private static void processGeo (JSONitem item, String itemURI) {
+		if (item.geoPosition.position2D != null) {
+			Util.addLiteralTriple(itemURI, GeoURIs.xETRS89.getURI(), item.geoPosition.position2D.x, namedGraphURI, repositoryConnection);
+			Util.addLiteralTriple(itemURI, GeoURIs.yETRS89.getURI(), item.geoPosition.position2D.y, namedGraphURI, repositoryConnection);
+		}
+		
+		// !!!!!!!!!!!!!
+		// Enlace a NORA
+		// !!!!!!!!!!!!!
+		
+		if (item.geoPosition.portal != null && item.geoPosition.street != null) {
+			String portal_oid = item.geoPosition.portal.get("oid");
+			String street_oid = item.geoPosition.street.get("oid");			
+			Util.addIRITriple(NORABaseURIs.DOORWAY.getURI() + portal_oid, ESCJRURIs.viaProp.getURI(),NORABaseURIs.STREET.getURI() + street_oid, namedGraphURI, repositoryConnection);
+		}
+		// TODO: address
+	}
 	
 	private static void processContactInfo(JSONitem item, String itemURI) {
 		if (item.contactInfo.phones != null) {
@@ -204,8 +248,6 @@ public class Directorio2GRAPHDB {
 		
 	}
 	
-
-
 	private static String extract_cv_url(String cv_link) {
 		Pattern p = Pattern.compile("href=\"(.*?)\"", Pattern.DOTALL);
 		Matcher m = p.matcher(cv_link);

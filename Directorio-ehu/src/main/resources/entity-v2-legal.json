@@ -1,0 +1,162 @@
+{
+  "oid" : "3EE14DA4-F5CB-430A-8E46-48D0DDFAB4E0",
+  "id" : "entity3EE14DA4",
+  "name" : "Desarrollo Económico, Sostenibilidad y Medio Ambiente",
+  "type" : "ENTITY",
+  "subType" : "PUBLIC_SECTOR",
+  "createDate" : "30/09/2020",
+  "lastUpdate" : "11/03/2022",
+  "contactInfo" : { },
+  "geoPosition" : {
+    "position2D" : {
+      "standard" : "ETRS89",
+      "x" : 525544.537177715,
+      "y" : 4745187.980709642
+    },
+    "country" : {
+      "oid" : "108"
+    },
+    "state" : {
+      "oid" : "16"
+    },
+    "county" : {
+      "oid" : "01"
+    },
+    "municipality" : {
+      "oid" : "059"
+    },
+    "locality" : {
+      "oid" : "10105900000734"
+    },
+    "street" : {
+      "oid" : "130105900007070"
+    },
+    "portal" : {
+      "oid" : "80105900105980"
+    },
+    "zipCode" : "01010"
+  },
+  "competences" : "<ol>\n<li>Al Departamento de Desarrollo Económico, Sostenibilidad y Medio Ambiente le corresponden las siguientes funciones y áreas de actuación:\n<ol style=\"list-style-type: lower-alpha;\">\n<li>Política industrial y competitividad empresarial.</li>\n<li>Innovación y tecnología.</li>\n<li>Promoción y desarrollo de la Sociedad de la Información y del Conocimiento en la sociedad vasca, sin perjuicio de las actuaciones en materia de Administración y gobierno electrónicos.</li>\n<li>Internacionalización industrial y empresarial.</li>\n<li>Propuesta y ejecución de la política del Gobierno para la transformación digital y el desarrollo y fomento de la inteligencia artificial.</li>\n<li>Energía y minas.</li>\n<li>Fomento y promoción de la artesanía.</li>\n<li>Promoción y ordenación agrícola y ganadera.</li>\n<li>Desarrollo rural y su diversificación económica.</li>\n<li>Ganadería y montes.<br />j bis) Protección de los animales.</li>\n<li>Caza y pesca continental.</li>\n<li>Pesca.</li>\n<li>Industrias y comercialización agrarias, pesqueras y alimentarias.</li>\n<li>Industrias de primera transformación forestal.</li>\n<li>Política agroalimentaria: promoción, tipificación, denominación de origen y control de calidad de productos agroalimentarios.</li>\n<li>Viticultura y enología.</li>\n<li>Formación agraria y náutico-pesquera, de conformidad con lo establecido en el artículo 10.1.b) del presente Decreto. Promoción de la capacitación profesional agraria y marítimo-pesquera. Investigación agraria y oceanográfica, sin perjuicio de lo previsto en el artículo 10.1.c) del presente Decreto.</li>\n<li>Transición energética.</li>\n<li>Medio Ambiente. Lucha contra el cambio climático.</li>\n<li>Economía circular.</li>\n<li>Conservación del patrimonio natural.</li>\n<li>Aguas. Canales y regadíos.</li>\n<li>Ordenación de recursos naturales y conservación de la naturaleza.</li>\n<li>Puertos y asuntos marítimos.</li>\n<li>Dirigir, de acuerdo con las leyes y los reglamentos, las entidades del sector público adscritas dependientes del departamento.</li>\n<li>Las demás facultades que le atribuyan las leyes y los reglamentos.</li>\n</ol>\n</li>\n<li>Están adscritos a este departamento los entes públicos de derecho privado «SPRI-Agencia Vasca de Desarrollo Empresarial», «Energiaren Euskal Erakundea / Ente Vasco de la Energía (EEE/EVE)», «Uraren Euskal Agentzia / Agencia Vasca del Agua» y «Euskadiko Kirol Portuak»; las sociedades públicas «NEIKER-Instituto Vasco de Investigación y Desarrollo Agrario, S.A.», «Ihobe, S.A. Sociedad Pública de Gestión Ambiental» y «Zumaiako Kirol Portua, S.A.»; las fundaciones del sector público «Fundación HAZI Fundazioa» y «ELIKA Nekazaritzako Elikagaien Segurtasunerako Euskal Fundazioa-Fundación Vasca para la Seguridad Agroalimentaria»; y el «Consorcio Científico-Tecnológico Vasco Basque Research and Technology Alliance».</li>\n</ol>",
+  "legislature" : "XII",
+  "scope" : "AUTONOMY",
+  "publicEntityType" : "ADMIN",
+  "_links" : {
+    "self" : {
+      "name" : "Desarrollo Económico, Sostenibilidad y Medio Ambiente",
+      "href" : "https://api.euskadi.eus/directory/entities/3EE14DA4-F5CB-430A-8E46-48D0DDFAB4E0"
+    },
+    "mainEntityOfPage" : "https://www.euskadi.eus/web01-s2jusap/es/contenidos/entidad/entity3ee14da4/es_def/index.shtml",
+    "entitesAbove" : [ {
+      "name" : "Eusko Jaurlaritza - Gobierno Vasco",
+      "href" : "https://api.euskadi.eus/directory/entities/4787E862-DC58-4B78-AAA2-E398A3550E1F"
+    } ],
+    "entitiesBelow" : [ {
+      "name" : "Dirección de Gabinete y Comunicación",
+      "href" : "https://api.euskadi.eus/directory/entities/CAB64258-6F7B-4ACB-9AFA-1ABD61F94086"
+    }, {
+      "name" : "Dirección de Servicios",
+      "href" : "https://api.euskadi.eus/directory/entities/56E568A2-5140-4FD1-95AA-CBE0661381B3"
+    }, {
+      "name" : "Viceconsejería de Tecnología, Innovación y Transformación Digital",
+      "href" : "https://api.euskadi.eus/directory/entities/0E469552-FDFD-417A-B21C-EB97194E1D99"
+    }, {
+      "name" : "Viceconsejería de Industria",
+      "href" : "https://api.euskadi.eus/directory/entities/23DDD605-5371-4F32-97AD-A9539201F8CE"
+    }, {
+      "name" : "Viceconsejería de Agricultura, Pesca y Política Alimentaria",
+      "href" : "https://api.euskadi.eus/directory/entities/AF0C7A91-6839-46D1-9C7A-5D37BD0A3B8C"
+    }, {
+      "name" : "Viceconsejería de Sostenibilidad Ambiental",
+      "href" : "https://api.euskadi.eus/directory/entities/D52E3C04-1562-4B95-9F72-22A77B1634D3"
+    } ],
+    "entitiesLinks" : [ {
+      "name" : "Consejo Vasco de Seguridad Industrial"
+    }, {
+      "name" : "Mesa de los Áridos de Euskadi"
+    }, {
+      "name" : "Comisión de Sostenibilidad Energética"
+    }, {
+      "name" : "Comisión Técnica Coordinadora de Sanidad Vegetal"
+    }, {
+      "name" : "Comité de coordinación de razas ganaderas de la Comunidad Autónoma del País Vasco"
+    }, {
+      "name" : "Comisión de Alimentación Animal de Euskadi"
+    }, {
+      "name" : "Mesa de Sanidad Forestal"
+    }, {
+      "name" : "Comisión de Homologación de Trofeos de Caza"
+    }, {
+      "name" : "Comisión Coordinadora para la Producción Integrada de Euskadi"
+    }, {
+      "name" : "Landaberri"
+    }, {
+      "name" : "Mesa Interinstitucional de Atención al Trabajo Temporero"
+    }, {
+      "name" : "Consejo Consultivo de Desarrollo Rural"
+    }, {
+      "name" : "Consejo Agrario y Alimentario de Euskadi"
+    }, {
+      "name" : "Foro de Innovación Agraria y Alimentaria"
+    }, {
+      "name" : "Comisión de Política Agraria y Alimentaria"
+    }, {
+      "name" : "Comité Consultivo de Pesca"
+    }, {
+      "name" : "Consejos Asesores de Puertos"
+    }, {
+      "name" : "Comisión Ambiental del País Vasco"
+    }, {
+      "name" : "Consejo Asesor de Medio Ambiente de la Comunidad Autónoma del País Vasco"
+    }, {
+      "name" : "Patronato de la Reserva de la Biosfera de Urdaibai"
+    }, {
+      "name" : "Consejo de Cooperación de la Reserva de la Biosfera de Urdaibai"
+    }, {
+      "name" : "Consejo Asesor de Conservación de la Naturaleza del País Vasco-Naturzaintza"
+    }, {
+      "name" : "Delegaciones Territoriales de Administración Industrial de cada uno de los Territorios Históricos"
+    }, {
+      "name" : "Servicios Territoriales de Sostenibilidad Ambiental"
+    }, {
+      "name" : "Servicio de Reserva de la Biosfera de Urdaibai"
+    }, {
+      "name" : "SPRI- Agencia Vasca de Desarrollo Empresarial"
+    }, {
+      "name" : "Energiaren Euskal Erakundea / Ente Vasco de la Energía (EEE/EVE)"
+    }, {
+      "name" : "Euskadiko Kirol Portuak (EKP)"
+    }, {
+      "name" : "Uraren Euskal Agentzia/Agencia Vasca del Agua"
+    }, {
+      "name" : "Sociedad Pública Agencia Vasca de Internacionalización / Basque Trade And Investment, S.A."
+    }, {
+      "name" : "Sociedad para la Transformación Competitiva / Erakaldeta Lehiakorrerako Sozietatea, S.A. (SPRI)"
+    }, {
+      "name" : "Zumaiako Kirol Portua, S.A"
+    }, {
+      "name" : "Neiker, Nekazal Ikerketa eta Garapenerako Euskal Erakundea, A.B., Instituto Vasco de Investigación y Desarrollo Agrario, S.A."
+    }, {
+      "name" : "Ihobe, S.A., Sociedad Pública de Gestión Ambiental"
+    }, {
+      "name" : "Fundación HAZI Fundazioa"
+    }, {
+      "name" : "ELIKA Nekazaritzako Elikagaien Segurtasunerako Euskal Fundazioa- Fundación Vasca para la Seguridad Alimentaria"
+    }, {
+      "name" : "Consorcio Científico- Tecnológico Vasco-Basque Research And Technology Alliance"
+    } ],
+    "people" : [ {
+      "name" : "Maria Aranzazu Tapia Otaegui",
+      "href" : "https://api.euskadi.eus/directory/people/8F6C3FD5-474D-431F-92FC-DC62BEB60525"
+    } ],
+    "legalFramework" : [ {
+      "name" : "DECRETO 68/2021, de 23 de febrero, por el que se establece la estructura orgánica y funcional del Departamento de Desarrollo Económico, Sostenibilidad y Medio Ambiente.",
+      "href" : "https://www.euskadi.eus/bopv2/datos/2021/03/2101301a.pdf"
+    }, {
+      "name" : "DECRETO 48/2020, de 28 de diciembre, del Lehendakari, de modificación del Decreto de creación, supresión y modificación de los Departamentos de la Administración de la Comunidad Autónoma del País Vasco y de determinación de funciones y áreas de actuación de los mismos.",
+      "href" : "https://www.euskadi.eus/bopv2/datos/2020/12/2005600a.pdf"
+    }, {
+      "name" : "DECRETO 18/2020, de 6 de septiembre, del Lehendakari, de creación, supresión y modificación de los Departamentos de la Administración de la Comunidad Autónoma del País Vasco y de determinación de funciones y áreas de actuación de los mismos.",
+      "href" : "https://www.euskadi.eus/bopv2/datos/2020/09/2003516a.pdf"
+    } ]
+  }
+}

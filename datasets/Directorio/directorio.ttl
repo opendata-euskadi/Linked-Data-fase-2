@@ -24,7 +24,7 @@
 #    Object Properties
 #################################################################
 
-###  http://id.euskadi.eus/def/directory#equipmentOf
+###  http://id.euskadi.eus/def/directorio#equipmentOf
 :equipmentOf rdf:type owl:ObjectProperty ;
              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
              <http://purl.org/dc/elements/1.1/date> "2022-06-06T16:06:30Z"^^xsd:dateTime .
@@ -44,6 +44,24 @@
 :webLink rdf:type owl:DatatypeProperty ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
          <http://purl.org/dc/elements/1.1/date> "2022-05-12T07:23:38Z"^^xsd:dateTime .
+
+
+###  http://id.euskadi.eus/def/directory#legislature
+:legislature rdf:type owl:DatatypeProperty ;
+             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+             <http://purl.org/dc/elements/1.1/date> "2022-06-07T14:00:02Z"^^xsd:dateTime .
+
+
+###  http://id.euskadi.eus/def/directory#publicEntityType
+:publicEntityType rdf:type owl:DatatypeProperty ;
+                  <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+                  <http://purl.org/dc/elements/1.1/date> "2022-06-07T14:00:25Z"^^xsd:dateTime .
+
+
+###  http://id.euskadi.eus/def/directory#scope
+:scope rdf:type owl:DatatypeProperty ;
+       <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
+       <http://purl.org/dc/elements/1.1/date> "2022-06-07T14:00:13Z"^^xsd:dateTime .
 
 
 #################################################################
