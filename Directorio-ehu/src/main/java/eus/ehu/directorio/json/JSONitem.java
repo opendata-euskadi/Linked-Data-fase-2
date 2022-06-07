@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class JSONitem {
 	public String oid;
+	public String id;
 	public String name;
 	public String description;
 	public ContactInfo contactInfo;
