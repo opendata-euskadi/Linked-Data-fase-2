@@ -76,10 +76,9 @@ public class Directorio2GRAPHDB {
 					if (person.curriculum.summary != null) {
 						Util.addLiteralTriple(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(person.curriculum.summary), namedGraphURI, repositoryConnection);
 					}
+					Util.addIRITriple(personURI, SchemaURIs.mainEntityOfPage.getURI(),person._links.mainEntityOfPage, namedGraphURI, repositoryConnection);
 					
-					
-					
-
+					// Todos los links de people apuntan a si mismos: las personas se relacionan con entidades mediante entidad->member->persona		
 				}
 			}
 			catch (IOException e) {
