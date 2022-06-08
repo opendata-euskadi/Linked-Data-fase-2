@@ -35,9 +35,18 @@ Para más detalles ver archivo `Directorio-metadata.ttl`:
 
 ## Consultas SPARQL
 
-Nombramientos
-Temas
-Legislacion
-Palabras clave
-Geolocalizado
+En que municipios se encuentra la sede de la presidencia?
+
+En que munincipios tiene equipamientos la entidad X?
+
+Que suborganizaciones tiene la organizacion a la que pertenece Bingen Zupiria?
+
+En que legislatura fue miembro X de la entidad Y?
+
+Buscar palabras clave en anotaciones como descripcion, nombramientos, etc
+
+Todos los CV de los miembros de la entidad X
+
+Todos los CV de los miembros de la entidad X que ...
+
 

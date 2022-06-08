@@ -13,6 +13,7 @@ public enum SchemaURIs {
 	memberOf ("memberOf"),
 	parentOrganization ("parentOrganization"), 
 	subOrganization ("subOrganization"),
+	location ("location"),
 	// Classes
 	GovernmentOrganization ("GovernmentOrganization")
     ; 

@@ -67,7 +67,9 @@ public class Directorio2GRAPHDB {
 						Util.addLiteralTriple(personURI, RDFS.COMMENT.stringValue(), person.description.replaceAll("<.*?>", ""), namedGraphURI, repositoryConnection);
 					}
 					processContactInfo(person, personURI);
-					processGeo(person, personURI);
+					if (person.geoPosition != null) {
+						processGeo(person, personURI);
+					}
 					if (person.curriculum.summary != null) {
 						Util.addLiteralTriple(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(person.curriculum.summary), namedGraphURI, repositoryConnection);
 					}
@@ -221,7 +223,15 @@ public class Directorio2GRAPHDB {
 		if (item.geoPosition.portal != null && item.geoPosition.street != null) {
 			String portal_oid = item.geoPosition.portal.get("oid");
 			String street_oid = item.geoPosition.street.get("oid");			
-			Util.addIRITriple(NORABaseURIs.DOORWAY.getURI() + portal_oid, ESCJRURIs.viaProp.getURI(),NORABaseURIs.STREET.getURI() + street_oid, namedGraphURI, repositoryConnection);
+			Util.addIRITriple(
+					NORABaseURIs.DOORWAY.getURI() + portal_oid, 
+					ESCJRURIs.viaProp.getURI(),
+					NORABaseURIs.STREET.getURI() + street_oid, namedGraphURI, repositoryConnection);
+			Util.addIRITriple(
+					itemURI, 
+					SchemaURIs.location.getURI(), 
+					NORABaseURIs.DOORWAY.getURI() + portal_oid, 
+					namedGraphURI, repositoryConnection);
 		}
 		
 		if (item.geoPosition.address != null) {
