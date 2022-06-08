@@ -35,4 +35,9 @@ Para más detalles ver archivo `Directorio-metadata.ttl`:
 
 ## Consultas SPARQL
 
-A definir.
+Nombramientos
+Temas
+Legislacion
+Palabras clave
+Geolocalizado
+

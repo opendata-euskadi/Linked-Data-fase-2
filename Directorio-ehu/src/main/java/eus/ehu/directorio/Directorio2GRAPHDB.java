@@ -1,7 +1,6 @@
 package eus.ehu.directorio;
 
 import java.io.IOException;
-import java.util.Iterator;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -20,19 +19,15 @@ import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.json.Phone;
 import eus.ehu.directorio.json.Link;
 import eus.ehu.directorio.json.Email;
-import eus.ehu.directorio.json.Email;
 import eus.ehu.directorio.json.Entity;
 import eus.ehu.directorio.json.Equipment;
 import eus.ehu.directorio.json.JSONCollection;
 import eus.ehu.directorio.json.JSONParser;
 import eus.ehu.directorio.json.JSONitem;
-import eus.ehu.directorio.json.Person;
 import eus.ehu.directorio.uris.DIRECTORIOBaseURIs;
 import eus.ehu.directorio.uris.EuskadiURIs;
-import eus.ehu.directorio.uris.OrganizationURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 import eus.ehu.directorio.uris.SchemaURIs;
-import jdk.internal.org.jline.utils.Log;
 import eus.ehu.directorio.uris.GeoURIs;
 import eus.ehu.directorio.uris.ESCJRURIs;
 import eus.ehu.directorio.uris.NORABaseURIs;
@@ -53,8 +48,8 @@ public class Directorio2GRAPHDB {
 			Util.clearGraph(namedGraphURI, repositoryConnection);
 		}
 		processPeople ();
-//		processEntities ();
-//		processEquipments ();
+		processEntities ();
+		processEquipments ();
 	}
 	
 	private static void processPeople () {
