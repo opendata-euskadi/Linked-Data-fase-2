@@ -4,12 +4,15 @@ public enum SchemaURIs {
 	
 	// Properties
 	identifier ("identifier"),
-	memberOf ("memberOf"),
 	address ("address"),
 	telephone ("telephone"),
 	email ("email"),
 	url ("url"),
 	mainEntityOfPage ("mainEntityOfPage"),
+	member ("member"),
+	memberOf ("memberOf"),
+	parentOrganization ("parentOrganization"), 
+	subOrganization ("subOrganization"),
 	// Classes
 	GovernmentOrganization ("GovernmentOrganization")
     ; 
