@@ -94,10 +94,3 @@ WHERE {
     FILTER CONTAINS(?org_label, "Tecnología") .
 } 
 ```
-
-
-Buscar palabras clave en anotaciones como descripcion, nombramientos, etc
-
-
-
-
