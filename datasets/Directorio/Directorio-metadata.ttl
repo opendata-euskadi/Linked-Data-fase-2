@@ -1,0 +1,34 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#> 
+PREFIX void: <http://rdfs.org/ns/void#> 
+PREFIX prov: <http://www.w3.org/ns/prov#> 
+PREFIX sd: <http://www.w3.org/ns/sparql-service-description#> 
+PREFIX dc: <http://purl.org/dc/terms/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX schema: <http://schema.org/> 
+PREFIX cc: <http://creativecommons.org/ns#> 
+
+<http://id.euskadi.eus/distribution/DIRECTORY> a dcat:Distribution, void:Dataset, schema:Distribution ;
+    sd:namedGraph <http://id.euskadi.eus/graph/Directory> ;
+    void:sparqlEndpoint <https://api.euskadi.eus/sparql/> ;
+    void:rootResource <http://id.euskadi.eus/public-sector/directory/person/9A1538A3-C48F-4831-A760-295E3FD17086> ;
+    void:exampleResource <http://id.euskadi.eus/public-sector/directory/organization/A59EA905-8DA7-4F6D-9049-C1A9469FA670> ;
+    void:vocabulary <http://id.euskadi.eus/def/directory> ;
+    void:vocabulary <https://schema.org> ;
+    dc:modified "2022-06-09"^^xsd:date ;
+    dc:License <http://creativecommons.org/licenses/MIT/> ;
+    dc:title "Directorio: datos sobre entidades, personas y equipamientos"@es .
+
+<http://id.euskadi.eus/graph/Directory> prov:wasGeneratedBy [
+    a prov:Activity ;
+    prov:wasAssociatedWith  <https://github.com/opendata-euskadi/Linked-Data-fase-2/tree/main/Directorio-ehu> ;
+] .
+
+<http://creativecommons.org/licenses/MIT/>
+  a cc:License ;
+  cc:permits cc:Distribution, cc:Reproduction, cc:DerivativeWorks ;
+  cc:licenseClass <http://creativecommons.org/license/software> ;
+  cc:requires cc:Notice ;
+  cc:legalcode <http://opensource.org/licenses/mit-license.php> .

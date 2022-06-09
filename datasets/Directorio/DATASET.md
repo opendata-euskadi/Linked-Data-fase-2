@@ -3,9 +3,9 @@
 ## Ficha técnica
 
 * Nombre: Directorio
-* URI Named Graph: http://id.euskadi.eus/graph/Directorio
-* URI Named Graph enlaces: http://id.euskadi.eus/graph/Directorio-links
-* URI Named Graph ontologias: http://id.euskadi.eus/graph/Directorio-vocabs
+* URI Named Graph: http://id.euskadi.eus/graph/Directory
+* URI Named Graph enlaces: http://id.euskadi.eus/graph/Directory-links
+* URI Named Graph ontologias: http://id.euskadi.eus/graph/Directory-vocabs
 * Origen: https://www.opendata.euskadi.eus/webopd00-apidirectory/es?api=directory
 * DCAT/Metadatos: `Directorio-metadata.ttl`
 * Prototipo: `Directorio-abstract.ttl`
