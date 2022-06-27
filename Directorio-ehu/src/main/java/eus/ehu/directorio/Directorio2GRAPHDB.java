@@ -56,7 +56,6 @@ public class Directorio2GRAPHDB {
 //		processEntities ();
 		processEquipments ();
 		
-		// TODO: define file in config
 		FileOutputStream output = new FileOutputStream(DIRECTORIO2GRAPHDBConfig.RDFfileBackupPath);
 		util.flushModel(output);
 	}
