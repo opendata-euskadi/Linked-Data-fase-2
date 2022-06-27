@@ -22,5 +22,6 @@ public abstract class DIRECTORIO2GRAPHDBConfig  {
 	public final static String DIRECTORIO_API_EQUIPMENT = "https://api.euskadi.eus/directory/equipments/";
 	
 	public final static boolean clearGraph = true;
+	public static final String RDFfileBackupPath = "/home/mikel/EHU-LSI/Investigacion/TransferenciaConocimientoEuskoiker/EJIE-LDf2-2105015/Linked-Data-fase-2/Directorio-ehu/directorio.ttl";
 
 }

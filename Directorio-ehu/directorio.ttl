@@ -1,0 +1,35 @@
+
+<http://id.euskadi.eus/public-sector/directory/equipment/1C31174D-9553-452F-B554-5E5C29110FC5>
+  a <http://id.euskadi.eus/def/directory#Equipment>;
+  <http://id.euskadi.eus/def/directory#equipmentOf> <http://id.euskadi.eus/public-sector/directory/organization/E80F7AFB-91CA-4586-B587-BCEA704AB725>;
+  <http://www.w3.org/2000/01/rdf-schema#comment> """El Edificio
+Un moderno y funcional edificio de piedra caliza blanca, con una pir&aacute;mide central y tres torres acristaladas que lo flanquean, alberga las oficinas administrativas de Lehendakaritza.
+Si el emblem&aacute;tico Palacio de Ajuria-Enea, que est&aacute; en el entorno de Lehendakaritza, cumple funciones de residencia oficial del Lehendakari y es sede de actos y encuentros institucionales, este nuevo inmueble fue concebido para albergar cometidos tanto administrativos como de representaci&oacute;n en el d&iacute;a a d&iacute;a de la acci&oacute;n de gobierno.
+La edificaci&oacute;n se organiza como un espacio eminentemente pr&aacute;ctico y representativo, integrado en un entorno urbano residencial que acoge, junto a un buen n&uacute;mero de villas ajardinadas, otros edificios destinados a equipamientos educativos, sanitarios e institucionales.
+La propuesta arquitect&oacute;nica exterior se sustancia en una construcci&oacute;n de parcela en esquina, coronada por una pir&aacute;mide de cristal que constituye el elemento m&aacute;s caracter&iacute;stico del edificio, junto a las torretas, tambi&eacute;n acristaladas, de los lados. Bajo la pir&aacute;mide se extiende un amplio patio central de gran luminosidad y decorado en m&aacute;rmol, en el que habitualmente se desarrollan actos de marcada significaci&oacute;n social y pol&iacute;tica, como grandes recepciones, importantes encuentros con representantes vascos, estatales e internacionales y el seguimiento de los comicios.
+En la disposici&oacute;n interior prima la preocupaci&oacute;n por la organizaci&oacute;n y la circulaci&oacute;n, intentando que ambas sean di&aacute;fanas. Para ello se elige una disposici&oacute;n constructiva anular, alrededor de la cual se plantea la distribuci&oacute;n del espacio, lo que permite un elemental control espacial, que simplifica al m&aacute;ximo las circulaciones.
+El edificio de Lehendakaritza est&aacute; situado en el n&uacute;mero 2 de la calle Navarra, en su confluencia con el paseo de Nieves Cano, en Vitoria-Gasteiz, la capital de la Comunidad Aut&oacute;noma de Euskadi. Ocupa una superficie de dos mil trescientos treinta metros cuadrados, que comprenden el edificio y un jard&iacute;n que lo circunda. Todo ello dentro del marco urban&iacute;stico de la zona de \"El Bat&aacute;n\", &aacute;rea eminentemente residencial de mediana densidad de poblaci&oacute;n, en los aleda&ntilde;os del Parlamento Vasco, de la Ciudad Universitaria y muy pr&oacute;xima al centro hist&oacute;rico y monumental.
+Erigida a principios de los a&ntilde;os noventa por el equipo del arquitecto Javier Ega&ntilde;a Oyarzabal, esta construcci&oacute;n aloja las unidades administrativas de Lehendakaritza: la Secretar&iacute;a General de la Presidencia del Gobierno, la Secretar&iacute;a General de Acci&oacute;n Exterior y la Secretar&iacute;a General de Comunicaci&oacute;n; adem&aacute;s de los despachos de trabajo del Lehendakari, la Sala de Consejos y la destinada a las comparecencias ante los medios de comunicaci&oacute;n. Guarda asimismo en su interior piezas art&iacute;sticas destacadas, tanto de la tradici&oacute;n artesanal como del arte vasco contempor&aacute;neo.""";
+  <http://www.w3.org/2000/01/rdf-schema#label> "Sede de la Presidencia";
+  <https://datos.ign.es/def/geo_core#xETRS89> 5.2625714304178E5;
+  <https://datos.ign.es/def/geo_core#yETRS89> 4.742942607748814E6;
+  <https://schema.org/identifier> "equipment1C31174D";
+  <https://schema.org/location> <http://id.euskadi.eus/public-sector/urbanism-territory/doorway/80105900106300>;
+  <https://schema.org/mainEntityOfPage> <https://www.euskadi.eus/web01-ejeduki/es/contenidos/equipamiento/equipment1c31174d/es_def/index.shtml>;
+  <https://schema.org/telephone> "945017832", "945017900" .
+
+<http://id.euskadi.eus/public-sector/directory/equipment/38F6D67F-34A1-4162-9302-94F34999DDEE>
+  a <http://id.euskadi.eus/def/directory#Equipment>;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Sede Central del Gobierno Vasco (Lakua)";
+  <https://datos.ign.es/def/geo_core#xETRS89> 5.25544537177715E5;
+  <https://datos.ign.es/def/geo_core#yETRS89> 4.745187980709642E6;
+  <https://schema.org/identifier> "equipment38F6D67F";
+  <https://schema.org/location> <http://id.euskadi.eus/public-sector/urbanism-territory/doorway/80105900105980>;
+  <https://schema.org/mainEntityOfPage> <https://www.euskadi.eus/web01-ejeduki/es/contenidos/equipamiento/equipment38f6d67f/es_def/index.shtml>;
+  <https://schema.org/telephone> "945018000", "945018002" .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/doorway/80105900105980> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via>
+    <http://id.euskadi.eus/public-sector/urbanism-territory/street/130105900007070> .
+
+<http://id.euskadi.eus/public-sector/urbanism-territory/doorway/80105900106300> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#via>
+    <http://id.euskadi.eus/public-sector/urbanism-territory/street/130105900001640> .
