@@ -1,0 +1,1026 @@
+jsonCallback([{
+		"id": 0,
+		"title": "Indicadores municipales de sostenibilidad: Valor Añadido Bruto del sector agropesquero (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_0/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 1,
+		"title": "Indicadores municipales de sostenibilidad: Población de 16 y más años ocupada en el sector agropesquero (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_1/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 10,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de ocupación de la población de 16 y mas años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_10/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 100,
+		"title": "Indicadores municipales de sostenibilidad: Población ocupada de 16 y más años que trabaja fuera del municipio de residencia (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_100/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 101,
+		"title": "Indicadores municipales de sostenibilidad: Población estudiante de 16 y más años que estudia fuera del municipio de residencia (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_101/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 102,
+		"title": "Indicadores municipales de sostenibilidad: Parque de vehículos (vehículos/habitante)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_102/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 103,
+		"title": "Indicadores municipales de sostenibilidad: Licencias de taxi (por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_103/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 104,
+		"title": "Indicadores municipales de sostenibilidad: Tiempo medio de desplazamiento al hospital de referencia (min.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_104/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 105,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la Seguridad Social por municipio de trabajo (% habitantes de 16 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_105/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 106,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de crecimiento acumulativo anual del PIB en el último periodo (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_106/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 108,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas protegidas (VPO) adjudicadas por Etxebide en el último quinquenio (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_108/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 109,
+		"title": "Indicadores municipales de sostenibilidad: Dotación policial local (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_109/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 11,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de ocupación de la población de 55 a 64 años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_11/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 110,
+		"title": "Indicadores municipales de sostenibilidad: Índice de delitos (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_110/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 111,
+		"title": "Indicadores municipales de sostenibilidad: Densidad poblacional (Hab./Km²)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_111/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 112,
+		"title": "Indicadores municipales de sostenibilidad: Superficie destinada a infraestructuras de transporte y comunicaciones (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_112/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 113,
+		"title": "Indicadores municipales de sostenibilidad: Superficie destinada a carreteras (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_113/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 114,
+		"title": "Indicadores municipales de sostenibilidad: Calificación sanitaria del agua de consumo",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_114/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 115,
+		"title": "Indicadores municipales de sostenibilidad: Unidades de educación infantil por cada 100 habitantes de 0 a 2 años",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_115/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 116,
+		"title": "Indicadores municipales de sostenibilidad: Grado de ocupación de los centros de día (3ª edad y personas con discapacidad) (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_116/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 117,
+		"title": "Indicadores municipales de sostenibilidad: Grado de ocupación de los centros residenciales (3ª edad y personas con discapacidad) (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_117/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 118,
+		"title": "Indicadores municipales de sostenibilidad: Plazas en centros de día para la 3ª edad (&#x2030; habitantes de 65 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_118/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 119,
+		"title": "Indicadores municipales de sostenibilidad: Plazas en centros residenciales para la 3ª edad (&#x2030; habitantes de 65 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_119/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 12,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de ocupación de las mujeres de 16 y más años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_12/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 120,
+		"title": "Indicadores municipales de sostenibilidad: Plazas en centros de día para personas discapacitadas (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_120/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 121,
+		"title": "Indicadores municipales de sostenibilidad: Plazas en centros residenciales para personas discapacitadas (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_121/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 122,
+		"title": "Indicadores municipales de sostenibilidad: Tiempo medio de desplazamiento a los restantes municipios de la C.A.de Euskadi (min.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_122/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 123,
+		"title": "Indicadores municipales de sostenibilidad: Accesibilidad del municipio",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_123/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 124,
+		"title": "Indicadores municipales de sostenibilidad: Pantallas de cine (nº )",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_124/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 125,
+		"title": "Indicadores municipales de sostenibilidad: Aforo de cines (butacas por &#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_125/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 126,
+		"title": "Indicadores municipales de sostenibilidad: Equipamientos y edificios municipales accesibles (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_126/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 127,
+		"title": "Indicadores municipales de sostenibilidad: Puntos de alumbrado público (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_127/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 129,
+		"title": "Indicadores municipales de sostenibilidad: Hidrantes contra incendios instalados en suelo urbano (hidrantes/ha.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_129/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 13,
+		"title": "Indicadores municipales de sostenibilidad: Población parada registrada en Lanbide (% poblacion de 16 a 64 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_13/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 130,
+		"title": "Indicadores municipales de sostenibilidad: Zonas públicas de juegos infantiles (&#x2030; habitantes de 0 a 14 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_130/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 131,
+		"title": "Indicadores municipales de sostenibilidad: Instalaciones de aseos públicos (10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_131/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 132,
+		"title": "Indicadores municipales de sostenibilidad: Teléfonos públicos (por cada 1.500 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_132/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 134,
+		"title": "Indicadores municipales de sostenibilidad: Generación de residuos urbanos por habitante y año (kg./hab./año)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_134/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 135,
+		"title": "Indicadores municipales de sostenibilidad: Contenedores para la recogida de residuos domésticos ( &#x2030; habitantes )",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_135/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 136,
+		"title": "Indicadores municipales de sostenibilidad: Contenedores para la recogida de vidrio ( &#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_136/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 137,
+		"title": "Indicadores municipales de sostenibilidad: Contenedores para la recogida de papel ( &#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_137/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 138,
+		"title": "Indicadores municipales de sostenibilidad: Contenedores para la recogida de envases y plásticos ( &#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_138/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 139,
+		"title": "Indicadores municipales de sostenibilidad: Contenedores para la recogida de pilas ( &#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_139/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 14,
+		"title": "Indicadores municipales de sostenibilidad: Población parada de larga duración registrada en Lanbide (% población de 16 a 64 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_14/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 140,
+		"title": "Indicadores municipales de sostenibilidad: Contenedores para la recogida de ropa/textiles ( &#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_140/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 141,
+		"title": "Indicadores municipales de sostenibilidad: Red de bidegorris o carriles-bici (km por cada 10.000 habitates)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_141/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 142,
+		"title": "Indicadores municipales de sostenibilidad: Superficie ocupada por parques, jardines y zonas verdes urbanas (%/suelo urbano)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_142/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 143,
+		"title": "Indicadores municipales de sostenibilidad: Superficie ocupada por parques, jardines y zonas verdes urbanas (m²/persona)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_143/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 144,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de ocupación: brecha de género (p.p.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_144/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 145,
+		"title": "Indicadores municipales de sostenibilidad: Demanda total de agua por habitante y día (l/hab./día)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_145/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 146,
+		"title": "Indicadores municipales de sostenibilidad: Demanda industrial de agua por habitante y día (l./hab./día)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_146/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 148,
+		"title": "Indicadores municipales de sostenibilidad: Días con calidad del aire buena o admisible (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_148/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 149,
+		"title": "Indicadores municipales de sostenibilidad: Distancia a la capital del Territorio Histórico (% rodeo)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_149/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 15,
+		"title": "Indicadores municipales de sostenibilidad: Índice de rotación contractual (contratos/personas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_15/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 150,
+		"title": "Indicadores municipales de sostenibilidad: Tiempo medio de acceso a la capital del Territorio Histórico (min.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_150/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 151,
+		"title": "Indicadores municipales de sostenibilidad: Tiempo medio de acceso a carreteras principales (min.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_151/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 152,
+		"title": "Indicadores municipales de sostenibilidad: Conectividad del municipio mediante transporte público: autobús interurbano (nº de municipios)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_152/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 153,
+		"title": "Indicadores municipales de sostenibilidad: PIB municipal por persona ocupada (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_153/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 154,
+		"title": "Indicadores municipales de sostenibilidad: Superficie forestal (% s  superficie total)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_154/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 155,
+		"title": "Indicadores municipales de sostenibilidad: Superficie forestal pública (% s/ superficie forestal total)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_155/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 156,
+		"title": "Indicadores municipales de sostenibilidad: Superficie agrícola (% s/ superficie total)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_156/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 157,
+		"title": "Indicadores municipales de sostenibilidad: Participación en elecciones municipales (% s/censo electoral)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_157/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 158,
+		"title": "Indicadores municipales de sostenibilidad: Parque de turismos (turismos/habitante)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_158/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 159,
+		"title": "Indicadores municipales de sostenibilidad: Consumo eléctrico anual del municipio (Kwh./habitante)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_159/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 16,
+		"title": "Indicadores municipales de sostenibilidad: Índice de rotación contractual: mujeres (contratos/mujeres)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_16/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 160,
+		"title": "Indicadores municipales de sostenibilidad: Consumo eléctrico anual no industrial (Kwh./habitante)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_160/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 161,
+		"title": "Indicadores municipales de sostenibilidad: Consumo eléctrico anual del sector industrial (Kwh./habitante)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_161/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 162,
+		"title": "Indicadores municipales de sostenibilidad: Población total (hab.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_162/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 163,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas adjudicadas por Etxebide en el último trienio por cada 100 solicitudes inscritas",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_163/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 164,
+		"title": "Indicadores municipales de sostenibilidad: PIB municipal per cápita (Base CAE=100)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_164/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 165,
+		"title": "Indicadores municipales de sostenibilidad: PIB municipal por persona ocupada (Base CAE=100)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_165/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 166,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal total (Base CAE=100)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_166/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 167,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal disponible (Base CAE=100)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_167/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 168,
+		"title": "Indicadores municipales de sostenibilidad: Certificaciones Medioambientales (&#x2030; establecimientos)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_168/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 169,
+		"title": "Indicadores municipales de sostenibilidad: Mujeres paradas registradas en Lanbide (% mujeres de 16 a 64 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_169/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 17,
+		"title": "Indicadores municipales de sostenibilidad: Empleo generado por las microempresas (0-9 empleados) (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_17/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 170,
+		"title": "Indicadores municipales de sostenibilidad: Hombres parados registrados en Lanbide (% hombres de 16 a 64 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_170/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 172,
+		"title": "Indicadores municipales de sostenibilidad: Superficie municipal con uso urbano potencialmente inundable (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_172/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 173,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la Seguridad Social por municipio de trabajo: Mujeres (% mujeres de 16 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_173/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 174,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la Seguridad Social por municipio de trabajo: Hombres (% hombres de 16 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_174/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 175,
+		"title": "Indicadores municipales de sostenibilidad: Antigüedad media de las viviendas familiares",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_175/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 176,
+		"title": "Indicadores municipales de sostenibilidad: Índice de sobreenvejecimiento: Mujeres de 75 y más años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_176/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 177,
+		"title": "Indicadores municipales de sostenibilidad: Índice de sobreenvejecimiento: Hombres de 75 y más años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_177/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 178,
+		"title": "Indicadores municipales de sostenibilidad: Superficie media de las viviendas familiares (m²)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_178/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 179,
+		"title": "Indicadores municipales de sostenibilidad: Población extranjera. Mujeres (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_179/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 18,
+		"title": "Indicadores municipales de sostenibilidad: Tamaño medio de los establecimientos industriales (nº de empleados)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_18/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 180,
+		"title": "Indicadores municipales de sostenibilidad: Población extranjera. Hombres (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_180/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 181,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la Seguridad Social por municipio de residencia  (% habitantes de 16 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_181/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 182,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la Seguridad Social por municipio de residencia: Mujeres (% mujeres de 16 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_182/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 183,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la Seguridad Social por municipio de residencia: Hombres (% hombres de 16 y más años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_183/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 184,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal total. Mujeres (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_184/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 185,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal total. Hombres (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_185/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 186,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal disponible. Mujeres (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_186/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 187,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal disponible. Hombres (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_187/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 188,
+		"title": "Indicadores municipales de sostenibilidad: Tasa media de crecimiento acumulativo anual de la renta personal en el último periodo (%). Mujeres",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_188/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 189,
+		"title": "Indicadores municipales de sostenibilidad: Tasa media de crecimiento acumulativo anual de la renta personal en el último periodo (%). Hombres",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_189/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 19,
+		"title": "Indicadores municipales de sostenibilidad: Porcentaje de establecimientos del sector industrial sobre el total (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_19/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 190,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal derivada del trabajo (% renta personal total). Mujeres",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_190/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 191,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal derivada del trabajo (% renta personal total). Hombres",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_191/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 192,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la seguridad social por municipio de residencia: población 16-24 años (%habitantes) ",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_192/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 193,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afil.a la S.S. según Grupo Cotización: Personal directivo (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_193/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 194,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afil.a la S.S. según Grupo Cotización: Personal administrativo (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_194/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 195,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afil.a la S.S. según Grupo Cotización:Oficiales de Producción (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_195/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 196,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afil.a la S.S. según Grupo Cotización:Personal no cualificado y Aprendices  (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_196/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 197,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación.a la S.S. Sector Primario (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_197/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 198,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación.a la S.S. Sector Industria (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_198/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 199,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la S.S. Sector Construcción  (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_199/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 2,
+		"title": "Indicadores municipales de sostenibilidad: Valor Añadido Bruto del sector industria (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_2/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 20,
+		"title": "Indicadores municipales de sostenibilidad: Porcentaje de establecimientos del sector construcción sobre el total (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_20/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 200,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de afiliación a la S.S. Sector Servicios (% sobre total personas afiliadas)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_200/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 201,
+		"title": "Indicadores municipales de sostenibilidad: Presion fiscal municipal por habitante",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_201/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 202,
+		"title": "Indicadores municipales de sostenibilidad: Ingresos municipales por operaciones corrientes",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_202/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 203,
+		"title": "Indicadores municipales de sostenibilidad: Mujeres beneficiarias de Renta de Garantía de Ingresos (&#x2030; mujeres)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_203/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 204,
+		"title": "Indicadores municipales de sostenibilidad: Hombres beneficiarios de Renta de Garantía de Ingresos (&#x2030; hombres)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_204/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 205,
+		"title": "Indicadores municipales de sostenibilidad: Personas extranjeras beneficiarias de Renta de Garantía de Ingresos (% personas extranjeras)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_205/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 206,
+		"title": "Indicadores municipales de sostenibilidad: Renta familiar total (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_206/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 207,
+		"title": "Indicadores municipales de sostenibilidad: Superficie de suelo artificializado (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_207/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 208,
+		"title": "Indicadores municipales de sostenibilidad: Porcentaje de establecimientos del sector primario sobre el total (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_208/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 209,
+		"title": "Indicadores municipales de sostenibilidad: Mujeres paradas de larga duración registradas en Lanbide (% mujeres de 16 a 64 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_209/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 21,
+		"title": "Indicadores municipales de sostenibilidad: Porcentaje de establecimientos del sector servicios sobre el total (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_21/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 210,
+		"title": "Indicadores municipales de sostenibilidad: Hombres parados de larga duración registrados en LANBIDE (% Hombres de 16 a 24 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_210/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 22,
+		"title": "Indicadores municipales de sostenibilidad: Contratos registrados en el año (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_22/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 23,
+		"title": "Indicadores municipales de sostenibilidad: Contratos indefinidos registrados en el año (% total contratos)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_23/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 24,
+		"title": "Indicadores municipales de sostenibilidad: Población contratada en el año (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_24/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 25,
+		"title": "Indicadores municipales de sostenibilidad: Variación interanual en la cifra de empleo (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_25/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 26,
+		"title": "Indicadores municipales de sostenibilidad: Saldo neto de establecimientos (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_26/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 27,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de creación de nuevos establecimientos (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_27/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 28,
+		"title": "Indicadores municipales de sostenibilidad: Plazas de alojamiento turístico (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_28/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 29,
+		"title": "Indicadores municipales de sostenibilidad: Establecimientos de hostelería y restauración (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_29/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 3,
+		"title": "Indicadores municipales de sostenibilidad: Población de 16 y más años ocupada en el sector industria (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_3/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 30,
+		"title": "Indicadores municipales de sostenibilidad: Densidad comercial minorista (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_30/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 31,
+		"title": "Indicadores municipales de sostenibilidad: Superficie comercial minorista por habitante (m²)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_31/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 32,
+		"title": "Indicadores municipales de sostenibilidad: Densidad comercial de bienes ocasionales (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_32/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 33,
+		"title": "Indicadores municipales de sostenibilidad: Población de mas de 10 años que ha completado al menos Estudios Secundarios (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_33/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 34,
+		"title": "Indicadores municipales de sostenibilidad: Población de mas de 10 años que ha completado estudios profesionales (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_34/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 35,
+		"title": "Indicadores municipales de sostenibilidad: Población de mas de 10 años que ha completado estudios Universitarios (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_35/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 36,
+		"title": "Indicadores municipales de sostenibilidad: Gasto liquidado del Ayuntamiento por habitante (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_36/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 37,
+		"title": "Indicadores municipales de sostenibilidad: Recaudación impositiva del Ayuntamiento por habitante (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_37/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 38,
+		"title": "Indicadores municipales de sostenibilidad: Deuda viva del Ayuntamiento por habitante (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_38/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 39,
+		"title": "Indicadores municipales de sostenibilidad: Inversión neta del Ayuntamiento por habitante (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_39/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 4,
+		"title": "Indicadores municipales de sostenibilidad: Valor Añadido Bruto del sector construcción (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_4/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 40,
+		"title": "Indicadores municipales de sostenibilidad: Variación interanual de la población (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_40/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 41,
+		"title": "Indicadores municipales de sostenibilidad: Variación de la población en la última década (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_41/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 42,
+		"title": "Indicadores municipales de sostenibilidad: Índice de infancia: Población de 0-14 años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_42/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 43,
+		"title": "Indicadores municipales de sostenibilidad: Índice de envejecimiento: Población de 65 y más años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_43/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 44,
+		"title": "Indicadores municipales de sostenibilidad: Índice de sobreenvejecimiento: Población de 75 y más años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_44/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 45,
+		"title": "Indicadores municipales de sostenibilidad: Índice de dependencia demográfica (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_45/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 46,
+		"title": "Indicadores municipales de sostenibilidad: Tasa bruta de natalidad (&#x2030;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_46/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 47,
+		"title": "Indicadores municipales de sostenibilidad: Saldo migratorio externo (&#x2030;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_47/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 48,
+		"title": "Indicadores municipales de sostenibilidad: Población extranjera de fuera de la UE-15 (% población extranjera)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_48/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 49,
+		"title": "Indicadores municipales de sostenibilidad: Población extranjera de fuera de la UE (% población extranjera)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_49/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 5,
+		"title": "Indicadores municipales de sostenibilidad: Población de 16 y más años ocupada en el sector construcción (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_5/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 50,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de ocupación juvenil de la población de 16 a 24 años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_50/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 51,
+		"title": "Indicadores municipales de sostenibilidad: Suelo potencialmente contaminado (% superficie total)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_51/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 52,
+		"title": "Indicadores municipales de sostenibilidad: Superficie municipal de especial protección (% superficie total)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_52/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 53,
+		"title": "Indicadores municipales de sostenibilidad: Establecimientos con acreditación medioambiental (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_53/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 55,
+		"title": "Indicadores municipales de sostenibilidad: Población de 45 y más años parada registrada en Lanbide (% población de 45 y 64 años)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_55/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 56,
+		"title": "Indicadores municipales de sostenibilidad: PIB municipal per cápita (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_56/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 57,
+		"title": "Indicadores municipales de sostenibilidad: Contratos indefinidos registrados en el año: mujeres (% total contratos indefinidos)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_57/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 58,
+		"title": "Indicadores municipales de sostenibilidad: Contratos indefinidos registrados en el año: menores de 30 años (% total contratos indefinidos)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_58/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 59,
+		"title": "Indicadores municipales de sostenibilidad: Contratos indefinidos registrados en el año: población de 45 y más años (% total contratos indefinidos)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_59/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 6,
+		"title": "Indicadores municipales de sostenibilidad: Valor Añadido Bruto del sector servicios (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_6/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 60,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal total (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_60/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 61,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal disponible (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_61/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 62,
+		"title": "Indicadores municipales de sostenibilidad: Tasa media de crecimiento acumulativo anual de la renta personal total en el último periodo (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_62/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 63,
+		"title": "Indicadores municipales de sostenibilidad: Personas beneficiarias de Renta de Garantía de Ingresos (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_63/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 64,
+		"title": "Indicadores municipales de sostenibilidad: Renta personal derivada del trabajo (% renta personal total)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_64/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 65,
+		"title": "Indicadores municipales de sostenibilidad: Unidades convivenciales perceptoras de Ayudas de Emergencia Social (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_65/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 66,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de crecimiento vegetativo (&#x2030;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_66/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 67,
+		"title": "Indicadores municipales de sostenibilidad: Densidad de viviendas en suelo residencial (Viviendas/Ha.)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_67/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 68,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas familiares desocupadas (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_68/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 69,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas familiares con más de 50 años de antigüedad (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_69/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 7,
+		"title": "Indicadores municipales de sostenibilidad: Población de 16 y más años ocupada en el sector servicios (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_7/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 70,
+		"title": "Indicadores municipales de sostenibilidad: Índice de confort de las viviendas familiares principales",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_70/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 71,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas familiares principales en edificios en estado ruinoso, malo o deficiente (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_71/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 72,
+		"title": "Indicadores municipales de sostenibilidad: Licencias de vivienda nueva concedidas en el último quinquenio (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_72/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 73,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas protegidas (VPO) terminadas en el último quinquenio (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_73/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 74,
+		"title": "Indicadores municipales de sostenibilidad: Población extranjera (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_74/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 75,
+		"title": "Indicadores municipales de sostenibilidad: Suelo urbano (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_75/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 76,
+		"title": "Indicadores municipales de sostenibilidad: Edificios de viviendas de 2 o más plantas sin ascensor (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_76/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 77,
+		"title": "Indicadores municipales de sostenibilidad: Superficie residencial urbanizable (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_77/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 78,
+		"title": "Indicadores municipales de sostenibilidad: Gasto corriente del presupuesto municipal per capita en Servicios Sociales (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_78/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 79,
+		"title": "Indicadores municipales de sostenibilidad: Gasto total per capita en Servicios Sociales (&#x20AC;)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_79/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 8,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de actividad (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_8/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 80,
+		"title": "Indicadores municipales de sostenibilidad: Edificios de viviendas familiares principales con instalación de gas por tubería (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_80/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 81,
+		"title": "Indicadores municipales de sostenibilidad: Oficinas bancarias ( por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_81/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 82,
+		"title": "Indicadores municipales de sostenibilidad: Oficinas de Correos (por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_82/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 83,
+		"title": "Indicadores municipales de sostenibilidad: Gasolineras (por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_83/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 84,
+		"title": "Indicadores municipales de sostenibilidad: Farmacias (por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_84/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 85,
+		"title": "Indicadores municipales de sostenibilidad: Gestión de residuos peligrosos por habitante (kg./habitante/año)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_85/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 86,
+		"title": "Indicadores municipales de sostenibilidad: Solicitudes de vivienda que constan en Etxebide (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_86/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 87,
+		"title": "Indicadores municipales de sostenibilidad: Índice de rendimiento del sistema de abastecimiento de agua (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_87/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 88,
+		"title": "Indicadores municipales de sostenibilidad: Volúmenes de las bibliotecas de acceso público por habitante",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_88/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 89,
+		"title": "Indicadores municipales de sostenibilidad: Peatones atropellados en accidentes registrados (por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_89/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 9,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de actividad de las mujeres (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_9/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 90,
+		"title": "Indicadores municipales de sostenibilidad: Accidentes de tráfico registrados (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_90/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 91,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de actividad de los hombres (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_91/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 92,
+		"title": "Indicadores municipales de sostenibilidad: Tasa de ocupación de los hombres de 16 y más años (%)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_92/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 93,
+		"title": "Indicadores municipales de sostenibilidad: Índice de rotación contractual: hombres (contratos /hombres)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_93/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 94,
+		"title": "Indicadores municipales de sostenibilidad: Población perceptora de pensiones no contributivas (&#x2030; habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_94/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 95,
+		"title": "Indicadores municipales de sostenibilidad: Viviendas con certificado de eficiencia energética  (&#x2030; )",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_95/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 96,
+		"title": "Indicadores municipales de sostenibilidad: Potencia fotovoltaica instalada (kW por 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_96/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 97,
+		"title": "Indicadores municipales de sostenibilidad: Potencia eólica instalada (kW por 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_97/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 98,
+		"title": "Indicadores municipales de sostenibilidad: Potencia hidráulica instalada (kW por 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_98/es_def/adjuntos/indicator.json"
+	},
+	{
+		"id": 99,
+		"title": "Indicadores municipales de sostenibilidad: Superficie solar térmica instalada (m² por cada 10.000 habitantes)",
+		"url": "http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_99/es_def/adjuntos/indicator.json"
+	}
+]);
