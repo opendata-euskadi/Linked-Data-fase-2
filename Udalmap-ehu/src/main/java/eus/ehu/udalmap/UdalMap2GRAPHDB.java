@@ -10,6 +10,9 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
+import eus.ehu.udalmap.Indice;
+import eus.ehu.udalmap.IndicadorURL;
+
 import com.google.gson.Gson;
 
 public class UdalMap2GRAPHDB {
@@ -23,13 +26,17 @@ public class UdalMap2GRAPHDB {
                 HttpEntity entity = response.getEntity();
                 if (entity != null) {
                     String result = EntityUtils.toString(entity);
-                    System.out.println(result);
+                    String jsonResult = result.replace("jsonCallback(", "").replace(");", "");
+                    System.out.println();
                     // Remove
                     // "jsonCallback("
                     // ");"
 
             		Gson gson = new Gson();
-//            		gson.fromJson(result, CLASSINDICE);
+            		Indice index = gson.fromJson(jsonResult, Indice.class);
+            		for (IndicadorURL indicadorurl : index.indicadores) {
+            			System.out.println(indicadorurl.url);
+            		}
                 }
 
             } catch (ParseException e) {
