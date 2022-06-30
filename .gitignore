@@ -41,3 +41,8 @@ Directorio-ehu/.classpath
 Directorio-ehu/.project
 Directorio-ehu/.settings/org.eclipse.jdt.core.prefs
 Directorio-ehu/.settings/org.eclipse.m2e.core.prefs
+/target/
+Udalmap-ehu/.classpath
+Udalmap-ehu/.project
+Udalmap-ehu/.settings/org.eclipse.jdt.core.prefs
+Udalmap-ehu/.settings/org.eclipse.m2e.core.prefs
