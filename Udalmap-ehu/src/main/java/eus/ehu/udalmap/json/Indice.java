@@ -1,4 +1,4 @@
-package eus.ehu.udalmap;
+package eus.ehu.udalmap.json;
 
 import java.util.List;
 

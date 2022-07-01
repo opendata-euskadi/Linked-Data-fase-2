@@ -1,0 +1,615 @@
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_0/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_1/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_10/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_100/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_101/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_102/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_103/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_104/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_105/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_106/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_108/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_109/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_11/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_110/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_111/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_112/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_113/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_114/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_115/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_116/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_117/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_118/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_119/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_12/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_120/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_121/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_122/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_123/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_124/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_125/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_126/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_127/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_129/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_13/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_130/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_131/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_132/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_134/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_135/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_136/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_137/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_138/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_139/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_14/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_140/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_141/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_142/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_143/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_144/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_145/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_146/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_148/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_149/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_15/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_150/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_151/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_152/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_153/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_154/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_155/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_156/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_157/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_158/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_159/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_16/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_160/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_161/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_162/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_163/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_164/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_165/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_166/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_167/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_168/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_169/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_17/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_170/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_172/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_173/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_174/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_175/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_176/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_177/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_178/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_179/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_18/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_180/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_181/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_182/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_183/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_184/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_185/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_186/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_187/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_188/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_189/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_19/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_190/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_191/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_192/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_193/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_194/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_195/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_196/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_197/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_198/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_199/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_2/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_20/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_200/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_201/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_202/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_203/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_204/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_205/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_206/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_207/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_208/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_209/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_21/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_210/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_22/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_23/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_24/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_25/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_26/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_27/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_28/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_29/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_3/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_30/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_31/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_32/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_33/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_34/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_35/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_36/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_37/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_38/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_39/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_4/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_40/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_41/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_42/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_43/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_44/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_45/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_46/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_47/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_48/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_49/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_5/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_50/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_51/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_52/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_53/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_55/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_56/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_57/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_58/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_59/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_6/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_60/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_61/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_62/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_63/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_64/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_65/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_66/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_67/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_68/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_69/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_7/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_70/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_71/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_72/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_73/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_74/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_75/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_76/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_77/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_78/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_79/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_8/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_80/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_81/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_82/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_83/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_84/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_85/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_86/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_87/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_88/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_89/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_9/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_90/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_91/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_92/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_93/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_94/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_95/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_96/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_97/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_98/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
+
+<http://opendata.euskadi.eus/contenidos/estadistica/udalmap_indicador_99/es_def/adjuntos/indicator.json>
+  a <http://example.com/uri> .
