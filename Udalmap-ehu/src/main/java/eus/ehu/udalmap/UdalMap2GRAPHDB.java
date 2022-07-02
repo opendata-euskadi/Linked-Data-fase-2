@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
+import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -15,6 +16,8 @@ import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
 
@@ -23,6 +26,8 @@ import eus.ehu.udalmap.json.IndicadorURL;
 import eus.ehu.udalmap.json.Indice;
 
 public class UdalMap2GRAPHDB {
+	
+	private static Logger logger = LoggerFactory.getLogger(UdalMap2GRAPHDB.class);
 	
 	static String urlGraphDB = UDALMAP2GRAPHDBConfig.urlGraphDB;
 	static String graphDBrepoName = UDALMAP2GRAPHDBConfig.graphDBUDALMAPrepoName;
@@ -33,35 +38,42 @@ public class UdalMap2GRAPHDB {
 	public static void main(String[] args) throws IOException {
 		
 		RemoteRepositoryManager repositoryManager = new RemoteRepositoryManager(urlGraphDB);
-		repositoryManager.setUsernameAndPassword("admin", "root");		
+		repositoryManager.setUsernameAndPassword(UDALMAP2GRAPHDBConfig.graphDBUser, UDALMAP2GRAPHDBConfig.graphDBPassword);		
 		Repository repository = repositoryManager.getRepository(graphDBrepoName);
 		RepositoryConnection repositoryConnection = repository.getConnection();
 		
 		if(UDALMAP2GRAPHDBConfig.clearGraph) {
 			util.clearGraph(namedGraphURI, repositoryConnection);
 		}
+		String indicadores = getJSONStringFromURL(UDALMAP2GRAPHDBConfig.URLIndiceIndicadores);
+		String jsonIndicadores = indicadores.replace("jsonCallback(", "{\"indicadores\":").replace(");", "}");
+		Gson gson = new Gson();
+		Indice index = gson.fromJson(jsonIndicadores, Indice.class);
+		for (IndicadorURL indicadorurl : index.indicadores) {
+			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
+			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
+			Valores jsonValores = gson.fromJson(valoresIndicador, Valores.class);
+//			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
+		}
 		
 		
+		
+
+        
+		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
+		util.flushModel(output);
+	}
+	
+	private static String getJSONStringFromURL (String url) {
+		String result = null;
 		CloseableHttpClient httpClient = HttpClients.createDefault();
         try {
-            HttpGet request = new HttpGet("https://www.opendata.euskadi.eus/contenidos/estadistica/udalmap_grupo_m/es_def/adjuntos/indice.json");
+            HttpGet request = new HttpGet(url);
             CloseableHttpResponse response = httpClient.execute(request);
             try {
                 HttpEntity entity = response.getEntity();
                 if (entity != null) {
-                    String result = EntityUtils.toString(entity);
-                    String jsonResult = result.replace("jsonCallback(", "{\"indicadores\":").replace(");", "}");
-                    System.out.println();
-                    // Remove
-                    // "jsonCallback("
-                    // ");"
-
-            		Gson gson = new Gson();
-            		Indice index = gson.fromJson(jsonResult, Indice.class);
-            		for (IndicadorURL indicadorurl : index.indicadores) {
-            			System.out.println(indicadorurl.url);
-            			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
-            		}
+                    result = EntityUtils.toString(entity);               
                 }
 
             } catch (ParseException e) {
@@ -71,11 +83,17 @@ public class UdalMap2GRAPHDB {
 			} finally {
                 response.close();
             }
-        } finally {
-            httpClient.close();
+        } catch (ClientProtocolException e1) {
+        	logger.error(e1.getMessage());
+		} catch (IOException e1) {
+			logger.error(e1.getMessage());
+		} finally {
+            try {
+				httpClient.close();
+			} catch (IOException e) {
+				logger.error(e.getMessage());
+			}
         }
-        
-		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
-		util.flushModel(output);
+        return result;
 	}
 }

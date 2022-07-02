@@ -12,9 +12,10 @@ public abstract class UDALMAP2GRAPHDBConfig  {
 	public final static String MetadataFile = "Udalmap-metadata.ttl"; // cp ../../../../../datasets/Udalmap/Udalmap-metadata.ttl .
 	public final static String LinksFile = "Udalmap-links.ttl"; // cp ../../../../../datasets/Udalmap/Udalmap-links.ttl . 
 	
-	
 	public final static String graphDBUser = "admin";
 	public final static String graphDBPassword = "root";
+	
+	public final static String URLIndiceIndicadores = "https://www.opendata.euskadi.eus/contenidos/estadistica/udalmap_grupo_m/es_def/adjuntos/indice.json";
 	
 	public final static boolean clearGraph = true;
 	public static final String RDFfileBackupPath = "/home/mikel/EHU-LSI/Investigacion/TransferenciaConocimientoEuskoiker/EJIE-LDf2-2105015/Linked-Data-fase-2/Udalmap-ehu/udalmap.ttl";
