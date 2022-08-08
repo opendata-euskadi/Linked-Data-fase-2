@@ -53,13 +53,20 @@ public class UdalMap2GRAPHDB {
 		Indice index = gson.fromJson(jsonIndicadores, Indice.class);
 		for (IndicadorURL indicadorurl : index.indicadores) {
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
-			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
-			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
-			for (Valor valor : jsonValores.valores) {
-				if (valor.title != null) {
-					logger.info(valor.title);
-				}
-			}
+			
+			// El valor 01100 etc siempre cabia asi que lo parseo a mano
+			
+			
+			
+			
+			
+//			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
+//			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
+//			for (Valor valor : jsonValores.valores) {
+//				if (valor.title != null) {
+//					logger.info(valor.title);
+//				}
+//			}
 			
 			
 			
