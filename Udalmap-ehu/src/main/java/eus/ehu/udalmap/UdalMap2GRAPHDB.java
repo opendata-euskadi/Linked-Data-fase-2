@@ -24,6 +24,7 @@ import com.google.gson.Gson;
 import eus.ehu.udalmap.graphdb.Util;
 import eus.ehu.udalmap.json.IndicadorURL;
 import eus.ehu.udalmap.json.Indice;
+import eus.ehu.udalmap.json.Valor;
 import eus.ehu.udalmap.json.Valores;
 
 public class UdalMap2GRAPHDB {
@@ -54,7 +55,15 @@ public class UdalMap2GRAPHDB {
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
 			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
 			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
-			logger.info(jsonValores.valores.get(0).title);
+			for (Valor valor : jsonValores.valores) {
+				if (valor.title != null) {
+					logger.info(valor.title);
+				}
+			}
+			
+			
+			
+//			logger.info(jsonValores.valores.get(0).title);
 //			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
 		}
 		
