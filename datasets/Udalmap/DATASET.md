@@ -19,7 +19,7 @@
   * ClassName: ???
   * Identifier: ???
 * Enlaces a/desde otros datasets:
-  * NORA: ???
+  * NORA: a traves de ID entity, region, municipality
 * Notas:
 
 ## Ontologías

@@ -22,3 +22,16 @@ Docker no funciona al actualizar a Ubuntu por que no monta los cgroups. Solucion
 mkdir /sys/fs/cgroup/systemd
 mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
 ```
+
+Añadir la linea a `/etc/fstab`:
+
+```bash
+cgroup    /sys/fs/cgroup/systemd    cgroup    defaults
+```
+
+Pero no funciona por que se borra el directorio cada vez. Esto si funciona:
+
+```
+echo "GRUB_CMDLINE_LINUX=systemd.unified_cgroup_hierarchy=false" | sudo tee /etc/default/grub.d/cgroup.cfg
+sudo update-grub
+``

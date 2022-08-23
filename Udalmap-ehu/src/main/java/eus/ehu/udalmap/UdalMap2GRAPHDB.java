@@ -2,6 +2,7 @@ package eus.ehu.udalmap;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Map;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.ParseException;
@@ -52,31 +53,49 @@ public class UdalMap2GRAPHDB {
 		String jsonIndicadores = indicadores.replace("jsonCallback(", "{\"indicadores\":").replace(");", "}");
 		Gson gson = new Gson();
 		Indice index = gson.fromJson(jsonIndicadores, Indice.class);
+		
+
 		for (IndicadorURL indicadorurl : index.indicadores) {
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
-		
-			// El valor 01100 etc siempre cabia asi que lo parseo a mano
+			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
 			
-			logger.info(valoresIndicador);
+			// El valor 01100 etc siempre cambia asi que lo parseo a mano, sobre todo a nivel municipio y region
 			
+			// TODO: usar IDs ej. 01100 para enlazzar con NORA!
 			
+			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
+			for (Valor valor : jsonValores.valores) {
+				if (valor.title != null) {
+					logger.info(valor.title);
+				}
+				
+				if (valor.entity != null) {
+					for (Map medicion : valor.entity) {
+						logger.info(medicion.toString());
+					}
+				}
+				
+				if (valor.region != null) {
+					for (Map medicion : valor.region) {
+						logger.info(medicion.toString());
+					}
+				}
+				
+				if (valor.municipality != null) {
+					for (Map medicion : valor.municipality) {
+						logger.info(medicion.toString());
+					}
+				}
+				
+			}
 			
-		
-//			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
-//			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
-//			for (Valor valor : jsonValores.valores) {
-//				if (valor.title != null) {
-//					logger.info(valor.title);
-//				}
-//			}
-		
 			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
+			
+//			break;
+
 		
 		}	
 			
-
-		
-		
 		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
 		util.flushModel(output);
 	}
