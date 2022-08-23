@@ -48,18 +48,20 @@ public class UdalMap2GRAPHDB {
 			util.clearGraph(namedGraphURI, repositoryConnection);
 		}
 		String indicadores = getJSONStringFromURL(UDALMAP2GRAPHDBConfig.URLIndiceIndicadores);
+		
 		String jsonIndicadores = indicadores.replace("jsonCallback(", "{\"indicadores\":").replace(");", "}");
 		Gson gson = new Gson();
 		Indice index = gson.fromJson(jsonIndicadores, Indice.class);
 		for (IndicadorURL indicadorurl : index.indicadores) {
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
-			
+		
 			// El valor 01100 etc siempre cabia asi que lo parseo a mano
 			
+			logger.info(valoresIndicador);
 			
 			
 			
-			
+		
 //			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
 //			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
 //			for (Valor valor : jsonValores.valores) {
@@ -67,17 +69,14 @@ public class UdalMap2GRAPHDB {
 //					logger.info(valor.title);
 //				}
 //			}
-			
-			
-			
-//			logger.info(jsonValores.valores.get(0).title);
-//			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
-		}
 		
+			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
 		
-		
+		}	
+			
 
-        
+		
+		
 		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
 		util.flushModel(output);
 	}
