@@ -16,11 +16,12 @@
 * Patrón de URIs:
   * Sector: public-sector
   * Domain: udalmap
-  * ClassName: ???
-  * Identifier: ???
+  * ClassName: indicadormunicipalsostenbilidad
+  * Identifier: nombre de indicador normalizado + localizacion (entity|region|municipality) + periodo + valor
 * Enlaces a/desde otros datasets:
-  * NORA: a traves de ID entity, region, municipality
+  * NORA: URI NORA mediante localizacion (entity|region|municipality)
 * Notas:
+  * Se crea una clase por cada indicador, y cada medicion es una instancia de esa clase
 
 ## Ontologías
 
@@ -30,7 +31,7 @@ Posibles ontologías:
 
 Ontologias a incluir en triple store:
 
-* ...
+* Se crea una clase por cada indicador, y cada medicion es una instancia de esa clase. No hace falta incluir la ontologia.
 
 Para más detalles ver archivo `Directorio-metadata.ttl`:
 

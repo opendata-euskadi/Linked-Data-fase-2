@@ -69,33 +69,28 @@ public class UdalMap2GRAPHDB {
 					logger.info(valor.title);
 				}
 				
-				if (valor.entity != null) {
-					for (Map medicion : valor.entity) {
-						logger.info(medicion.toString());
-					}
-				}
+//				if (valor.entity != null) {
+//					for (Map medicion : valor.entity) {
+//						logger.info(medicion.toString());
+//					}
+//				}
+//				
+//				if (valor.region != null) {
+//					for (Map medicion : valor.region) {
+//						logger.info(medicion.toString());
+//					}
+//				}
 				
-				if (valor.region != null) {
-					for (Map medicion : valor.region) {
-						logger.info(medicion.toString());
-					}
-				}
-				
-				if (valor.municipality != null) {
-					for (Map medicion : valor.municipality) {
-						logger.info(medicion.toString());
-					}
-				}
+//				if (valor.municipality != null) {
+//					for (Map medicion : valor.municipality) {
+//						logger.info(medicion.toString());
+//					}
+//				}
 				
 			}
-			
 			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
-			
 //			break;
-
-		
-		}	
-			
+		}		
 		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
 		util.flushModel(output);
 	}
