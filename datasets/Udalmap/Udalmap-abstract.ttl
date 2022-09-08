@@ -8,6 +8,6 @@
     <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> "2021"^^xsd:gYear ; 
     <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://id.euskadi.eus/public-sector/urbanism-territory/province/01000> .
 
-<http://id.euskadi.eus/def/udalmap#superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes> rdfs:label "Indicadores municipales de sostenibilidad: Superficie solar térmica instalada (m² por cada 10.000 habitantes)"@es
+<http://id.euskadi.eus/def/udalmap#superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes> rdfs:label "Indicadores municipales de sostenibilidad: Superficie solar térmica instalada (m² por cada 10.000 habitantes)"@es .
 
 

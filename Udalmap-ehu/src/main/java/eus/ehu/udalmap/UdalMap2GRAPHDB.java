@@ -12,6 +12,9 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+
+import org.apache.commons.lang3.StringUtils;
+
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
@@ -66,7 +69,27 @@ public class UdalMap2GRAPHDB {
 			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
 			for (Valor valor : jsonValores.valores) {
 				if (valor.title != null) {
-					logger.info(valor.title);
+					String titulo_medidor = valor.title;
+					String titulo_medidor_normalizado = StringUtils.stripAccents(
+							titulo_medidor
+							.toLowerCase()
+							.replace("indicadores municipales de sostenibilidad: ", "")
+							.replaceAll("%", "porcentaje")
+							.replaceAll("/", "por")
+							.replaceAll("\\.", "")
+							.replaceAll("\\(", "")
+							.replaceAll("\\)", "")
+							.replaceAll("km²", "km2")
+							.replaceAll("m²","-")
+							.replaceAll("&#x2030;", "")
+							.replaceAll("&#x20ac;", "")
+							.replaceAll("nº", "")
+							.replaceAll("\\s","-")
+							
+//							.replaceAll("\\W[^-]","")
+							);
+					
+					logger.info("--" + titulo_medidor_normalizado);
 				}
 				
 //				if (valor.entity != null) {
