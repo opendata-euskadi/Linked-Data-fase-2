@@ -64,12 +64,13 @@ public class UdalMap2GRAPHDB {
 			
 			// El valor 01100 etc siempre cambia asi que lo parseo a mano, sobre todo a nivel municipio y region
 			
-			// TODO: usar IDs ej. 01100 para enlazzar con NORA!
+			// TODO: usar IDs ej. 01100 para enlazar con NORA!
 			
 			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
 			for (Valor valor : jsonValores.valores) {
 				if (valor.title != null) {
 					String titulo_medidor = valor.title;
+					logger.info("--" + titulo_medidor);
 					String titulo_medidor_normalizado = StringUtils.stripAccents(
 							titulo_medidor
 							.toLowerCase()
@@ -84,19 +85,32 @@ public class UdalMap2GRAPHDB {
 							.replaceAll("&#x2030;", "")
 							.replaceAll("&#x20ac;", "")
 							.replaceAll("nº", "")
+							.replaceAll(",", "")
+							.replaceAll(":", "")
+							.replaceAll("=", "")
+							.replaceAll("ª", "")
+							.trim()
+							.strip()
 							.replaceAll("\\s","-")
-							
-//							.replaceAll("\\W[^-]","")
 							);
 					
-					logger.info("--" + titulo_medidor_normalizado);
+					logger.info("!!!" + titulo_medidor_normalizado + "!!!");
 				}
 				
-//				if (valor.entity != null) {
-//					for (Map medicion : valor.entity) {
-//						logger.info(medicion.toString());
-//					}
-//				}
+				if (valor.entity != null) {
+					for (Map medicion : valor.entity) {
+						String medicion_original = medicion.toString();
+						
+						
+//						!!!!!! La medicion cambia del original, de : a = y quita comillas????
+						
+						
+						System.out.println(medicion_original);
+						System.out.println(medicion_original.indexOf("="));
+						System.out.println(medicion_original.substring(medicion_original.indexOf("=")+1, medicion_original.length()-1));
+//						logger.info();
+					}
+				}
 //				
 //				if (valor.region != null) {
 //					for (Map medicion : valor.region) {

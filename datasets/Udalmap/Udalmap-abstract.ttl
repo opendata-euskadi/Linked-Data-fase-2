@@ -2,6 +2,16 @@
 
 # {01000={title=Araba/Álava, values=[{2021=273.75, 2020=271.71, 2019=256.12, 2018=233.81, 2017=229.97, 2016=220.78, 2015=216.81, 2014=216.33, 2013=208.3, 2012=205.56, 2011=200.03, 2010=198.07, 2009=182.26, 2008=164.73, 2007=107.88, 2006=92.39, 2005=73.24}]}}
 
+# {
+# 	01000=
+# 	{
+# 	title=Araba/Álava, 
+# 	values=[
+# 		{2019=1.52, 2018=1.78, 2017=1.67, 2016=1.7, 2015=1.7, 2012=1.2, 2010=1.2, 2008=1.3, 2005=1.8, 2000=3.5}
+# 		]
+# 	}
+# }
+
 <http://id.euskadi.eus/public-sector/udalmap/indicadormunicipalsostenbilidad/superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes-01000-2021-273-75> 
     rdf:type <http://id.euskadi.eus/def/udalmap#superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes> ;
     <http://purl.org/linked-data/sdmx/2009/measure#obsValue> "273.75"^^<http://www.w3.org/2001/XMLSchema#double> ;
