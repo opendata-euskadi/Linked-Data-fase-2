@@ -21,6 +21,7 @@ import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
+import org.json.JSONArray;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,16 +65,40 @@ public class UdalMap2GRAPHDB {
 		for (IndicadorURL indicadorurl : index.indicadores) {
 			System.out.println(indicadorurl.url);
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
-			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
+//			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
 			
-			
-			JSONObject jo = new JSONObject(jsonValoresIndicador);
-			System.out.println(jo.get("title"));
-			System.out.println(jo.get("entity"));
-//			System.out.println(jo.get("region"));
-			System.out.println(jo.get("municipality"));
+//			System.out.println(valoresIndicador);
+						
+			JSONObject valoresIndicadorJSONObject = new JSONObject("{\"datos\":[" + valoresIndicador + "]}");
+			JSONArray valoresIndicadorJSONArray = (JSONArray) valoresIndicadorJSONObject.get("datos");
+			System.out.println(valoresIndicadorJSONArray.length());
+			// entity, municipality
+			if(valoresIndicadorJSONArray.length() == 2) {
+				System.out.println("Entity: " + valoresIndicadorJSONArray.get(0));
+				System.out.println("Municipality: " + valoresIndicadorJSONArray.get(1));
+			}
+			// entity, region, municipality
+			if(valoresIndicadorJSONArray.length() == 3) {
+				System.out.println("Entity: " + valoresIndicadorJSONArray.get(0));
+				System.out.println("Region: " + valoresIndicadorJSONArray.get(1));
+				System.out.println("Municipality: " + valoresIndicadorJSONArray.get(2));
+			}
 
 			
+//			for (String key : valoresIndicadorJSONObject.keySet()) {
+//				System.out.println(key);
+//				System.out.println(valoresIndicadorJSONObject.get(key));
+//			}
+			
+//			System.out.println(valoresIndicadorJSONObject.get("title"));
+//			System.out.println(valoresIndicadorJSONObject.get("entity"));
+			
+//			System.out.println(jo.get("title"));
+//			System.out.println(jo.get("entity"));
+//			System.out.println(jo.get("region"));
+//			System.out.println(jo.get("municipality"));
+
+//			break;
 			
 			
 			
@@ -139,7 +164,6 @@ public class UdalMap2GRAPHDB {
 				
 //			}
 //			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
-//			break;
 		}		
 		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
 		util.flushModel(output);
