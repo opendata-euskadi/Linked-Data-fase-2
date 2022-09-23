@@ -2,6 +2,7 @@ package eus.ehu.udalmap;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.apache.http.HttpEntity;
@@ -20,10 +21,12 @@ import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
 import org.eclipse.rdf4j.repository.manager.RepositoryManager;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 
 import eus.ehu.udalmap.graphdb.Util;
 import eus.ehu.udalmap.json.IndicadorURL;
@@ -59,58 +62,68 @@ public class UdalMap2GRAPHDB {
 		
 
 		for (IndicadorURL indicadorurl : index.indicadores) {
+			System.out.println(indicadorurl.url);
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
 			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
+			
+			
+			JSONObject jo = new JSONObject(jsonValoresIndicador);
+			System.out.println(jo.get("title"));
+			System.out.println(jo.get("entity"));
+//			System.out.println(jo.get("region"));
+			System.out.println(jo.get("municipality"));
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			// El valor 01100 etc siempre cambia asi que lo parseo a mano, sobre todo a nivel municipio y region
 			
 			// TODO: usar IDs ej. 01100 para enlazar con NORA!
 			
-			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
-			for (Valor valor : jsonValores.valores) {
-				if (valor.title != null) {
-					String titulo_medidor = valor.title;
-					logger.info("--" + titulo_medidor);
-					String titulo_medidor_normalizado = StringUtils.stripAccents(
-							titulo_medidor
-							.toLowerCase()
-							.replace("indicadores municipales de sostenibilidad: ", "")
-							.replaceAll("%", "porcentaje")
-							.replaceAll("/", "por")
-							.replaceAll("\\.", "")
-							.replaceAll("\\(", "")
-							.replaceAll("\\)", "")
-							.replaceAll("km²", "km2")
-							.replaceAll("m²","-")
-							.replaceAll("&#x2030;", "")
-							.replaceAll("&#x20ac;", "")
-							.replaceAll("nº", "")
-							.replaceAll(",", "")
-							.replaceAll(":", "")
-							.replaceAll("=", "")
-							.replaceAll("ª", "")
-							.trim()
-							.strip()
-							.replaceAll("\\s","-")
-							);
-					
-					logger.info("!!!" + titulo_medidor_normalizado + "!!!");
-				}
-				
-				if (valor.entity != null) {
-					for (Map medicion : valor.entity) {
-						String medicion_original = medicion.toString();
+//			System.out.println(jsonValoresIndicador);
+			
+//			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
+			
+//			System.out.println(jsonValores.title);
+			
+//			for (Valor valor : jsonValores.valores) {
+//				if (valor.title != null) {
+//					String titulo_medidor = valor.title;
+//					logger.info("--" + titulo_medidor);
+//					String titulo_medidor_normalizado = normalize_string (titulo_medidor);
+//					logger.info("!!!" + titulo_medidor_normalizado + "!!!");
+//				}
+//				
+//				if (valor.entity != null) {
+//					for (Map medicion : valor.entity) {
+//						String medicion_original = medicion.toString();
+//						com.google.gson.internal.LinkedTreeMap
+//						System.out.println(medicion.entrySet());
+//						Iterator itr = medicion.keySet().iterator();
+//						while (itr.hasNext()){
+//						    String key = (String) itr.next();
+//						    String value = (String) medicion.get(key);
+//						 
+//						    System.out.println(key + "=" + value);
+//						}
 						
 						
 //						!!!!!! La medicion cambia del original, de : a = y quita comillas????
 						
 						
-						System.out.println(medicion_original);
-						System.out.println(medicion_original.indexOf("="));
-						System.out.println(medicion_original.substring(medicion_original.indexOf("=")+1, medicion_original.length()-1));
+//						System.out.println(medicion_original);
+//						System.out.println(medicion_original.indexOf("="));
+//						System.out.println(medicion_original.substring(medicion_original.indexOf("=")+1, medicion_original.length()-1));
 //						logger.info();
-					}
-				}
+//					}
+//				}
 //				
 //				if (valor.region != null) {
 //					for (Map medicion : valor.region) {
@@ -124,14 +137,39 @@ public class UdalMap2GRAPHDB {
 //					}
 //				}
 				
-			}
-			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
+//			}
+//			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
 //			break;
 		}		
 		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
 		util.flushModel(output);
 	}
 	
+	private static String normalize_string(String target_string) {
+		return StringUtils.stripAccents(
+				target_string
+				.toLowerCase()
+				.replace("indicadores municipales de sostenibilidad: ", "")
+				.replaceAll("%", "porcentaje")
+				.replaceAll("/", "por")
+				.replaceAll("\\.", "")
+				.replaceAll("\\(", "")
+				.replaceAll("\\)", "")
+				.replaceAll("km²", "km2")
+				.replaceAll("m²","-")
+				.replaceAll("&#x2030;", "")
+				.replaceAll("&#x20ac;", "")
+				.replaceAll("nº", "")
+				.replaceAll(",", "")
+				.replaceAll(":", "")
+				.replaceAll("=", "")
+				.replaceAll("ª", "")
+				.trim()
+				.strip()
+				.replaceAll("\\s","-")
+				);
+	}
+
 	private static String getJSONStringFromURL (String url) {
 		String result = null;
 		CloseableHttpClient httpClient = HttpClients.createDefault();
