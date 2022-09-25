@@ -63,106 +63,31 @@ public class UdalMap2GRAPHDB {
 		
 
 		for (IndicadorURL indicadorurl : index.indicadores) {
-			System.out.println(indicadorurl.url);
+
 			String valoresIndicador = getJSONStringFromURL(indicadorurl.url); 
-//			String jsonValoresIndicador = valoresIndicador.replace("jsonCallback(", "{\"valores\":").replace(");", "}");
 			
-//			System.out.println(valoresIndicador);
 						
 			JSONObject valoresIndicadorJSONObject = new JSONObject("{\"datos\":[" + valoresIndicador + "]}");
 			JSONArray valoresIndicadorJSONArray = (JSONArray) valoresIndicadorJSONObject.get("datos");
-			System.out.println(valoresIndicadorJSONArray.length());
-			// entity, municipality
-			if(valoresIndicadorJSONArray.length() == 2) {
-				System.out.println("Entity: " + valoresIndicadorJSONArray.get(0));
-				System.out.println("Municipality: " + valoresIndicadorJSONArray.get(1));
-			}
-			// entity, region, municipality
-			if(valoresIndicadorJSONArray.length() == 3) {
-				System.out.println("Entity: " + valoresIndicadorJSONArray.get(0));
-				System.out.println("Region: " + valoresIndicadorJSONArray.get(1));
-				System.out.println("Municipality: " + valoresIndicadorJSONArray.get(2));
-			}
-
-			
-//			for (String key : valoresIndicadorJSONObject.keySet()) {
-//				System.out.println(key);
-//				System.out.println(valoresIndicadorJSONObject.get(key));
-//			}
-			
-//			System.out.println(valoresIndicadorJSONObject.get("title"));
-//			System.out.println(valoresIndicadorJSONObject.get("entity"));
-			
-//			System.out.println(jo.get("title"));
-//			System.out.println(jo.get("entity"));
-//			System.out.println(jo.get("region"));
-//			System.out.println(jo.get("municipality"));
-
-//			break;
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			// El valor 01100 etc siempre cambia asi que lo parseo a mano, sobre todo a nivel municipio y region
 			
 			// TODO: usar IDs ej. 01100 para enlazar con NORA!
 			
-//			System.out.println(jsonValoresIndicador);
-			
-//			Valores jsonValores = gson.fromJson(jsonValoresIndicador, Valores.class);
-			
-//			System.out.println(jsonValores.title);
-			
-//			for (Valor valor : jsonValores.valores) {
-//				if (valor.title != null) {
-//					String titulo_medidor = valor.title;
-//					logger.info("--" + titulo_medidor);
-//					String titulo_medidor_normalizado = normalize_string (titulo_medidor);
-//					logger.info("!!!" + titulo_medidor_normalizado + "!!!");
-//				}
-//				
-//				if (valor.entity != null) {
-//					for (Map medicion : valor.entity) {
-//						String medicion_original = medicion.toString();
-//						com.google.gson.internal.LinkedTreeMap
-//						System.out.println(medicion.entrySet());
-//						Iterator itr = medicion.keySet().iterator();
-//						while (itr.hasNext()){
-//						    String key = (String) itr.next();
-//						    String value = (String) medicion.get(key);
-//						 
-//						    System.out.println(key + "=" + value);
-//						}
-						
-						
-//						!!!!!! La medicion cambia del original, de : a = y quita comillas????
-						
-						
-//						System.out.println(medicion_original);
-//						System.out.println(medicion_original.indexOf("="));
-//						System.out.println(medicion_original.substring(medicion_original.indexOf("=")+1, medicion_original.length()-1));
-//						logger.info();
-//					}
-//				}
-//				
-//				if (valor.region != null) {
-//					for (Map medicion : valor.region) {
-//						logger.info(medicion.toString());
-//					}
-//				}
-				
-//				if (valor.municipality != null) {
-//					for (Map medicion : valor.municipality) {
-//						logger.info(medicion.toString());
-//					}
-//				}
-				
+			// indicadores municipales: entity con solo title, municipality con datos
+			if(valoresIndicadorJSONArray.length() == 2) {
+				JSONObject tituloJSONObject = (JSONObject) valoresIndicadorJSONArray.get(0);
+				System.out.println(normalize_string((String)tituloJSONObject.get("title")));
+				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1));
+
+			}
+			// entity, region, municipality
+//			if(valoresIndicadorJSONArray.length() == 3) {
+//				System.out.println("Entity: " + valoresIndicadorJSONArray.get(0));
+//				System.out.println("Region: " + valoresIndicadorJSONArray.get(1));
+//				System.out.println("Municipality: " + valoresIndicadorJSONArray.get(2));
 //			}
+
+//			break;
+			
 //			util.addIRITriple(indicadorurl.url, RDF.TYPE.stringValue(), "http://example.com/uri", namedGraphURI, repositoryConnection);
 		}		
 		FileOutputStream output = new FileOutputStream(UDALMAP2GRAPHDBConfig.RDFfileBackupPath);
@@ -225,5 +150,20 @@ public class UdalMap2GRAPHDB {
 			}
         }
         return result;
+	}
+	
+	private static void process_municipality(JSONObject municipalityJSONObject) {
+		Iterator valuesJSONArrayIterator = ((JSONArray) municipalityJSONObject.get("municipality")).iterator();
+		while (valuesJSONArrayIterator.hasNext()) {
+			JSONObject valueJSONObject = (JSONObject) valuesJSONArrayIterator.next();
+			String municipality_id = (String) valueJSONObject.names().get(0);
+			// 48001 http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-001
+			JSONObject medicionesJSONObject = valueJSONObject.getJSONObject(municipality_id);
+			JSONObject medicionesValoresJSONObject = ((JSONObject) medicionesJSONObject.getJSONArray("values").get(0));
+			Iterator medicionesValoresIterator = medicionesValoresJSONObject.keys();
+			while(medicionesValoresIterator.hasNext()) {
+				System.out.println(medicionesValoresIterator.next() + "--" + medicionesValoresJSONObject.get((String)medicionesValoresIterator.next()));
+			}
+		}
 	}
 }
