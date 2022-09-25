@@ -17,6 +17,7 @@ import org.apache.http.util.EntityUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import org.eclipse.rdf4j.model.vocabulary.RDF;
+import org.eclipse.rdf4j.model.vocabulary.RDFS;
 import org.eclipse.rdf4j.repository.Repository;
 import org.eclipse.rdf4j.repository.RepositoryConnection;
 import org.eclipse.rdf4j.repository.manager.RemoteRepositoryManager;
@@ -32,8 +33,7 @@ import com.google.gson.stream.JsonReader;
 import eus.ehu.udalmap.graphdb.Util;
 import eus.ehu.udalmap.json.IndicadorURL;
 import eus.ehu.udalmap.json.Indice;
-import eus.ehu.udalmap.json.Valor;
-import eus.ehu.udalmap.json.Valores;
+import eus.ehu.udalmap.uris.EuskadiURIs;
 
 public class UdalMap2GRAPHDB {
 	
@@ -75,8 +75,9 @@ public class UdalMap2GRAPHDB {
 			// indicadores municipales: entity con solo title, municipality con datos
 			if(valoresIndicadorJSONArray.length() == 2) {
 				JSONObject tituloJSONObject = (JSONObject) valoresIndicadorJSONArray.get(0);
-				System.out.println(normalize_string((String)tituloJSONObject.get("title")));
-				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1));
+				String titulo_bruto = (String)tituloJSONObject.get("title");
+				String URI_indicador = process_indicador_title(titulo_bruto,repositoryConnection);
+//				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1));
 
 			}
 			// entity, region, municipality
@@ -162,8 +163,16 @@ public class UdalMap2GRAPHDB {
 			JSONObject medicionesValoresJSONObject = ((JSONObject) medicionesJSONObject.getJSONArray("values").get(0));
 			Iterator medicionesValoresIterator = medicionesValoresJSONObject.keys();
 			while(medicionesValoresIterator.hasNext()) {
-				System.out.println(medicionesValoresIterator.next() + "--" + medicionesValoresJSONObject.get((String)medicionesValoresIterator.next()));
+				String year = (String) medicionesValoresIterator.next();
+				System.out.println(year + "--");
+				System.out.println(medicionesValoresJSONObject.get(year));
 			}
 		}
+	}
+	private static String process_indicador_title (String title, RepositoryConnection repositoryConnection) {
+		System.out.println(title);
+		String URI_indicador = EuskadiURIs.Indicador + normalize_string(title);
+		util.addLiteralTripleLang(URI_indicador, RDFS.LABEL.stringValue(), title, "es", namedGraphURI, repositoryConnection);
+		return URI_indicador;
 	}
 }
