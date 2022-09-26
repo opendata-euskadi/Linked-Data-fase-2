@@ -39,3 +39,21 @@ Para más detalles ver archivo `Directorio-metadata.ttl`:
 
 ## Consultas SPARQL
 
+### Lista indicadores
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?nombre_indicador
+FROM <http://id.euskadi.eus/graph/Udalmap>
+WHERE { 
+	?medicion rdf:type ?indicador .
+  ?indicador rdfs:label ?nombre_indicador
+} 
+```
+
+### Valores de indicador que contenga la palabra "agro" ordenados por años
+
+### Valores de indicador que contenga la palabra "agro" ordenados por años de municipios de Alava (Y su enlace a WikiData)
+
+### Lista indicadores ordenados por municipio
