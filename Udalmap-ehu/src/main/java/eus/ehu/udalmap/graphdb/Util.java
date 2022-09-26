@@ -1,6 +1,7 @@
 package eus.ehu.udalmap.graphdb;
 
 import java.io.FileOutputStream;
+import java.time.Year;
 
 import org.eclipse.rdf4j.model.IRI;
 import org.eclipse.rdf4j.model.Literal;
@@ -57,6 +58,15 @@ public class Util {
 			model.add(sub,pred,obj);
 		}
 	}
+	
+	public void addLiteralTriple (String s, String p, Year o, String namedGraph, RepositoryConnection connection) {
+		IRI sub= Values.iri(s);
+		IRI pred = Values.iri(p);
+		Literal obj = Values.literal(o);
+		IRI namedgraphIRI = Values.iri(namedGraph);
+		connection.add(sub, pred, obj, namedgraphIRI);
+		model.add(sub,pred,obj);
+	}	
 	
 	public void addLiteralTripleLang (String s, String p, String o, String lang, String namedGraph, RepositoryConnection connection) {
 		IRI sub= Values.iri(s);

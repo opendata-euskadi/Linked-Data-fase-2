@@ -1,0 +1,30 @@
+
+<http://id.euskadi.eus/def/udalmap#accesibilidad-del-municipio> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Indicadores municipales de sostenibilidad: Accesibilidad del municipio"@es .
+
+<http://id.euskadi.eus/def/udalmap#calificacion-sanitaria-del-agua-de-consumo> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Indicadores municipales de sostenibilidad: Calificación sanitaria del agua de consumo"@es .
+
+<http://id.euskadi.eus/def/udalmap#conectividad-del-municipio-mediante-transporte-publico-autobus-interurbano--de-municipios>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Conectividad del municipio mediante transporte público: autobús interurbano (nº de municipios)"@es .
+
+<http://id.euskadi.eus/def/udalmap#distancia-a-la-capital-del-territorio-historico-porcentaje-rodeo>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Distancia a la capital del Territorio Histórico (% rodeo)"@es .
+
+<http://id.euskadi.eus/def/udalmap#edificios-de-viviendas-de-2-o-mas-plantas-sin-ascensor-porcentaje>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Edificios de viviendas de 2 o más plantas sin ascensor (%)"@es .
+
+<http://id.euskadi.eus/def/udalmap#gasto-corriente-del-presupuesto-municipal-per-capita-en-servicios-sociales>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Gasto corriente del presupuesto municipal per capita en Servicios Sociales (&#x20AC;)"@es .
+
+<http://id.euskadi.eus/def/udalmap#indice-de-rendimiento-del-sistema-de-abastecimiento-de-agua-porcentaje>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Índice de rendimiento del sistema de abastecimiento de agua (%)"@es .
+
+<http://id.euskadi.eus/def/udalmap#tiempo-medio-de-acceso-a-carreteras-principales-min>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Tiempo medio de acceso a carreteras principales (min.)"@es .
+
+<http://id.euskadi.eus/def/udalmap#tiempo-medio-de-acceso-a-la-capital-del-territorio-historico-min>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Tiempo medio de acceso a la capital del Territorio Histórico (min.)"@es .
+
+<http://id.euskadi.eus/def/udalmap#tiempo-medio-de-desplazamiento-a-los-restantes-municipios-de-la-cade-euskadi-min>
+  <http://www.w3.org/2000/01/rdf-schema#label> "Indicadores municipales de sostenibilidad: Tiempo medio de desplazamiento a los restantes municipios de la C.A.de Euskadi (min.)"@es .

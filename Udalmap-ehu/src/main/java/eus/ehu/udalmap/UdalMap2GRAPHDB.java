@@ -2,6 +2,8 @@ package eus.ehu.udalmap;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.time.Year;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -33,7 +35,9 @@ import com.google.gson.stream.JsonReader;
 import eus.ehu.udalmap.graphdb.Util;
 import eus.ehu.udalmap.json.IndicadorURL;
 import eus.ehu.udalmap.json.Indice;
+import eus.ehu.udalmap.uris.DataCubeURIs;
 import eus.ehu.udalmap.uris.EuskadiURIs;
+import eus.ehu.udalmap.uris.UDALMAPBaseURIs;
 
 public class UdalMap2GRAPHDB {
 	
@@ -77,7 +81,7 @@ public class UdalMap2GRAPHDB {
 				JSONObject tituloJSONObject = (JSONObject) valoresIndicadorJSONArray.get(0);
 				String titulo_bruto = (String)tituloJSONObject.get("title");
 				String URI_indicador = process_indicador_title(titulo_bruto,repositoryConnection);
-//				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1));
+				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1), URI_indicador, repositoryConnection);
 
 			}
 			// entity, region, municipality
@@ -153,25 +157,41 @@ public class UdalMap2GRAPHDB {
         return result;
 	}
 	
-	private static void process_municipality(JSONObject municipalityJSONObject) {
+	private static void process_municipality(JSONObject municipalityJSONObject, String URI_indicador, RepositoryConnection repositoryConnection) {
+		System.out.println(URI_indicador);
 		Iterator valuesJSONArrayIterator = ((JSONArray) municipalityJSONObject.get("municipality")).iterator();
 		while (valuesJSONArrayIterator.hasNext()) {
 			JSONObject valueJSONObject = (JSONObject) valuesJSONArrayIterator.next();
 			String municipality_id = (String) valueJSONObject.names().get(0);
+			String proper_municipality_id = municipality_id.substring(0,2) + "-" + municipality_id.substring(2,5);
+//			System.out.println(proper_municipality_id);
 			// 48001 http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-001
 			JSONObject medicionesJSONObject = valueJSONObject.getJSONObject(municipality_id);
 			JSONObject medicionesValoresJSONObject = ((JSONObject) medicionesJSONObject.getJSONArray("values").get(0));
 			Iterator medicionesValoresIterator = medicionesValoresJSONObject.keys();
 			while(medicionesValoresIterator.hasNext()) {
 				String year = (String) medicionesValoresIterator.next();
-				System.out.println(year + "--");
-				System.out.println(medicionesValoresJSONObject.get(year));
+				Year year_proper = Year.parse(year);
+				String URI_medicion = UDALMAPBaseURIs.INDICADORMUNICIPALSOSTENIBILIDAD.getURI() 
+									+ URI_indicador.replace(EuskadiURIs.Indicador.getURI(), "") + "-" 
+									+ municipality_id + "-"
+									+ year + "-" 
+									+ medicionesValoresJSONObject.get(year).toString().replace(".", "");
+				util.addLiteralTriple(URI_medicion, DataCubeURIs.refPeriod.getURI(), year_proper, namedGraphURI, repositoryConnection);
+				if(medicionesValoresJSONObject.get(year).getClass() == java.math.BigDecimal.class) {
+					Double o = ((BigDecimal)medicionesValoresJSONObject.get(year)).doubleValue();
+					util.addLiteralTriple(URI_medicion, DataCubeURIs.obsValue.getURI(), o, namedGraphURI, repositoryConnection);
+				}
+				else {
+					util.addLiteralTriple(URI_medicion, DataCubeURIs.obsValue.getURI(), medicionesValoresJSONObject.get(year).toString(), namedGraphURI, repositoryConnection);
+				}
+				
 			}
 		}
 	}
+	
 	private static String process_indicador_title (String title, RepositoryConnection repositoryConnection) {
-		System.out.println(title);
-		String URI_indicador = EuskadiURIs.Indicador + normalize_string(title);
+		String URI_indicador = EuskadiURIs.Indicador.getURI() + normalize_string(title);
 		util.addLiteralTripleLang(URI_indicador, RDFS.LABEL.stringValue(), title, "es", namedGraphURI, repositoryConnection);
 		return URI_indicador;
 	}

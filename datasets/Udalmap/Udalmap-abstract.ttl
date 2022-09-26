@@ -12,18 +12,24 @@
 # 	}
 # }
 
+<http://id.euskadi.eus/def/udalmap#superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes> rdfs:label "Indicadores municipales de sostenibilidad: Superficie solar térmica instalada (m² por cada 10.000 habitantes)"@es .
+
+
+
+
 <http://id.euskadi.eus/public-sector/udalmap/indicadormunicipalsostenbilidad/superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes-01000-2021-273-75> 
     rdf:type <http://id.euskadi.eus/def/udalmap#superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes> ;
-    <http://id.euskadi.eus/def/udalmap#valor> <http://id.euskadi.eus/public-sector/udalmap/superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes/01000> .
+    <http://purl.org/linked-data/sdmx/2009/measure#obsValue> "273.75"^^<http://www.w3.org/2001/XMLSchema#double> ; #  | <http://www.w3.org/2001/XMLSchema#integer>
+    <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> "2021"^^xsd:gYear ;
+    <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://id.euskadi.eus/public-sector/urbanism-territory/province/01000> .
 
-<http://id.euskadi.eus/public-sector/udalmap/superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes/01000>
-    <http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://id.euskadi.eus/public-sector/urbanism-territory/province/01000> ;
-    <http://id.euskadi.eus/def/udalmap#medicion> <http://id.euskadi.eus/public-sector/udalmap/superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes/01000/2021/273-75> .
 
-<http://id.euskadi.eus/public-sector/udalmap/superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes/01000/2021/273-75>
-    <http://purl.org/linked-data/sdmx/2009/measure#obsValue> "273.75"^^<http://www.w3.org/2001/XMLSchema#double> | <http://www.w3.org/2001/XMLSchema#integer> ;
-    <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> "2021"^^xsd:gYear .
 
-<http://id.euskadi.eus/def/udalmap#superficie-solar-termica-instalada-m-2-por-cada-10000-habitantes> rdfs:label "Indicadores municipales de sostenibilidad: Superficie solar térmica instalada (m² por cada 10.000 habitantes)"@es .
+
+
+
+
+
+
 
 
