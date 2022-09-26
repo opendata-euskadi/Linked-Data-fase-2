@@ -38,6 +38,7 @@ import eus.ehu.udalmap.json.Indice;
 import eus.ehu.udalmap.uris.DataCubeURIs;
 import eus.ehu.udalmap.uris.EuskadiURIs;
 import eus.ehu.udalmap.uris.UDALMAPBaseURIs;
+import eus.ehu.udalmap.uris.WGS84URIS;
 
 public class UdalMap2GRAPHDB {
 	
@@ -177,6 +178,7 @@ public class UdalMap2GRAPHDB {
 									+ municipality_id + "-"
 									+ year + "-" 
 									+ medicionesValoresJSONObject.get(year).toString().replace(".", "");
+				util.addIRITriple(URI_medicion, WGS84URIS.location.getURI(), "http://id.euskadi.eus/public-sector/urbanism-territory/municipality/" + proper_municipality_id, namedGraphURI, repositoryConnection);
 				util.addLiteralTriple(URI_medicion, DataCubeURIs.refPeriod.getURI(), year_proper, namedGraphURI, repositoryConnection);
 				if(medicionesValoresJSONObject.get(year).getClass() == java.math.BigDecimal.class) {
 					Double o = ((BigDecimal)medicionesValoresJSONObject.get(year)).doubleValue();
