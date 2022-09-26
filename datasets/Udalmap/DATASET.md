@@ -54,6 +54,23 @@ WHERE {
 
 ### Valores de indicador que contenga la palabra "agro" ordenados por años
 
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?nombre_indicador
+
+FROM <http://id.euskadi.eus/graph/Udalmap>
+
+WHERE { 
+	?medicion rdf:type ?indicador .
+    ?medicion <http://purl.org/linked-data/sdmx/2009/measure#obsValue> ?value .
+    ?medicion <http://purl.org/linked-data/sdmx/2009/dimension#refPeriod> ?year .
+    ?indicador rdfs:label ?nombre_indicador .
+    FILTER CONTAINS(?nombre_indicador, "agro") .
+}
+```
+
 ### Valores de indicador que contenga la palabra "agro" ordenados por años de municipios de Alava (Y su enlace a WikiData)
 
 ### Lista indicadores ordenados por municipio
