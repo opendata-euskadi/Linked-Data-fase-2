@@ -77,7 +77,7 @@ public class UdalMap2GRAPHDB {
 				JSONObject tituloJSONObject = (JSONObject) valoresIndicadorJSONArray.get(0);
 				String titulo_bruto = (String)tituloJSONObject.get("title");
 				String URI_indicador = process_indicador_title(titulo_bruto,repositoryConnection);
-//				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1), URI_indicador, repositoryConnection);
+				process_municipality((JSONObject) valoresIndicadorJSONArray.get(1), URI_indicador, repositoryConnection);
 
 			}
 			// entity, region, municipality

@@ -71,6 +71,77 @@ WHERE {
 }
 ```
 
-### Valores de indicador que contenga la palabra "agro" ordenados por años de municipios de Alava (Y su enlace a WikiData)
+### Valores de indicador que contenga la palabra "agro" de municipios de Alava (Y su enlace a WikiData), ordenados por años 
 
-### Lista indicadores ordenados por municipio
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX territorio: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX measure: <http://purl.org/linked-data/sdmx/2009/measure#>
+PREFIX dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+
+SELECT DISTINCT ?nombre_indicador ?year ?value ?location_name
+
+WHERE { 
+    GRAPH <http://id.euskadi.eus/graph/Udalmap>{
+		  ?medicion rdf:type ?indicador .
+    	?medicion measure:obsValue ?value .
+    	?medicion dimension:refPeriod ?year .
+    	?medicion wgs:location ?location .
+      ?indicador rdfs:label ?nombre_indicador .
+      FILTER CONTAINS(?nombre_indicador, "agro") .
+    }
+    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    	?location gn:officialname ?location_name .
+      ?location territorio:provincia ?provincia .
+      ?provincia rdfs:label "Araba"@eu .
+	  }
+    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+      ?location owl:sameAs ?location_wikidata .
+    }
+}
+ORDER BY ?nombre_indicador ?location_name ?year
+```
+
+### Valores de indicador que contenga la palabra "agro" de municipios de Alava (Y su enlace a WikiData), ordenados por años, junto con su area (Sacada de la DBPedia)
+
+```sparql
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX territorio: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX measure: <http://purl.org/linked-data/sdmx/2009/measure#>
+PREFIX dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+SELECT DISTINCT ?nombre_indicador ?year ?value ?location_name ?area
+
+WHERE { 
+    GRAPH <http://id.euskadi.eus/graph/Udalmap>{
+		?medicion rdf:type ?indicador .
+    	?medicion measure:obsValue ?value .
+    	?medicion dimension:refPeriod ?year .
+    	?medicion wgs:location ?location .
+        ?indicador rdfs:label ?nombre_indicador .
+        FILTER CONTAINS(?nombre_indicador, "agro") .
+    }
+    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    	?location gn:officialname ?location_name .
+        ?location territorio:provincia ?provincia .
+        ?provincia rdfs:label "Araba"@eu .
+	}
+    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+        ?location owl:sameAs ?location_wikidata .
+    }
+    SERVICE <https://dbpedia.org/sparql> {
+        ?location_dbpedia owl:sameAs ?location_wikidata .
+        ?location_dbpedia dbo:areaTotal ?area .
+    }
+}
+ORDER BY ?nombre_indicador ?location_name ?year
+```
