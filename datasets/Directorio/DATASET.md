@@ -20,18 +20,14 @@
 
 ## Ontologías
 
-Posibles ontologías:
+Ontologías usadas:
 
-* [e-Government core vocabularies](https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/solution/e-government-core-vocabularies/release/201)
-
-Ontologias a incluir en triple store:
-
-* `directorio.ttl`
-* [ISA Programme Person Core Vocabulary](http://www.w3.org/ns/person).(`person.ttl`)
-
-Para más detalles ver archivo `Directorio-metadata.ttl`:
-
-* ...
+* [http://id.euskadi.eus/def/directory](directorio.ttl). Ontología creada para este dataset con algunas entidades específicas como `Equipment` o `legislature` (**Subir `directorio.ttl` a GraphDB**).
+* [ISA Programme Person Core Vocabulary](http://www.w3.org/ns/person). (**Subir `person.ttl` a GraphDB**).
+* [Schema](https://schema.org).
+* [IGN Geo](https://datos.ign.es/def/geo_core#).
+* [Callejero](http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero).
+* [Organization](www.w3.org/ns/org#).
 
 ## Consultas SPARQL
 

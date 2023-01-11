@@ -11,7 +11,6 @@
   * [ELI](https://eur-lex.europa.eu/eli-register/about.html)
   * [ELI](https://op.europa.eu/en/web/eu-vocabularies/eli)
 
-
 ## Ontologías
 
 * [Schema](https://schema.org).

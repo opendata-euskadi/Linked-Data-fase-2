@@ -53,7 +53,7 @@ public class Directorio2GRAPHDB {
 		}
 
 //		processPeople ();
-//		processEntities ();
+		processEntities ();
 		processEquipments ();
 		
 		FileOutputStream output = new FileOutputStream(DIRECTORIO2GRAPHDBConfig.RDFfileBackupPath);

@@ -25,17 +25,14 @@
 
 ## Ontologías
 
-Posibles ontologías:
+Ontologías usadas:
 
-* ...
+* [RDF Data Cube Vocabulary](https://www.w3.org/TR/vocab-data-cube/).
+* [WGS84](https://www.w3.org/2003/01/geo/wgs84_pos#).
 
 Ontologias a incluir en triple store:
 
 * Se crea una clase por cada indicador, y cada medicion es una instancia de esa clase. No hace falta incluir la ontologia.
-
-Para más detalles ver archivo `Directorio-metadata.ttl`:
-
-* ...
 
 ## Consultas SPARQL
 
