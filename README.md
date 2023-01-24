@@ -37,3 +37,5 @@ Directorios actuales y su contenido:
 * `graphdb-silk-docker`: proyecto docker compose para levantar servicios GraphDB y Silk en local para pruebas de desarrollo.
 * `metadatos`: ejemplo de metadatos en DCAT.
 * `r01fejie`: proyecto Maven para convertir NORA a Linked Data.
+
+
