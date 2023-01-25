@@ -6,7 +6,7 @@ public enum UDALMAPBaseURIs {
     ; 
 
 	private final String uri_name;
-	private final String base = "http://id.euskadi.eus/public-sector/udalmap/";
+	private final String base = "https://id.euskadi.eus/public-sector/udalmap/";
 
     private UDALMAPBaseURIs(String uri_name) {
         this.uri_name = base+uri_name;

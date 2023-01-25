@@ -52,7 +52,7 @@ public class Directorio2GRAPHDB {
 			util.clearGraph(namedGraphURI, repositoryConnection);
 		}
 
-//		processPeople ();
+		processPeople ();
 		processEntities ();
 		processEquipments ();
 		

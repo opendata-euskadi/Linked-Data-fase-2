@@ -3,7 +3,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:dc="http://purl.org/dc/elements/1.1/"
     xmlns:time="http://www.w3.org/2006/time#"
-    xmlns:j.0="https://purl.org/dc/terms/"
+    xmlns:j.0="http://purl.org/dc/terms/"
     xmlns:tema="https://datos.gob.es/kos/sector-publico/sector/"
     xmlns:dcat="http://www.w3.org/ns/dcat#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"

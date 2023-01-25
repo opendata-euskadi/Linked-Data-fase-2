@@ -46,7 +46,7 @@ class SPARQLTests {
 		repositoryManager.shutDown();
 	}
 
-	// Upload the following ontologies to Named Graph http://id.euskadi.eus/graph/NORA-vocabs for inference to work:
+	// Upload the following ontologies to Named Graph https://id.euskadi.eus/graph/NORA-vocabs for inference to work:
 	// Linked-Data-fase-2/datasets/NORA/territorio.owl
 	// Linked-Data-fase-2/datasets/NORA/nora.ttl
 
@@ -55,8 +55,8 @@ class SPARQLTests {
 		String query = getQueryFromResource("/SubPropInference.rq");
 		ArrayList<String> results = execSingleVariableQuery ("country", query);
 		
-		String expectedCountry = "http://id.euskadi.eus/public-sector/urbanism-territory/country/108";
-		String expectedAutonomousComunity = "http://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16";
+		String expectedCountry = "https://id.euskadi.eus/public-sector/urbanism-territory/country/108";
+		String expectedAutonomousComunity = "https://id.euskadi.eus/public-sector/urbanism-territory/autonomous_community/16";
 		
 		assertTrue(results.contains(expectedCountry));
 		assertTrue(results.contains(expectedAutonomousComunity));

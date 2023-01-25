@@ -1,12 +1,12 @@
-@prefix : <http://id.euskadi.eus/def/directorio#> .
+@prefix : <https://id.euskadi.eus/def/directorio#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://id.euskadi.eus/def/directory> .
+@base <https://id.euskadi.eus/def/directory> .
 
-<http://id.euskadi.eus/def/directory> rdf:type owl:Ontology .
+<https://id.euskadi.eus/def/directory> rdf:type owl:Ontology .
 
 #################################################################
 #    Annotation properties
@@ -24,7 +24,7 @@
 #    Object Properties
 #################################################################
 
-###  http://id.euskadi.eus/def/directorio#equipmentOf
+###  https://id.euskadi.eus/def/directorio#equipmentOf
 :equipmentOf rdf:type owl:ObjectProperty ;
              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
              <http://purl.org/dc/elements/1.1/date> "2022-06-06T16:06:30Z"^^xsd:dateTime .
@@ -34,31 +34,31 @@
 #    Data properties
 #################################################################
 
-###  http://id.euskadi.eus/def/directorio#curriculum
+###  https://id.euskadi.eus/def/directorio#curriculum
 :curriculum rdf:type owl:DatatypeProperty ;
             <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
             <http://purl.org/dc/elements/1.1/date> "2022-05-11T10:23:04Z"^^xsd:dateTime .
 
 
-###  http://id.euskadi.eus/def/directorio#webLink
+###  https://id.euskadi.eus/def/directorio#webLink
 :webLink rdf:type owl:DatatypeProperty ;
          <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
          <http://purl.org/dc/elements/1.1/date> "2022-05-12T07:23:38Z"^^xsd:dateTime .
 
 
-###  http://id.euskadi.eus/def/directory#legislature
+###  https://id.euskadi.eus/def/directory#legislature
 :legislature rdf:type owl:DatatypeProperty ;
              <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
              <http://purl.org/dc/elements/1.1/date> "2022-06-07T14:00:02Z"^^xsd:dateTime .
 
 
-###  http://id.euskadi.eus/def/directory#publicEntityType
+###  https://id.euskadi.eus/def/directory#publicEntityType
 :publicEntityType rdf:type owl:DatatypeProperty ;
                   <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
                   <http://purl.org/dc/elements/1.1/date> "2022-06-07T14:00:25Z"^^xsd:dateTime .
 
 
-###  http://id.euskadi.eus/def/directory#scope
+###  https://id.euskadi.eus/def/directory#scope
 :scope rdf:type owl:DatatypeProperty ;
        <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
        <http://purl.org/dc/elements/1.1/date> "2022-06-07T14:00:13Z"^^xsd:dateTime .
@@ -68,7 +68,7 @@
 #    Classes
 #################################################################
 
-###  http://id.euskadi.eus/def/directorio#Equipment
+###  https://id.euskadi.eus/def/directorio#Equipment
 :Equipment rdf:type owl:Class ;
            <http://purl.org/dc/elements/1.1/creator> "Mikel Egaña Aranguren (https://orcid.org/0000-0001-8081-1839)"^^xsd:string ;
            <http://purl.org/dc/elements/1.1/date> "2022-05-11T10:20:47Z"^^xsd:dateTime .

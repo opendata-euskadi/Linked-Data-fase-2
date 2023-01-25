@@ -1,0 +1,223 @@
+Thread 0x709d8cf40
+
+  locals:
+
+Thread 0x70a1bb128
+  at java.lang.Thread.sleep(J)V (Native Method)
+  at sun.net.www.http.KeepAliveCache.run()V (KeepAliveCache.java:169)
+  at java.lang.Thread.run()V (Thread.java:832)
+  at jdk.internal.misc.InnocuousThread.run()V (InnocuousThread.java:134)
+
+  locals:
+    objectId=0x70a1bb328, line=1
+    objectId=0x70a1bb128, line=2
+    objectId=0x70a1bb128, line=3
+
+Thread 0x709dc4d00
+  at sun.nio.ch.SocketDispatcher.read0(Ljava/io/FileDescriptor;JI)I (Native Method)
+  at sun.nio.ch.SocketDispatcher.read(Ljava/io/FileDescriptor;JI)I (SocketDispatcher.java:47)
+  at sun.nio.ch.NioSocketImpl.tryRead(Ljava/io/FileDescriptor;[BII)I (NioSocketImpl.java:261)
+  at sun.nio.ch.NioSocketImpl.implRead([BII)I (NioSocketImpl.java:312)
+  at sun.nio.ch.NioSocketImpl.read([BII)I (NioSocketImpl.java:350)
+  at sun.nio.ch.NioSocketImpl$1.read([BII)I (NioSocketImpl.java:803)
+  at java.net.Socket$SocketInputStream.read([BII)I (Socket.java:981)
+  at java.io.BufferedInputStream.fill()V (BufferedInputStream.java:244)
+  at java.io.BufferedInputStream.read1([BII)I (BufferedInputStream.java:284)
+  at java.io.BufferedInputStream.read([BII)I (BufferedInputStream.java:343)
+  at sun.net.www.http.HttpClient.parseHTTPHeader(Lsun/net/www/MessageHeader;Lsun/net/ProgressSource;Lsun/net/www/protocol/http/HttpURLConnection;)Z (HttpClient.java:754)
+  at sun.net.www.http.HttpClient.parseHTTP(Lsun/net/www/MessageHeader;Lsun/net/ProgressSource;Lsun/net/www/protocol/http/HttpURLConnection;)Z (HttpClient.java:689)
+  at sun.net.www.protocol.http.HttpURLConnection.getInputStream0()Ljava/io/InputStream; (HttpURLConnection.java:1623)
+  at sun.net.www.protocol.http.HttpURLConnection.getInputStream()Ljava/io/InputStream; (HttpURLConnection.java:1528)
+  at java.net.HttpURLConnection.getResponseCode()I (HttpURLConnection.java:527)
+  at com.sun.xml.messaging.saaj.client.p2p.HttpSOAPConnection.post(Ljavax/xml/soap/SOAPMessage;Ljava/net/URL;)Ljavax/xml/soap/SOAPMessage; (HttpSOAPConnection.java:336)
+  at com.sun.xml.messaging.saaj.client.p2p.HttpSOAPConnection$PriviledgedPost.run()Ljava/lang/Object; (HttpSOAPConnection.java:194)
+  at java.security.AccessController.executePrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;Ljava/lang/Class;)Ljava/lang/Object; (AccessController.java:784)
+  at java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object; (AccessController.java:554)
+  at com.sun.xml.messaging.saaj.client.p2p.HttpSOAPConnection.call(Ljavax/xml/soap/SOAPMessage;Ljava/lang/Object;)Ljavax/xml/soap/SOAPMessage; (HttpSOAPConnection.java:165)
+  at r01f.ejie.nora.NORAServiceMethodInvoker.invokeNORAMethod(Ljava/lang/String;Ljava/util/Map;Z)Ljavax/xml/soap/SOAPMessage; (NORAServiceMethodInvoker.java:134)
+  at r01f.ejie.nora.NORAServiceBase.getAllItems(Ljava/lang/String;Ljava/util/Map;Z)Ljava/util/Collection; (NORAServiceBase.java:56)
+  at r01f.ejie.nora.NORAServiceBase.getAllItems(Ljava/lang/String;Ljava/util/Map;)Ljava/util/Collection; (NORAServiceBase.java:49)
+  at r01f.ejie.nora.NORAServiceForStreet.getStreetsOf(Lr01f/types/geo/GeoOIDs$GeoStateID;Lr01f/types/geo/GeoOIDs$GeoCountyID;Lr01f/types/geo/GeoOIDs$GeoRegionID;Lr01f/types/geo/GeoOIDs$GeoMunicipalityID;Lr01f/types/geo/GeoOIDs$GeoLocalityID;)Ljava/util/Collection; (NORAServiceForStreet.java:105)
+  at r01f.ejie.nora.NORAServiceForStreet.getStreetsOf(Lr01f/types/geo/GeoOIDs$GeoStateID;Lr01f/types/geo/GeoOIDs$GeoCountyID;Lr01f/types/geo/GeoOIDs$GeoMunicipalityID;Lr01f/types/geo/GeoOIDs$GeoLocalityID;)Ljava/util/Collection; (NORAServiceForStreet.java:88)
+  at eus.ehu.nora.NORA2GRAPHDB.processLocalities(Lr01f/types/geo/GeoMunicipality;Lorg/eclipse/rdf4j/repository/RepositoryConnection;Lr01f/ejie/nora/NORAService;Ljava/lang/String;)V (NORA2GRAPHDB.java:180)
+  at eus.ehu.nora.NORA2GRAPHDB.processTowns(Lr01f/types/geo/GeoCounty;Lorg/eclipse/rdf4j/repository/RepositoryConnection;Lr01f/ejie/nora/NORAService;Ljava/lang/String;)V (NORA2GRAPHDB.java:163)
+  at eus.ehu.nora.NORA2GRAPHDB.main([Ljava/lang/String;)V (NORA2GRAPHDB.java:104)
+
+  locals:
+    objectId=0x70a312ba8, line=2
+    objectId=0x709dc6128, line=2
+    objectId=0x70a4dc6c8, line=3
+    objectId=0x70a312ba8, line=3
+    objectId=0x70a1ad000, line=3
+    objectId=0x70a4dc6c8, line=4
+    objectId=0x70a312b80, line=7
+    objectId=0x70a312b80, line=8
+    objectId=0x70a314bb8, line=8
+    objectId=0x70a312b80, line=9
+    objectId=0x70a314bb8, line=9
+    objectId=0x70a4dc638, line=10
+    objectId=0x70a311c98, line=10
+    objectId=0x70a311b08, line=10
+    objectId=0x70a314bb8, line=10
+    objectId=0x70a4dc638, line=11
+    objectId=0x70a311c98, line=11
+    objectId=0x70a311b08, line=11
+    objectId=0x70a311b08, line=12
+    objectId=0x70a311b08, line=14
+    objectId=0x70a3116e8, line=15
+    objectId=0x70a310568, line=15
+    objectId=0x70a311918, line=15
+    objectId=0x70a311918, line=15
+    objectId=0x70a311b08, line=15
+    objectId=0x70a311a28, line=15
+    objectId=0x70a3105d8, line=15
+    objectId=0x70a312788, line=15
+    objectId=0x70a3127a8, line=15
+    objectId=0x70a311a10, line=16
+    objectId=0x709dee4e8, line=17
+    objectId=0x70a311a10, line=18
+    objectId=0x709dee4e8, line=18
+    objectId=0x70a3116e8, line=19
+    objectId=0x70a310568, line=19
+    objectId=0x70a311918, line=19
+    objectId=0x709dd11a8, line=19
+    objectId=0x70a311a10, line=19
+    objectId=0x709ddc410, line=20
+    objectId=0x70a423d20, line=20
+    objectId=0x70a310438, line=20
+    objectId=0x70a310550, line=20
+    objectId=0x70a310568, line=20
+    objectId=0x70a310670, line=20
+    objectId=0x70a3107a0, line=20
+    objectId=0x70a310a60, line=20
+    objectId=0x70a310c60, line=20
+    objectId=0x70a310c80, line=20
+    objectId=0x70a3116d8, line=20
+    objectId=0x70a3116e8, line=20
+    objectId=0x709ddc3f0, line=21
+    objectId=0x70a423d20, line=21
+    objectId=0x70a310438, line=21
+    objectId=0x70a310538, line=21
+    objectId=0x709ddc3f0, line=22
+    objectId=0x70a423d20, line=22
+    objectId=0x70a310438, line=22
+    objectId=0x709ddc3f0, line=23
+    objectId=0x70a237de8, line=23
+    objectId=0x70a1ac5d0, line=23
+    objectId=0x70a1ac4a0, line=23
+    objectId=0x70a1abb88, line=23
+    objectId=0x70a310438, line=23
+    objectId=0x709ddc3f0, line=24
+    objectId=0x70a237de8, line=24
+    objectId=0x70a1ac5d0, line=24
+    objectId=0x70a1ac4a0, line=24
+    objectId=0x70a1abb88, line=24
+    objectId=0x70a1a2398, line=25
+    objectId=0x709ddc050, line=25
+    objectId=0x709ddc0f8, line=25
+    objectId=0x709dc4ce8, line=25
+    objectId=0x70a1a23d0, line=25
+    objectId=0x70a1abb48, line=25
+    objectId=0x70a1a2428, line=25
+    objectId=0x70a1a2448, line=26
+    objectId=0x709ddc050, line=26
+    objectId=0x709ddc0f8, line=26
+    objectId=0x709dc4ce8, line=26
+    objectId=0x70a1a2478, line=26
+    objectId=0x70a1a2398, line=26
+    objectId=0x70a1a2490, line=26
+    objectId=0x709c1a178, line=27
+    objectId=0x709dc4cb8, line=27
+    objectId=0x709dc4cd0, line=27
+    objectId=0x709dc4ce8, line=27
+    objectId=0x709c1a118, line=27
+    objectId=0x709ddc848, line=27
+    objectId=0x709ddc050, line=27
+    objectId=0x709ddc0f8, line=27
+    objectId=0x70a1a24b0, line=27
+    objectId=0x70a1a24d8, line=27
+    objectId=0x70a1a2448, line=27
+
+Thread 0x709d8d860
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:155)
+  at jdk.internal.ref.CleanerImpl.run()V (CleanerImpl.java:148)
+  at java.lang.Thread.run()V (Thread.java:832)
+  at jdk.internal.misc.InnocuousThread.run()V (InnocuousThread.java:134)
+
+  locals:
+    objectId=0x709d8d9e8, line=1
+    objectId=0x709d8d9d8, line=1
+    objectId=0x709d8da80, line=2
+    objectId=0x709d8d860, line=2
+    objectId=0x709d8d860, line=2
+    objectId=0x709d8d860, line=3
+    objectId=0x709d8d860, line=4
+
+Thread 0x709da3720
+  at java.lang.Object.wait(J)V (Native Method)
+  at java.lang.ref.ReferenceQueue.remove(J)Ljava/lang/ref/Reference; (ReferenceQueue.java:155)
+  at java.lang.ref.ReferenceQueue.remove()Ljava/lang/ref/Reference; (ReferenceQueue.java:176)
+  at java.lang.ref.Finalizer$FinalizerThread.run()V (Finalizer.java:170)
+
+  locals:
+    objectId=0x709da3998, line=1
+    objectId=0x709da3898, line=1
+    objectId=0x709da3998, line=2
+    objectId=0x709da3720, line=3
+    objectId=0x709da3a28, line=3
+
+Thread 0x709dd7dd0
+  at jdk.internal.misc.Unsafe.park(ZJ)V (Native Method)
+  at java.util.concurrent.locks.LockSupport.park()V (LockSupport.java:341)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block()Z (AbstractQueuedSynchronizer.java:505)
+  at java.util.concurrent.ForkJoinPool.managedBlock(Ljava/util/concurrent/ForkJoinPool$ManagedBlocker;)V (ForkJoinPool.java:3137)
+  at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await()V (AbstractQueuedSynchronizer.java:1614)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take()Ljava/util/concurrent/RunnableScheduledFuture; (ScheduledThreadPoolExecutor.java:1170)
+  at java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take()Ljava/lang/Object; (ScheduledThreadPoolExecutor.java:899)
+  at java.util.concurrent.ThreadPoolExecutor.getTask()Ljava/lang/Runnable; (ThreadPoolExecutor.java:1056)
+  at java.util.concurrent.ThreadPoolExecutor.runWorker(Ljava/util/concurrent/ThreadPoolExecutor$Worker;)V (ThreadPoolExecutor.java:1116)
+  at java.util.concurrent.ThreadPoolExecutor$Worker.run()V (ThreadPoolExecutor.java:630)
+  at java.lang.Thread.run()V (Thread.java:832)
+
+  locals:
+    objectId=0x70a1bafd8, line=2
+    objectId=0x70a1bafd8, line=3
+    objectId=0x709dd7dd0, line=3
+    objectId=0x709dd7f40, line=4
+    objectId=0x70a1bafd8, line=4
+    objectId=0x709dd7fd0, line=5
+    objectId=0x709dd7ff0, line=5
+    objectId=0x709dd7fd0, line=6
+    objectId=0x709dd8000, line=7
+    objectId=0x709dd8000, line=8
+    objectId=0x709dd8048, line=8
+    objectId=0x709dd7dd0, line=8
+    objectId=0x709dd8048, line=9
+    objectId=0x709dd7dd0, line=10
+
+Thread 0x709d8d6f0
+
+  locals:
+
+Thread 0x70a314c68
+
+  locals:
+
+Thread 0x709d8cce8
+  at java.lang.ref.Reference.waitForReferencePendingList()V (Native Method)
+  at java.lang.ref.Reference.processPendingReferences()V (Reference.java:241)
+  at java.lang.ref.Reference$ReferenceHandler.run()V (Reference.java:213)
+
+  locals:
+    objectId=0x709d8cce8, line=2
+
+Thread 0x709dd7bd8
+  at java.lang.Thread.sleep(J)V (Native Method)
+  at org.apache.http.impl.client.IdleConnectionEvictor$1.run()V (IdleConnectionEvictor.java:66)
+  at java.lang.Thread.run()V (Thread.java:832)
+
+  locals:
+    objectId=0x709dd7db8, line=1
+    objectId=0x709dd7bd8, line=2
+

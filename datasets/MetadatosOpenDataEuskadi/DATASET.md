@@ -3,7 +3,7 @@
 ## Ficha técnica
 
 * Nombre: Metadatos Open Data Euskadi
-* URI Named Graph: http://id.euskadi.eus/graph/DCATOpenDataEuskadi
+* URI Named Graph: https://id.euskadi.eus/graph/DCATOpenDataEuskadi
 * Origen: Todos los DCAT de Open Data Euskadi
 * DCAT/Metadatos: No aplica
 * Prototipo: No aplica
@@ -24,7 +24,7 @@ PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
 SELECT (COUNT(?dataset) AS ?cantidad_datasets)
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
 }
@@ -40,7 +40,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?dataset ?title ?date_modified
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dct:modified ?date_modified .
@@ -60,7 +60,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
 SELECT DISTINCT ?format_value
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:distribution ?distribution .
@@ -79,7 +79,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
 SELECT DISTINCT ?dataset
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:distribution ?distribution .
@@ -98,7 +98,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
 SELECT DISTINCT ?dataset
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:keyword ?keywords .
@@ -116,7 +116,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dct: <http://purl.org/dc/terms/>
 
 SELECT DISTINCT ?tema
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:theme ?tema .
@@ -134,7 +134,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX sector: <https://datos.gob.es/kos/sector-publico/sector/>
 
 SELECT ?dataset ?date_modified
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:theme sector:urbanismo-infraestructuras .
@@ -155,7 +155,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX sector: <https://datos.gob.es/kos/sector-publico/sector/>
 
 SELECT ?dataset ?description ?date_modified
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:theme sector:urbanismo-infraestructuras .
@@ -178,7 +178,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX time: <http://www.w3.org/2006/time#>
 
 SELECT ?dataset ?title ?beggining_time ?end_time
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dct:title ?title .
@@ -203,7 +203,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX time: <http://www.w3.org/2006/time#>
 
 SELECT ?dataset ?title 
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dct:title ?title .
@@ -226,7 +226,7 @@ PREFIX sector_gob: <http://datos.gob.es/kos/sector-publico/sector/>
 
 SELECT ?dataset ?dataset_gob
 WHERE { 
-    GRAPH <http://id.euskadi.eus/graph/DCATOpenDataEuskadi> {
+    GRAPH <https://id.euskadi.eus/graph/DCATOpenDataEuskadi> {
 		?dataset rdf:type dcat:Dataset .
     	?dataset dcat:theme sector:medio-ambiente .
     }

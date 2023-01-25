@@ -1,0 +1,8 @@
+PREFIX esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT  (COUNT(?municipioBizkaia) as ?count) 
+WHERE { 
+	?municipioBizkaia esadm:provincia ?provincia .
+    ?provincia rdfs:label "Bizkaia"@eu .
+} 

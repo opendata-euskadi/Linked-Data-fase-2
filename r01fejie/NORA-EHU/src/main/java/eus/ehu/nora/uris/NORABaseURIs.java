@@ -19,7 +19,7 @@ public enum NORABaseURIs {
     ; 
 
 	private final String uri_name;
-	private final String base = "http://id.euskadi.eus/public-sector/urbanism-territory/";
+	private final String base = "https://id.euskadi.eus/public-sector/urbanism-territory/";
 
     private NORABaseURIs(String uri_name) {
         this.uri_name = base+uri_name;

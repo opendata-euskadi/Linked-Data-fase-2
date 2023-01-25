@@ -130,38 +130,38 @@ Embedded JSON-LD:
 ```json-ld
 {
   "@graph" : [ {
-    "@id" : "http://id.euskadi.eus/eli/es-pv/o/2018/05/16/(10)/dof",
+    "@id" : "https://id.euskadi.eus/eli/es-pv/o/2018/05/16/(10)/dof",
     "@type" : "http://schema.org/Legislation"
   }, {
-    "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)",
+    "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)",
     "@type" : "http://schema.org/Legislation"
   }, {
-    "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof",
+    "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof",
     "@type" : "http://schema.org/Legislation",
     "http://schema.org/about" : [ {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/urbanismo-infraestructuras"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/urbanismo-infraestructuras"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/economia"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/economia"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/transporte"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/transporte"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/sector-publico"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/sector-publico"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/hacienda"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/hacienda"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/turismo"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/turismo"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/comercio"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/comercio"
     }, {
-      "@id" : "http://id.euskadi.eus/kos/public-sector/sector/empleo"
+      "@id" : "https://id.euskadi.eus/kos/public-sector/sector/empleo"
     } ],
     "http://schema.org/citation" : {
-      "@id" : "http://id.euskadi.eus/eli/es-pv/o/2018/05/16/(10)/dof",
+      "@id" : "https://id.euskadi.eus/eli/es-pv/o/2018/05/16/(10)/dof",
       "@type" : "http://schema.org/Legislation"
     },
     "http://schema.org/datePublished" : "2018-11-05",
     "http://schema.org/isPartOf" : {
-      "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)",
+      "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)",
       "@type" : "http://schema.org/Legislation"
     },
     "http://schema.org/legislationDate" : "2018-10-18",
@@ -174,7 +174,7 @@ Embedded JSON-LD:
     "http://schema.org/legislationType" : "res",
     "http://schema.org/license" : "https://creativecommons.org/licenses/by/4.0/deed.es_ES",
     "http://schema.org/workExample" : [ {
-      "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/eus",
+      "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/eus",
       "@type" : "http://schema.org/Legislation",
       "http://schema.org/encoding" : [ {
         "@id" : "_:b5",
@@ -195,7 +195,7 @@ Embedded JSON-LD:
       "http://schema.org/inLanguage" : "eus",
       "http://schema.org/name" : "EBAZPENA, 2018ko urriaren 18koa, Garraio Plangintzaren zuzendariarena, zeinaren bidez aldatzen baita 2018ko maiatzaren 16ko Aginduan salgaien eta bidaiarien garraio publikoaren arloan lanbidea uzteko laguntza-programarako ezarritako gehieneko diru kopurua."
     }, {
-      "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/spa",
+      "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/spa",
       "@type" : "http://schema.org/Legislation",
       "http://schema.org/encoding" : [ {
         "@id" : "_:b1",
@@ -217,7 +217,7 @@ Embedded JSON-LD:
       "http://schema.org/name" : "RESOLUCIÓN de 18 de octubre de 2018, de la Directora de Planificación del Transporte, por la que se modifica el importe global máximo destinado en la Orden de 16 de mayo de 2018, por la que se establece un programa de ayudas al sector del transporte público de mercancías y viajeros por abandono de actividad."
     } ]
   }, {
-    "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/eus",
+    "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/eus",
     "@type" : "http://schema.org/Legislation",
     "http://schema.org/encoding" : [ {
       "@id" : "_:b5",
@@ -238,7 +238,7 @@ Embedded JSON-LD:
     "http://schema.org/inLanguage" : "eus",
     "http://schema.org/name" : "EBAZPENA, 2018ko urriaren 18koa, Garraio Plangintzaren zuzendariarena, zeinaren bidez aldatzen baita 2018ko maiatzaren 16ko Aginduan salgaien eta bidaiarien garraio publikoaren arloan lanbidea uzteko laguntza-programarako ezarritako gehieneko diru kopurua."
   }, {
-    "@id" : "http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/spa",
+    "@id" : "https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof/spa",
     "@type" : "http://schema.org/Legislation",
     "http://schema.org/encoding" : [ {
       "@id" : "_:b1",

@@ -11,6 +11,7 @@ import eus.ehu.nora.entity.GeoNamesADMDEntity;
 import eus.ehu.nora.entity.Locality;
 import eus.ehu.nora.entity.Municipality;
 import eus.ehu.nora.entity.Portal;
+import eus.ehu.nora.NORA2GRAPHDBConfig;
 import eus.ehu.nora.entity.County;
 import eus.ehu.nora.entity.State;
 import eus.ehu.nora.entity.Street;
@@ -141,7 +142,7 @@ public class NORA2GRAPHDB {
 		for(GeoMunicipality muni : municipalities) {
 			double x = 0.0;
 			double y = 0.0;
-			// e.g. Badaiako mendizerra/Sierra Brava de Badaya: http://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-501
+			// e.g. Badaiako mendizerra/Sierra Brava de Badaya: https://id.euskadi.eus/public-sector/urbanism-territory/municipality/01-501
 			if(muni.getPosition2D() != null) {
 				x = muni.getPosition2D().getX();
 				y = muni.getPosition2D().getY();

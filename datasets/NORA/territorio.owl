@@ -4,7 +4,7 @@
      xmlns:schema="http://schema.org/"
      xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
-     xmlns:geonames="http://www.geonames.org/ontology#"
+     xmlns:geonames="https://www.geonames.org/ontology#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -395,17 +395,17 @@ http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/territorio/tipo-esta
     
 
 
-    <!-- http://www.geonames.org/ontology#featureClass -->
+    <!-- https://www.geonames.org/ontology#featureClass -->
 
-    <owl:ObjectProperty espppp:about="http://www.geonames.org/ontology#featureClass">
+    <owl:ObjectProperty espppp:about="https://www.geonames.org/ontology#featureClass">
         <rdfs:subPropertyOf espppp:resource="http://purl.org/dc/terms/type"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.geonames.org/ontology#featureCode -->
+    <!-- https://www.geonames.org/ontology#featureCode -->
 
-    <owl:ObjectProperty espppp:about="http://www.geonames.org/ontology#featureCode">
+    <owl:ObjectProperty espppp:about="https://www.geonames.org/ontology#featureCode">
         <rdfs:subPropertyOf espppp:resource="http://purl.org/dc/terms/type"/>
     </owl:ObjectProperty>
     
@@ -470,41 +470,41 @@ http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/territorio/tipo-esta
     
 
 
-    <!-- http://www.geonames.org/ontology#countryCode -->
+    <!-- https://www.geonames.org/ontology#countryCode -->
 
-    <owl:DatatypeProperty espppp:about="http://www.geonames.org/ontology#countryCode">
+    <owl:DatatypeProperty espppp:about="https://www.geonames.org/ontology#countryCode">
         <rdfs:comment xml:lang="es">Un código de país de dos letras, de la lista ISO 3166</rdfs:comment>
-        <rdfs:isDefinedBy espppp:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy espppp:resource="https://www.geonames.org/ontology"/>
         <rdfs:label xml:lang="es">código de país ISO</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.geonames.org/ontology#name -->
+    <!-- https://www.geonames.org/ontology#name -->
 
-    <owl:DatatypeProperty espppp:about="http://www.geonames.org/ontology#name">
+    <owl:DatatypeProperty espppp:about="https://www.geonames.org/ontology#name">
         <rdfs:comment xml:lang="es">El nombre con el que se conoce internacionalmente este fenómeno geográfico. No lleva asociado un valor para xml:lang</rdfs:comment>
-        <rdfs:isDefinedBy espppp:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy espppp:resource="https://www.geonames.org/ontology"/>
         <rdfs:label xml:lang="es">nombre internacional</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.geonames.org/ontology#officialName -->
+    <!-- https://www.geonames.org/ontology#officialName -->
 
-    <owl:DatatypeProperty espppp:about="http://www.geonames.org/ontology#officialName">
+    <owl:DatatypeProperty espppp:about="https://www.geonames.org/ontology#officialName">
         <rdfs:comment xml:lang="es">Un nombre en el idioma oficial local</rdfs:comment>
-        <rdfs:isDefinedBy espppp:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy espppp:resource="https://www.geonames.org/ontology"/>
         <rdfs:label xml:lang="es">nombre oficial</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.geonames.org/ontology#population -->
+    <!-- https://www.geonames.org/ontology#population -->
 
-    <owl:DatatypeProperty espppp:about="http://www.geonames.org/ontology#population">
+    <owl:DatatypeProperty espppp:about="https://www.geonames.org/ontology#population">
         <rdfs:comment xml:lang="es">Número total de habitantes del núcleo según el nomenclátor del INE para el año que aparezca en los metadatos </rdfs:comment>
-        <rdfs:isDefinedBy espppp:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy espppp:resource="https://www.geonames.org/ontology"/>
         <rdfs:label xml:lang="es">población</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -616,7 +616,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/territorio/tipo-esta
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#AreaMetropolitana -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#AreaMetropolitana">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty espppp:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
@@ -635,14 +635,14 @@ http://vocab.linkeddata.es/datosabiertos/kos/sector-publico/territorio/tipo-esta
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dcterms:issued>2014-05-03</dcterms:issued>
@@ -680,17 +680,17 @@ Nota: Si existe una definición oficial de lo que es un área metropolitana, ser
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Autonomia">
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
         <rdfs:subClassOf espppp:resource="http://schema.org/AdministrativeArea"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -711,17 +711,17 @@ Nota: Si existe una definición oficial de lo que es un área metropolitana, ser
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Barrio">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPLX"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPLX"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -744,7 +744,7 @@ Nota: Si existe una definición oficial de lo que es un área metropolitana, ser
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Ciudad">
         <rdfs:subClassOf espppp:resource="http://schema.org/AdministrativeArea"/>
         <rdfs:subClassOf espppp:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <dcterms:issued>2014-04-15</dcterms:issued>
         <rdfs:comment xml:lang="es">Una ciudad es un área urbana en la que predominan fundamentalmente la industria y los servicios [fuente: Wikipedia]</rdfs:comment>
         <rdfs:isDefinedBy espppp:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
@@ -772,7 +772,7 @@ Nota: Si existe una definición oficial de lo que es un área metropolitana, ser
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Comarca">
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
         <rdfs:subClassOf espppp:resource="http://schema.org/AdministrativeArea"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty espppp:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
@@ -791,14 +791,14 @@ Nota: Si existe una definición oficial de lo que es un área metropolitana, ser
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -847,17 +847,17 @@ Su existencia es el resultado de los trabajos de campo originales realizados par
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Diseminado">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPLL"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPLL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -888,17 +888,17 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Distrito">
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/District"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPLX"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPLX"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -919,7 +919,7 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#EntidadColectiva -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#EntidadColectiva">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty espppp:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
@@ -936,14 +936,14 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPL"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -966,7 +966,7 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#EntidadSingular -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#EntidadSingular">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty espppp:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
@@ -982,14 +982,14 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPL"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1013,17 +1013,17 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Isla">
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/Island"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#T"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#T"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#T.ISL"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#T.ISL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dcterms:issued>2014-05-03</dcterms:issued>
@@ -1038,17 +1038,17 @@ Nota: Si existe una definición oficial de lo que es una isla, desde el punto de
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#JuntaAdministrativa -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#JuntaAdministrativa">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPLX"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPLX"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1071,7 +1071,7 @@ En determinados municipios pueden existir subdivisiones de este concepto. Por ej
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Mancomunidad -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Mancomunidad">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty espppp:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
@@ -1090,14 +1090,14 @@ En determinados municipios pueden existir subdivisiones de este concepto. Por ej
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dcterms:issued>2014-05-03</dcterms:issued>
@@ -1115,17 +1115,17 @@ Nota: Si existe una definición oficial de lo que es una mancomunidad, sería bu
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Municipio">
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/Municipality"/>
         <rdfs:subClassOf espppp:resource="http://schema.org/AdministrativeArea"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPL"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1150,17 +1150,17 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#NucleoPoblacion">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPL"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPL"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1193,17 +1193,17 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/Country"/>
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/GovernmentalAdministrativeRegion"/>
         <rdfs:subClassOf espppp:resource="http://schema.org/AdministrativeArea"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1225,7 +1225,7 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#PartidoJudicial">
         <rdfs:subClassOf espppp:resource="http://schema.org/AdministrativeArea"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty espppp:resource="http://www.opengis.net/ont/geosparql#sfContains"/>
@@ -1244,14 +1244,14 @@ Su identificador se especifica con la propiedad dct:identifier, y su nombre se e
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1275,17 +1275,17 @@ Nota: Si existe una definición oficial de lo que es un partido judicial, sería
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#Provincia">
         <rdfs:subClassOf espppp:resource="http://dbpedia.org/ontology/Province"/>
         <rdfs:subClassOf espppp:resource="http://schema.org/State"/>
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#A.ADMD"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#A.ADMD"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1319,17 +1319,17 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal -->
 
     <owl:Class espppp:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#SeccionCensal">
-        <rdfs:subClassOf espppp:resource="http://www.geonames.org/ontology#Feature"/>
+        <rdfs:subClassOf espppp:resource="https://www.geonames.org/ontology#Feature"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureClass"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureClass"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty espppp:resource="http://www.geonames.org/ontology#featureCode"/>
-                <owl:hasValue espppp:resource="http://www.geonames.org/ontology#P.PPLX"/>
+                <owl:onProperty espppp:resource="https://www.geonames.org/ontology#featureCode"/>
+                <owl:hasValue espppp:resource="https://www.geonames.org/ontology#P.PPLX"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1347,9 +1347,9 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
-    <!-- http://www.geonames.org/ontology#Feature -->
+    <!-- https://www.geonames.org/ontology#Feature -->
 
-    <owl:Class espppp:about="http://www.geonames.org/ontology#Feature">
+    <owl:Class espppp:about="https://www.geonames.org/ontology#Feature">
         <rdfs:subClassOf espppp:resource="http://schema.org/Place"/>
     </owl:Class>
     
@@ -1372,65 +1372,65 @@ Su nombre, que se especifica con la propiedad dct:title, es el proporcionado por
     
 
 
-    <!-- http://www.geonames.org/ontology#A -->
+    <!-- https://www.geonames.org/ontology#A -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#A">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#A">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#A.ADMD -->
+    <!-- https://www.geonames.org/ontology#A.ADMD -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#A.ADMD">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#A.ADMD">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#P -->
+    <!-- https://www.geonames.org/ontology#P -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#P">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#P">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#P.PPL -->
+    <!-- https://www.geonames.org/ontology#P.PPL -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#P.PPL">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#P.PPL">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#P.PPLL -->
+    <!-- https://www.geonames.org/ontology#P.PPLL -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#P.PPLL">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#P.PPLL">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#P.PPLX -->
+    <!-- https://www.geonames.org/ontology#P.PPLX -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#P.PPLX">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#P.PPLX">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#T -->
+    <!-- https://www.geonames.org/ontology#T -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#T">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#T">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.geonames.org/ontology#T.ISL -->
+    <!-- https://www.geonames.org/ontology#T.ISL -->
 
-    <owl:NamedIndividual espppp:about="http://www.geonames.org/ontology#T.ISL">
+    <owl:NamedIndividual espppp:about="https://www.geonames.org/ontology#T.ISL">
         <espppp:type espppp:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     <espppp:Description>

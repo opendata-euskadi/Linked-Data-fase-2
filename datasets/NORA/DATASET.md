@@ -3,9 +3,9 @@
 ## Ficha técnica
 
 * Nombre: NORA
-* URI Named Graph: http://id.euskadi.eus/graph/NORA
-* URI Named Graph enlaces: http://id.euskadi.eus/graph/NORA-links
-* URI Named Graph ontologias: http://id.euskadi.eus/graph/NORA-vocabs
+* URI Named Graph: https://id.euskadi.eus/graph/NORA
+* URI Named Graph enlaces: https://id.euskadi.eus/graph/NORA-links
+* URI Named Graph ontologias: https://id.euskadi.eus/graph/NORA-vocabs
 * Origen: https://www.eustat.eus/productosServicios/idioma_c/kale_formu.html
 * DCAT/Metadatos: `NORA-metadata.ttl`
 * Prototipo: `NORA-abstract.ttl`
@@ -56,7 +56,7 @@ Para que esta consulta funcione hay que cargar los archivos `nora.ttl` y `territ
 PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
 SELECT ?country
 WHERE { 
-   <http://id.euskadi.eus/public-sector/urbanism-territory/province/48> geosparql:sfWithin ?country .
+   <https://id.euskadi.eus/public-sector/urbanism-territory/province/48> geosparql:sfWithin ?country .
 }
 ```
 
@@ -67,15 +67,15 @@ Esta consulta demuestra la utilidad de los enlaces existentes. A partir de esta 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
-PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX gn: <https://www.geonames.org/ontology#>
 
 SELECT ?entity ?euskoLabel ?wikidataEntity ?wikidataLabel ?dbpediaEntity ?dbpediaLabel
 
 WHERE {
-    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    GRAPH <https://id.euskadi.eus/graph/NORA> {
     	?entity gn:officialname ?euskoLabel .
     }
-    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+    GRAPH <https://id.euskadi.eus/graph/NORA-links> {
     	?entity owl:sameAs ?wikidataEntity .
     }
     SERVICE <https://query.wikidata.org/sparql> { 

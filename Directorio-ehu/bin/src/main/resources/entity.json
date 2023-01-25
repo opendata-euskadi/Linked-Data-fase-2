@@ -1,0 +1,164 @@
+{
+  "typeId" : "publicEntity",
+  "oid" : "F3367668-D09D-43D6-80DA-9AF27621E779",
+  "numericId" : 0,
+  "entityVersion" : 195,
+  "trackingInfo" : {
+    "createDate" : 1637166327000,
+    "creatorUserOid" : "b48fc7c0-a959-482e-82e6-6265ae6b55f5",
+    "creatorUserCode" : "SPANIAGU",
+    "lastUpdate" : 1651055108000,
+    "lastUpdaterUserOid" : "7d6f3bcd-27bf-46b6-8f20-bddcd2de0c5a",
+    "lastUpdaterUserCode" : "ALOPEABE"
+  },
+  "id" : "entityF3367668",
+  "type" : "ENTITY",
+  "subType" : "PUBLIC_SECTOR",
+  "contactInfo" : {
+    "private" : false,
+    "geoPosition" : {
+      "position2D" : {
+        "standard" : "ETRS89",
+        "x" : 0.0,
+        "y" : 0.0
+      }
+    }
+  },
+  "inheritDirection" : false,
+  "inheritContact" : false,
+  "relationsOrdering" : [ {
+    "collectionId" : "PUBLIC-SECTOR-ENTITY-RELS",
+    "collectionItemId" : "ADMIN-ORG"
+  }, {
+    "collectionId" : "PUBLIC-SECTOR-ENTITY-RELS",
+    "collectionItemId" : "REGISTRY"
+  }, {
+    "collectionId" : "PUBLIC-SECTOR-ENTITY-RELS",
+    "collectionItemId" : "OTHER"
+  }, { }, {
+    "relationMode" : "HIERARCHY",
+    "thisObjSide" : "RIGHT",
+    "targetObjType" : "ENTITY",
+    "relations" : [ "6F46FF4C-68B1-44C5-B851-150420331083" ]
+  }, {
+    "relationMode" : "HIERARCHY",
+    "thisObjSide" : "LEFT",
+    "targetObjType" : "ENTITY"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "EQUIPMENT"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "PERSON"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY",
+    "collectionId" : "PUBLIC-SECTOR-ENTITY-RELS",
+    "collectionItemId" : "ADMIN-ORG"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY",
+    "collectionId" : "PUBLIC-SECTOR-ENTITY-RELS",
+    "collectionItemId" : "REGISTRY"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY",
+    "collectionId" : "PUBLIC-SECTOR-ENTITY-RELS",
+    "collectionItemId" : "OTHER"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "PERSON",
+    "targetObjSubType" : "ACCOUNTABLE"
+  } ],
+  "labelPicks" : [ {
+    "structureOid" : "r01etpd17e00e28e111ea6d50fa67b7ed12707291e/1",
+    "labelOid" : "r01e00000ff26d4628fa470b8acd3288a1e1eaf23/1",
+    "labelRoleInStructure" : "1",
+    "pickTimeStamp" : 1651055108690
+  }, {
+    "structureOid" : "r01e00000fe4e6676dda470b8deed65c9bfe02f4c/1",
+    "labelOid" : "r01epd0122e4ed314423e0db04c97a47b5baa317f/1",
+    "labelRoleInStructure" : "1",
+    "pickTimeStamp" : 1651055108690
+  }, {
+    "structureOid" : "r01e00000fe4e6676dda470b8deed65c9bfe02f4c/1",
+    "labelOid" : "r01etpd158aa64558419b9ec5ed77644af02263cda/1",
+    "labelRoleInStructure" : "2",
+    "pickTimeStamp" : 1651055108690
+  }, {
+    "structureOid" : "r01e00000fe4e6676dda470b8deed65c9bfe02f4c/1",
+    "labelOid" : "r01e00000ff26d465bca470b8832717fd08b75808/1",
+    "labelRoleInStructure" : "3",
+    "pickTimeStamp" : 1651055108690
+  } ],
+  "collectionPicks" : {
+    "list" : [ {
+      "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+      "itemId" : "AUTONOMY",
+      "forSide" : "ANY"
+    }, {
+      "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+      "itemId" : "ADMIN",
+      "forSide" : "ANY"
+    }, {
+      "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+      "itemId" : "XII",
+      "forSide" : "ANY"
+    } ]
+  },
+  "name" : {
+    "SPANISH" : "Pleno del Consejo Asesor del Euskera",
+    "BASQUE" : "EABren Batzorde Osoa"
+  },
+  "shortName" : {
+    "SPANISH" : "",
+    "BASQUE" : ""
+  },
+  "description" : {
+    "SPANISH" : "",
+    "BASQUE" : ""
+  },
+  "orgHierarchyLevel" : 5,
+  "editedOrgChart" : {
+    "SPANISH" : "<p>Los y las miembros del Consejo Asesor del Euskera son nombrados o nombradas por el consejero de Cultura y Política Lingüística.</p>\n<p>La composición del Pleno se dio a conocer mediante la Orden indicada en el apartado 'Marco legal'.</p>\n<table width=\"90%\">\n<tbody>\n<tr>\n<td class=\"r01-directory-entity-org-level-1\" colspan=\"3\" width=\"100%\">Representantes de entidades</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\">Presidente</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person65ed9fb2/es_def/index.shtml\" class=\"hrefNode\">Iñigo Urkullu Renteria</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Lehendakari del Gobierno Vasco</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\">Vicepresidente</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person9a1538a3/es_def/index.shtml\" class=\"hrefNode\">Bingen Zupiria Gorostidi</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Consejero de Cultura y Política Lingüística</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person0a58889c/es_def/index.shtml\" class=\"hrefNode\">Miren Dobaran Urrutia</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Viceconsejera de Política Lingüística</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person637a8965/es_def/index.shtml\" class=\"hrefNode\">Mª Begoña Pedrosa Lobato</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Viceconsejera de Educación</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Maite Barruetabeña Zenekorta</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Director general del IVAP</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Andres Urrutia Badiola</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Presidente de Euskaltzaindia<br />representando a Euskaltzaindia</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Lexuri Ugarte Aretxaga</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Directora de Euskera y Gobierno Abierto<br />nombrada a propuesta de la Diputación Foral de Álava<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Lorea Bilbao Ibarra</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Diputada foral de Euskera y Cultura<br />nombrada a propuesta de la Diputación Foral de Bizkaia<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Garbiñe Mendizabal Mendizabal</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Directora general de Igualdad Lingüística<br />nombrada a propuesta de la Diputación Foral de Gipuzkoa<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Txomin Sagarzazu Ancisar</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>representando a la Asociación de Municipios Vascos (EUDEL)</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Miren Segurola Larrañaga</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>representando a la Mancomunidad  de Municipios Vascos (UEMA)</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\">Secretaria de EAB</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person0a58889c/es_def/index.shtml\" class=\"hrefNode\">Josune Zabala Alberdi</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Directora de Investigación Lingüística y Coordinación de la Viceconsejería de Política Lingüística</em></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table width=\"90%\">\n<tbody>\n<tr>\n<td class=\"r01-directory-entity-org-level-1\" colspan=\"3\" width=\"100%\">Vocales a propuesta del Parlamento</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Gotzon Egia Goienetxea</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Maialen Gurrutxaga Uranga</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Asier Imaz Telleria</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Xabier Olabarrieta Arnaiz</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Andoni Unzalu Garaigordobil</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table width=\"90%\">\n<tbody>\n<tr>\n<td class=\"r01-directory-entity-org-level-1\" colspan=\"3\" width=\"100%\">Personas expertas</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Kike Amonarriz Gorria</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Estibaliz Amorrortu Gomez</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Irene Arrarats Lizeaga</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Mikel Arregi Pérez</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Miren Azkarate Villar</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Paul Bilbao Sarria</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Antton Curutcharry</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Maite Goñi Eizmendi</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Jon Sarasua Maritxalar</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Iñaki Martinez de Luna Perez de Arriba</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"></td>\n</tr>\n</tbody>\n</table>",
+    "BASQUE" : "<p>Kultura eta Hizkuntza Politikako sailburuak izendatzen ditu Batzorde Osoko kideak.</p>\n<p>Gaur egungo Batzarde Osoaren osaera 'Lege-esparrua' atalean adierazitako Aginduaren bidez jakinarazi zen.</p>\n<table style=\"height: 324px; width: 90%;\" width=\"90%\">\n<tbody>\n<tr>\n<td class=\"r01-directory-entity-org-level-1\" colspan=\"3\" width=\"100%\">Erakundeetako ordezkariak</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\">Lehendakaria</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person65ed9fb2/eu_def/index.shtml\" class=\"hrefNode\">Iñigo Urkullu Renteria</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Eusko Jaurlaritzako Lehendakaria</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\">Lehendakariordea</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person9a1538a3/eu_def/index.shtml\" class=\"hrefNode\">Bingen Zupiria Gorostidi</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Kultura eta Hizkuntza Politikako sailburua</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person0a58889c/eu_def/index.shtml\" class=\"hrefNode\">Miren Dobaran Urrutia</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Hizkuntza Politikarako sailburuordea</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person637a8965/eu_def/index.shtml\" class=\"hrefNode\">Mª Begoña Pedrosa Lobato</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Hezkuntza sailburuordea</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Maite Barruetabeña Zenekorta</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>IVAPeko zuzendari nagusia</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Andres Urrutia Badiola</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Euskaltzainburua<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Lexuri Ugarte Aretxaga</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Euskararen eta Gobernu Irekiaren zuzendaria<br />Arabako Foru Aldundiaren proposamenez izendatua<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Lorea Bilbao Ibarra</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Euskara eta Kulturako Foru diputatua<br />Bizkaiko Foru Aldundiaren proposamenez izendatua<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Garbiñe Mendizabal Mendizabal</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Hizkuntza Berdintasunerako zuzendari nagusia<br />Gipuzkoako Foru Aldundiaren proposamenez izendatua<br /></em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Txomin Sagarzazu Ancisar</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Euskal Udalen Elkarteko ordezkaria (EUDEL)</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Miren Segurola Larrañaga</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Udalerri Euskaldunen Mankomunitateko ordezkaria (UEMA)</em></td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-2\" width=\"33%\">EABren idazkaria</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><a href=\"/<!--#echo var=\"PORTAL\" -->-<!--#echo var=\"PAGE\" -->/<!--#echo var=\"LANG\" -->/contenidos/persona/person0a58889c/eu_def/index.shtml\" class=\"hrefNode\">Josune Zabala Alberdi</a></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"><em>Hizkuntza Ikerketa eta Koordinaziorako zuzendaria</em></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table width=\"90%\">\n<tbody>\n<tr>\n<td class=\"r01-directory-entity-org-level-1\" colspan=\"3\" width=\"100%\">Legebiltzarrak proposatutakoak</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Gotzon Egia Goienetxea</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Maialen Gurrutxaga Uranga</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Asier Imaz Telleria</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Xabier Olabarrieta Arnaiz</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Andoni Unzalu Garaigordobil</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"></td>\n</tr>\n</tbody>\n</table>\n<hr />\n<table width=\"90%\">\n<tbody>\n<tr>\n<td class=\"r01-directory-entity-org-level-1\" colspan=\"3\" width=\"100%\">Adituak</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Kike Amonarriz Gorria</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Estibaliz Amorrortu Gomez</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Irene Arrarats Lizeaga</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Mikel Arregi Pérez</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Miren Azkarate Villar</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Paul Bilbao Sarria</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Antton Curutcharry</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Maite Goñi Eizmendi</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Jon Sarasua Maritxalar</td>\n</tr>\n<tr>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\">Iñaki Martinez de Luna Perez de Arriba</td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"></td>\n<td class=\"r01-directory-entity-org-level-3\" width=\"33%\"></td>\n</tr>\n</tbody>\n</table>"
+  },
+  "competences" : {
+    "SPANISH" : "<ol style=\"list-style-type: lower-alpha;\">\n<li>Estudiar y analizar, a instancias del Gobierno, cuantas cuestiones se refieran a la normalizaci&oacute;n ling&uuml;&iacute;stica en la Comunidad Aut&oacute;noma del Pa&iacute;s Vasco.</li>\n<li>Proponer al Gobierno y a las instituciones correspondientes la adopci&oacute;n de medidas adecuadas para la mejor aplicaci&oacute;n de las disposiciones referentes al uso del Euskera.</li>\n<li>Proponer medidas que aseguren la actuaci&oacute;n coordinada de todos los poderes p&uacute;blicos con competencia en materia ling&uuml;&iacute;stica.</li>\n<li>Elaborar informes sobre el desarrollo y el cumplimiento del plan general de promoci&oacute;n del euskera vigente.</li>\n<li>Establecer las normas de funcionamiento del Pleno y de las Comisiones Especiales.</li>\n<li>Elaborar y aprobar la memoria anual del Consejo Asesor del Euskera.<a href=\"/contenidos/entidad/entityf3367668/eu_def/adjuntos/EAB_OROITIDAZKIA-2021.pdf\" target=\"_blank\" class=\"hrefNode\" rel=\"noopener\">(<em>Memoria aprobada el 7 de marzo de 2022 (PDF, 1 MB) </em><span class=\"new-window-icon\"><img alt=\"(abre en nueva ventana)\" src=\"/AVComun/images/r01new-window.png\" /></span>)</a></li>\n<li>Analizar las propuestas y los informes que, en su caso, pudieran formular las Comisiones Especiales.</li>\n<li>Cualquier otra funci&oacute;n que le atribuyan las leyes o los reglamentos.</li>\n</ol>",
+    "BASQUE" : "<ol style=\"list-style-type: lower-alpha;\">\n<li>Jaurlaritzak eskatuta, Euskal Autonomia Erkidegoko hizkuntza-normalizazioari buruzko gaiak aztertzea eta ikertzea.</li>\n<li>Euskararen erabilerari buruzko xedapenak ondo ezartzeko behar diren neurriak proposatzea Jaurlaritzari eta dagokien erakundeei.</li>\n<li>Hizkuntzari loturiko gaietan eskumena duten aginte publikoen jarduera koordinatua bermatzeko neurriak proposatzea.</li>\n<li>Indarrean dagoen euskara sustatzeko plan nagusiaren garapenari eta betetzeari buruzko txostenak egitea.</li>\n<li>Batzorde Osoaren nahiz batzorde-atal berezien jarduera-arauak ezartzea.</li>\n<li>Euskararen Aholku Batzordearen urteko oroitidazkia onartzea. <a href=\"/contenidos/entidad/entityf3367668/eu_def/adjuntos/EAB_OROITIDAZKIA-2021.pdf\" target=\"_blank\" class=\"hrefNode\" rel=\"noopener\">(<em>2022ko martxoaren 7an onartutako oroitidazkia (PDF, 1 MB)</em> <span class=\"new-window-icon\"><img alt=\"(leiho berri batean irekitzen da)\" src=\"/AVComun/images/r01new-window.png\" /></span>)</a></li>\n<li>Batzorde-atal bereziek proposamenak eta txostenak eginez gero, horiek aztertzea.</li>\n<li>Legeek edo erregelamenduek aitortutako beste edozein egiteko.</li>\n</ol>"
+  },
+  "legalFramework" : {
+    "descriptionByLanguage" : { },
+    "webLinks" : [ {
+      "url" : "/bopv2/datos/2020/12/2005463a.pdf",
+      "texts" : {
+        "lang" : "SPANISH",
+        "text" : "ORDEN de 10 de diciembre de 2020, del Consejero de Cultura y Política Lingüística, por la que se da a conocer la composición actual del Pleno del Consejo Asesor del Euskera."
+      },
+      "presentation" : {
+        "openTarget" : "_blank"
+      },
+      "useCanonicalUrl" : false
+    }, {
+      "url" : "/bopv2/datos/2020/12/2005463e.pdf",
+      "texts" : {
+        "lang" : "BASQUE",
+        "text" : "AGINDUA, 2020ko abenduaren 10ekoa, Kultura eta Hizkuntza Politikako sailburuarena, Euskararen Aholku Batzordearen Batzorde Osoaren egungo osaera jakinarazteko dena."
+      },
+      "presentation" : {
+        "openTarget" : "_blank"
+      },
+      "useCanonicalUrl" : false
+    } ]
+  }
+}

@@ -3,7 +3,7 @@
 ## Ficha técnica
 
 * Nombre: European Legislation Identifier (ELI)
-* URI Named Graph: http://id.euskadi.eus/graph/bopv-european-legislation-identifier-eli
+* URI Named Graph: https://id.euskadi.eus/graph/bopv-european-legislation-identifier-eli
 * Origen: Archivos JSON-LD que se inyectan en páginas de legegunea. Por ejemplo en https://www.legegunea.euskadi.eus/eli/es-pv/res/2022/01/14/(2)/dof/spa/html/, en el codigo fuente, buscar `<script type="application/ld+json">`
 * DCAT/Metadatos: No aplica
 * Prototipo: No aplica
@@ -24,9 +24,9 @@ Obtener la página de legegunea a partir de una la URI de un Recurso Legal:
 PREFIX eli:<https://data.europa.eu/eli/ontology#>
 
 SELECT ?url
-FROM <http://id.euskadi.eus/graph/bopv-european-legislation-identifier-eli>
+FROM <https://id.euskadi.eus/graph/bopv-european-legislation-identifier-eli>
 WHERE {
-    <http://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof> eli:is_realized_by ?LegalExpression .
+    <https://id.euskadi.eus/eli/es-pv/res/2018/10/18/(3)/dof> eli:is_realized_by ?LegalExpression .
     ?format eli:embodies ?LegalExpression .
     ?format eli:published_in_format ?url .
 }
@@ -42,7 +42,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 SELECT ?url ?date_publication
-FROM <http://id.euskadi.eus/graph/bopv-european-legislation-identifier-eli>
+FROM <https://id.euskadi.eus/graph/bopv-european-legislation-identifier-eli>
 WHERE {
 	?LegalResource rdf:type eli:LegalResource .
     ?LegalResource eli:is_about <https://id.euskadi.eus/kos/public-sector/sector/salud> .
@@ -67,7 +67,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX sector: <https://datos.gob.es/kos/sector-publico/sector/>
 
 SELECT ?dataset ?date_modified
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:theme sector:urbanismo-infraestructuras .
@@ -88,7 +88,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX sector: <https://datos.gob.es/kos/sector-publico/sector/>
 
 SELECT ?dataset ?date_modified
-FROM <http://id.euskadi.eus/graph/DCATOpenDataEuskadi>
+FROM <https://id.euskadi.eus/graph/DCATOpenDataEuskadi>
 WHERE { 
 	?dataset rdf:type dcat:Dataset .
     ?dataset dcat:theme sector:urbanismo-infraestructuras .

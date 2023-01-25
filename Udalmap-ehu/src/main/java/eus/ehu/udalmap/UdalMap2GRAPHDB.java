@@ -159,7 +159,7 @@ public class UdalMap2GRAPHDB {
 			JSONObject valueJSONObject = (JSONObject) valuesJSONArrayIterator.next();
 			String municipality_id = (String) valueJSONObject.names().get(0);
 			String proper_municipality_id = municipality_id.substring(0,2) + "-" + municipality_id.substring(2,5);
-			// 48001 http://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-001
+			// 48001 https://id.euskadi.eus/public-sector/urbanism-territory/municipality/48-001
 			JSONObject medicionesJSONObject = valueJSONObject.getJSONObject(municipality_id);
 			JSONObject medicionesValoresJSONObject = ((JSONObject) medicionesJSONObject.getJSONArray("values").get(0));
 			Iterator medicionesValoresIterator = medicionesValoresJSONObject.keys();
@@ -172,7 +172,7 @@ public class UdalMap2GRAPHDB {
 									+ year + "-" 
 									+ medicionesValoresJSONObject.get(year).toString().replace(".", "");
 				util.addIRITriple(URI_medicion, RDF.TYPE.stringValue(), URI_indicador, namedGraphURI, repositoryConnection);
-				util.addIRITriple(URI_medicion, WGS84URIS.location.getURI(), "http://id.euskadi.eus/public-sector/urbanism-territory/municipality/" + proper_municipality_id, namedGraphURI, repositoryConnection);
+				util.addIRITriple(URI_medicion, WGS84URIS.location.getURI(), "https://id.euskadi.eus/public-sector/urbanism-territory/municipality/" + proper_municipality_id, namedGraphURI, repositoryConnection);
 				util.addLiteralTriple(URI_medicion, DataCubeURIs.refPeriod.getURI(), year_proper, namedGraphURI, repositoryConnection);
 				if(medicionesValoresJSONObject.get(year).getClass() == java.math.BigDecimal.class) {
 					Double o = ((BigDecimal)medicionesValoresJSONObject.get(year)).doubleValue();

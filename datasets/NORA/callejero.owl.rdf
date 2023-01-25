@@ -13,7 +13,7 @@
     <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY vcard "http://www.w3.org/2006/vcard/ns#" >
-    <!ENTITY geonames "http://www.geonames.org/ontology#" >
+    <!ENTITY geonames "https://www.geonames.org/ontology#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
     <!ENTITY geosparql "http://www.opengis.net/ont/geosparql#" >
@@ -31,7 +31,7 @@
      xmlns:escjr="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
-     xmlns:geonames="http://www.geonames.org/ontology#"
+     xmlns:geonames="https://www.geonames.org/ontology#"
      xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
@@ -222,24 +222,24 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     
 
 
-    <!-- http://www.geonames.org/ontology#featureClass -->
+    <!-- https://www.geonames.org/ontology#featureClass -->
 
     <owl:ObjectProperty rdf:about="&geonames;featureClass">
         <rdfs:label xml:lang="es">Clase del fenómeno</rdfs:label>
         <rdfs:comment xml:lang="es">La categoría principal a la que pertenece el fenómeno, tal y como se define en la taxonomía de GeoNames</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.geonames.org/ontology"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.geonames.org/ontology#featureCode -->
+    <!-- https://www.geonames.org/ontology#featureCode -->
 
     <owl:ObjectProperty rdf:about="&geonames;featureCode">
         <rdfs:label xml:lang="es">código del fenómeno</rdfs:label>
         <rdfs:comment xml:lang="es">Tipo del fenómeno, tal y como se define en la taxonomía de GeoNames</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.geonames.org/ontology"/>
     </owl:ObjectProperty>
     
 
@@ -293,23 +293,23 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     
 
 
-    <!-- http://www.geonames.org/ontology#name -->
+    <!-- https://www.geonames.org/ontology#name -->
 
     <owl:DatatypeProperty rdf:about="&geonames;name">
         <rdfs:label xml:lang="es">nombre internacional</rdfs:label>
         <rdfs:comment xml:lang="es">El nombre con el que se conoce internacionalmente este fenómeno geográfico. No lleva asociado un valor para xml:lang</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.geonames.org/ontology"/>
         <rdfs:domain rdf:resource="&geonames;Feature"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.geonames.org/ontology#officialName -->
+    <!-- https://www.geonames.org/ontology#officialName -->
 
     <owl:DatatypeProperty rdf:about="&geonames;officialName">
         <rdfs:label xml:lang="es">nombre oficial</rdfs:label>
         <rdfs:comment xml:lang="es">Un nombre en el idioma oficial local</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
+        <rdfs:isDefinedBy rdf:resource="https://www.geonames.org/ontology"/>
     </owl:DatatypeProperty>
     
 
@@ -401,7 +401,7 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
     
 
 
-    <!-- http://www.geonames.org/ontology#Feature -->
+    <!-- https://www.geonames.org/ontology#Feature -->
 
     <owl:Class rdf:about="&geonames;Feature">
         <rdfs:subClassOf rdf:resource="&schema;Place"/>
@@ -426,7 +426,7 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
     
 
 
-    <!-- http://www.geonames.org/ontology#R -->
+    <!-- https://www.geonames.org/ontology#R -->
 
     <owl:NamedIndividual rdf:about="&geonames;R">
         <rdf:type rdf:resource="&skos;Concept"/>
@@ -434,7 +434,7 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
     
 
 
-    <!-- http://www.geonames.org/ontology#R.ST -->
+    <!-- https://www.geonames.org/ontology#R.ST -->
 
     <owl:NamedIndividual rdf:about="&geonames;R.ST">
         <rdf:type rdf:resource="&skos;Concept"/>

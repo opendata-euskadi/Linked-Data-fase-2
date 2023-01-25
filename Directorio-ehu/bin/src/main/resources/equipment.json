@@ -1,0 +1,104 @@
+{
+  "typeId" : "directoryEquipment",
+  "oid" : "1C31174D-9553-452F-B554-5E5C29110FC5",
+  "numericId" : 0,
+  "entityVersion" : 5,
+  "trackingInfo" : {
+    "createDate" : 1645783274000,
+    "creatorUserOid" : "b48fc7c0-a959-482e-82e6-6265ae6b55f5",
+    "creatorUserCode" : "SPANIAGU",
+    "lastUpdate" : 1647439757000,
+    "lastUpdaterUserOid" : "b48fc7c0-a959-482e-82e6-6265ae6b55f5",
+    "lastUpdaterUserCode" : "SPANIAGU"
+  },
+  "id" : "equipment1C31174D",
+  "type" : "EQUIPMENT",
+  "subType" : "GENERAL",
+  "contactInfo" : {
+    "private" : false,
+    "phoneChannels" : [ {
+      "private" : false,
+      "usage" : "WORK",
+      "default" : true,
+      "type" : "NORMAL",
+      "number" : "945017900",
+      "availability" : "[0..23]"
+    }, {
+      "private" : false,
+      "usage" : "WORK",
+      "default" : false,
+      "type" : "FAX",
+      "number" : "945017832",
+      "availability" : "[0..23]"
+    } ],
+    "geoPosition" : {
+      "position2D" : {
+        "standard" : "ETRS89",
+        "x" : 526257.14304178,
+        "y" : 4742942.607748814
+      },
+      "country" : {
+        "oid" : "108"
+      },
+      "state" : {
+        "oid" : "16"
+      },
+      "county" : {
+        "oid" : "01"
+      },
+      "municipality" : {
+        "oid" : "059"
+      },
+      "locality" : {
+        "oid" : "10105900000734"
+      },
+      "street" : {
+        "oid" : "130105900001640"
+      },
+      "portal" : {
+        "oid" : "80105900106300"
+      },
+      "zipCode" : "01007"
+    }
+  },
+  "inheritDirection" : false,
+  "inheritContact" : false,
+  "images" : [ "BFA863AE-4764-4DCC-B956-85BF31D41727" ],
+  "relationsOrdering" : [ { }, {
+    "relationMode" : "HIERARCHY",
+    "thisObjSide" : "RIGHT",
+    "targetObjType" : "EQUIPMENT"
+  }, {
+    "relationMode" : "HIERARCHY",
+    "thisObjSide" : "LEFT",
+    "targetObjType" : "EQUIPMENT"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "EQUIPMENT"
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "ENTITY",
+    "relations" : [ "311C4970-6A23-498F-A3AE-A0B64965A637" ]
+  }, {
+    "relationMode" : "LINK",
+    "thisObjSide" : "ANY",
+    "targetObjType" : "PERSON"
+  } ],
+  "labelPicks" : [ {
+    "structureOid" : "r01etpd17e00e28e111ea6d50fa67b7ed12707291e/1",
+    "labelOid" : "r01e00000ff26d461e3a470b8181621308b9c4fdf/1",
+    "labelRoleInStructure" : "1",
+    "pickTimeStamp" : 1647439757670
+  } ],
+  "name" : {
+    "SPANISH" : "Sede de la Presidencia",
+    "BASQUE" : "Lehendakaritzaren egoitza"
+  },
+  "shortName" : { },
+  "description" : {
+    "SPANISH" : "<h2>El Edificio</h2>\n<p>Un moderno y funcional edificio de piedra caliza blanca, con una pir&aacute;mide central y tres torres acristaladas que lo flanquean, alberga las oficinas administrativas de Lehendakaritza.</p>\n<p>Si el emblem&aacute;tico Palacio de Ajuria-Enea, que est&aacute; en el entorno de Lehendakaritza, cumple funciones de residencia oficial del Lehendakari y es sede de actos y encuentros institucionales, este nuevo inmueble fue concebido para albergar cometidos tanto administrativos como de representaci&oacute;n en el d&iacute;a a d&iacute;a de la acci&oacute;n de gobierno.</p>\n<p>La edificaci&oacute;n se organiza como un espacio eminentemente pr&aacute;ctico y representativo, integrado en un entorno urbano residencial que acoge, junto a un buen n&uacute;mero de villas ajardinadas, otros edificios destinados a equipamientos educativos, sanitarios e institucionales.</p>\n<p>La propuesta arquitect&oacute;nica exterior se sustancia en una construcci&oacute;n de parcela en esquina, coronada por una pir&aacute;mide de cristal que constituye el elemento m&aacute;s caracter&iacute;stico del edificio, junto a las torretas, tambi&eacute;n acristaladas, de los lados. Bajo la pir&aacute;mide se extiende un amplio patio central de gran luminosidad y decorado en m&aacute;rmol, en el que habitualmente se desarrollan actos de marcada significaci&oacute;n social y pol&iacute;tica, como grandes recepciones, importantes encuentros con representantes vascos, estatales e internacionales y el seguimiento de los comicios.</p>\n<p>En la disposici&oacute;n interior prima la preocupaci&oacute;n por la organizaci&oacute;n y la circulaci&oacute;n, intentando que ambas sean di&aacute;fanas. Para ello se elige una disposici&oacute;n constructiva anular, alrededor de la cual se plantea la distribuci&oacute;n del espacio, lo que permite un elemental control espacial, que simplifica al m&aacute;ximo las circulaciones.</p>\n<p>El edificio de Lehendakaritza est&aacute; situado en el n&uacute;mero 2 de la calle Navarra, en su confluencia con el paseo de Nieves Cano, en Vitoria-Gasteiz, la capital de la Comunidad Aut&oacute;noma de Euskadi. Ocupa una superficie de dos mil trescientos treinta metros cuadrados, que comprenden el edificio y un jard&iacute;n que lo circunda. Todo ello dentro del marco urban&iacute;stico de la zona de \"El Bat&aacute;n\", &aacute;rea eminentemente residencial de mediana densidad de poblaci&oacute;n, en los aleda&ntilde;os del Parlamento Vasco, de la Ciudad Universitaria y muy pr&oacute;xima al centro hist&oacute;rico y monumental.</p>\n<p>Erigida a principios de los a&ntilde;os noventa por el equipo del arquitecto Javier Ega&ntilde;a Oyarzabal, esta construcci&oacute;n aloja las unidades administrativas de Lehendakaritza: la Secretar&iacute;a General de la Presidencia del Gobierno, la Secretar&iacute;a General de Acci&oacute;n Exterior y la Secretar&iacute;a General de Comunicaci&oacute;n; adem&aacute;s de los despachos de trabajo del Lehendakari, la Sala de Consejos y la destinada a las comparecencias ante los medios de comunicaci&oacute;n. Guarda asimismo en su interior piezas art&iacute;sticas destacadas, tanto de la tradici&oacute;n artesanal como del arte vasco contempor&aacute;neo.</p>",
+    "BASQUE" : "<h2>Eraikina</h2>\n<p>Kareharri zurizko eraikin moderno eta funtzional bat da; erdian kristalezko piramide bat eta inguruan kristalezko hiru dorre dituena eta Lehendakaritzaren administrazio bulegoak hartzen dituena.</p>\n<p>Bertatik bertara du Ajuria-Enea Jauregi enblematikoa, lehendakariaren egoitza ofiziala eta bilera eta ekitaldi instituzionalerako erabiltzen den etxea, alegia. Eraikin berri hau, ordea, Jaurlaritzaren egunez eguneko ekitaldi administratiboak edota ordezkaritzakoak jasotzeko egin zen.</p>\n<p>Eraikina gune erabilgarri eta adierazgarria da, lorategidun etxe ugariz eta hezkuntza, osasungintza eta instituzio zereginetarako erabiltzen diren eraikuntzez inguratutako gune baten.<br />Kanpoko proposamen arkitektonikoa kantoiko lursail bateko eraikin baten gauzatzen da; kristalezko piramide batek buru ematen dio eraikinari; eta piramidea eta aldeetako dorreak -horiek ere kristalezkoak- dira eraikinaren bereizgarriak. Piramidearen azpian erdiko patio zabal eta argitsu bat dago, marmolez apaindutakoa; hor izan ohi dira gizarte eta politikarako garrantzitsuak diren hainbat ekitaldi: hala nola, harrera ekitaldi handiak, euskal ordezkariekin, estatukoekin eta nazioartekoekin egin beharreko biltzarrak; eta hauteskundeen jarraipena.</p>\n<p>Barruko eraketan antolamenduak eta joan-etorriek eragindako kezka da nagusi, antolamendua eta joan-etorriak argiak izatea bilatu baita. Horretarako, eraztun antzeko eraikuntza aukeratu da, eraztunaren inguruan espazioa banatuta, espazioa hobeto kontrolatu eta joan-etorriak ahalik eta gehien errazteko.<br />Lehendakaritzaren eraikina Nafarroa kaleko 2. zenbakian dago, Nieves Cano pasealekuarekin bat egiten duen gunean, Vitoria-Gasteizen, Euskal Autonomia Erkidegoaren hiriburuan. Bi mila hirurehun eta hogeita hamar metro karratuko azalera hartzen dute eraikinak eta inguruan duen lorategiak. Hori guztia, Batan inguruko esparru urbanistikoan. Biztanle dentsitate ertaina du erresidentzia gune horrek, Eusko Legebiltzarretik eta Unibertsitate gunetik gertu dago, eta hirigune historiko eta monumentaletik ez oso urruti.</p>\n<p>Laurogeita hamarreko hamarkadan hasieran eraiki zuen Javier Ega&ntilde;a Oyarzabal arkitektoaren taldeak eta hor biltzen dira Lehendakaritzako unitate administratiboak: Jaurlaritzako Lehendakaritzaren Idazkaritza Nagusia, Kanpo Harremanetarako Idazkaritza Nagusia eta Komunikaziorako Idazkaritza Nagusia; baita lehendakariak lanerako dituen bulegoak, Kontseilu Gela eta komunikabideen aurrean agertzeko aretoa ere. Zenbait artelan aipagarri ere badaude barruan, hala artisau tradiziozkoak nola egungo euskal arteari buruzkoak.</p>"
+  }
+}

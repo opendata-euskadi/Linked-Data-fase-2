@@ -3,9 +3,9 @@
 ## Ficha técnica
 
 * Nombre: Directorio
-* URI Named Graph: http://id.euskadi.eus/graph/Directory
-* URI Named Graph enlaces: http://id.euskadi.eus/graph/Directory-links
-* URI Named Graph ontologias: http://id.euskadi.eus/graph/Directory-vocabs
+* URI Named Graph: https://id.euskadi.eus/graph/Directory
+* URI Named Graph enlaces: https://id.euskadi.eus/graph/Directory-links
+* URI Named Graph ontologias: https://id.euskadi.eus/graph/Directory-vocabs
 * Origen: https://www.opendata.euskadi.eus/webopd00-apidirectory/es?api=directory
 * DCAT/Metadatos: `Directorio-metadata.ttl`
 * Prototipo: `Directorio-abstract.ttl`
@@ -22,7 +22,7 @@
 
 Ontologías usadas:
 
-* [http://id.euskadi.eus/def/directory](directorio.ttl). Ontología creada para este dataset con algunas entidades específicas como `Equipment` o `legislature` (**Subir `directorio.ttl` a GraphDB**).
+* [https://id.euskadi.eus/def/directory](directorio.ttl). Ontología creada para este dataset con algunas entidades específicas como `Equipment` o `legislature` (**Subir `directorio.ttl` a GraphDB**).
 * [ISA Programme Person Core Vocabulary](http://www.w3.org/ns/person). (**Subir `person.ttl` a GraphDB**).
 * [Schema](https://schema.org).
 * [IGN Geo](https://datos.ign.es/def/geo_core#).
@@ -34,22 +34,26 @@ Ontologías usadas:
 ### ¿En qué localidad se encuentra Lehendakaritza?
 
 ```sparql
-PREFIX dir: <http://id.euskadi.eus/def/directory#>
+PREFIX dir: <https://id.euskadi.eus/def/directory#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 PREFIX callejero: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
-PREFIX nora: <http://id.euskadi.eus/def/nora#>
-PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX nora: <https://id.euskadi.eus/def/nora#>
+PREFIX gn: <https://www.geonames.org/ontology#>
 
 SELECT ?localidad_name 
 WHERE { 
-    ?equipment dir:equipmentOf ?organization .
-    ?equipment schema:location ?portal .
-    ?portal callejero:via ?street .
-    ?street nora:localidad ?localidad .
-    ?localidad gn:officialname ?localidad_name .
-    ?organization rdfs:label ?org_label .
-    FILTER CONTAINS(?org_label, "Lehendakaritza") .
+    GRAPH <https://id.euskadi.eus/graph/Directorio> {
+    	?equipment dir:equipmentOf ?organization .
+    	?equipment schema:location ?portal .
+    	?portal callejero:via ?street .
+        ?organization rdfs:label ?org_label .
+        FILTER CONTAINS(?org_label, "Lehendakaritza") .
+    }
+    GRAPH <https://id.euskadi.eus/graph/NORA> {
+    	?street nora:localidad ?localidad .
+    	?localidad gn:officialname ?localidad_name .
+    }
 }
 ```
 
@@ -78,7 +82,7 @@ WHERE {
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX schema: <https://schema.org/>
-PREFIX dir: <http://id.euskadi.eus/def/directory#>
+PREFIX dir: <https://id.euskadi.eus/def/directory#>
 
 SELECT ?org_label ?person_label ?cv_url 
 WHERE { 

@@ -15,7 +15,7 @@ public enum EuskadiURIs {
     ; 
 
 	private final String uri_name;
-	private final String base = "http://id.euskadi.eus/def/directory#";
+	private final String base = "https://id.euskadi.eus/def/directory#";
 
     private EuskadiURIs(String uri_name) {
         this.uri_name = base+uri_name;

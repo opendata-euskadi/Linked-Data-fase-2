@@ -1,0 +1,346 @@
+{
+  "totalItemsCount" : 192,
+  "startPosition" : 10,
+  "endPosition" : 20,
+  "requestedNumberOfItems" : 10,
+  "filter" : {
+    "uiLanguage" : "SPANISH",
+    "booleanQuery" : {
+      "clauses" : [ {
+        "clause" : {
+          "typeId" : "containedInClause",
+          "forMetaData" : "typeFacets",
+          "spectrum" : [ 120 ]
+        },
+        "occur" : "MUST"
+      }, {
+        "clause" : {
+          "typeId" : "equalsClause",
+          "forMetaData" : "objType",
+          "value" : [ "r01mb.model.directory.R01MDirectoryObjectType", "ENTITY" ]
+        },
+        "occur" : "MUST"
+      } ]
+    }
+  },
+  "pageItems" : [ {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "F3367668-D09D-43D6-80DA-9AF27621E779",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "F3367668-D09D-43D6-80DA-9AF27621E779",
+      "name" : "Pleno del Consejo Asesor del Euskera",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1651055108696,
+      "orgHierarchyLevel" : 5
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "B1492799-AD7B-4F2B-983A-927FA0FEBEE7",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "B1492799-AD7B-4F2B-983A-927FA0FEBEE7",
+      "name" : "Dirección del Gabinete del Vicelehendakari Primero y Consejero de Seguridad",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1647938909657,
+      "_importedAt" : 1645626174995,
+      "orgHierarchyLevel" : 3
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "AF0C7A91-6839-46D1-9C7A-5D37BD0A3B8C",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "AF0C7A91-6839-46D1-9C7A-5D37BD0A3B8C",
+      "name" : "Viceconsejería de Agricultura, Pesca y Política Alimentaria",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1647004263680,
+      "_importedAt" : 1621241350801,
+      "orgHierarchyLevel" : 2
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "ECBBBF37-7630-4428-8D96-128E442646FC",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "ECBBBF37-7630-4428-8D96-128E442646FC",
+      "name" : "Dirección de Agricultura y Ganadería",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1645785029308,
+      "_importedAt" : 1621241353031,
+      "orgHierarchyLevel" : 3
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "C7135548-B0AF-4DDB-9D10-1262FD6A9ED6",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "C7135548-B0AF-4DDB-9D10-1262FD6A9ED6",
+      "name" : "Dirección de Gabinete y Comunicación",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1646129715719,
+      "_importedAt" : 1646129715716,
+      "orgHierarchyLevel" : 3
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "E80F7AFB-91CA-4586-B587-BCEA704AB725",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "E80F7AFB-91CA-4586-B587-BCEA704AB725",
+      "name" : "Lehendakaritza",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1648455317603,
+      "_importedAt" : 1621246713392,
+      "orgHierarchyLevel" : 1
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "A6F3FC1C-3CBB-456D-A259-886EB13920C3",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "A6F3FC1C-3CBB-456D-A259-886EB13920C3",
+      "name" : "Dirección de Gestión de Telecomunicaciones y Sistemas Informáticos",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1647004146776,
+      "_importedAt" : 1645626180663,
+      "orgHierarchyLevel" : 3
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "275DCB1A-2E0F-4C0C-87F7-B61AFCE6E8FC",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "275DCB1A-2E0F-4C0C-87F7-B61AFCE6E8FC",
+      "name" : "Seguridad",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1646999309233,
+      "_importedAt" : 1645626188416,
+      "orgHierarchyLevel" : 1
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "7D18BA7D-926A-4504-BBC6-E69E5801336C",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "7D18BA7D-926A-4504-BBC6-E69E5801336C",
+      "name" : "Dirección de Coordinación de Seguridad",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1645786653623,
+      "_importedAt" : 1645626185848,
+      "orgHierarchyLevel" : 3
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.entity.R01MDirectoryIsEntity",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "31149D64-CC79-40F7-BAED-37DA7F3D2222",
+    "data" : {
+      "typeId" : "summarizedDirectoryEntity",
+      "oid" : "31149D64-CC79-40F7-BAED-37DA7F3D2222",
+      "name" : "Gobernanza Pública y Autogobierno",
+      "objectType" : "ENTITY",
+      "objectSubType" : "PUBLIC_SECTOR",
+      "collectionPicks" : [ {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-SCOPE",
+        "itemId" : "AUTONOMY",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-TYPE",
+        "itemId" : "ADMIN",
+        "forSide" : "ANY"
+      }, {
+        "collectionId" : "PUBLIC-SECTOR-ENTITY-LEGISLATURE",
+        "itemId" : "XII",
+        "forSide" : "ANY"
+      } ],
+      "_lastActionDate" : 1646923764448,
+      "_importedAt" : 1646835588693,
+      "orgHierarchyLevel" : 1
+    }
+  } ]
+}

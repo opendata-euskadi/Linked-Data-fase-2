@@ -17,7 +17,7 @@ public enum GeoNamesURIs {
     ; 
 
 	private final String uri_name;
-	private final String base = "http://www.geonames.org/ontology#";
+	private final String base = "https://www.geonames.org/ontology#";
 
     private GeoNamesURIs(String uri_name) {
         this.uri_name = base+uri_name;

@@ -1,0 +1,61 @@
+{
+  "totalItemsCount" : 2,
+  "startPosition" : 0,
+  "endPosition" : 2,
+  "requestedNumberOfItems" : 10,
+  "filter" : {
+    "uiLanguage" : "SPANISH",
+    "booleanQuery" : {
+      "clauses" : [ {
+        "clause" : {
+          "typeId" : "equalsClause",
+          "forMetaData" : "objType",
+          "value" : [ "r01mb.model.directory.R01MDirectoryObjectType", "EQUIPMENT" ]
+        },
+        "occur" : "MUST"
+      }, {
+        "clause" : {
+          "typeId" : "containedInClause",
+          "forMetaData" : "typeFacets",
+          "spectrum" : [ 120 ]
+        },
+        "occur" : "MUST"
+      } ]
+    }
+  },
+  "pageItems" : [ {
+    "modelObjectType" : "r01mb.model.directory.equipment.R01MDirectoryIsEquipment",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "1C31174D-9553-452F-B554-5E5C29110FC5",
+    "data" : {
+      "typeId" : "summarizedDirectoryEquipment",
+      "oid" : "1C31174D-9553-452F-B554-5E5C29110FC5",
+      "name" : "Sede de la Presidencia",
+      "objectType" : "EQUIPMENT",
+      "objectSubType" : "GENERAL",
+      "_lastActionDate" : 1647439757675
+    }
+  }, {
+    "modelObjectType" : "r01mb.model.directory.equipment.R01MDirectoryIsEquipment",
+    "objectTypeCode" : 0,
+    "numericId" : 0,
+    "entityVersion" : 0,
+    "db" : "default",
+    "orderNumberWithinResults" : -1,
+    "score" : -1.0,
+    "oid" : "38F6D67F-34A1-4162-9302-94F34999DDEE",
+    "data" : {
+      "typeId" : "summarizedDirectoryEquipment",
+      "oid" : "38F6D67F-34A1-4162-9302-94F34999DDEE",
+      "name" : "Sede Central del Gobierno Vasco (Lakua)",
+      "objectType" : "EQUIPMENT",
+      "objectSubType" : "GENERAL",
+      "_lastActionDate" : 1647938453889
+    }
+  } ]
+}

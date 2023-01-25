@@ -3,9 +3,9 @@
 ## Ficha técnica
 
 * Nombre: Udalmap
-* URI Named Graph: http://id.euskadi.eus/graph/Udalmap
-* URI Named Graph enlaces: http://id.euskadi.eus/graph/Udalmap-links
-* URI Named Graph ontologias: http://id.euskadi.eus/graph/Udalmap-vocabs
+* URI Named Graph: https://id.euskadi.eus/graph/Udalmap
+* URI Named Graph enlaces: https://id.euskadi.eus/graph/Udalmap-links
+* URI Named Graph ontologias: https://id.euskadi.eus/graph/Udalmap-vocabs
 * Origen:
   * Indice general: https://www.opendata.euskadi.eus/contenidos/estadistica/udalmap_grupo_m/es_def/adjuntos/indice.json
   * ECONOMÍA / COMPETITIVIDAD: https://www.opendata.euskadi.eus/catalogo/-/indicadores-municipales-de-sostenibilidad-economia-competitividad/
@@ -42,7 +42,7 @@ Ontologias a incluir en triple store:
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?nombre_indicador
-FROM <http://id.euskadi.eus/graph/Udalmap>
+FROM <https://id.euskadi.eus/graph/Udalmap>
 WHERE { 
 	?medicion rdf:type ?indicador .
   ?indicador rdfs:label ?nombre_indicador
@@ -57,7 +57,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
 SELECT DISTINCT ?nombre_indicador
 
-FROM <http://id.euskadi.eus/graph/Udalmap>
+FROM <https://id.euskadi.eus/graph/Udalmap>
 
 WHERE { 
 	?medicion rdf:type ?indicador .
@@ -74,7 +74,7 @@ WHERE {
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX gn: <https://www.geonames.org/ontology#>
 PREFIX territorio: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX measure: <http://purl.org/linked-data/sdmx/2009/measure#>
@@ -83,7 +83,7 @@ PREFIX dimension: <http://purl.org/linked-data/sdmx/2009/dimension#>
 SELECT DISTINCT ?nombre_indicador ?year ?value ?location_name
 
 WHERE { 
-    GRAPH <http://id.euskadi.eus/graph/Udalmap>{
+    GRAPH <https://id.euskadi.eus/graph/Udalmap>{
 		  ?medicion rdf:type ?indicador .
     	?medicion measure:obsValue ?value .
     	?medicion dimension:refPeriod ?year .
@@ -91,12 +91,12 @@ WHERE {
       ?indicador rdfs:label ?nombre_indicador .
       FILTER CONTAINS(?nombre_indicador, "agro") .
     }
-    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    GRAPH <https://id.euskadi.eus/graph/NORA> {
     	?location gn:officialname ?location_name .
       ?location territorio:provincia ?provincia .
       ?provincia rdfs:label "Araba"@eu .
 	  }
-    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+    GRAPH <https://id.euskadi.eus/graph/NORA-links> {
       ?location owl:sameAs ?location_wikidata .
     }
 }
@@ -109,7 +109,7 @@ ORDER BY ?nombre_indicador ?location_name ?year
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX wgs: <http://www.w3.org/2003/01/geo/wgs84_pos#>
-PREFIX gn: <http://www.geonames.org/ontology#>
+PREFIX gn: <https://www.geonames.org/ontology#>
 PREFIX territorio: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX measure: <http://purl.org/linked-data/sdmx/2009/measure#>
@@ -119,7 +119,7 @@ PREFIX dbo: <http://dbpedia.org/ontology/>
 SELECT DISTINCT ?nombre_indicador ?year ?value ?location_name ?area
 
 WHERE { 
-    GRAPH <http://id.euskadi.eus/graph/Udalmap>{
+    GRAPH <https://id.euskadi.eus/graph/Udalmap>{
 		?medicion rdf:type ?indicador .
     	?medicion measure:obsValue ?value .
     	?medicion dimension:refPeriod ?year .
@@ -127,12 +127,12 @@ WHERE {
         ?indicador rdfs:label ?nombre_indicador .
         FILTER CONTAINS(?nombre_indicador, "agro") .
     }
-    GRAPH <http://id.euskadi.eus/graph/NORA> {
+    GRAPH <https://id.euskadi.eus/graph/NORA> {
     	?location gn:officialname ?location_name .
         ?location territorio:provincia ?provincia .
         ?provincia rdfs:label "Araba"@eu .
 	}
-    GRAPH <http://id.euskadi.eus/graph/NORA-links> {
+    GRAPH <https://id.euskadi.eus/graph/NORA-links> {
         ?location owl:sameAs ?location_wikidata .
     }
     SERVICE <https://dbpedia.org/sparql> {
