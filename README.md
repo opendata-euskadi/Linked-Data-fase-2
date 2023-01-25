@@ -4,7 +4,7 @@
 
 Este es el repositorio del Linked Data Fase 2. El objetivo del proyecto es convertir ciertos DataSets de gran valor a Linked Data y utilizar la infraestructura ya instalada en [Open Data Euskadi](https://opendata.euskadi.eus/lod/-/linked-open-data/) para publicarlos (Mayormente la Triple Store [GraphDB](https://graphdb.ontotext.com/)).
 
-A grandes rasgos este repositorio contiene los siguientes elementos:
+A grandes rasgos este repositorio contiene los siguientes elementos: 
 
 * Gestión:
   * Documentación (En el [Wiki](https://github.com/opendata-euskadi/Produccion-Datos-Enlazados-contrato-2105015/wiki) o mediante archivos MarkDown).
