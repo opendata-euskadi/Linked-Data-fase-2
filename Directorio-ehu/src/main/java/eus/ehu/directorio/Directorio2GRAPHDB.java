@@ -86,8 +86,7 @@ public class Directorio2GRAPHDB {
 			}
 			catch (IOException e) {
 				logger.info("Pages out of range: " + e.getMessage());				
-				continue; //FIX in API-Rest curriculum values
-				//break;				
+				break;				
 			}
 		}
 	}
