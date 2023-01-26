@@ -100,7 +100,10 @@
 			<artifactId>r01fEJIEClasses</artifactId>
 			<version>${revision}</version>
 		</dependency>
-
+		<dependency><groupId>r01.r01f.ejie</groupId>
+			<artifactId>r01fNORAClasses</artifactId>
+			<version>${revision}</version>
+		</dependency>
 		<!-- EHU -->
 
 		<dependency>
@@ -121,6 +124,9 @@
 			<artifactId>saaj-api</artifactId>
 			<version>1.3.5</version>
 		</dependency>
+
+		
+
 
 	</dependencies>
 </project>

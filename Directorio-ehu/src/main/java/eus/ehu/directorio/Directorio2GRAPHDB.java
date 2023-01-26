@@ -6,8 +6,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import org.eclipse.rdf4j.model.Model;
-import org.eclipse.rdf4j.model.impl.TreeModel;
 import org.eclipse.rdf4j.model.vocabulary.RDF;
 import org.eclipse.rdf4j.model.vocabulary.RDFS;
 import org.eclipse.rdf4j.repository.Repository;
@@ -18,22 +16,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import eus.ehu.directorio.graphdb.Util;
-import eus.ehu.directorio.json.Person;
-import eus.ehu.directorio.json.Phone;
-import eus.ehu.directorio.json.Link;
 import eus.ehu.directorio.json.Email;
 import eus.ehu.directorio.json.Entity;
 import eus.ehu.directorio.json.Equipment;
 import eus.ehu.directorio.json.JSONCollection;
 import eus.ehu.directorio.json.JSONParser;
 import eus.ehu.directorio.json.JSONitem;
+import eus.ehu.directorio.json.Link;
+import eus.ehu.directorio.json.Person;
+import eus.ehu.directorio.json.Phone;
 import eus.ehu.directorio.uris.DIRECTORIOBaseURIs;
+import eus.ehu.directorio.uris.ESCJRURIs;
 import eus.ehu.directorio.uris.EuskadiURIs;
+import eus.ehu.directorio.uris.GeoURIs;
+import eus.ehu.directorio.uris.NORABaseURIs;
 import eus.ehu.directorio.uris.PersonURIs;
 import eus.ehu.directorio.uris.SchemaURIs;
-import eus.ehu.directorio.uris.GeoURIs;
-import eus.ehu.directorio.uris.ESCJRURIs;
-import eus.ehu.directorio.uris.NORABaseURIs;
 
 public class Directorio2GRAPHDB {
 	
@@ -78,7 +76,7 @@ public class Directorio2GRAPHDB {
 					if (person.geoPosition != null) {
 						processGeo(person, personURI);
 					}
-					if (person.curriculum.summary != null) {
+					if (person.curriculum != null && person.curriculum.summary != null) {
 						util.addLiteralTriple(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(person.curriculum.summary), namedGraphURI, repositoryConnection);
 					}
 					util.addIRITriple(personURI, SchemaURIs.mainEntityOfPage.getURI(),person._links.mainEntityOfPage, namedGraphURI, repositoryConnection);
@@ -87,8 +85,9 @@ public class Directorio2GRAPHDB {
 				}
 			}
 			catch (IOException e) {
-				logger.info("Pages out of range: " + e.getMessage());
-				break;
+				logger.info("Pages out of range: " + e.getMessage());				
+				continue; //FIX in API-Rest curriculum values
+				//break;				
 			}
 		}
 	}
@@ -100,7 +99,7 @@ public class Directorio2GRAPHDB {
 				String api_call_url = DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITIES + String.valueOf(itemAt);
 				JSONCollection json_collection = (new JSONParser()).parseJSONCollection(api_call_url);
 				for (JSONitem item : json_collection.pageItems) {
-//					logger.info(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid);
+					logger.info(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid);
 					Entity entity = (Entity) (new JSONParser()).parseJSONItem(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid, new Entity ());
 					String entityURI = DIRECTORIOBaseURIs.ENTITY.getURI() + entity.oid;
 					processBasics(entity, entityURI, SchemaURIs.GovernmentOrganization.getURI());
@@ -138,8 +137,8 @@ public class Directorio2GRAPHDB {
 						}
 					}
 							
-					if(entity._links.entitesAbove != null) {
-						for (Link link : entity._links.entitesAbove) {
+					if(entity._links.entitiesAbove != null) {
+						for (Link link : entity._links.entitiesAbove) {
 							util.addIRITriple(entityURI, SchemaURIs.parentOrganization.getURI(),
 									DIRECTORIOBaseURIs.ENTITY.getURI() + link.href.replace("https://api.euskadi.eus/directory/entities/", ""), 
 									namedGraphURI, repositoryConnection);
