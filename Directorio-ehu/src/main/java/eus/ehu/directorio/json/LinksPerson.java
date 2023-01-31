@@ -4,5 +4,5 @@ import java.util.List;
 
 public class LinksPerson {
 	public String mainEntityOfPage;
-	public List <Link> people;
+	public List <Link> entitiesLinks;
 }

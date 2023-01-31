@@ -80,8 +80,14 @@ public class Directorio2GRAPHDB {
 						util.addLiteralTriple(personURI, EuskadiURIs.curriculum.getURI(), extract_cv_url(person.curriculum.summary), namedGraphURI, repositoryConnection);
 					}
 					util.addIRITriple(personURI, SchemaURIs.mainEntityOfPage.getURI(),person._links.mainEntityOfPage, namedGraphURI, repositoryConnection);
-					
-					// Todos los links de people apuntan a si mismos: las personas se relacionan con entidades mediante entidad->member->persona		
+					List <Link> links = person._links.entitiesLinks;
+					if (links != null) {
+						for (Link link : links) {							
+							util.addIRITriple(personURI, SchemaURIs.memberOf.getURI(),
+									DIRECTORIOBaseURIs.ENTITY.getURI() + link.href.replace("https://api.euskadi.eus/directory/entities/", ""),
+									namedGraphURI, repositoryConnection);
+						}
+					}		
 				}
 			}
 			catch (IOException e) {
@@ -96,6 +102,7 @@ public class Directorio2GRAPHDB {
 		for (;; itemAt += 10) {
 			try {
 				String api_call_url = DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITIES + String.valueOf(itemAt);
+				logger.info(api_call_url);
 				JSONCollection json_collection = (new JSONParser()).parseJSONCollection(api_call_url);
 				for (JSONitem item : json_collection.pageItems) {
 					logger.info(DIRECTORIO2GRAPHDBConfig.DIRECTORIO_API_ENTITY + item.oid);
@@ -154,7 +161,8 @@ public class Directorio2GRAPHDB {
 					
 					if(entity._links.people != null) {
 						for (Link link : entity._links.people) {
-							logger.info(entityURI);
+							logger.info("MEMBER " +  entityURI);
+							logger.info("MEMBER " +  link);
 							util.addIRITriple(entityURI, SchemaURIs.member.getURI(),
 									DIRECTORIOBaseURIs.PERSON.getURI() + link.href.replace("https://api.euskadi.eus/directory/people/", ""), 
 									namedGraphURI, repositoryConnection);
@@ -213,6 +221,7 @@ public class Directorio2GRAPHDB {
 	private static void processBasics (JSONitem item, String itemURI, String typeURI) {
 		util.addIRITriple(itemURI, RDF.TYPE.stringValue(), typeURI, namedGraphURI, repositoryConnection);
 		util.addLiteralTriple(itemURI, RDFS.LABEL.stringValue(), item.name, namedGraphURI, repositoryConnection);
+		logger.info(item.name);
 		util.addLiteralTriple(itemURI, SchemaURIs.identifier.getURI(), item.id, namedGraphURI, repositoryConnection);
 	}
 	
