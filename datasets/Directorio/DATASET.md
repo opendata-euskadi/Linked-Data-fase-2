@@ -35,13 +35,14 @@ Ontologías usadas:
 
 ```sparql
 PREFIX dir: <https://id.euskadi.eus/def/directory#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX schema: <https://schema.org/>
 PREFIX callejero: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
-PREFIX nora: <https://id.euskadi.eus/def/nora#>
 PREFIX gn: <https://www.geonames.org/ontology#>
 
-SELECT ?localidad_name 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX nora: <https://id.euskadi.eus/def/nora#>
+
+SELECT *
 WHERE { 
     GRAPH <https://id.euskadi.eus/graph/Directorio> {
     	?equipment dir:equipmentOf ?organization .
@@ -57,22 +58,22 @@ WHERE {
 }
 ```
 
-### ¿Que suborganizaciones tiene la organizacion a la que pertenece Bingen Zupiria?
+### ¿Que suborganizaciones tiene la organizacion a la que pertenece Bingen Urkullu?
 
 ```sparql
 PREFIX person: <http://www.w3.org/ns/person#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
-
-SELECT ?subOrg ?subOrg_label
-WHERE { 
-	  ?person rdf:type person:Person .
-    ?person rdfs:label ?person_label .
-    ?organization schema:member ?person .
-    ?organization schema:subOrganization ?subOrg .
-    ?subOrg rdfs:label ?subOrg_label .
-    FILTER CONTAINS(?person_label, "Bingen Zupiria") .
+SELECT * WHERE {
+	GRAPH <https://id.euskadi.eus/graph/Directorio> {
+		?person rdf:type person:Person .
+		?person rdfs:label ?person_label .
+		?person schema:memberOf ?organization  .
+		?organization schema:subOrganization ?subOrg .
+		?subOrg rdfs:label ?subOrg_label .
+		FILTER CONTAINS(?person_label, "Urkullu") .
+	}
 }
 ```
 
