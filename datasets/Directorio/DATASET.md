@@ -85,13 +85,14 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX schema: <https://schema.org/>
 PREFIX dir: <https://id.euskadi.eus/def/directory#>
 
-SELECT ?org_label ?person_label ?cv_url 
-WHERE { 
-    ?organization rdf:type schema:GovernmentOrganization .
-    ?organization rdfs:label ?org_label .
-    ?organization schema:member ?person .
-    ?person rdfs:label ?person_label .
-    ?person dir:curriculum ?cv_url .
-    FILTER CONTAINS(?org_label, "Tecnología") .
-} 
+SELECT ?org_label ?person_label ?cv_url WHERE {
+    GRAPH <https://id.euskadi.eus/graph/Directorio> {
+        ?organization rdf:type schema:GovernmentOrganization .
+        ?organization rdfs:label ?org_label .
+        ?person schema:memberOf ?organization .
+        ?person rdfs:label ?person_label .
+        ?person dir:curriculum ?cv_url .
+        FILTER CONTAINS(?org_label, "Tecnología") .
+    }
+}
 ```
