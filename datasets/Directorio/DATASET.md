@@ -92,7 +92,7 @@ SELECT ?org_label ?person_label ?cv_url WHERE {
         ?person schema:memberOf ?organization .
         ?person rdfs:label ?person_label .
         ?person dir:curriculum ?cv_url .
-        FILTER CONTAINS(?org_label, "Tecnología") .
+        FILTER CONTAINS(?org_label, "Empleo") .
     }
 }
 ```
