@@ -58,7 +58,7 @@ WHERE {
 }
 ```
 
-### ¿Que suborganizaciones tiene la organizacion a la que pertenece Bingen Urkullu?
+### ¿Que suborganizaciones tiene la organizacion a la que pertenece Iñigo Urkullu?
 
 ```sparql
 PREFIX person: <http://www.w3.org/ns/person#>
@@ -77,7 +77,7 @@ SELECT * WHERE {
 }
 ```
 
-### Obtener los curriculum de las personas que trabajan en entidades que incluyan el termino "Tecnología" en su nombre 
+### Obtener los curriculum de las personas que trabajan en entidades que incluyan el termino "Empleo" en su nombre 
 
 ```sparql
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
